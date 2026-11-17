@@ -1,0 +1,5 @@
+cells 3327 pair counts identical: True
+k 103 vs 103; identical: False; max abs diff 1.73e-14
+k 53 vs 53; identical: False; max abs diff 1.71e-14
+k 53 vs 53; identical: False; max abs diff 9.44e-15
+k 74 vs 74; identical: False; max abs diff 1.42e-14

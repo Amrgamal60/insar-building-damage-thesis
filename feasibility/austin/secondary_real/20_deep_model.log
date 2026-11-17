@@ -1,0 +1,97 @@
+{"rows": 83496, "cases": 1754, "field": 0.9956302105172904}
+{"fold": 0, "elapsed_seconds": 13.576276247971691, "comparison_epoch": 15, "series_epoch": 12}
+{"fold": 1, "elapsed_seconds": 6.110195653978735, "comparison_epoch": 13, "series_epoch": 2}
+{"fold": 2, "elapsed_seconds": 13.522517494973727, "comparison_epoch": 15, "series_epoch": 15}
+{"fold": 3, "elapsed_seconds": 7.58844321698416, "comparison_epoch": 6, "series_epoch": 6}
+{"fold": 4, "elapsed_seconds": 13.107531293993816, "comparison_epoch": 16, "series_epoch": 15}
+{
+ "label": "REAL RUN",
+ "secondary": "20_deep_model",
+ "mode": "real",
+ "null_engine": "gpu",
+ "inputs": {
+  "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+  "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+  "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+ },
+ "events_in_file": 2846,
+ "cases": 1754,
+ "rows": 83496,
+ "dropped": {
+  "no value in the window": 961,
+  "missing Baseline 1 input": 127,
+  "demolition-censored on or before the event date": 4
+ },
+ "control_rows_dropped_missing_inputs": 5958,
+ "cases_per_fold": [
+  319,
+  349,
+  346,
+  365,
+  375
+ ],
+ "primary_record": "work/insar/real_20261112/test_a.json",
+ "primary_record_sha256": "c50f3da7ff87f6eff1b85410ac1102e77132b073d7771d9506c732da01e3f7b4",
+ "equal_to_primary": {
+  "cases": true,
+  "rows": true,
+  "dropped": true,
+  "control_rows_dropped": true,
+  "cases_per_fold": true
+ },
+ "comparison_pr_auc": 0.050273159257334187,
+ "series_pr_auc": 0.046563606338361256,
+ "observed": {
+  "pr": -0.0037095529189729304,
+  "roc": -0.009216677848960964,
+  "top10": -0.02964652223489167
+ },
+ "fit_seconds": 54.09417847596342,
+ "null_seconds": 19400.126794699987,
+ "boot_seconds": 19400.271925523004,
+ "workers": 32,
+ "started": "2026-11-16 11:13:52 EET",
+ "elapsed_seconds": 19540.955557545007,
+ "sources": {
+  "secondary_deep.py": "1e07f3f5e65d3b9d1877890960a8eac637b2d65c1d84971bba9e989a9e5093f5",
+  "deep_field.py": "3ca903db1f94cff576435f2397c7b858505b745f11743b8fe1a9ad972a381f15",
+  "run_tests.py": "020c67e0c9f32b01520d45ef9e5b8897eeb720c68c641160219692c72985628b",
+  "run_report.py": "ea0315b6a5117e4db092bf188fc0a680e9c8fd70fb80259339045d7869e0a62c",
+  "deep_model.py": "9ce5ccfbadd42a4c62354cbe1bb8d8cabea790e2ddbc08df71c2de37a1dd6130",
+  "lowmem_null.py": "84a6e78ef074d6ae29f1dbbe1b76d0f8bd46d35a8d3850da73a8c5ccaadf87e9",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430"
+ },
+ "inputs_deep": {
+  "field": "work/insar/fields_20261111_slips/field_v.npz",
+  "field_sha256": "7a9ad77f75b05c4a13d7cc29db07da47c871c8a31e196aae49989a521aa4a4e4",
+  "house_series": "work/insar/windows_20261111_slips/house_series.npz"
+ },
+ "host": "ai",
+ "python": "3.12.7",
+ "finished": "2026-11-16 16:39:33 EET"
+}
+{
+ "p": 0.52,
+ "boot": {
+  "resamples": 2000,
+  "seeds": "default_rng(s), s = 0 .. resamples - 1",
+  "universe_blocks": 200,
+  "resamples_with_value": 2000,
+  "resamples_without_value": 0,
+  "serial_check_resamples": 2,
+  "pr_ci95": [
+   -0.005368212286209521,
+   0.0016498936243158266
+  ],
+  "roc_ci95": [
+   -0.01627883873233487,
+   0.00874733921059935
+  ],
+  "top10_ci95": [
+   -0.03918417285989539,
+   0.01732777490651504
+  ]
+ }
+}

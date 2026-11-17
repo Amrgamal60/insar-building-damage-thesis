@@ -1,0 +1,30 @@
+﻿collapsed_part_raw,severity_class
+شرفة,partial_element
+شرفتين,partial_element
+شرفة وسور,partial_element
+شرفة وحائط,partial_element
+سقف غرفة,partial_element
+سقف حجرة,partial_element
+سقف الحمام,partial_element
+أرضية,partial_element
+حائط,partial_element
+أجزاء منه,partial_structural
+الجانب الأيمن,partial_structural
+الجانب الغربي,partial_structural
+الجانب الخلفي,partial_structural
+الخلفية,partial_structural
+الجهة الخلفية,partial_structural
+النصف الغربي,partial_structural
+أربعة غرف,partial_structural
+سقف وواجهتين,partial_structural
+واجهة وسقف,partial_structural
+حائط وسقف,partial_structural
+سقف وسلم,partial_structural
+سقف وواجهة,partial_structural
+شرفة وسلم,partial_structural
+سلم,partial_structural
+السلم,partial_structural
+سقف,partial_structural
+واجهة,partial_structural
+الواجهة,partial_structural
+كامل العقار,total

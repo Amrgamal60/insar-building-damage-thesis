@@ -1,0 +1,128 @@
+{
+ "house_pixels": 114058,
+ "valid_full_period": 107527,
+ "min_step_mm": 20.0,
+ "half_window_epochs": 15,
+ "common_mode_sd_about_trend_mm": 26.912038827568733,
+ "relative_resid_sd_median_mm": 7.69153416065092,
+ "pixels_with_a_step": 1228,
+ "share_with_a_step": 0.011420387437573818,
+ "houses_on_stepped_pixels": 1756,
+ "step_size_histogram_abs_mm": {
+  "20-24": 881,
+  "24-28": 283,
+  "28-32": 1469,
+  "32-36": 508,
+  "36-40": 11,
+  "40-44": 0,
+  "44-48": 0,
+  "48-52": 0,
+  "52-56": 0,
+  "56-60": 0,
+  "60-64": 0,
+  "64-68": 0,
+  "68-72": 0,
+  "72-76": 0,
+  "76-80": 0
+ },
+ "steps": 3152,
+ "steps_positive": 2762,
+ "steps_at_reference_change": 6,
+ "most_common_step_dates": {
+  "2020-12-28 -> 2021-01-09": 1100,
+  "2019-10-23 -> 2019-11-04": 1057,
+  "2022-12-30 -> 2023-01-11": 550,
+  "2022-05-28 -> 2022-06-09": 303,
+  "2022-07-15 -> 2022-07-27": 37,
+  "2022-05-16 -> 2022-05-28": 20,
+  "2019-05-08 -> 2019-05-20": 20,
+  "2018-02-18 -> 2018-03-02": 15,
+  "2021-07-20 -> 2021-08-01": 8,
+  "2021-01-09 -> 2021-01-21": 7,
+  "2019-07-31 -> 2019-08-12": 5,
+  "2023-07-10 -> 2023-07-22": 5
+ },
+ "blocks_with_100_valid_pixels": 144,
+ "block_share_quantiles": {
+  "0.5": 0.0,
+  "0.9": 0.0026125160286729326,
+  "0.99": 0.6384090909090852,
+  "1.0": 1.0
+ },
+ "top_blocks": [
+  {
+   "block_x_km": 634,
+   "block_y_km": 1358,
+   "valid": 843,
+   "stepped": 843,
+   "share": 1.0
+  },
+  {
+   "block_x_km": 634,
+   "block_y_km": 1356,
+   "valid": 182,
+   "stepped": 182,
+   "share": 1.0
+  },
+  {
+   "block_x_km": 632,
+   "block_y_km": 1358,
+   "valid": 308,
+   "stepped": 49,
+   "share": 0.159
+  },
+  {
+   "block_x_km": 620,
+   "block_y_km": 1334,
+   "valid": 268,
+   "stepped": 22,
+   "share": 0.082
+  },
+  {
+   "block_x_km": 622,
+   "block_y_km": 1334,
+   "valid": 191,
+   "stepped": 9,
+   "share": 0.047
+  },
+  {
+   "block_x_km": 630,
+   "block_y_km": 1354,
+   "valid": 341,
+   "stepped": 9,
+   "share": 0.026
+  },
+  {
+   "block_x_km": 632,
+   "block_y_km": 1352,
+   "valid": 463,
+   "stepped": 10,
+   "share": 0.022
+  },
+  {
+   "block_x_km": 622,
+   "block_y_km": 1340,
+   "valid": 1414,
+   "stepped": 23,
+   "share": 0.016
+  },
+  {
+   "block_x_km": 628,
+   "block_y_km": 1352,
+   "valid": 1141,
+   "stepped": 18,
+   "share": 0.016
+  },
+  {
+   "block_x_km": 630,
+   "block_y_km": 1350,
+   "valid": 328,
+   "stepped": 3,
+   "share": 0.009
+  }
+ ],
+ "full_period_v_median": {
+  "stepped": 18.615800200634553,
+  "unstepped": 8.325801574356127
+ }
+}

@@ -1,0 +1,511 @@
+{
+  "aliases": {
+    "ambiguous_2019_geo_ids": 3,
+    "ambiguous_geo_ids": 3,
+    "distinct_2019_geo_ids": 151941,
+    "distinct_geo_ids": 151960,
+    "distinct_house_geo_pairs": 151963,
+    "houses_with_ambiguous_2019_geo": 6,
+    "note": "Evidence only; safe permit use also requires the registered house-continuity and event-date rule."
+  },
+  "by_stage_and_kind": {
+    "1 prop_id | same": 149857,
+    "2 geo_id | same geo_id": 0,
+    "3 spatial | merged": 126,
+    "3 spatial | renumbered": 21,
+    "3 spatial | split": 49,
+    "3 spatial | unresolved": 1891
+  },
+  "changes_from_v1": [
+    "Stage 2 requires unique keys in both years and >=0.9 reciprocal spatial corroboration: two false geographic candidates move to stage-3 renumberings.",
+    "Split coverage uses the geometric union and >=2 successors; no accepted splits change.",
+    "Statuses use all A1 roll accounts, including those missing polygons; recorded year >2015 is a rebuild/update proxy.",
+    "Removed A1-filtered IMP_INFO absence as a no-improvement flag; full raw improvement audit added.",
+    "Added final gap/partial-overlap categories, ambiguity flags, reverse edges, sensitivity, local controls and raw-field diagnostics."
+  ],
+  "final_categories": {
+    "2026 A1 townhouse, different/missing recorded year": 2,
+    "2026 A1 townhouse, same recorded year": 2152,
+    "2026 A1 type 01 pre-2016, outside diagnostic geometry/boundary": 25,
+    "2026 A1 type 01, recorded year missing": 8,
+    "2026 A1, recorded year after 2015 (rebuild/update proxy)": 2483,
+    "2026 A1, selected main dwelling missing": 26,
+    "2026 detached diagnostic population": 144056,
+    "2026 non-A1": 1124,
+    "parcel merged: physical continuity unverified": 126,
+    "parcel split: physical continuity unverified": 49,
+    "successor absent from certified roll": 2,
+    "unresolved: partial/ambiguous hosted overlap": 54,
+    "unresolved: point in hosted gap": 1837
+  },
+  "geometry_source": {
+    "features": 386682,
+    "hosted_definition_expression": null,
+    "hosted_parent_or_reference_fields": [],
+    "hosted_relationship_count": 0,
+    "roll_polygon_coverage_by_improvement_state": {
+      "(blank)": {
+        "roll": 91967,
+        "with_polygon": 43716,
+        "without_polygon": 48251
+      },
+      "A1": {
+        "roll": 289879,
+        "with_polygon": 289465,
+        "without_polygon": 414
+      },
+      "A2": {
+        "roll": 5810,
+        "with_polygon": 5720,
+        "without_polygon": 90
+      },
+      "A3": {
+        "roll": 1982,
+        "with_polygon": 1955,
+        "without_polygon": 27
+      },
+      "A4": {
+        "roll": 54571,
+        "with_polygon": 1028,
+        "without_polygon": 53543
+      },
+      "A5": {
+        "roll": 20,
+        "with_polygon": 12,
+        "without_polygon": 8
+      },
+      "A9": {
+        "roll": 15,
+        "with_polygon": 15,
+        "without_polygon": 0
+      },
+      "B1": {
+        "roll": 2138,
+        "with_polygon": 1825,
+        "without_polygon": 313
+      },
+      "B2": {
+        "roll": 9680,
+        "with_polygon": 9664,
+        "without_polygon": 16
+      },
+      "B3": {
+        "roll": 145,
+        "with_polygon": 145,
+        "without_polygon": 0
+      },
+      "B4": {
+        "roll": 1104,
+        "with_polygon": 1103,
+        "without_polygon": 1
+      },
+      "C1": {
+        "roll": 421,
+        "with_polygon": 382,
+        "without_polygon": 39
+      },
+      "D2": {
+        "roll": 197,
+        "with_polygon": 180,
+        "without_polygon": 17
+      },
+      "E1": {
+        "roll": 2386,
+        "with_polygon": 2242,
+        "without_polygon": 144
+      },
+      "E2": {
+        "roll": 433,
+        "with_polygon": 417,
+        "without_polygon": 16
+      },
+      "E3": {
+        "roll": 327,
+        "with_polygon": 304,
+        "without_polygon": 23
+      },
+      "F1": {
+        "roll": 12120,
+        "with_polygon": 11646,
+        "without_polygon": 474
+      },
+      "F2": {
+        "roll": 60,
+        "with_polygon": 45,
+        "without_polygon": 15
+      },
+      "F3": {
+        "roll": 782,
+        "with_polygon": 737,
+        "without_polygon": 45
+      },
+      "F4": {
+        "roll": 2825,
+        "with_polygon": 27,
+        "without_polygon": 2798
+      },
+      "F5": {
+        "roll": 1263,
+        "with_polygon": 1243,
+        "without_polygon": 20
+      },
+      "J1": {
+        "roll": 4,
+        "with_polygon": 4,
+        "without_polygon": 0
+      },
+      "J2": {
+        "roll": 2,
+        "with_polygon": 2,
+        "without_polygon": 0
+      },
+      "J3": {
+        "roll": 7,
+        "with_polygon": 7,
+        "without_polygon": 0
+      },
+      "J4": {
+        "roll": 10,
+        "with_polygon": 9,
+        "without_polygon": 1
+      },
+      "M1": {
+        "roll": 11682,
+        "with_polygon": 3,
+        "without_polygon": 11679
+      },
+      "O1": {
+        "roll": 3416,
+        "with_polygon": 1617,
+        "without_polygon": 1799
+      }
+    },
+    "skipped_manifest_bodies": {
+      "error_or_not_geojson": 1,
+      "invalid_json": 1
+    },
+    "unique_property_ids": 373524,
+    "valid_pages": 39
+  },
+  "houses_2019": 151944,
+  "improvement_flag_audit": {
+    "conclusion": "v1 no-improvement labels were invalid: derived IMP_INFO was A1-filtered; raw absence is not demolition evidence",
+    "derived_improvement_property_ids": 289879,
+    "derived_non_A1_property_ids": 0,
+    "raw_rows": 454986,
+    "raw_unique_property_ids": 401279,
+    "stage1_non_A1_accounts": 1124,
+    "stage1_non_A1_with_raw_improvements": 568,
+    "stage1_non_A1_without_raw_improvements": 556
+  },
+  "inputs": {
+    "all_A1_main_fields_sha256": "383e4289b8137923d93dc54128d42bac5fd8e322e508a8f53090319f2185d424",
+    "boundary_sha256": "d7ff529b992c48fa9a886ac29c270cca46aa2cd2f95c67de3fc13d78cffd7388",
+    "derived_property_sha256": "d24049500c6a17d04eb6fa2fb071427c6a0cf924d04a039cc7f985c93c0f8967",
+    "old_geometry_sha256": "8f6584c9628123791811fbe03aca4c48a2ad9dfa5eb527d5b9186cd239db45bb",
+    "roll_layout_sha256": "f22439b025de5c90120614334d8237299528544d330a56954fc0a792dcea8ed7",
+    "roll_sha256": "62d0d1cd22b03f31db8d3986160eb181c5d00044df98a303fce9e17a44e9aa02",
+    "tcad_manifest_sha256": "709e42932d10787dcb32cef9df1f1da842671c40dc3bd8abd68800524641bf07"
+  },
+  "invariants": {
+    "all_2019_houses_have_one_final_category": true,
+    "no_outcome_inputs_read": true,
+    "reverse_counts_sum_to_417": true,
+    "stage_counts_sum_to_population": true
+  },
+  "prop_id_matches": 149857,
+  "prop_id_matches_with_same_geo_id": 149857,
+  "raw_property_audit": {
+    "confidential_flag_counts": {
+      "appr_confidential_flag": {
+        "F": 493324
+      },
+      "jan1_confidential_flag": {
+        "F": 493299,
+        "T": 25
+      },
+      "py_confidential_flag": {
+        "F": 493324
+      }
+    },
+    "rows": 493324,
+    "supplement_field_nonblank": {
+      "sup_action": 0,
+      "sup_cd": 0,
+      "sup_desc": 0
+    },
+    "unique_property_ids": 493246
+  },
+  "reverse_2026_detached_not_matched_by_prop_id": {
+    "count": 417,
+    "linked_successors_by_kind": {
+      "merged": 12,
+      "renumbered": 15,
+      "same geo_id": 0,
+      "split": 18
+    },
+    "linked_successors_with_multiple_2019_predecessors": 2,
+    "reasons": {
+      "2019 state code A2": 24,
+      "2019 state code A3": 17,
+      "2019 state code A4": 26,
+      "2019 state code A9": 1,
+      "2019 state code B1": 2,
+      "2019 state code B2": 80,
+      "2019 state code B3": 3,
+      "2019 state code B4": 1,
+      "2019 state code C1": 13,
+      "2019 state code E1": 1,
+      "2019 state code F1": 10,
+      "2019 state code F5": 8,
+      "2019 state code O1": 18,
+      "2019 state code missing": 10,
+      "2019 year built missing or after 2015": 62,
+      "not in 2019 layer": 96,
+      "successor of 2019 house(s), stages 2/3": 45
+    }
+  },
+  "scope": "parcel-account continuity; physical-house continuity is not inferred",
+  "stage2_geographic_candidates": {
+    "count": 2,
+    "historical_key_ambiguous": 1,
+    "reason_counts": {
+      "geographic key conflicts with geometry": 1,
+      "historical key ambiguous": 1
+    },
+    "zero_overlap_both_directions": 2
+  },
+  "status_by_stage": {
+    "1 prop_id": {
+      "2026 A1 townhouse, different/missing recorded year": 2,
+      "2026 A1 townhouse, same recorded year": 2152,
+      "2026 A1 type 01 pre-2016, outside diagnostic geometry/boundary": 25,
+      "2026 A1 type 01, recorded year missing": 8,
+      "2026 A1, recorded year after 2015 (rebuild/update proxy)": 2479,
+      "2026 A1, selected main dwelling missing": 26,
+      "2026 detached diagnostic population": 144041,
+      "2026 non-A1 (codes -/A1)": 37,
+      "2026 non-A1 (codes -/C1)": 513,
+      "2026 non-A1 (codes -/E1)": 3,
+      "2026 non-A1 (codes -/F1)": 1,
+      "2026 non-A1 (codes -/F5)": 2,
+      "2026 non-A1 (codes A2/A1)": 1,
+      "2026 non-A1 (codes A2/A2)": 14,
+      "2026 non-A1 (codes A3/A1)": 5,
+      "2026 non-A1 (codes A3/A3)": 18,
+      "2026 non-A1 (codes A4/A4)": 11,
+      "2026 non-A1 (codes A9/A9)": 1,
+      "2026 non-A1 (codes B1/B1)": 14,
+      "2026 non-A1 (codes B1/C1)": 1,
+      "2026 non-A1 (codes B1/F3)": 1,
+      "2026 non-A1 (codes B2/A1)": 6,
+      "2026 non-A1 (codes B2/B2)": 80,
+      "2026 non-A1 (codes B2/C1)": 1,
+      "2026 non-A1 (codes B3/B3)": 1,
+      "2026 non-A1 (codes B4/A1)": 1,
+      "2026 non-A1 (codes C1/A1)": 1,
+      "2026 non-A1 (codes C1/C1)": 112,
+      "2026 non-A1 (codes E1/A1)": 1,
+      "2026 non-A1 (codes E1/D1)": 2,
+      "2026 non-A1 (codes E1/E1)": 6,
+      "2026 non-A1 (codes F1/C1)": 2,
+      "2026 non-A1 (codes F1/F1)": 64,
+      "2026 non-A1 (codes F1/F5)": 169,
+      "2026 non-A1 (codes F3/F3)": 3,
+      "2026 non-A1 (codes F5/A1)": 1,
+      "2026 non-A1 (codes F5/F1)": 4,
+      "2026 non-A1 (codes F5/F5)": 48
+    },
+    "3 spatial": {
+      "2026 A1, recorded year after 2015 (rebuild/update proxy)": 25,
+      "2026 A1, recorded year after 2015 (rebuild/update proxy); 2026 A1, selected main dwelling missing": 1,
+      "2026 A1, recorded year after 2015 (rebuild/update proxy); 2026 detached diagnostic population": 7,
+      "2026 A1, recorded year after 2015 (rebuild/update proxy); 2026 non-A1 (codes -/C1)": 8,
+      "2026 A1, recorded year after 2015 (rebuild/update proxy); 2026 non-A1 (codes -/O1)": 1,
+      "2026 A1, selected main dwelling missing": 2,
+      "2026 detached diagnostic population": 61,
+      "2026 detached diagnostic population; 2026 non-A1 (codes -/C1)": 10,
+      "2026 detached diagnostic population; 2026 non-A1 (codes C1/C1)": 1,
+      "2026 non-A1 (codes -/C1)": 19,
+      "2026 non-A1 (codes -/C1); 2026 non-A1 (codes -/O1)": 1,
+      "2026 non-A1 (codes -/F5)": 1,
+      "2026 non-A1 (codes A3/F1)": 1,
+      "2026 non-A1 (codes B1/B1)": 20,
+      "2026 non-A1 (codes B2/B2)": 2,
+      "2026 non-A1 (codes C1/C1)": 5,
+      "2026 non-A1 (codes E1/E1)": 1,
+      "2026 non-A1 (codes F1/C1)": 2,
+      "2026 non-A1 (codes F1/F1)": 14,
+      "2026 non-A1 (codes F1/F5)": 2,
+      "2026 non-A1 (codes F3/C1)": 1,
+      "2026 non-A1 (codes F5/F1)": 3,
+      "2026 non-A1 (codes F5/F5)": 6,
+      "2026 successor unknown": 1891,
+      "successor absent from certified roll": 2
+    }
+  },
+  "threshold_sensitivity_original_v1": {
+    "0.5": {
+      "merged": 110,
+      "renumbered": 95,
+      "split": 38,
+      "unresolved": 1842
+    },
+    "0.8": {
+      "merged": 132,
+      "renumbered": 23,
+      "split": 62,
+      "unresolved": 1868
+    },
+    "0.9": {
+      "merged": 126,
+      "renumbered": 19,
+      "split": 49,
+      "unresolved": 1891
+    }
+  },
+  "threshold_sensitivity_union": {
+    "0.5": {
+      "merged": 110,
+      "renumbered": 97,
+      "split": 38,
+      "unresolved": 1842
+    },
+    "0.8": {
+      "merged": 132,
+      "renumbered": 25,
+      "split": 62,
+      "unresolved": 1868
+    },
+    "0.9": {
+      "merged": 126,
+      "renumbered": 21,
+      "split": 49,
+      "unresolved": 1891
+    }
+  },
+  "unresolved_diagnostics": {
+    "count": 1891,
+    "local_controls_200m_count": {
+      "10%": 20.0,
+      "50%": 20.0,
+      "90%": 20.0,
+      "95%": 20.0,
+      "99%": 20.0,
+      "count": 1891.0,
+      "max": 20.0,
+      "mean": 19.62453728186145,
+      "min": 0.0,
+      "std": 2.211013972914722
+    },
+    "local_median_shift_m": {
+      "10%": 3.0219989111272794e-06,
+      "50%": 9.562265119889685e-06,
+      "90%": 0.4636489172045213,
+      "95%": 1.2956060826070654,
+      "99%": 3.106849457680539,
+      "count": 1889.0,
+      "max": 5.911646017282501,
+      "mean": 0.17714203060097047,
+      "min": 2.7684694982985977e-07,
+      "std": 0.5764490356153604
+    },
+    "local_shift_under_1m": 1774,
+    "local_translation_max_overlap_ge_0_9": 1,
+    "nearest_local_control_m": {
+      "10%": 14.885836234734802,
+      "50%": 19.35071105960947,
+      "90%": 36.17694527314885,
+      "95%": 46.72157650534287,
+      "99%": 79.48836891578983,
+      "count": 1889.0,
+      "max": 179.9825210741602,
+      "mean": 23.57508215759003,
+      "min": 4.87599686685641,
+      "std": 14.108316159682536
+    },
+    "nearest_polygon_distance_m": {
+      "10%": 5.993247846330759,
+      "50%": 8.76108004430082,
+      "90%": 15.666634294857035,
+      "95%": 21.317253472284758,
+      "99%": 32.34392574160557,
+      "count": 1891.0,
+      "max": 92.08962821391296,
+      "mean": 10.12539823279429,
+      "min": 0.0,
+      "std": 6.335832155813099
+    },
+    "no_controls_within_200m": 2,
+    "reference_field_checks": {
+      "ref_id1": {
+        "exact_missing_old_geo_hits": 0,
+        "exact_missing_old_pid_hits": 0,
+        "nonblank": 35715,
+        "nonzero": 35711
+      },
+      "ref_id2": {
+        "exact_missing_old_geo_hits": 0,
+        "exact_missing_old_pid_hits": 0,
+        "nonblank": 493246,
+        "nonzero": 493246
+      },
+      "udi_group": {
+        "exact_missing_old_geo_hits": 0,
+        "exact_missing_old_pid_hits": 0,
+        "nonblank": 493246,
+        "nonzero": 34
+      }
+    },
+    "representative_point_in_any_polygon": 54,
+    "representative_point_in_hosted_gap": 1837,
+    "same_id_dx_m": {
+      "10%": -2.575997496023774e-05,
+      "50%": -1.262524165213108e-07,
+      "90%": 2.4686509277671576e-05,
+      "95%": 8.661500760354102e-05,
+      "99%": 0.7996693941240665,
+      "count": 149826.0,
+      "max": 3776.4078238923103,
+      "mean": 0.013356177109782865,
+      "min": -203.08150568127166,
+      "std": 9.818218340775246
+    },
+    "same_id_dy_m": {
+      "10%": -2.792547456920147e-05,
+      "50%": -4.66126948595047e-07,
+      "90%": 2.317107282578945e-05,
+      "95%": 5.867588333785534e-05,
+      "99%": 0.36177527520339936,
+      "count": 149826.0,
+      "max": 520.4316681269556,
+      "mean": -0.03350894437882446,
+      "min": -55.07694100541994,
+      "std": 1.6439791672340467
+    },
+    "same_id_geometry_control_count": 149826,
+    "same_id_iou": {
+      "10%": 0.9999869078418178,
+      "50%": 0.9999972348064337,
+      "90%": 0.9999983142804383,
+      "95%": 0.9999985491092993,
+      "99%": 0.9999989644963097,
+      "count": 149826.0,
+      "max": 0.9999999079530979,
+      "mean": 0.9911344174213113,
+      "min": 0.0,
+      "std": 0.05057787273049609
+    },
+    "unverified_cause": "Hosted gaps verified; suppression, conversion and resubdivision cannot be assigned to missing accounts without an authoritative history.",
+    "with_any_positive_area_overlap": 1721
+  },
+  "v1_stage_counts_for_comparison": {
+    "1 prop_id | same": 149857,
+    "2 geo_id | same geo_id": 2,
+    "3 spatial | merged": 126,
+    "3 spatial | renumbered": 19,
+    "3 spatial | split": 49,
+    "3 spatial | unresolved": 1891
+  },
+  "version": 3
+}

@@ -1,0 +1,149 @@
+{
+ "api": "https://tnmaccess.nationalmap.gov/api/v1/products",
+ "bbox_lonlat": [
+  -97.938309,
+  30.125135,
+  -97.590595,
+  30.455885
+ ],
+ "queried_utc": "2026-11-10T13:36:15Z",
+ "tiles": 19,
+ "projects": [
+  "TX_Central_B1_2017"
+ ],
+ "items": [
+  {
+   "title": "USGS one meter x60y334 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x60y334_TX_Central_B1_2017.tif",
+   "bytes": 415802327,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x60y335 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x60y335_TX_Central_B1_2017.tif",
+   "bytes": 426770432,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x60y336 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x60y336_TX_Central_B1_2017.tif",
+   "bytes": 462495416,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x60y337 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x60y337_TX_Central_B1_2017.tif",
+   "bytes": 361486090,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x61y334 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x61y334_TX_Central_B1_2017.tif",
+   "bytes": 419031941,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x61y335 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x61y335_TX_Central_B1_2017.tif",
+   "bytes": 429853245,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x61y336 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x61y336_TX_Central_B1_2017.tif",
+   "bytes": 459108516,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x61y337 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x61y337_TX_Central_B1_2017.tif",
+   "bytes": 445026140,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x61y338 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x61y338_TX_Central_B1_2017.tif",
+   "bytes": 385330708,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x62y334 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x62y334_TX_Central_B1_2017.tif",
+   "bytes": 417280819,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x62y335 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x62y335_TX_Central_B1_2017.tif",
+   "bytes": 392324710,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x62y336 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x62y336_TX_Central_B1_2017.tif",
+   "bytes": 423907820,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x62y337 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x62y337_TX_Central_B1_2017.tif",
+   "bytes": 417018675,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x62y338 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x62y338_TX_Central_B1_2017.tif",
+   "bytes": 400577004,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x63y334 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x63y334_TX_Central_B1_2017.tif",
+   "bytes": 406637773,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x63y335 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x63y335_TX_Central_B1_2017.tif",
+   "bytes": 382866555,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x63y336 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x63y336_TX_Central_B1_2017.tif",
+   "bytes": 412604170,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x63y337 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x63y337_TX_Central_B1_2017.tif",
+   "bytes": 407644406,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  },
+  {
+   "title": "USGS one meter x63y338 TX Central B1 2017",
+   "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/TX_Central_B1_2017/TIFF/USGS_one_meter_x63y338_TX_Central_B1_2017.tif",
+   "bytes": 405945713,
+   "publication_date": "2020-03-30",
+   "project": "TX_Central_B1_2017"
+  }
+ ]
+}

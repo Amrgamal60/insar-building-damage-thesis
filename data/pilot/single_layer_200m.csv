@@ -1,0 +1,10 @@
+Layer,Source,Eligible cells with a value (%),Positive cells with a value,Background cells with a value,"Median, positive","Median, background",AUC,Direction
+"Built-up share of the cell, 2015 (%)","GHS-BUILT-S R2023A, 100 m, cell mean",99.8,53,4683,43.95,30.56,0.81,higher in positive cells
+Share of 2015 built-up surface already built in 1975 (0-1),GHS-BUILT-S 1975 / 2015,99.7,53,4680,1.00,0.49,0.89,higher in positive cells
+"Net building height, 2018 (m)","GHS-BUILT-H ANBH R2023A, cell mean of non-zero pixels",99.7,53,4680,17.93,11.34,0.78,higher in positive cells
+"Building count, log(1 + n)","Google Open Buildings v3, confidence >= 0.70",100.0,53,4692,4.93,3.74,0.87,higher in positive cells
+Ground elevation (m),"FABDEM v1-2, cell mean",100.0,53,4692,10.30,1.73,0.83,higher in positive cells
+Distance from cell centre to the 2021 shoreline (km),"DSAS shoreline, OSF 98pyu",100.0,53,4692,1.42,2.55,0.29,lower in positive cells
+"Shirzaei et al. VLM, mean of points in the cell (mm/yr)","VT Figshare 25864435, IGS14",52.0,49,2420,-3.46,-3.06,0.41,lower in positive cells
+Ohenhen et al. 2025 VLM at the cell (mm/yr),"Zenodo 15015923, bilinear from ~900 m",96.4,52,4522,-5.26,-6.27,0.67,higher in positive cells
+Shirzaei et al. points in the cell (count),"availability, not a velocity",100.0,53,4692,3.00,1.00,0.73,higher in positive cells

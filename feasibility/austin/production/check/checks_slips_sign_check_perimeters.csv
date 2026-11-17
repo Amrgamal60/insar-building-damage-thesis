@@ -1,0 +1,40 @@
+perimeter_id,status,active_years,type,area_ha,pixels,valid_pixels,median_v
+1,INACTIVE,1958-1967,"Municipal,Domestic",1.27,14,13,9.22016563133014
+2,INACTIVE,1967-1970,"Municipal, Domestic, Construction,",3.55,39,0,
+3,INACTIVE,1973-1979,"Domestic, Industrial, Construction, Hazard",0.7,9,2,8.522290606971247
+4,INACTIVE,1954-1961,"Municipal,Domestic,",4.19,48,31,8.14427262438056
+5,INACTIVE,1968-1982,"Municipal, Industrial",41.9,466,5,2.6101545404219824
+6,INACTIVE,????-1970,"Domestic, Industrial, Constuction, Tires",13.18,145,59,9.084448200369318
+7,INACTIVE,1967-1973,"Municipal, Domestic, Construction, Industrial, Agricultural",14.64,162,22,9.236915956816322
+9,INACTIVE,1951-1969,"Industrial, Laboratory,Hazard",4.58,51,51,8.754173813413438
+10,INACTIVE,early 1960's,"Municipal, Domestic,",0.74,8,8,8.685665765295418
+11,INACTIVE,1963-1977,Industrial,0.45,5,5,8.215108165580611
+12,INACTIVE,1963-1977,"Domestic, Industrial, Hazard",1.71,19,16,8.294511034755141
+13,INACTIVE,1943-1980,"Domestic, Industrial, Agricultural",0.24,3,2,8.563329167501657
+14,INACTIVE,1958-1967,"Municipal,Domestic",13.32,147,90,8.811430548551817
+15,INACTIVE,1943-1980,"Domestic, Industrial, Agricultural,Hazard",3.23,34,31,9.267433430016343
+16,ACTIVE,1977-present,Municipal,146.82,1637,0,
+17,ACTIVE,1981-present,Municipal,143.64,1598,0,
+18,ACTIVE,2003-present,"Municipal,Domestic, Construction, Industrial, Agricultural,",68.76,765,0,
+19,ACTIVE,1961-present,Municipal/Industrial,159.79,1773,0,
+21,INACTIVE,1952-1957,"Municipal, Domestic,",4.32,49,47,8.408752035945833
+22,INACTIVE,1971-1972,"Industrial,",20.35,225,0,
+24,INACTIVE,1948-1967,"Municipal, Domestic,",11.74,130,22,7.777450601306741
+25,INACTIVE,????-1972,"Domestic, Construction, Industrial, Agricultural, Brush",3.21,37,0,
+26,INACTIVE,before 1983,???,8.98,100,96,9.045358872681454
+27,INACTIVE,1955-1957,"Municipal, Domestic, Construction, Brush",12.35,139,107,9.192693014424098
+29,INACTIVE,????-1974,"Domestic, construction, tires, brush, hazard",1.89,21,21,8.708159754977702
+31,INACTIVE,1973-1979,"Construction, Brush, Other",1.73,17,16,2.3691386817396207
+33,INACTIVE,1943-1980,"Domestic, Industrial",1.4,18,0,
+34,INACTIVE,1943-1980,"Domestic, Industrial, Construction,Agricultural,Hazard",8.11,96,43,9.042511701923909
+35,INACTIVE,1943-1980,"Domestic, Industrial, Construction, Agricultural,Hazard",9.02,101,64,8.431595509484376
+36,INACTIVE,1943-1980,"Domestic, Industrial, Construction, Agricultural,Hazard",5.31,60,39,8.675690451431535
+37,INACTIVE,1944-1955,"Municipal, Domestic, Industral, Hazard",14.65,161,75,8.06982793081556
+38,INACTIVE,1930-1940,???,1.56,18,14,9.009315883822662
+39,INACTIVE,1963-1987,???,6.62,73,1,9.102989316605365
+40,INACTIVE,1963-1984,Municipal,7.9,89,0,
+41,INACTIVE,1963-1977,"Industrial, Hazard",1.51,17,16,8.483036548275471
+42,INACTIVE,1943-1980,"Domestic, Industrial, Construction,Agricultural,Hazard",8.89,100,32,8.911556776647629
+43,INACTIVE,1943-1980,"Domestic, Industrial, Construction,Agricultural,Hazard",2.33,25,11,9.423288532511073
+45,INACTIVE,????,???,0.59,6,6,8.371492258009352
+46,INACTIVE,????,???,0.25,3,0,

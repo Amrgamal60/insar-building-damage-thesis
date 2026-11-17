@@ -1,0 +1,5 @@
+"Predictor(s), all eligible cells with baseline inputs",Cells,Positive cells,Out-of-fold ROC AUC,PR AUC,Prevalence
+Has ≥ 1 Shirzaei point,4733,53,0.641,0.016,0.011
+"Shirzaei point count, log(1 + n)",4733,53,0.702,0.020,0.011
+Has an Ohenhen value,4733,53,0.442,0.010,0.011
+Urban/coastal baseline (for reference),4733,53,0.905,0.066,0.011

@@ -1,0 +1,421 @@
+[    0.4 s] 1 equivalence with the frozen calibration: identical
+[    2.9 s] 2 geometry: {'houses': 149316, 'complete': 139778, 'pixels': 114058, 'null_pixels': 107243, 'standardisation_houses': 141183, 'houses_off_null_field': 8133, 'folds_reproduced': True}
+[   21.6 s] 3 synthetic field saved
+[ 5510.7 s] 4 surrogates: {'reused': False, 'draws': 20, 'settings': {'kmax': 200, 'max_lag': 16, 'chunk': 8}, 'setup_seconds': 108.77895876392722, 'seconds_per_draw': 268.93007259150033, 'explained_variance_mean': 0.7110175997462668, 'chosen_k': [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200], 'sha256': '21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4', 'peak_rss_gb': 8.565484, 'nan_pattern_preserved': True}
+{
+ "events": 2846,
+ "cases": 2620,
+ "dropped": {
+  "missing Baseline 1 input": 127,
+  "no value in the window": 95,
+  "demolition-censored on or before the event date": 4
+ },
+ "sha256": "e7fd868bc59955794d48631799c3be560f9eecab58ce624fe4da981545246d23",
+ "events_sha256": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+ "field_sha256": "e69499956361a6bcb86073bc3b8ebee95cc2e4132cd47c946cb26882e70752a8",
+ "sources": {
+  "planted_signal.py": "7223905710ea8e5de750d4c50bc59b35c1b87ff7cdca548b94292a59b6c93ed7",
+  "testa_core.py": "a901e59fc1f307ae141b6f8d933016bcafe07126c967bd85f132a51c3a1a7be4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+ }
+}
+{
+ "sha256": "c3b16fb4036ea5ccba0afb27065dda9aca00ea2c47effc835e786c2e87d631f6",
+ "surrogates_sha256": "21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4",
+ "fingerprint": "67a99a6e8c927e3b12ac582343e02de8e374e7a75b937e5f29b0aa6374e84576",
+ "shape": [
+  20,
+  5,
+  88
+ ],
+ "percentiles": [
+  0.5,
+  25,
+  50,
+  75,
+  99.5
+ ],
+ "sources": {
+  "planted_signal.py": "7223905710ea8e5de750d4c50bc59b35c1b87ff7cdca548b94292a59b6c93ed7",
+  "testa_core.py": "a901e59fc1f307ae141b6f8d933016bcafe07126c967bd85f132a51c3a1a7be4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+ }
+}
+2026-11-10 21:33:30 setup 4.8 s; 12 jobs; 12 workers; draws 20; synthetic events per dataset 2620
+2026-11-10 21:34:28 cell 1 dataset 1: observed +0.00002, p 0.0476, 59 s
+2026-11-10 21:34:29 cell 1 dataset 0: observed +0.00001, p 0.1429, 59 s
+2026-11-10 21:34:30 cell 3 dataset 1: observed -0.00013, p 0.4286, 60 s
+2026-11-10 21:34:30 cell 5 dataset 0: observed -0.00012, p 0.6190, 61 s
+2026-11-10 21:34:30 cell 3 dataset 0: observed +0.00007, p 0.4286, 61 s
+2026-11-10 21:34:30 cell 4 dataset 0: observed +0.00036, p 0.0476, 61 s
+2026-11-10 21:34:31 cell 4 dataset 1: observed +0.00029, p 0.1429, 61 s
+2026-11-10 21:34:31 cell 2 dataset 1: observed +0.00166, p 0.1429, 61 s
+2026-11-10 21:34:31 cell 5 dataset 1: observed +0.00164, p 0.0476, 61 s
+2026-11-10 21:34:31 cell 6 dataset 0: observed +0.00187, p 0.0476, 61 s
+2026-11-10 21:34:31 cell 6 dataset 1: observed +0.00394, p 0.0476, 61 s
+2026-11-10 21:34:31 cell 2 dataset 0: observed -0.00057, p 0.4286, 62 s
+2026-11-10 21:34:31 projection: 0.0 h for 12 jobs -> datasets per cell 2
+2026-11-10 21:34:31 run complete
+# Planted-signal check of Test A (AUSTIN_PLAN.md §14)
+
+Datasets per cell: 2 (projection 0.0 h on 12 workers; fallback not applied). Null draws per dataset: 20. Synthetic events per dataset: 2620.
+
+A dataset meets the §11 rule if its change in PR AUC is positive and p < 0.05. Paired bias is the observed change minus the mean of that dataset's null draws; intervals are Student t over datasets. p deciles count (0,.1], ..., (.9,1].
+
+| Cell | Meets §11 rule [95% Wilson] | Mean observed change [95% t] | Mean null change | Paired bias [95% t] | p deciles |
+|---|---|---|---|---|---|
+| 1. nothing added | 1/2 = 50.0% [9.5, 90.5] | +0.00001 [-0.00006, +0.00008] | -0.00019 | +0.00020 [-0.00036, +0.00076] | [1, 1, 0, 0, 0, 0, 0, 0, 0, 0] |
+| 2. 0.65 t (nonlinear soil) | 0/2 = 0.0% [0.0, 65.8] | +0.00055 [-0.01364, +0.01474] | -0.00025 | +0.00080 [-0.00763, +0.00923] | [0, 1, 0, 0, 1, 0, 0, 0, 0, 0] |
+| 3. 0.7 H (hidden spatial field) | 0/2 = 0.0% [0.0, 65.8] | -0.00003 [-0.00128, +0.00123] | +0.00010 | -0.00012 [-0.00053, +0.00029] | [0, 0, 0, 0, 2, 0, 0, 0, 0, 0] |
+| 4. beta = -0.1 | 1/2 = 50.0% [9.5, 90.5] | +0.00032 [-0.00016, +0.00081] | -0.00005 | +0.00038 [-0.00168, +0.00244] | [1, 1, 0, 0, 0, 0, 0, 0, 0, 0] |
+| 5. beta = -0.2 | 1/2 = 50.0% [9.5, 90.5] | +0.00076 [-0.01046, +0.01198] | -0.00007 | +0.00083 [-0.01059, +0.01225] | [1, 0, 0, 0, 0, 0, 1, 0, 0, 0] |
+| 6. beta = -0.4 | 2/2 = 100.0% [34.2, 100.0] | +0.00291 [-0.01028, +0.01610] | +0.00078 | +0.00213 [-0.00624, +0.01049] | [2, 0, 0, 0, 0, 0, 0, 0, 0, 0] |
+
+Source hashes: `planted_signal.py` 7223905710ea8e5de750d4c50bc59b35c1b87ff7cdca548b94292a59b6c93ed7, `testa_core.py` a901e59fc1f307ae141b6f8d933016bcafe07126c967bd85f132a51c3a1a7be4, `nyc_lib.py` 619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1.
+Input fingerprints: {"checkpoint1_inputs": {"features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a", "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb", "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace", "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"}, "field_npz": "e69499956361a6bcb86073bc3b8ebee95cc2e4132cd47c946cb26882e70752a8", "null_field": "67a99a6e8c927e3b12ac582343e02de8e374e7a75b937e5f29b0aa6374e84576", "coefficients": "2f67ed802968a6992101894724fdfb09489bb3fb2e8054ef277e37a1c98a9c8b", "event_dates": "e7fd868bc59955794d48631799c3be560f9eecab58ce624fe4da981545246d23", "surrogates": "21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4", "quantiles": "c3b16fb4036ea5ccba0afb27065dda9aca00ea2c47effc835e786c2e87d631f6"}.
+[ 5586.3 s] 5 planted-signal script ran; planted directions and cell 6 detection as expected
+[ 5624.2 s] 6 independent checks passed: {'cell4_ds0': {'count_per_date': True, 'unique_houses': True, 'cases_valid': True, 'episode_dates': True, 'set_sizes_51': True, 'controls_not_case': True, 'controls_unique_within_set': True, 'controls_have_value': True, 'controls_not_demolished': True, 'controls_no_episode_on_or_before': True, 'some_controls_hold_a_later_synthetic_event': True, 'dropped_equals_incomplete_controls': True, 'rows_match_record': True}, 'cell3_ds1': {'count_per_date': True, 'unique_houses': True, 'cases_valid': True, 'episode_dates': True, 'set_sizes_51': True, 'controls_not_case': True, 'controls_unique_within_set': True, 'controls_have_value': True, 'controls_not_demolished': True, 'controls_no_episode_on_or_before': True, 'some_controls_hold_a_later_synthetic_event': True, 'dropped_equals_incomplete_controls': True, 'rows_match_record': True}}
+[ 5624.3 s] 7 selection frequencies: chi2 8.8, p 0.458
+2026-11-10 21:35:14 setup 4.8 s; 2 jobs; 2 workers; draws 20; synthetic events per dataset 2620
+2026-11-10 21:35:45 cell 4 dataset 0: observed +0.00036, p 0.0476, 31 s
+2026-11-10 21:35:45 cell 3 dataset 0: observed +0.00007, p 0.4286, 31 s
+2026-11-10 21:35:45 projection: 0.0 h for 2 jobs -> datasets per cell 1
+2026-11-10 21:35:45 run complete
+[ 5660.0 s] 8 reruns identical: {'cell3_ds0': True, 'cell4_ds0': True}
+[ 5660.0 s] 9 timing: {'seconds_per_null_statistic': np.float64(1.1005151643010322), 'seconds_outside_null': np.float64(38.49507486036358), 'projected_job_seconds_999': np.float64(1137.9097239970947), 'projected_hours_600_jobs': {'12': np.float64(15.80430172218187), '16': np.float64(11.853226291636403), '48': np.float64(3.9510754305454676), '96': np.float64(1.9755377152727338)}, 'note': 'measured with 12 concurrent workers on this machine'}
+{
+ "sources": {
+  "planted_signal.py": "7223905710ea8e5de750d4c50bc59b35c1b87ff7cdca548b94292a59b6c93ed7",
+  "testa_core.py": "a901e59fc1f307ae141b6f8d933016bcafe07126c967bd85f132a51c3a1a7be4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+ },
+ "check_sha256": "55bf47618fcd5e539cb216c2dd06680279465bf5c2bbd2345a593a684984d0d1",
+ "draws": 20,
+ "workers": 12,
+ "1_equivalence": {
+  "record": "calibration/records/A_00_0000.json",
+  "spec": [
+   "A",
+   0,
+   0,
+   "N1",
+   "moderate",
+   0.0
+  ],
+  "standardisation_bit_identical": true,
+  "baseline_equal": true,
+  "observed_core": -0.0008245528441595609,
+  "observed_record": -0.0008245528441595609,
+  "observed_equal": true
+ },
+ "2_geometry": {
+  "houses": 149316,
+  "complete": 139778,
+  "pixels": 114058,
+  "null_pixels": 107243,
+  "standardisation_houses": 141183,
+  "houses_off_null_field": 8133,
+  "folds_reproduced": true
+ },
+ "3_field": {
+  "path": "/tmp/claude-1000/-mnt-data-Master-projects-Alex/9a7b69ba-2d8d-4506-890e-5b18c890f65d/scratchpad/ps_check/synthetic_field.npz",
+  "sha256": "e69499956361a6bcb86073bc3b8ebee95cc2e4132cd47c946cb26882e70752a8",
+  "fingerprint": "67a99a6e8c927e3b12ac582343e02de8e374e7a75b937e5f29b0aa6374e84576",
+  "valid_share": 0.9650097279055792
+ },
+ "4_surrogates": {
+  "reused": false,
+  "draws": 20,
+  "settings": {
+   "kmax": 200,
+   "max_lag": 16,
+   "chunk": 8
+  },
+  "setup_seconds": 108.77895876392722,
+  "seconds_per_draw": 268.93007259150033,
+  "explained_variance_mean": 0.7110175997462668,
+  "chosen_k": [
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200,
+   200
+  ],
+  "sha256": "21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4",
+  "peak_rss_gb": 8.565484,
+  "nan_pattern_preserved": true
+ },
+ "5_run": {
+  "event_dates": {
+   "events": 2846,
+   "cases": 2620,
+   "dropped": {
+    "missing Baseline 1 input": 127,
+    "no value in the window": 95,
+    "demolition-censored on or before the event date": 4
+   },
+   "sha256": "e7fd868bc59955794d48631799c3be560f9eecab58ce624fe4da981545246d23",
+   "events_sha256": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+   "field_sha256": "e69499956361a6bcb86073bc3b8ebee95cc2e4132cd47c946cb26882e70752a8",
+   "sources": {
+    "planted_signal.py": "7223905710ea8e5de750d4c50bc59b35c1b87ff7cdca548b94292a59b6c93ed7",
+    "testa_core.py": "a901e59fc1f307ae141b6f8d933016bcafe07126c967bd85f132a51c3a1a7be4",
+    "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+   }
+  },
+  "projection": {
+   "first_round_jobs": 12,
+   "mean_job_seconds": 60.505378146384224,
+   "workers": 12,
+   "jobs": 12,
+   "draws": 20,
+   "projected_hours": 0.01680704948510673,
+   "threshold_hours": 72.0,
+   "datasets_per_cell": 2,
+   "fallback_applied": false,
+   "written": "2026-11-10 21:34:31 EET"
+  },
+  "per_dataset": {
+   "cell1_ds0": {
+    "observed": 6.3786338003607446e-06,
+    "p": 0.14285714285714285,
+    "meets_rule": false,
+    "baseline": 0.052006509838199835,
+    "rows": 125068,
+    "dropped": 8552,
+    "case_minus_candidate_term": 0.0,
+    "case_minus_candidate_u": 0.2782942158852733,
+    "elapsed_seconds": 59.362622272223234,
+    "null_seconds": 23.03972076997161
+   },
+   "cell1_ds1": {
+    "observed": 1.6911698897406624e-05,
+    "p": 0.047619047619047616,
+    "meets_rule": true,
+    "baseline": 0.051269863851289274,
+    "rows": 125170,
+    "dropped": 8450,
+    "case_minus_candidate_term": 0.0,
+    "case_minus_candidate_u": 0.2710084643568785,
+    "elapsed_seconds": 58.649888643063605,
+    "null_seconds": 22.30568379862234
+   },
+   "cell2_ds0": {
+    "observed": -0.0005690278463719167,
+    "p": 0.42857142857142855,
+    "meets_rule": false,
+    "baseline": 0.19224172909661433,
+    "rows": 125099,
+    "dropped": 8521,
+    "case_minus_candidate_term": 1.6082708240365313,
+    "case_minus_candidate_u": 1.1148469165179449,
+    "elapsed_seconds": 61.541313908062875,
+    "null_seconds": 22.488149965181947
+   },
+   "cell2_ds1": {
+    "observed": 0.0016646210806789963,
+    "p": 0.14285714285714285,
+    "meets_rule": false,
+    "baseline": 0.1765841030720662,
+    "rows": 125128,
+    "dropped": 8492,
+    "case_minus_candidate_term": 1.5178738300198558,
+    "case_minus_candidate_u": 1.0656864274546305,
+    "elapsed_seconds": 60.72700276086107,
+    "null_seconds": 22.027190994936973
+   },
+   "cell3_ds0": {
+    "observed": 7.221345042795341e-05,
+    "p": 0.42857142857142855,
+    "meets_rule": false,
+    "baseline": 0.05647184451476581,
+    "rows": 125201,
+    "dropped": 8419,
+    "case_minus_candidate_term": 0.5342495506285596,
+    "case_minus_candidate_u": 0.29743760355680565,
+    "elapsed_seconds": 60.54031002800912,
+    "null_seconds": 21.762618425302207
+   },
+   "cell3_ds1": {
+    "observed": -0.00012531074869515102,
+    "p": 0.42857142857142855,
+    "meets_rule": false,
+    "baseline": 0.05768092769141335,
+    "rows": 125017,
+    "dropped": 8603,
+    "case_minus_candidate_term": 0.4760097783701125,
+    "case_minus_candidate_u": 0.3027125682556062,
+    "elapsed_seconds": 60.20563403097913,
+    "null_seconds": 21.769670530688018
+   },
+   "cell4_ds0": {
+    "observed": 0.0003631455408414641,
+    "p": 0.047619047619047616,
+    "meets_rule": true,
+    "baseline": 0.050217560022460445,
+    "rows": 124916,
+    "dropped": 8704,
+    "case_minus_candidate_term": -0.018297529471872218,
+    "case_minus_candidate_u": 0.18297529471872204,
+    "elapsed_seconds": 60.54540338506922,
+    "null_seconds": 21.32196138286963
+   },
+   "cell4_ds1": {
+    "observed": 0.00028659158322347916,
+    "p": 0.14285714285714285,
+    "meets_rule": false,
+    "baseline": 0.04926747921481917,
+    "rows": 125142,
+    "dropped": 8478,
+    "case_minus_candidate_term": -0.015709662779593608,
+    "case_minus_candidate_u": 0.15709662779593647,
+    "elapsed_seconds": 60.72681519808248,
+    "null_seconds": 22.692026999779046
+   },
+   "cell5_ds0": {
+    "observed": -0.0001224425620695857,
+    "p": 0.6190476190476191,
+    "meets_rule": false,
+    "baseline": 0.04329281318580821,
+    "rows": 125162,
+    "dropped": 8458,
+    "case_minus_candidate_term": -0.026187476706460554,
+    "case_minus_candidate_u": 0.13093738353230333,
+    "elapsed_seconds": 60.52483210293576,
+    "null_seconds": 21.390370920300484
+   },
+   "cell5_ds1": {
+    "observed": 0.0016435496418469517,
+    "p": 0.047619047619047616,
+    "meets_rule": true,
+    "baseline": 0.047049020609250244,
+    "rows": 125064,
+    "dropped": 8556,
+    "case_minus_candidate_term": -0.021416736299944422,
+    "case_minus_candidate_u": 0.10708368149972226,
+    "elapsed_seconds": 60.952083884272724,
+    "null_seconds": 21.66025058971718
+   },
+   "cell6_ds0": {
+    "observed": 0.0018676418034035552,
+    "p": 0.047619047619047616,
+    "meets_rule": true,
+    "baseline": 0.04603899419204552,
+    "rows": 125148,
+    "dropped": 8472,
+    "case_minus_candidate_term": 0.0036722031985884016,
+    "case_minus_candidate_u": -0.00918050799647098,
+    "elapsed_seconds": 61.13141643209383,
+    "null_seconds": 21.72693143086508
+   },
+   "cell6_ds1": {
+    "observed": 0.003943876069584719,
+    "p": 0.047619047619047616,
+    "meets_rule": true,
+    "baseline": 0.04276136395299857,
+    "rows": 125098,
+    "dropped": 8522,
+    "case_minus_candidate_term": 0.01791302452633854,
+    "case_minus_candidate_u": -0.044782561315846584,
+    "elapsed_seconds": 61.15721511095762,
+    "null_seconds": 21.939063624013215
+   }
+  }
+ },
+ "6_independent": {
+  "cell4_ds0": {
+   "count_per_date": true,
+   "unique_houses": true,
+   "cases_valid": true,
+   "episode_dates": true,
+   "set_sizes_51": true,
+   "controls_not_case": true,
+   "controls_unique_within_set": true,
+   "controls_have_value": true,
+   "controls_not_demolished": true,
+   "controls_no_episode_on_or_before": true,
+   "some_controls_hold_a_later_synthetic_event": true,
+   "dropped_equals_incomplete_controls": true,
+   "rows_match_record": true
+  },
+  "cell3_ds1": {
+   "count_per_date": true,
+   "unique_houses": true,
+   "cases_valid": true,
+   "episode_dates": true,
+   "set_sizes_51": true,
+   "controls_not_case": true,
+   "controls_unique_within_set": true,
+   "controls_have_value": true,
+   "controls_not_demolished": true,
+   "controls_no_episode_on_or_before": true,
+   "some_controls_hold_a_later_synthetic_event": true,
+   "dropped_equals_incomplete_controls": true,
+   "rows_match_record": true
+  }
+ },
+ "7_selection": {
+  "date": "2022-08-10",
+  "candidates": 127138,
+  "draws": 400000,
+  "observed_by_eta_decile": [
+   12516,
+   17530,
+   21842,
+   25808,
+   29948,
+   34978,
+   40245,
+   48984,
+   63249,
+   104900
+  ],
+  "expected_by_eta_decile": [
+   12528.7,
+   17656.3,
+   21578.5,
+   25756.8,
+   30048.7,
+   34705.2,
+   40449.5,
+   48961.3,
+   63127.7,
+   105187.3
+  ],
+  "chi2": 8.779315601933865,
+  "p": 0.45788980441066485
+ },
+ "8_reproducible": {
+  "cell3_ds0": true,
+  "cell4_ds0": true
+ },
+ "9_timing": {
+  "seconds_per_null_statistic": 1.1005151643010322,
+  "seconds_outside_null": 38.49507486036358,
+  "projected_job_seconds_999": 1137.9097239970947,
+  "projected_hours_600_jobs": {
+   "12": 15.80430172218187,
+   "16": 11.853226291636403,
+   "48": 3.9510754305454676,
+   "96": 1.9755377152727338
+  },
+  "note": "measured with 12 concurrent workers on this machine"
+ },
+ "all_passed": true,
+ "seconds": 5660.006578006316
+}

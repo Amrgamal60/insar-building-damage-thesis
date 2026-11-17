@@ -1,0 +1,70 @@
+/home/ai-admin/AmrGamal/env/venv/lib/python3.12/site-packages/pyfixest/estimation/formula/model_matrix.py:151: UserWarning: 6 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+/home/ai-admin/AmrGamal/env/venv/lib/python3.12/site-packages/pyfixest/estimation/models/fepois_.py:576: UserWarning: 91629 observations removed because of separation.
+  warnings.warn(
+{
+ "label": "REAL RUN",
+ "test": "B",
+ "mode": "real",
+ "panel": {
+  "events_counted": 2842,
+  "events_counted_in_quarters": 2655,
+  "events_outside_the_28_quarters": 187,
+  "events_in_rows_used": 2553,
+  "events_in_rows_without_value": 102,
+  "rows_possible": 158060,
+  "rows_with_value": 129714,
+  "rows_used": 129682,
+  "cells_with_an_event_in_used_rows": 1397
+ },
+ "observed": {
+  "beta": 0.00022320947234928773,
+  "clustered_se": 0.002825631988577642,
+  "velocity_iqr": 26.954952947326113,
+  "rate_ratio_iqr": 1.0060347369216218,
+  "rate_ratio_ci95": [
+   0.8665256056745756,
+   1.1680045982080929
+  ],
+  "null_statistic": 0.00022320947234928773,
+  "rows_input": 129682,
+  "rows_used": 38047,
+  "rows_dropped": 91635,
+  "cells_input": 4980,
+  "cells_used": 1397,
+  "cells_dropped": 3583,
+  "quarters_input": 28,
+  "quarters_used": 28,
+  "quarters_dropped": 0,
+  "blocks_used": 145,
+  "all_zero_cells_input": 3583,
+  "all_zero_quarters_input": 0,
+  "correction": "CRV1 full FE: G/(G-1) * (N-1)/(N-K)",
+  "interval": "normal Wald 1.959963984540054"
+ },
+ "exceedances": 966,
+ "p_B": 0.967,
+ "detected": false,
+ "elapsed_seconds": 191.75581620100002,
+ "inputs": {
+  "checkpoint1": {
+   "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+   "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+   "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+   "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+  },
+  "events": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+  "cells": "125bd0d19dfaae6062a887f3069e3a5f9f1f94c33de9ea22ec28a786038cff33",
+  "surrogates": "0bc1305e07d0c3481f53bfa36f52aa0696e66138aedea0524c445af3f66f337d",
+  "surrogate_seed": 2034
+ },
+ "sources": {
+  "run_tests.py": "020c67e0c9f32b01520d45ef9e5b8897eeb720c68c641160219692c72985628b",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "test_b.py": "d5c0ea95db7897b1689e0f0847cfb19b61e17432672e5ba59c813d28742a4e1d"
+ },
+ "host": "ai",
+ "finished": "2026-11-12 09:27:07 EET"
+}

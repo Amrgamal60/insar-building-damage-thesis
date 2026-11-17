@@ -1,0 +1,63 @@
+{
+ "source": "wss_SSA_TX453_[2026-09-03].zip",
+ "sha256": "190c943af415a0a27bafee7c6a5f61043d84714c981aed768b01b7d9413383c7",
+ "survey_area": [
+  "TX453",
+  "Travis County, Texas",
+  "28",
+  "09/03/2026 15:16:20"
+ ],
+ "map_units": 103,
+ "map_units_with_value": 96,
+ "components": 297,
+ "components_with_value": 110,
+ "horizons": 384,
+ "horizons_with_lep": 315,
+ "eligible_houses": 149316,
+ "houses_outside_any_map_unit": 48,
+ "houses_in_two_polygons_first_mukey_taken": 0,
+ "missing": {
+  "count": 1112,
+  "percent": 0.745
+ },
+ "missing_by_map_unit_name": {
+  "Urban land, 0 to 6 percent slopes": 923,
+  "Pits, quarry, 1 to 40 percent slopes": 109,
+  "nan": 48,
+  "Pits, gravel, 1 to 90 percent slopes": 30,
+  "Water": 2
+ },
+ "houses_whose_value_rests_on_under_half_of_the_map_unit": 10474,
+ "lep_0_150": {
+  "count": 148204.0,
+  "mean": 6.113,
+  "std": 4.04,
+  "min": 1.5,
+  "25%": 3.945,
+  "50%": 4.849,
+  "75%": 7.5,
+  "max": 17.0
+ },
+ "shrink_swell_class": {
+  "moderate": {
+   "count": 93002,
+   "percent": 62.29
+  },
+  "very high": {
+   "count": 29396,
+   "percent": 19.69
+  },
+  "low": {
+   "count": 16843,
+   "percent": 11.28
+  },
+  "high": {
+   "count": 8963,
+   "percent": 6.0
+  }
+ },
+ "distinct_values": 46,
+ "private_outputs_sha256": {
+  "soil_lep.parquet": "803e20ae9a4fa301651ed6252de1d89f93f3a7bc2933e4a2d36a3862ca73fbc4"
+ }
+}

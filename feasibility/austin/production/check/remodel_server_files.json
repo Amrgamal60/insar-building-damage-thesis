@@ -1,0 +1,28 @@
+{
+ "inputs": {
+  "remodel_control_events_amended.parquet": "20f56403276f865a5923fc964395ba8a721d31c8dca2757c84bd6a3d79db6976",
+  "remodel_first_episodes_amended.parquet": "adaeef6ede4ef3e9f80a1683cdfa9cb5780244085730a8d688cb0eed87960050"
+ },
+ "outputs": {
+  "remodel_events.parquet": {
+   "sha256": "773f48d3010beb48bce68daf511b85e4c922890b720e03652eb4b1957e5a5c65",
+   "rows": 1491,
+   "columns": [
+    "prop_id",
+    "t_first"
+   ],
+   "t_first_min": "2018-08-01 00:00:00",
+   "t_first_max": "2025-11-21 00:00:00"
+  },
+  "remodel_first_episodes.parquet": {
+   "sha256": "04e03d52560be648c108a5b06eddc1bd85fbd4e16580f4f3c478b6eecae2a45c",
+   "rows": 9235,
+   "columns": [
+    "prop_id",
+    "t_first"
+   ],
+   "t_first_min": "1980-01-08 00:00:00",
+   "t_first_max": "2026-10-28 00:00:00"
+  }
+ }
+}

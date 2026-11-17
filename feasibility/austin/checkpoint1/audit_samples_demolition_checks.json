@@ -1,0 +1,184 @@
+{
+ "inputs": {
+  "permits_sha256": "0e6f003f286473512cc4cb59765df9ddd4a834b70256f788269e0a3b76f28146",
+  "population_sha256": "8a418a3b707b8bcd74d3ee7fd6d6aaf385acae66d238fd93c8832f53d02e266d"
+ },
+ "label_audit_sample": {
+  "events": 2846,
+  "drawn": 100,
+  "seed": 2028,
+  "by_year": {
+   "2018": 7,
+   "2019": 16,
+   "2020": 14,
+   "2021": 15,
+   "2022": 9,
+   "2023": 13,
+   "2024": 13,
+   "2025": 13
+  }
+ },
+ "demolition_audit_sample": {
+  "censoring_permits": 3797,
+  "drawn": 50,
+  "seed": 2036,
+  "by_year": {
+   "2018": 2,
+   "2019": 4,
+   "2020": 5,
+   "2021": 12,
+   "2022": 4,
+   "2023": 6,
+   "2024": 7,
+   "2025": 3,
+   "2026": 7
+  }
+ },
+ "check_a": {
+  "censoring_permits_from_study_start": {
+   "count": 8,
+   "denominator": 3797,
+   "percent": 0.211,
+   "wilson95": [
+    0.107,
+    0.415
+   ]
+  },
+  "censoring_permits_within_study_period": {
+   "count": 8,
+   "denominator": 3416,
+   "percent": 0.234,
+   "wilson95": [
+    0.119,
+    0.461
+   ]
+  },
+  "matched_terms": {
+   "foundation": 8
+  }
+ },
+ "check_b": {
+  "houses": 149316,
+  "houses_with_a_matched_episode_by_study_end": 9544,
+  "houses_with_episode_before_study_start": 6573,
+  "demolitions_in_study_period": 3416,
+  "demolitions_dated_on_the_episode_date_counted_unexposed": 0,
+  "exposed": {
+   "demolitions": 240,
+   "house_years": 57683.1,
+   "rate_per_1000_house_years": 4.161
+  },
+  "unexposed": {
+   "demolitions": 3176,
+   "house_years": 1024450.3,
+   "rate_per_1000_house_years": 3.1
+  },
+  "crude_rate_ratio": 1.3421,
+  "crude_95": [
+   1.177,
+   1.5302
+  ],
+  "mantel_haenszel_rate_ratio": 0.6939,
+  "mantel_haenszel_95": [
+   0.6085,
+   0.7913
+  ],
+  "strata": [
+   {
+    "year_built": "(200.999, 1950.0]",
+    "houses": 16763,
+    "exposed_demolitions": 126,
+    "unexposed_demolitions": 1296,
+    "exposed_house_years": 16254.2,
+    "unexposed_house_years": 101347.5,
+    "rate_ratio": 0.606
+   },
+   {
+    "year_built": "(1950.0, 1960.0]",
+    "houses": 13994,
+    "exposed_demolitions": 59,
+    "unexposed_demolitions": 924,
+    "exposed_house_years": 7816.4,
+    "unexposed_house_years": 91246.8,
+    "rate_ratio": 0.745
+   },
+   {
+    "year_built": "(1960.0, 1969.0]",
+    "houses": 14558,
+    "exposed_demolitions": 30,
+    "unexposed_demolitions": 396,
+    "exposed_house_years": 8954.0,
+    "unexposed_house_years": 96244.3,
+    "rate_ratio": 0.814
+   },
+   {
+    "year_built": "(1969.0, 1976.0]",
+    "houses": 16819,
+    "exposed_demolitions": 12,
+    "unexposed_demolitions": 197,
+    "exposed_house_years": 7203.3,
+    "unexposed_house_years": 115321.7,
+    "rate_ratio": 0.975
+   },
+   {
+    "year_built": "(1976.0, 1981.0]",
+    "houses": 14368,
+    "exposed_demolitions": 7,
+    "unexposed_demolitions": 159,
+    "exposed_house_years": 4133.7,
+    "unexposed_house_years": 100462.7,
+    "rate_ratio": 1.07
+   },
+   {
+    "year_built": "(1981.0, 1985.0]",
+    "houses": 13931,
+    "exposed_demolitions": 3,
+    "unexposed_demolitions": 44,
+    "exposed_house_years": 2759.7,
+    "unexposed_house_years": 99219.0,
+    "rate_ratio": 2.451
+   },
+   {
+    "year_built": "(1985.0, 1995.0]",
+    "houses": 15285,
+    "exposed_demolitions": 1,
+    "unexposed_demolitions": 72,
+    "exposed_house_years": 2867.0,
+    "unexposed_house_years": 108899.1,
+    "rate_ratio": 0.528
+   },
+   {
+    "year_built": "(1995.0, 2001.0]",
+    "houses": 15488,
+    "exposed_demolitions": 1,
+    "unexposed_demolitions": 29,
+    "exposed_house_years": 3150.0,
+    "unexposed_house_years": 110312.8,
+    "rate_ratio": 1.208
+   },
+   {
+    "year_built": "(2001.0, 2006.0]",
+    "houses": 13620,
+    "exposed_demolitions": 0,
+    "unexposed_demolitions": 28,
+    "exposed_house_years": 2395.6,
+    "unexposed_house_years": 97372.4,
+    "rate_ratio": null
+   },
+   {
+    "year_built": "(2006.0, 2015.0]",
+    "houses": 14490,
+    "exposed_demolitions": 1,
+    "unexposed_demolitions": 31,
+    "exposed_house_years": 2149.3,
+    "unexposed_house_years": 104024.0,
+    "rate_ratio": 1.561
+   }
+  ]
+ },
+ "private_outputs_sha256": {
+  "check_a_foundation_mentions.csv": "9a794c7fcb893094d2d7ae42b8a6d1179ae8dfec9c85fd6489c13de9d304afec",
+  "demolition_audit_sample.csv": "cfb78b0557c18182de05da8ebb58ba1ac3b742e69fc0687e16b023e15f629574",
+  "label_audit_sample.csv": "a7395ab56cda42a0528e1d1ef972d4385b20ec692f083e85780d31a8b5705880"
+ }
+}

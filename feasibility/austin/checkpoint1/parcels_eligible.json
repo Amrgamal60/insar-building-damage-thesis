@@ -1,0 +1,22 @@
+{
+ "file": "parcels_eligible_32614.parquet",
+ "sha256": "e478c2c9f6bd25e98ea3e4b3f371242b38b0b5fb6dc71246d30f795f09748e7d",
+ "bytes": 24347827,
+ "parcels": 149316,
+ "columns": [
+  "prop_id",
+  "geometry"
+ ],
+ "crs": "EPSG:32614",
+ "bounds": [
+  602771.9,
+  3333627.1,
+  634814.9,
+  3369646.5
+ ],
+ "geometry_types": {
+  "Polygon": 149245,
+  "MultiPolygon": 71
+ },
+ "centroid_and_area_equal_to_population_table": true
+}

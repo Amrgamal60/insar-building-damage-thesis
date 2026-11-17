@@ -1,0 +1,36 @@
+{
+  "synthetic_only": true,
+  "tolerance": 1e-11,
+  "frozen_nyc_sha256": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "upstream_nyc_sha256": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "frozen_lowmem_sha256": "84a6e78ef074d6ae29f1dbbe1b76d0f8bd46d35a8d3850da73a8c5ccaadf87e9",
+  "step0_lowmem_sha256": "84a6e78ef074d6ae29f1dbbe1b76d0f8bd46d35a8d3850da73a8c5ccaadf87e9",
+  "nvidia_smi_before": "NVIDIA GeForce RTX 3090, 24576, 22406",
+  "status": "PASS",
+  "cells": 3327,
+  "windows": 11,
+  "pair_counts_identical": true,
+  "draws": [
+    {
+      "original_k": 103,
+      "lowmem_k": 103,
+      "max_abs_difference": 7.993605777301127e-15
+    },
+    {
+      "original_k": 53,
+      "lowmem_k": 53,
+      "max_abs_difference": 1.5987211554602254e-14
+    },
+    {
+      "original_k": 53,
+      "lowmem_k": 53,
+      "max_abs_difference": 3.108624468950438e-14
+    },
+    {
+      "original_k": 74,
+      "lowmem_k": 74,
+      "max_abs_difference": 1.4876988529977098e-14
+    }
+  ],
+  "max_abs_difference": 3.108624468950438e-14
+}

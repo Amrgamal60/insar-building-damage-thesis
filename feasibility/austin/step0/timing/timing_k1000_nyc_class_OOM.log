@@ -1,0 +1,47 @@
+{
+ "n_cells": 111039,
+ "windows": 88,
+ "kmax": 1000,
+ "ks": [
+ ],
+ "variogram_pairs": 15338069,
+ "smoothing_nnz": 310242966,
+ "pair_seconds": 1.1,
+ "gpu_gb_estimate": {
+  "W_k (csr float64 + int32 idx)": 3.72,
+  "vp (W x P float64, as nyc_lib)": 10.8,
+  "pair index gi, gj, H (int64/float64)": 0.55,
+  "z, x0, xs (W x n float64, x3)": 0.23,
+  "vario chunk d (16 x P float64, x3 temporaries)": 5.89
+ },
+ "gpu_gb_estimate_total": 21.19,
+ "surrogate_file_gb (999 x W x n float32)": 39.0
+}
+Traceback (most recent call last):
+  File "/tmp/claude-1000/-mnt-data-Master-projects-Alex/9a7b69ba-2d8d-4506-890e-5b18c890f65d/scratchpad/timing/null_timing.py", line 70, in <module>
+    null = N.VariogramNull(F, xy, a.res, kmax=a.kmax)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 285, in __init__
+    self.cnt = (self.H.T @ vp.T).T  # (W, max_lag)
+                ~~~~~~~~~^~~~~~
+  File "/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/cupyx/scipy/sparse/_base.py", line 195, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/cupyx/scipy/sparse/_csc.py", line 202, in _matmul_dispatch
+    return csrmm(self.T, cupy.asfortranarray(other), transa=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/cupy/_manipulation/kind.py", line 64, in asfortranarray
+    return _core.asfortranarray(a, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 3242, in cupy._core.core.asfortranarray
+  File "cupy/_core/core.pyx", line 3260, in cupy._core.core.asfortranarray
+  File "cupy/_core/core.pyx", line 3195, in cupy._core.core._internal_asfortranarray
+  File "cupy/_core/core.pyx", line 176, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 282, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 904, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1614, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1635, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1350, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1376, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1560, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 10,798,000,640 bytes (allocated so far: 15,486,243,328 bytes).

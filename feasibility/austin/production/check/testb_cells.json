@@ -1,0 +1,123 @@
+{
+ "inputs": {
+  "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "i08_run": "64eec9b48b67613bd21f89645f57186c350ca03498187b6eec6fbee58a4e1b7b",
+  "L12.npz": "8e820c56720982297480eb8f8758a3dc969dee6c3282ead2f3bde470cc033bcd",
+  "L24.npz": "d87c838a8f3ae9c1958c294962e14327e5302ca9994ae10f12b9aa958a2c58dd",
+  "i08_run1_run": "415634e850bdafc5e7c0c4e2d2bde52c33b5ef9f1f2d8835a2802d0c234357f5",
+  "run1_L12.npz": "f8123576d906e517a8151023108924e6ed5f74e074efae1b01fc558511bead2a"
+ },
+ "testa_core": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+ "parcels": 149316,
+ "cells": 5645,
+ "cells_with_3_or_more_parcels": 5019,
+ "parcels_per_cell_median": 23.0,
+ "blocks": 213,
+ "quarters": [
+  "2018Q4",
+  "2025Q3",
+  28
+ ],
+ "output_sha256": "125bd0d19dfaae6062a887f3069e3a5f9f1f94c33de9ea22ec28a786038cff33",
+ "fields": {
+  "v": {
+   "source": "L12 v at the quarter start",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4982,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4621.5,
+   "cells_with_value_max": 4727,
+   "median_value": 4.979015017699423
+  },
+  "v_run1": {
+   "source": "first-run L12 v at the quarter start",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4982,
+   "cells_with_value_min": 4581,
+   "cells_with_value_median": 4650.5,
+   "cells_with_value_max": 4727,
+   "median_value": 5.05141914732472
+  },
+  "v_lag1": {
+   "source": "L12 v at the quarter start minus 1 months",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4985,
+   "cells_with_value_min": 4543,
+   "cells_with_value_median": 4619.0,
+   "cells_with_value_max": 4731,
+   "median_value": 6.036231982087735
+  },
+  "v_lag3": {
+   "source": "L12 v at the quarter start minus 3 months",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4984,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4621.5,
+   "cells_with_value_max": 4727,
+   "median_value": 6.705197465587641
+  },
+  "v_lag6": {
+   "source": "L12 v at the quarter start minus 6 months",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4984,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4621.5,
+   "cells_with_value_max": 4719,
+   "median_value": 6.002292912826478
+  },
+  "v_lag12": {
+   "source": "L12 v at the quarter start minus 12 months",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4983,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4620.5,
+   "cells_with_value_max": 4690,
+   "median_value": 7.479311055671384
+  },
+  "v24": {
+   "source": "L24 v at the quarter start",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4932,
+   "cells_with_value_min": 4329,
+   "cells_with_value_median": 4382.5,
+   "cells_with_value_max": 4522,
+   "median_value": 7.539862572696033
+  },
+  "amp": {
+   "source": "L12 amp at the quarter start",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4982,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4621.5,
+   "cells_with_value_max": 4727,
+   "median_value": 9.810352813812113
+  },
+  "lrm": {
+   "source": "L12 lrm at the quarter start",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4982,
+   "cells_with_value_min": 4548,
+   "cells_with_value_median": 4621.5,
+   "cells_with_value_max": 4727,
+   "median_value": -0.0242653262579614
+  },
+  "acc": {
+   "source": "L12 v at the quarter start minus 12 months earlier, per parcel",
+   "rows": 28,
+   "cells_with_a_value_in_any_row": 4932,
+   "cells_with_value_min": 4329,
+   "cells_with_value_median": 4383.5,
+   "cells_with_value_max": 4522,
+   "median_value": -0.7188417763721078
+  },
+  "v_monthly": {
+   "source": "L12 v at each study month (months x cells)",
+   "rows": 88,
+   "cells_with_a_value_in_any_row": 4990,
+   "cells_with_value_min": 4543,
+   "cells_with_value_median": 4621.0,
+   "cells_with_value_max": 4731,
+   "median_value": 6.737731011007822
+  }
+ }
+}

@@ -1,0 +1,116 @@
+{
+  "synthetic_only": true,
+  "beta_true": -0.35,
+  "agreement": [
+    {
+      "pyfixest": {
+        "beta": -0.29478260259239397,
+        "clustered_se": 0.010204936689024858,
+        "velocity_iqr": 1.6315403743752124,
+        "rate_ratio_iqr": 0.6181960011808099,
+        "rate_ratio_ci95": [
+          0.598348056571676,
+          0.6387023266451677
+        ],
+        "null_statistic": 0.29478260259239397,
+        "rows_input": 960,
+        "rows_used": 960,
+        "rows_dropped": 0,
+        "cells_input": 80,
+        "cells_used": 80,
+        "cells_dropped": 0,
+        "quarters_input": 12,
+        "quarters_used": 12,
+        "quarters_dropped": 0,
+        "blocks_used": 10,
+        "all_zero_cells_input": 0,
+        "all_zero_quarters_input": 0,
+        "correction": "CRV1 full FE: G/(G-1) * (N-1)/(N-K)",
+        "interval": "normal Wald 1.959963984540054"
+      },
+      "statsmodels_beta": -0.2947826025923931,
+      "statsmodels_clustered_se": 0.010204936689397136,
+      "abs_coefficient_difference": 8.881784197001252e-16,
+      "abs_se_difference": 3.722785968385267e-13,
+      "coefficient_tolerance": 1e-07,
+      "se_tolerance": 1e-07,
+      "N": 960,
+      "K": 92,
+      "G": 10,
+      "correction_factor": 1.2275985663082438
+    },
+    {
+      "pyfixest": {
+        "beta": -0.3505480010843684,
+        "clustered_se": 0.031108687908255103,
+        "velocity_iqr": 1.5712181774487308,
+        "rate_ratio_iqr": 0.5764957038809031,
+        "rate_ratio_ci95": [
+          0.5238302689299531,
+          0.6344560753849441
+        ],
+        "null_statistic": 0.3505480010843684,
+        "rows_input": 960,
+        "rows_used": 847,
+        "rows_dropped": 113,
+        "cells_input": 80,
+        "cells_used": 77,
+        "cells_dropped": 3,
+        "quarters_input": 12,
+        "quarters_used": 11,
+        "quarters_dropped": 1,
+        "blocks_used": 10,
+        "all_zero_cells_input": 3,
+        "all_zero_quarters_input": 1,
+        "correction": "CRV1 full FE: G/(G-1) * (N-1)/(N-K)",
+        "interval": "normal Wald 1.959963984540054"
+      },
+      "statsmodels_beta": -0.35054800108436857,
+      "statsmodels_clustered_se": 0.031108687909451437,
+      "abs_coefficient_difference": 1.6653345369377348e-16,
+      "abs_se_difference": 1.1963346979726452e-12,
+      "coefficient_tolerance": 1e-07,
+      "se_tolerance": 1e-07,
+      "N": 847,
+      "K": 88,
+      "G": 10,
+      "correction_factor": 1.238471673254282
+    }
+  ],
+  "realistic": {
+    "fit": {
+      "beta": -0.3503133158546308,
+      "clustered_se": 0.00620085147801718,
+      "velocity_iqr": 1.7040478539062325,
+      "rate_ratio_iqr": 0.5504877067800317,
+      "rate_ratio_ci95": [
+        0.5392043203386417,
+        0.5620072092998423
+      ],
+      "null_statistic": 0.3503133158546308,
+      "rows_input": 84000,
+      "rows_used": 83748,
+      "rows_dropped": 252,
+      "cells_input": 3000,
+      "cells_used": 2991,
+      "cells_dropped": 9,
+      "quarters_input": 28,
+      "quarters_used": 28,
+      "quarters_dropped": 0,
+      "blocks_used": 375,
+      "all_zero_cells_input": 9,
+      "all_zero_quarters_input": 0,
+      "correction": "CRV1 full FE: G/(G-1) * (N-1)/(N-K)",
+      "interval": "normal Wald 1.959963984540054"
+    },
+    "elapsed_seconds": 0.21868763701058924,
+    "projected_999_refits_seconds": 218.46894937357865,
+    "beta_absolute_error": 0.00031331585463084677,
+    "synthetic_distribution": "Gamma-Poisson, shape=2, mean exposure*exp(FEs+beta*v)"
+  },
+  "null_smoke": {
+    "draws": 2,
+    "p_B": 0.6666666666666666,
+    "identity_draw_exact": true
+  }
+}

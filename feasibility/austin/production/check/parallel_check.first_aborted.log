@@ -1,0 +1,1 @@
+[   449.5 s] 1 cap 200, parallel here vs sequential on the PC: {'draws': 3, 'reference_sha256': '21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4', 'setup_seconds': 116.49773965962231, 'parallel_seconds': 329.1368587668985, 'bytes_identical': False, 'nan_identical': True, 'max_abs_diff_mm_yr': 0.0, 'k_identical': True}

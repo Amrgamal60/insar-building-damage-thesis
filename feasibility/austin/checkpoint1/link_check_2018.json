@@ -1,0 +1,248 @@
+{
+ "permit_rows": 2384452,
+ "rules": {
+  "rule1_bp_repair_or_remodel": 239103,
+  "rule2_keyword_match": 15011,
+  "rule2_excluded": {
+   "pier_not_foundation": 13,
+   "pool": 3,
+   "retaining_wall": 2,
+   "new_construction_foundation_only": 1
+  },
+  "rules_1_to_3": 13881
+ },
+ "link_check_all_dates": {
+  "permits": 13881,
+  "blank_tcad_id": 29,
+  "matched_any_reference_parcel": {
+   "count": 13037,
+   "denominator": 13881,
+   "percent": 93.92,
+   "wilson95": [
+    93.51,
+    94.305
+   ]
+  },
+  "matched to the primary population": {
+   "count": 11706,
+   "denominator": 13881,
+   "percent": 84.331,
+   "wilson95": [
+    83.717,
+    84.926
+   ]
+  },
+  "matched to another reference-roll parcel": {
+   "count": 1331,
+   "denominator": 13881,
+   "percent": 9.589,
+   "wilson95": [
+    9.11,
+    10.09
+   ]
+  },
+  "unmatched": {
+   "count": 844,
+   "denominator": 13881,
+   "percent": 6.08,
+   "wilson95": [
+    5.695,
+    6.49
+   ]
+  },
+  "other_parcel_by_kind": {
+   "R": 1107,
+   "R, A1 not in population": 224
+  },
+  "exact_string_match_without_zero_normalisation": 13037
+ },
+ "link_check_study_period_A": {
+  "permits": 4221,
+  "blank_tcad_id": 1,
+  "matched_any_reference_parcel": {
+   "count": 3926,
+   "denominator": 4221,
+   "percent": 93.011,
+   "wilson95": [
+    92.202,
+    93.742
+   ]
+  },
+  "matched to the primary population": {
+   "count": 3514,
+   "denominator": 4221,
+   "percent": 83.25,
+   "wilson95": [
+    82.094,
+    84.347
+   ]
+  },
+  "matched to another reference-roll parcel": {
+   "count": 412,
+   "denominator": 4221,
+   "percent": 9.761,
+   "wilson95": [
+    8.902,
+    10.693
+   ]
+  },
+  "unmatched": {
+   "count": 295,
+   "denominator": 4221,
+   "percent": 6.989,
+   "wilson95": [
+    6.258,
+    7.798
+   ]
+  },
+  "other_parcel_by_kind": {
+   "R": 308,
+   "R, A1 not in population": 104
+  },
+  "note": "application date (issue date if missing) 2018-08-01..2025-11-30; reported only, not an event count"
+ },
+ "pop_geo_also_on_other_parcel_permits": 5,
+ "population_geo_ids_with_any_rule_1_3_permit_all_dates": 10240,
+ "survivorship_link_check": [
+  {
+   "year": 2016,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 20116,
+   "permits_per_100_house_years": 13.622
+  },
+  {
+   "year": 2016,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 50,
+   "permits_per_100_house_years": 3.038
+  },
+  {
+   "year": 2017,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 20291,
+   "permits_per_100_house_years": 13.741
+  },
+  {
+   "year": 2017,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 168,
+   "permits_per_100_house_years": 10.207
+  },
+  {
+   "year": 2018,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 22036,
+   "permits_per_100_house_years": 14.922
+  },
+  {
+   "year": 2018,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 228,
+   "permits_per_100_house_years": 13.852
+  },
+  {
+   "year": 2019,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 23603,
+   "permits_per_100_house_years": 15.984
+  },
+  {
+   "year": 2019,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 61,
+   "permits_per_100_house_years": 3.706
+  },
+  {
+   "year": 2020,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 22603,
+   "permits_per_100_house_years": 15.306
+  },
+  {
+   "year": 2020,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 37,
+   "permits_per_100_house_years": 2.248
+  },
+  {
+   "year": 2021,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 28739,
+   "permits_per_100_house_years": 19.462
+  },
+  {
+   "year": 2021,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 287,
+   "permits_per_100_house_years": 17.436
+  },
+  {
+   "year": 2022,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 26564,
+   "permits_per_100_house_years": 17.989
+  },
+  {
+   "year": 2022,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 449,
+   "permits_per_100_house_years": 27.278
+  },
+  {
+   "year": 2023,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 23234,
+   "permits_per_100_house_years": 15.734
+  },
+  {
+   "year": 2023,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 600,
+   "permits_per_100_house_years": 36.452
+  },
+  {
+   "year": 2024,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 21430,
+   "permits_per_100_house_years": 14.512
+  },
+  {
+   "year": 2024,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 1009,
+   "permits_per_100_house_years": 61.3
+  },
+  {
+   "year": 2025,
+   "prop_id_2018_in_2026_roll": true,
+   "houses": 147670,
+   "permits": 21435,
+   "permits_per_100_house_years": 14.515
+  },
+  {
+   "year": 2025,
+   "prop_id_2018_in_2026_roll": false,
+   "houses": 1646,
+   "permits": 323,
+   "permits_per_100_house_years": 19.623
+  }
+ ]
+}

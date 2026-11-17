@@ -1,0 +1,7 @@
+python: Python 3.12.7
+Model name:                              Intel(R) Core(TM) i9-10980HK CPU @ 2.40GHz
+               total        used        free      shared  buff/cache   available
+Mem:              61           6          39           1          17          55
+GPU: NVIDIA GeForce RTX 2080 Super Max-Q 8 GB, driver 595.91.07 (NVML library 595.99 mismatch on 2026-10-11)
+Build cuda_13.1.r13.1/compiler.37061995_0
+7.0.0-38-generic

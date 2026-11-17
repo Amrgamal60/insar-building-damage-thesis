@@ -1,0 +1,31 @@
+{
+  "identity_reconstruction": true,
+  "exact_nan_mask": true,
+  "deterministic_hgb": true,
+  "invalid_input_checks": 4,
+  "hgb_settings": {
+    "learning_rate": 0.1,
+    "max_iter": 100,
+    "max_leaf_nodes": 15,
+    "max_depth": null,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "max_bins": 255,
+    "early_stopping": false,
+    "random_state": 0,
+    "loss": "squared_error",
+    "categorical_features": null
+  },
+  "hgb_explained_variance": [
+    0.8934475226459682,
+    0.9014235013582461,
+    0.8930202908024711
+  ],
+  "gpu_free_mib_before": 1183,
+  "cpu_gpu_max_abs_difference": 2.398081733190338e-14,
+  "cpu_gpu_chosen_k_identical": true,
+  "unchanged_draw_method": true,
+  "unchanged_vario_method": true,
+  "gpu_pool_total_mib": 15.23046875,
+  "status": "PASS"
+}

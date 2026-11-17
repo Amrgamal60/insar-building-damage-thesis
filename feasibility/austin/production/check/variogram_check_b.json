@@ -1,0 +1,284 @@
+{
+ "test": "B",
+ "cells_npz_sha256": "125bd0d19dfaae6062a887f3069e3a5f9f1f94c33de9ea22ec28a786038cff33",
+ "surrogates_sha256": "0bc1305e07d0c3481f53bfa36f52aa0696e66138aedea0524c445af3f66f337d",
+ "draws": 999,
+ "seed": 8,
+ "chosen_k": {
+  "median": 169.0,
+  "p2_5": 169.0,
+  "p97_5": 1000.0,
+  "counts": {
+   "169": 743,
+   "264": 185,
+   "411": 3,
+   "641": 14,
+   "1000": 54
+  }
+ },
+ "method": "direct pair sums (NYC)",
+ "seconds": 1753.0429814625531,
+ "windows": [
+  "2019Q4",
+  "2020Q2",
+  "2020Q4",
+  "2023Q1",
+  "2025Q2"
+ ],
+ "bins": [
+  "0.25 km (lag 1)",
+  "0.5 km (lag 2)",
+  "0.75 km (lag 3)",
+  "1 km (lag 4)",
+  "1.25 km (lag 5)",
+  "1.5 km (lag 6)",
+  "1.75 km (lag 7)",
+  "2 km (lag 8)",
+  "2.25 km (lag 9)",
+  "2.5 km (lag 10)",
+  "2.75 km (lag 11)",
+  "3 km (lag 12)",
+  "3.25 km (lag 13)",
+  "3.5 km (lag 14)",
+  "3.75 km (lag 15)",
+  "4 km (lag 16)",
+  "4.125-5 km",
+  "5-6 km",
+  "6-7 km",
+  "7-8 km",
+  "8-9 km",
+  "9-10 km",
+  "10-11 km",
+  "11-12 km",
+  "12-13 km",
+  "13-14 km",
+  "14-15 km",
+  "15-16 km",
+  "16-17 km",
+  "17-18 km",
+  "18-19 km",
+  "19-20 km"
+ ],
+ "lags_1_16_inside": [
+  51,
+  80
+ ],
+ "long_bins_inside": [
+  37,
+  80
+ ],
+ "below": 11,
+ "above": 61,
+ "per_window": {
+  "2019Q4": {
+   "lags_1_16_inside": 12,
+   "long_bins_inside": 8,
+   "ratio_lags_1_4": [
+    1.345,
+    1.065,
+    0.966,
+    0.934
+   ],
+   "ratio_lags_5_16_range": [
+    0.917,
+    1.041
+   ],
+   "below": 1,
+   "above": 11
+  },
+  "2020Q2": {
+   "lags_1_16_inside": 9,
+   "long_bins_inside": 6,
+   "ratio_lags_1_4": [
+    1.603,
+    1.116,
+    0.966,
+    0.894
+   ],
+   "ratio_lags_5_16_range": [
+    0.873,
+    1.069
+   ],
+   "below": 3,
+   "above": 14
+  },
+  "2020Q4": {
+   "lags_1_16_inside": 11,
+   "long_bins_inside": 7,
+   "ratio_lags_1_4": [
+    1.549,
+    1.143,
+    1.02,
+    0.954
+   ],
+   "ratio_lags_5_16_range": [
+    0.906,
+    1.03
+   ],
+   "below": 2,
+   "above": 12
+  },
+  "2023Q1": {
+   "lags_1_16_inside": 7,
+   "long_bins_inside": 0,
+   "ratio_lags_1_4": [
+    1.264,
+    0.95,
+    0.886,
+    0.887
+   ],
+   "ratio_lags_5_16_range": [
+    0.894,
+    1.099
+   ],
+   "below": 4,
+   "above": 21
+  },
+  "2025Q2": {
+   "lags_1_16_inside": 12,
+   "long_bins_inside": 16,
+   "ratio_lags_1_4": [
+    1.511,
+    1.099,
+    0.993,
+    0.944
+   ],
+   "ratio_lags_5_16_range": [
+    0.933,
+    1.026
+   ],
+   "below": 1,
+   "above": 3
+  }
+ },
+ "per_bin": {
+  "0.25 km (lag 1)": {
+   "windows_inside": 1,
+   "median_ratio": 1.511
+  },
+  "0.5 km (lag 2)": {
+   "windows_inside": 3,
+   "median_ratio": 1.099
+  },
+  "0.75 km (lag 3)": {
+   "windows_inside": 4,
+   "median_ratio": 0.966
+  },
+  "1 km (lag 4)": {
+   "windows_inside": 2,
+   "median_ratio": 0.934
+  },
+  "1.25 km (lag 5)": {
+   "windows_inside": 0,
+   "median_ratio": 0.913
+  },
+  "1.5 km (lag 6)": {
+   "windows_inside": 0,
+   "median_ratio": 0.932
+  },
+  "1.75 km (lag 7)": {
+   "windows_inside": 2,
+   "median_ratio": 0.941
+  },
+  "2 km (lag 8)": {
+   "windows_inside": 5,
+   "median_ratio": 0.984
+  },
+  "2.25 km (lag 9)": {
+   "windows_inside": 5,
+   "median_ratio": 1.019
+  },
+  "2.5 km (lag 10)": {
+   "windows_inside": 4,
+   "median_ratio": 1.037
+  },
+  "2.75 km (lag 11)": {
+   "windows_inside": 3,
+   "median_ratio": 1.041
+  },
+  "3 km (lag 12)": {
+   "windows_inside": 4,
+   "median_ratio": 1.03
+  },
+  "3.25 km (lag 13)": {
+   "windows_inside": 4,
+   "median_ratio": 1.022
+  },
+  "3.5 km (lag 14)": {
+   "windows_inside": 5,
+   "median_ratio": 1.007
+  },
+  "3.75 km (lag 15)": {
+   "windows_inside": 5,
+   "median_ratio": 0.987
+  },
+  "4 km (lag 16)": {
+   "windows_inside": 4,
+   "median_ratio": 0.964
+  },
+  "4.125-5 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.908
+  },
+  "5-6 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.811
+  },
+  "6-7 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.7
+  },
+  "7-8 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.608
+  },
+  "8-9 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.551
+  },
+  "9-10 km": {
+   "windows_inside": 4,
+   "median_ratio": 0.463
+  },
+  "10-11 km": {
+   "windows_inside": 3,
+   "median_ratio": 0.418
+  },
+  "11-12 km": {
+   "windows_inside": 2,
+   "median_ratio": 0.392
+  },
+  "12-13 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.36
+  },
+  "13-14 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.324
+  },
+  "14-15 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.298
+  },
+  "15-16 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.276
+  },
+  "16-17 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.261
+  },
+  "17-18 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.246
+  },
+  "18-19 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.241
+  },
+  "19-20 km": {
+   "windows_inside": 1,
+   "median_ratio": 0.24
+  }
+ }
+}

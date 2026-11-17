@@ -1,0 +1,119 @@
+{
+ "host": "amr-Precision-5820-Tower-X-Series",
+ "python": "3.12.7",
+ "numpy": "2.5.3",
+ "sources": {
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+ },
+ "check_sha256": "e8af30e9ff9ce7996253228f1afae846059502c52246860e49687c6d57a0b38e",
+ "reference_record_count": 12,
+ "1_event_dates": {
+  "identical": true,
+  "cases": 2620,
+  "dropped_identical": true
+ },
+ "2_quantiles": {
+  "identical": true,
+  "max_abs_diff": 0.0
+ },
+ "3_records": {
+  "cell1_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell1_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell2_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell2_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell3_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell3_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell4_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell4_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell5_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell5_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell6_ds000": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  },
+  "cell6_ds001": {
+   "floats_identical": true,
+   "max_abs_float_diff": 0.0,
+   "other_fields_differing": [],
+   "p_identical": true,
+   "rule_identical": true
+  }
+ },
+ "3_all_p_and_rule_identical": true,
+ "3_no_other_field_differs": true,
+ "3_max_abs_float_diff": 0.0,
+ "4_kernels": {
+  "standard_normal": "a748da2c06b1bf56",
+  "gaussian_filter": "46868c7e9fe98a91",
+  "mean": "0.00015269282333833716",
+  "std": "0.017740010431451455",
+  "sqrt": "695bebbf2ff1b4d5",
+  "exp": "2647cb3d24d1afa4",
+  "sum_axis0": "91f405a0275658a4"
+ }
+}

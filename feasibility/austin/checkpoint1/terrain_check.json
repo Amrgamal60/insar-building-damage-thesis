@@ -1,0 +1,10 @@
+{
+ "parcels_drawn": 60,
+ "parcels_checked": 60,
+ "skipped_window_crosses_a_tile_edge": 0,
+ "seed": 2039,
+ "max_abs_elevation_difference_m": 0.0,
+ "max_abs_slope_difference_deg": 1.8053958782626722e-05,
+ "pixel_counts_equal": 60,
+ "max_abs_pixel_count_difference": 0
+}

@@ -1,0 +1,2 @@
+{"scenario": "no_signal", "seed_dataset": 1723, "p": 0.3, "observed_delta": 0.008205088782758281, "mean_null_delta": 0.00346961478403777, "elapsed_seconds": 143.06718483613804}
+{"scenario": "no_signal", "seed_dataset": 1724, "p": 0.7, "observed_delta": 0.0012056809927162015, "mean_null_delta": 0.0017461549578591299, "elapsed_seconds": 163.67235663719475}

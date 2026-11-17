@@ -1,0 +1,6 @@
+{
+  "gpu_cells": ["A_10", "A_11"],
+  "gpu_refit_workers": 16,
+  "set_utc": "2026-11-01T19:40Z",
+  "reason": "Measured: GPU path 82 s per 4x-city dataset (pilot, replicate 9999, 8 refit workers, under load) vs about 1200 s per dataset on 6 CPU workers; small-city GPU path slower than 16 CPU workers (27 s vs about 20 s); Test B GPU path serialises refits."
+}

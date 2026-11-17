@@ -1,0 +1,49 @@
+{
+ "label": "REAL RUN",
+ "secondary": "1_nyc_design",
+ "mode": "real",
+ "cases": 1477,
+ "rows": 6925554,
+ "dropped": {
+  "earlier event in the cell": 1326,
+  "no window value": 36,
+  "missing baseline input": 5,
+  "same cell and date as another event (one risk set)": 2
+ },
+ "controls_per_set": {
+  "min": 3989,
+  "median": 4663.0,
+  "max": 5463
+ },
+ "observed": {
+  "pr": -3.2322867444934235e-06,
+  "roc": -0.0008437279420265842,
+  "top10": -0.0006770480704129667,
+  "top10_rs": 0.002708192281652033
+ },
+ "p": {
+  "pr": 0.847,
+  "roc": 0.637,
+  "top10": 0.265,
+  "top10_rs": 0.009
+ },
+ "ci95": {
+  "pr": [
+   -0.002056438675174125,
+   3.535929213822026e-05
+  ],
+  "roc": [
+   -0.002906666952110187,
+   0.00012645613758847837
+  ],
+  "top10": [
+   -0.00942762926852499,
+   0.006833783770391767
+  ]
+ },
+ "seconds": {
+  "null": 3238.619392035005,
+  "bootstrap": 8440.607465335983,
+  "total": 11832.74645604298
+ }
+}

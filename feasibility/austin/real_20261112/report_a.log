@@ -1,0 +1,141 @@
+{
+ "label": "REAL RUN",
+ "mode": "real",
+ "primary_check": {
+  "cases": true,
+  "rows": true,
+  "dropped": true,
+  "control_rows_dropped": true,
+  "baseline_ap_diff": 0.0,
+  "observed_diff": 0.0,
+  "null_max_abs_diff": 0.0,
+  "pass": true
+ },
+ "null_seconds": 42.228123273000165,
+ "bootstrap_seconds": 123.24510250000003,
+ "permutation_seconds": 293.6286424189998,
+ "foundation": {
+  "cases": 1754,
+  "rows": 83496,
+  "dropped": {
+   "no value in the window": 961,
+   "missing Baseline 1 input": 127,
+   "demolition-censored on or before the event date": 4
+  },
+  "observed": {
+   "pr": -0.0005775151161721351,
+   "roc": -0.0014937143919209195,
+   "top10": -0.0005701254275940482,
+   "top10_rs": -0.01083238312428736
+  },
+  "p": {
+   "pr": 0.931,
+   "roc": 0.287,
+   "top10": 0.501,
+   "top10_rs": 0.962
+  },
+  "ci95": {
+   "blocks_with_rows": 200,
+   "universe_is_own_blocks": false,
+   "resamples_with_value": 2000,
+   "resamples_without_value": 0,
+   "pr_ci95": [
+    -0.001969264797121147,
+    0.0003428121658217054
+   ],
+   "roc_ci95": [
+    -0.00444723361972664,
+    0.0019579284416163857
+   ],
+   "top10_ci95": [
+    -0.020325704490090524,
+    0.007945866614499211
+   ]
+  }
+ },
+ "remodel": {
+  "cases": 866,
+  "rows": 41248,
+  "dropped": {
+   "no value in the window": 515,
+   "missing Baseline 1 input": 108,
+   "demolition-censored on or before the event date": 2
+  },
+  "observed": {
+   "pr": 0.0001076406484749326,
+   "roc": -0.0013843830677994218,
+   "top10": 0.0046189376443418195,
+   "top10_rs": 0.015011547344110837
+  },
+  "p": {
+   "pr": 0.341,
+   "roc": 0.713,
+   "top10": 0.135,
+   "top10_rs": 0.022
+  },
+  "ci95": {
+   "blocks_with_rows": 196,
+   "universe_is_own_blocks": false,
+   "resamples_with_value": 2000,
+   "resamples_without_value": 0,
+   "pr_ci95": [
+    -0.0006567101311917257,
+    0.0009750909564650777
+   ],
+   "roc_ci95": [
+    -0.006222911100466475,
+    0.0020426404130869454
+   ],
+   "top10_ci95": [
+    -0.01655798512897817,
+    0.02392953035378277
+   ]
+  }
+ },
+ "concordance": {
+  "risk_sets": 1754,
+  "risk_sets_without_controls": 0,
+  "direction_median": 0.009241934173889918,
+  "direction_label": "opposite",
+  "direction_share_below_0": 0.4960091220068415,
+  "direction_raw_mm_yr_median": 0.025313281365509255,
+  "direction_raw_share_below_0": 0.4960091220068415,
+  "event_raw_mm_yr_median": 8.298035616567102,
+  "control_raw_mm_yr_median": 7.91294024105648,
+  "coef_field_all_rows": 0.00847453366908061
+ },
+ "specificity": {
+  "change_pr": 0.0001076406484749326,
+  "ci95": [
+   -0.0006567101311917257,
+   0.0009750909564650777
+  ],
+  "p": 0.341,
+  "share_of_foundation_change": -0.186385854604798,
+  "foundation_change_positive": false,
+  "label": "Negative-control gain not detected"
+ },
+ "difference_pr": {
+  "definition": "foundation change in PR AUC minus remodel change, same resampled blocks",
+  "observed": -0.0006851557646470677,
+  "resamples_used": 2000,
+  "ci95": [
+   -0.0022468655517656378,
+   0.0004892627207847042
+  ]
+ },
+ "permutation_p": {
+  "free": {
+   "pr": 1.0,
+   "roc": 1.0,
+   "top10": 0.84007996001999,
+   "top10_rs": 1.0
+  },
+  "within-block": {
+   "pr": 0.9945027486256871,
+   "roc": 0.657671164417791,
+   "top10": 0.775112443778111,
+   "top10_rs": 0.9950024987506247
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "label": "REAL RUN",
+ "secondary": "3_window_12",
+ "mode": "real",
+ "cases": 1986,
+ "rows": 94612,
+ "dropped": {
+  "no value in the window": 729,
+  "missing Baseline 1 input": 127,
+  "demolition-censored on or before the event date": 4
+ },
+ "observed": {
+  "pr": -0.00037968167306198786,
+  "roc": -0.0006995886760190473,
+  "top10": -0.0025176233635448297,
+  "top10_rs": -0.000503524672708977
+ },
+ "p": {
+  "pr": 1.0,
+  "roc": 0.78,
+  "top10": 0.496,
+  "top10_rs": 0.813
+ },
+ "ci95": {
+  "pr": [
+   -0.0010663099243495503,
+   0.000158472783342217
+  ],
+  "roc": [
+   -0.0020314842310997032,
+   0.0005643740013420687
+  ],
+  "top10": [
+   -0.00926451957718043,
+   0.00587706907771271
+  ]
+ },
+ "notes": {
+  "risk_sets_without_a_control_row": 0
+ },
+ "seconds": {
+  "null": 33.704984034004156,
+  "bootstrap": 109.70850271399831,
+  "total": 192.0006020910223
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "label": "REAL RUN",
+ "secondary": "18_negative_binomial",
+ "mode": "real",
+ "field": "v",
+ "panel": {
+  "events_counted": 2842,
+  "events_counted_in_quarters": 2655,
+  "events_outside_the_28_quarters": 187,
+  "events_in_rows_used": 2553,
+  "events_in_rows_without_value": 102,
+  "rows_possible": 158060,
+  "rows_with_value": 129714,
+  "rows_used": 129682,
+  "cells_with_an_event_in_used_rows": 1397
+ },
+ "draws": 999,
+ "exceedances": 693,
+ "p_B": 0.694,
+ "null_seconds": 718.3613187830197,
+ "observed": {
+  "beta": 0.0023477987956159064,
+  "rate_ratio_iqr": 1.065592346391861,
+  "rate_ratio_ci95": [
+   0.8763710821711986,
+   1.2956692339456894
+  ],
+  "rows_used": 128647
+ }
+}

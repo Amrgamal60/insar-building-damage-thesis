@@ -1,0 +1,3 @@
+- [GPU allowed](gpu-allowed.md) — user permits installing GPU deps and using the RTX 2080 Super (CUDA) for heavy compute
+- [NYC replication frozen](nyc-replication-frozen.md) — plan frozen 2026-10-08; primary done p=0.418; s8 crash (RAM?) §14 dev 4; resumed 2026-10-10 17:52; crashed again, moving PCs 2026-10-11 (Alex/HANDOFF.md)
+- [Next study: Hong Kong + Miami DL](next-study-hong-kong.md) — after NYC report: supervisor DL coastal study, plan §17; HK + Miami-Dade, Mumbai reserve

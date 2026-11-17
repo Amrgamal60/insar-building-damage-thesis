@@ -1,0 +1,136 @@
+09:50:17 primary: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+09:50:21   surrogates primary: 0/999 (k = 169)
+09:53:35   surrogates primary: 200/999 (k = 169)
+09:56:39   surrogates primary: 400/999 (k = 169)
+09:59:43   surrogates primary: 600/999 (k = 169)
+10:02:48   surrogates primary: 800/999 (k = 169)
+10:34:33 primary: p = 0.153; done in 2660 s
+10:47:29 s8: Free permutation done
+11:03:15 s8: Within-block permutation done
+11:10:18 s8: MSR done
+11:57:22 s8: MSR, amplitude-adjusted done
+12:03:53 s9_seed0: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:10:16 s9_seed0: p = 0.203; done in 388 s
+12:10:20 s9_seed1: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:16:43 s9_seed1: p = 0.296; done in 387 s
+12:16:48 s9_seed2: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:23:11 s9_seed2: p = 0.297; done in 388 s
+12:23:15 s9_seed3: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:29:34 s9_seed3: p = 0.348; done in 383 s
+12:29:39 s9_seed4: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+12:36:01 s9_seed4: p = 0.517; done in 387 s
+12:36:06 s9_seed5: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:42:29 s9_seed5: p = 0.405; done in 388 s
+12:42:34 s9_seed6: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:48:57 s9_seed6: p = 0.258; done in 388 s
+12:49:02 s9_seed7: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+12:55:26 s9_seed7: p = 0.310; done in 389 s
+12:55:31 s9_seed8: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+13:01:55 s9_seed8: p = 0.102; done in 389 s
+13:01:59 s9_seed9: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+13:08:19 s9_seed9: p = 0.330; done in 384 s
+13:08:28 s1: 81 risk sets, 813,782 rows; PR AUC 0.0001 -> 0.0001 (+0.0000)
+13:08:37   surrogates s1: 0/199 (k = 264)
+Fatal Python error: Segmentation fault
+
+Current thread 0x000070397806bbc0 (most recent call first):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/lib/_arraysetops_impl.py", line 358 in _unique1d
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/lib/_arraysetops_impl.py", line 296 in unique
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 103 in boot_rep
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490 in _process_worker
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108 in run
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314 in _bootstrap
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 180 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, pyarrow.lib, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, _cyutility, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, scipy._cyutility, scipy._lib._ccallback_c, scipy.sparse._sparsetools, charset_normalizer.md, charset_normalizer.cd, _csparsetools, scipy.sparse._csparsetools, scipy.spatial._ckdtree, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._internal_matfuncs, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg.cython_lapack, scipy.linalg._decomp_update, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, sklearn.__check_build._check_build, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy._lib._uarray._uarray, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.interpolate._fitpack, scipy.interpolate._dierckx, scipy.interpolate._ppoly, scipy.interpolate._interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy.stats._ansari_swilk_statistics, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._rcont.rcont, scipy.stats._qmvnt_cy, scipy.ndimage._nd_image, scipy.ndimage._rank_filter_1d, _ni_label, scipy.ndimage._ni_label, sklearn._cyutility, sklearn.utils._isfinite, sklearn.utils.sparsefuncs_fast, sklearn.utils.murmurhash, sklearn.utils._openmp_helpers, sklearn.metrics.cluster._expected_mutual_info_fast, sklearn.metrics._dist_metrics, sklearn.metrics._pairwise_distances_reduction._datasets_pair, sklearn.utils._cython_blas, sklearn.metrics._pairwise_distances_reduction._base, sklearn.metrics._pairwise_distances_reduction._middle_term_computer, sklearn.utils._heap, sklearn.utils._sorting, sklearn.metrics._pairwise_distances_reduction._argkmin, sklearn.metrics._pairwise_distances_reduction._argkmin_classmode, sklearn.utils._vector_sentinel, sklearn.metrics._pairwise_distances_reduction._radius_neighbors, sklearn.metrics._pairwise_distances_reduction._radius_neighbors_classmode, sklearn.metrics._pairwise_fast, sklearn.preprocessing._csr_polynomial_expansion, sklearn.preprocessing._target_encoder_fast, sklearn.neighbors._partition_nodes, sklearn.neighbors._ball_tree, sklearn.neighbors._kd_tree, sklearn.utils.arrayfuncs, sklearn.utils._random, sklearn.utils._seq_dataset, sklearn.linear_model._cd_fast, sklearn._loss._loss, sklearn.linear_model._sag_fast, sklearn.svm._liblinear, sklearn.svm._libsvm, sklearn.svm._libsvm_sparse, sklearn.utils._weight_vector, sklearn.linear_model._sgd_fast, sklearn.decomposition._online_lda_fast, sklearn.decomposition._cdnmf_fast, sklearn.tree._utils, sklearn.neighbors._quad_tree, sklearn.tree._tree, sklearn.tree._partitioner, sklearn.tree._splitter, sklearn.tree._criterion, sklearn.ensemble._gradient_boosting, sklearn.ensemble._hist_gradient_boosting.common, sklearn.ensemble._hist_gradient_boosting._gradient_boosting, sklearn.ensemble._hist_gradient_boosting._binning, sklearn.utils._bitset, sklearn.ensemble._hist_gradient_boosting.histogram, sklearn.ensemble._hist_gradient_boosting._predictor, sklearn.ensemble._hist_gradient_boosting.splitting (total: 187)
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 108, in boot_rep
+    idx = np.concatenate([members[i] for i in rng.choice(len(ub), len(ub), replace=True)])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 188, in oof
+    s[te] = model(kind).fit(X[tr], y[tr]).predict_proba(X[te])[:, 1]
+                            ~^^^^
+IndexError: index 549756596579 is out of bounds for axis 0 with size 815916
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 361, in <module>
+    fold=ctx[250].cells.block.map(fm).values, tag=f"s9_seed{sd}")
+
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 356, in main
+    if ARGS.surrogates_only:
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 267, in run_analysis
+    for k in METRICS:
+                      
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 120, in par
+    def par(tasks):
+                   ^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+IndexError: index 549756596579 is out of bounds for axis 0 with size 815916
+EXIT 1
+=== 13:29:10 resumed after fixing the bootstrap block labels (pyarrow strings corrupted in workers); remaining analyses only
+13:29:35 s1: 81 risk sets, 813,782 rows; PR AUC 0.0001 -> 0.0001 (+0.0000)
+13:36:55 s1: p = 0.220; done in 448 s
+13:37:01 s2: 71 risk sets, 516,568 rows; PR AUC 0.0001 -> 0.0001 (-0.0000)
+13:37:06   surrogates s2: 0/199 (k = 169)
+13:45:32 s2: p = 0.875; done in 517 s
+13:45:36 s4: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+13:49:32 s4: p = 0.125; done in 240 s
+13:49:36 s5: 62 risk sets, 296,431 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+13:49:39   surrogates s5: 0/199 (k = 169)
+13:54:23 s5: p = 0.325; done in 291 s
+13:54:26 s6: 44 risk sets, 209,092 rows; PR AUC 0.0002 -> 0.0003 (+0.0000)
+13:54:28   surrogates s6: 0/199 (k = 169)
+13:57:43 s6: p = 0.090; done in 201 s
+13:57:49 s7: 82 risk sets, 404,846 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+13:57:52   surrogates s7: 0/199 (k = 169)
+14:04:20 s7: p = 0.100; done in 396 s
+14:04:24 s11: 81 risk sets, 386,424 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+14:07:47 s11: p = 0.130; done in 207 s
+14:07:52 s12: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+14:07:55   surrogates s12: 0/199 (k = 169)
+14:14:22 s12: p = 0.685; done in 395 s
+14:14:27 s13: 81 risk sets, 389,722 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+14:14:30   surrogates s13: 0/199 (k = 169)
+14:20:57 s13: p = 0.125; done in 395 s
+14:21:02 s14: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+14:21:05   surrogates s14: 0/199 (k = 44)
+14:27:31 s14: p = 0.785; done in 394 s
+14:27:36 s15: 81 risk sets, 390,090 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+14:27:39   surrogates s15: 0/199 (k = 169)
+14:34:02 s15: p = 0.300; done in 391 s
+14:38:31 s3: 81 risk sets, 389,658 rows; PR AUC 0.0002 -> 0.0003 (+0.0000)
+16:26:05 s3: p = 0.294; done in 6722 s
+16:26:05 ALLDONE
+EXIT 0

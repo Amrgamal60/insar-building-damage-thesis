@@ -1,0 +1,172 @@
+{
+ "inputs": {
+  "permits": {
+   "file": "3syk-w9eu_checkpoint1.csv",
+   "sha256": "0e6f003f286473512cc4cb59765df9ddd4a834b70256f788269e0a3b76f28146"
+  },
+  "roll_keys_2018": {
+   "file": "roll_keys_2018.parquet",
+   "sha256": "c8c715d9ccc312bf026fcdf23b273494176cec63a8e4f4a0e6901cf2e77c39bb"
+  },
+  "parcels_2018": {
+   "file": "2018_Shapefiles.zip",
+   "sha256": "64e1a626bd09ad2aad4d0800543e67c162b66b99982a37364c65c95632886c06"
+  },
+  "parcels_dec2025": {
+   "file": "source_2026_parcels.parquet",
+   "sha256": "665c9ee525c2e095a8793df879033db976569fe0079daa27cb04792beecb43cf"
+  },
+  "permit_points": {
+   "file": "permit_points.parquet",
+   "sha256": "c59590bfaf48141f150568fa015eea8ed89fc7e8f4affbd5e67aa891f5611eea"
+  },
+  "grid_check": {
+   "file": "grid_check.json",
+   "sha256": "6f47852bb51c4eb95310382e74de826ad638426c25db757d44af146d607f6620"
+  }
+ },
+ "distance_m": 50.0,
+ "issue_dates": [
+  "2015-01-01",
+  "2025-11-30"
+ ],
+ "classes": [
+  "New",
+  "Demolition",
+  "Addition",
+  "Addition and Remodel",
+  "Shell",
+  "Relocation"
+ ],
+ "mask_class_permits_all_dates": 270654,
+ "mask_class_permits_without_issue_date": 0,
+ "permits": 88191,
+ "by_source": {
+  "2018 parcel polygon": 67771,
+  "permit coordinates": 9774,
+  "Dec-2025 parcel polygon": 8295,
+  "unplaced": 2351
+ },
+ "by_source_from_2015_07_11": {
+  "2018 parcel polygon": 64231,
+  "permit coordinates": 9498,
+  "Dec-2025 parcel polygon": 8287,
+  "unplaced": 2319
+ },
+ "by_year_and_source": {
+  "2015": {
+   "2018 parcel polygon": 6816,
+   "Dec-2025 parcel polygon": 18,
+   "permit coordinates": 500,
+   "unplaced": 66
+  },
+  "2016": {
+   "2018 parcel polygon": 7585,
+   "Dec-2025 parcel polygon": 19,
+   "permit coordinates": 572,
+   "unplaced": 78
+  },
+  "2017": {
+   "2018 parcel polygon": 7830,
+   "Dec-2025 parcel polygon": 36,
+   "permit coordinates": 795,
+   "unplaced": 182
+  },
+  "2018": {
+   "2018 parcel polygon": 7159,
+   "Dec-2025 parcel polygon": 66,
+   "permit coordinates": 931,
+   "unplaced": 346
+  },
+  "2019": {
+   "2018 parcel polygon": 7585,
+   "Dec-2025 parcel polygon": 191,
+   "permit coordinates": 1484,
+   "unplaced": 327
+  },
+  "2020": {
+   "2018 parcel polygon": 5848,
+   "Dec-2025 parcel polygon": 1370,
+   "permit coordinates": 1386,
+   "unplaced": 381
+  },
+  "2021": {
+   "2018 parcel polygon": 5803,
+   "Dec-2025 parcel polygon": 1769,
+   "permit coordinates": 1604,
+   "unplaced": 285
+  },
+  "2022": {
+   "2018 parcel polygon": 5547,
+   "Dec-2025 parcel polygon": 1840,
+   "permit coordinates": 1138,
+   "unplaced": 238
+  },
+  "2023": {
+   "2018 parcel polygon": 4618,
+   "Dec-2025 parcel polygon": 1013,
+   "permit coordinates": 580,
+   "unplaced": 206
+  },
+  "2024": {
+   "2018 parcel polygon": 4380,
+   "Dec-2025 parcel polygon": 1151,
+   "permit coordinates": 420,
+   "unplaced": 128
+  },
+  "2025": {
+   "2018 parcel polygon": 4600,
+   "Dec-2025 parcel polygon": 822,
+   "permit coordinates": 364,
+   "unplaced": 114
+  }
+ },
+ "by_work_class_and_source": {
+  "Addition": {
+   "2018 parcel polygon": 866,
+   "Dec-2025 parcel polygon": 5,
+   "permit coordinates": 25,
+   "unplaced": 8
+  },
+  "Addition and Remodel": {
+   "2018 parcel polygon": 15551,
+   "Dec-2025 parcel polygon": 82,
+   "permit coordinates": 483,
+   "unplaced": 44
+  },
+  "Demolition": {
+   "2018 parcel polygon": 8285,
+   "Dec-2025 parcel polygon": 204,
+   "permit coordinates": 1345,
+   "unplaced": 281
+  },
+  "New": {
+   "2018 parcel polygon": 42108,
+   "Dec-2025 parcel polygon": 7886,
+   "permit coordinates": 7776,
+   "unplaced": 1933
+  },
+  "Relocation": {
+   "2018 parcel polygon": 269,
+   "Dec-2025 parcel polygon": 11,
+   "permit coordinates": 42,
+   "unplaced": 18
+  },
+  "Shell": {
+   "2018 parcel polygon": 692,
+   "Dec-2025 parcel polygon": 107,
+   "permit coordinates": 103,
+   "unplaced": 67
+  }
+ },
+ "placed_permits_masking_no_subset_pixel": 0,
+ "pixels_per_permit_quantiles": {
+  "0.5": 17.0,
+  "0.9": 140.0,
+  "0.99": 1086.0,
+  "1.0": 9557.0
+ },
+ "subset_pixels_ever_masked": 447481,
+ "subset_pixels": 2259712,
+ "npz_sha256": "68021fb29372a0960e69aa52e4c34f0b3b82b345587531db8687334ac59457cd"
+}

@@ -1,0 +1,51 @@
+{
+ "label": "REAL RUN",
+ "secondary": "D2_composite",
+ "mode": "real",
+ "cases": 2641,
+ "rows": 125702,
+ "dropped": {
+  "no value in the window": 3082,
+  "missing Baseline 1 input": 302,
+  "matched foundation episode before the date that is not the event itself": 210
+ },
+ "observed": {
+  "pr": -0.00011415752984411665,
+  "roc": -0.0012546672449527119,
+  "top10": -0.0007572889057175236,
+  "top10_rs": 0.0011359333585762577
+ },
+ "p": {
+  "pr": 0.986,
+  "roc": 0.92,
+  "top10": 0.393,
+  "top10_rs": 0.469
+ },
+ "ci95": {
+  "pr": [
+   -0.0007446242402981756,
+   0.0005257320799277204
+  ],
+  "roc": [
+   -0.004310246008771814,
+   0.0008981516044102633
+  ],
+  "top10": [
+   -0.008628462190071335,
+   0.008235509258035234
+  ]
+ },
+ "notes": {
+  "demolitions_in_file": 3797,
+  "demolitions_outside_the_study_months": 381,
+  "composite_candidates": 6235,
+  "composite_cases_that_are_foundation_events": 1754,
+  "composite_cases_that_are_demolitions": 887,
+  "risk_sets_without_a_control_row": 0
+ },
+ "seconds": {
+  "null": 28.280071239976678,
+  "bootstrap": 86.58911831100704,
+  "total": 159.12201304599876
+ }
+}

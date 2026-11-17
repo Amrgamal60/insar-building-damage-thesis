@@ -1,0 +1,37 @@
+{
+ "null": "MSR (secondary 8)",
+ "seed": 2026,
+ "draws": 999,
+ "threshold_m": 4928.498757228209,
+ "stages": {
+  "threshold": 142.9848191809997,
+  "weights": 207.98435670799972,
+  "householder": 111.7453938689996,
+  "eigh": 17972.05377043,
+  "peak_gb_after_eigh": 270.285012,
+  "basis": 168.0345324159971,
+  "coefficients": 3.350236620000942
+ },
+ "verify": {
+  "columns": 200,
+  "eigen_residual_rel": 8.264331817555379e-18,
+  "orthonormal_max_err": 2.704479977640173e-14,
+  "orthogonal_to_constant_max": 1.3106269541873772e-14
+ },
+ "build_seconds": 18606.168677576003,
+ "total_seconds": 20003.611739361004,
+ "peak_gb": 270.285012,
+ "threads": 32,
+ "fingerprint": "970344870bc083ddbe6d21260d00416e9afba5813b0a9e8a41007e8a5abb7e3e",
+ "inputs": {
+  "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+  "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+  "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+ },
+ "field_sha256": "7a9ad77f75b05c4a13d7cc29db07da47c871c8a31e196aae49989a521aa4a4e4",
+ "surrogates_sha256": "63b55ce62477378c64f471009e1b1c11e8e06d49a692f5f670d3b120eba5c334",
+ "source_sha256": "14302b9c2be8d3dde85a32f70db03da6865ecdbcd1be4c96040d679bf6dd82af",
+ "host": "ai",
+ "finished": "2026-11-12 15:33:38 EET"
+}

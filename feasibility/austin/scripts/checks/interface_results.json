@@ -1,0 +1,15 @@
+{
+  "nonpositive_exposure": true,
+  "negative_count": true,
+  "nonfinite_velocity": true,
+  "duplicate_cell_quarter": true,
+  "cell_crosses_blocks": true,
+  "nonfinite_surrogate": true,
+  "missing_null_draw": true,
+  "block_split_rejected": true,
+  "test_b_cli": true,
+  "cached_comparison_identity": true,
+  "inner_outer_block_disjoint": true,
+  "deep_cli_scores_exact": true,
+  "deep_cli_row_ids": true
+}

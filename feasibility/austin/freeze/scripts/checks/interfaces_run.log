@@ -1,0 +1,22 @@
+/mnt/data/Master-projects/Alex/feasibility/austin/scripts/test_b.py:41: DeprecationWarning: The `demeaner_backend`, `fixef_tol`, and `fixef_maxiter` arguments are deprecated and will be removed in a future release. Pass a typed `demeaner=` configuration instead.
+  model = pf.fepois('y ~ v | cell + quarter', d, offset='_log_n',
+{"fold": 0, "elapsed_seconds": 2.074287406168878, "comparison_epoch": 16, "series_epoch": 16}
+{"fold": 1, "elapsed_seconds": 1.1906226791907102, "comparison_epoch": 16, "series_epoch": 16}
+{"fold": 2, "elapsed_seconds": 1.1489319319371134, "comparison_epoch": 16, "series_epoch": 16}
+{"fold": 3, "elapsed_seconds": 1.322800843976438, "comparison_epoch": 16, "series_epoch": 16}
+{"fold": 4, "elapsed_seconds": 1.3119098348543048, "comparison_epoch": 16, "series_epoch": 16}
+{
+  "nonpositive_exposure": true,
+  "negative_count": true,
+  "nonfinite_velocity": true,
+  "duplicate_cell_quarter": true,
+  "cell_crosses_blocks": true,
+  "nonfinite_surrogate": true,
+  "missing_null_draw": true,
+  "block_split_rejected": true,
+  "test_b_cli": true,
+  "cached_comparison_identity": true,
+  "inner_outer_block_disjoint": true,
+  "deep_cli_scores_exact": true,
+  "deep_cli_row_ids": true
+}

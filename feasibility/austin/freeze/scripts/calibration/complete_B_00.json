@@ -1,0 +1,15 @@
+{
+  "cell": "B_00",
+  "datasets": 200,
+  "source_hashes": {
+    "calibration/design.json": "a059caf472eec0d8f5ade74e70e7db6d243a2266e922ddc3c22b6d90bba76b12",
+    "calibration/simulation.py": "dcbb995c846fe2a317c0270845dc68270356d442e39a48cbbfe9e82576f90692",
+    "calibration/cpu_null.py": "935ff76d17bc35070b9757132ba7998295a2bddfe852ed98d35e7782f6fc0f07",
+    "calibration/run_calibration.py": "1f29deaa1def9b2df60ca6a01d846f8084598d199defa970c517e9540a727343",
+    "conditional_null.py": "5dc5e9dfe1e3727aaedbc3d6114fc4168734e5f9e4511882197f707ecb0a0e15",
+    "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+    "lowmem_null.py": "84a6e78ef074d6ae29f1dbbe1b76d0f8bd46d35a8d3850da73a8c5ccaadf87e9",
+    "test_b.py": "d5c0ea95db7897b1689e0f0847cfb19b61e17432672e5ba59c813d28742a4e1d"
+  },
+  "finished_utc": "2026-11-06T20:58:39Z"
+}

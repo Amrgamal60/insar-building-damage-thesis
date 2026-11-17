@@ -1,0 +1,37 @@
+{
+ "n": 1500,
+ "threshold_nyc": 5414.9792243368765,
+ "threshold_ours": 5414.9792243368765,
+ "threshold_equal": true,
+ "threshold_verified": true,
+ "weights_equal": true,
+ "eigenvalues_max_abs_diff_rel": 6.542821365728001e-16,
+ "separated_eigenvalues": 1444,
+ "separated_min_abs_cos": 0.9999999999999972,
+ "basis_orthonormal_max_err": 4.1772141301521515e-15,
+ "basis_orthogonal_to_constant_max": 3.552713678800501e-15,
+ "draws_nan_pattern_equal_nyc": true,
+ "draws_separated_components_max_diff": 1.469400687047055e-11,
+ "field_sd": 6.8175795231615055,
+ "verify": {
+  "columns": 200,
+  "eigen_residual_rel": 5.377381309957704e-16,
+  "orthonormal_max_err": 3.3306690738754696e-15,
+  "orthogonal_to_constant_max": 2.6017382692700153e-14
+ },
+ "draws_max_abs_diff_vs_nyc_information": [
+  5.4487948503066885,
+  6.42018855766614,
+  5.939992442848883,
+  5.256444198723907,
+  6.099457631568578
+ ],
+ "draws_window_mean_diff_information": [
+  0.0030658661117382024,
+  0.00592883257631982,
+  0.00545247951855643,
+  0.006432601185521136,
+  0.0025750500892169903
+ ],
+ "pass": true
+}

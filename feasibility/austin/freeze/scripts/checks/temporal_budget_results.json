@@ -1,0 +1,33 @@
+{
+  "synthetic_only": true,
+  "pixels": 111039,
+  "acquisition_dates": 254,
+  "rows": 300000,
+  "steps": 61,
+  "synthetic_unique_event_months": 88,
+  "resampling_seconds": 1.1930266038980335,
+  "paired_five_fold_seconds": 191.59330310020596,
+  "measured_series_training_prediction_seconds": 156.40383061394095,
+  "shared_preprocessing_seconds": 3.0346613593865186,
+  "estimated_series_only_full_refit_seconds": 159.43849197332747,
+  "date_field_generation_projected_setup_seconds": 224.27045454545453,
+  "date_field_generation_projected_draw_seconds": 19.915909090909093,
+  "date_field_generation_projected_99_seconds": 2195.9454545454546,
+  "series_refits_and_resampling_projected_99_seconds": 15902.520339145325,
+  "total_projected_99_seconds": 18098.46579369078,
+  "total_projected_99_hours": 5.02735160935855,
+  "total_projected_99_all_16_epochs_hours": 8.087700936724255,
+  "historical_benchmark": "plan \u00a710 / step0/timing/timing_k1000_lowmem.json, 111039 pixels, 88 windows, kmax1000",
+  "assumptions": [
+    "generation time scales linearly with date count; setup scaling deliberately conservative",
+    "same spatial pair density and hardware as prior benchmark",
+    "series-only refit = measured series model time plus all measured shared preprocessing",
+    "surrogates can early-stop at different epochs; cap projection scales measured per-fold time",
+    "stream date fields; do not materialise all 99 draws"
+  ],
+  "boolean_valid_pair_mask_gb": 3.895869526,
+  "float64_source_date_field_gb": 0.225631248,
+  "all_99_float32_date_fields_gb": 11.168746776,
+  "full_date_gpu_memory": "UNVERIFIED: historic 88-window transient pool was 22.01 GB; 254-date setup may exceed free VRAM",
+  "full_99_draw_run": "UNVERIFIED: projected, not executed"
+}

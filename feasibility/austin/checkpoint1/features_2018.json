@@ -1,0 +1,207 @@
+{
+ "inputs": {
+  "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "population": "8a418a3b707b8bcd74d3ee7fd6d6aaf385acae66d238fd93c8832f53d02e266d",
+  "soil": "803e20ae9a4fa301651ed6252de1d89f93f3a7bc2933e4a2d36a3862ca73fbc4",
+  "terrain": "f7370398224fc0c5dfee489148d868139bc56d3f4be1e184f3837d56a85740de",
+  "income": "44a8b365abf11aacf4b3b07c1c5fea8f6621c90e09bece78409d32763fd9df2f",
+  "canopy": "3e72c18fadd63e5aa17cec2417dd9b6ac280c5d5b158377472e0e228fe997662"
+ },
+ "eligible_houses": 149316,
+ "baseline_1_columns": [
+  "building_age",
+  "log_living_area",
+  "log_lot_area",
+  "lep_0_150",
+  "slope_deg",
+  "elevation_m",
+  "log_income",
+  "foundation_slab",
+  "x_km",
+  "y_km"
+ ],
+ "baseline_2_extra": [
+  "other_bp_5y (at the row date)",
+  "canopy_share"
+ ],
+ "missing": {
+  "year_built": {
+   "count": 0,
+   "percent": 0.0
+  },
+  "log_living_area": {
+   "count": 0,
+   "percent": 0.0
+  },
+  "log_lot_area": {
+   "count": 0,
+   "percent": 0.0
+  },
+  "lep_0_150": {
+   "count": 1112,
+   "percent": 0.745
+  },
+  "slope_deg": {
+   "count": 0,
+   "percent": 0.0
+  },
+  "elevation_m": {
+   "count": 0,
+   "percent": 0.0
+  },
+  "log_income": {
+   "count": 41,
+   "percent": 0.027
+  },
+  "foundation_slab": {
+   "count": 8460,
+   "percent": 5.666
+  },
+  "canopy_share": {
+   "count": 0,
+   "percent": 0.0
+  }
+ },
+ "complete_baseline_1": {
+  "houses": 139778,
+  "percent": 93.612,
+  "events": 2719,
+  "events_percent": 95.538
+ },
+ "incomplete_baseline_1": {
+  "houses": 9538,
+  "events": 127,
+  "only_foundation_missing": 8400
+ },
+ "event_share_by_foundation": {
+  "slab": {
+   "houses": 118970,
+   "events": 2227,
+   "events_per_1000": 18.72
+  },
+  "pier and beam": {
+   "houses": 21886,
+   "events": 505,
+   "events_per_1000": 23.07
+  },
+  "no value": {
+   "houses": 8460,
+   "events": 114,
+   "events_per_1000": 13.48
+  }
+ },
+ "summary": {
+  "year_built": {
+   "count": 149316.0,
+   "mean": 1979.3533,
+   "std": 22.4006,
+   "min": 201.0,
+   "25%": 1965.0,
+   "50%": 1981.0,
+   "75%": 1998.0,
+   "max": 2015.0
+  },
+  "log_living_area": {
+   "count": 149316.0,
+   "mean": 7.4682,
+   "std": 0.4126,
+   "min": 4.7875,
+   "25%": 7.1763,
+   "50%": 7.4431,
+   "75%": 7.7539,
+   "max": 9.7914
+  },
+  "log_lot_area": {
+   "count": 149316.0,
+   "mean": 6.7115,
+   "std": 0.4741,
+   "min": 4.6157,
+   "25%": 6.4338,
+   "50%": 6.6408,
+   "75%": 6.9001,
+   "max": 13.6752
+  },
+  "lep_0_150": {
+   "count": 148204.0,
+   "mean": 6.1131,
+   "std": 4.0397,
+   "min": 1.5,
+   "25%": 3.945,
+   "50%": 4.8486,
+   "75%": 7.5,
+   "max": 17.0
+  },
+  "slope_deg": {
+   "count": 149316.0,
+   "mean": 3.6803,
+   "std": 2.747,
+   "min": 0.453,
+   "25%": 2.0693,
+   "50%": 2.8481,
+   "75%": 4.1661,
+   "max": 37.0765
+  },
+  "elevation_m": {
+   "count": 149316.0,
+   "mean": 212.7213,
+   "std": 40.3358,
+   "min": 127.5489,
+   "25%": 182.1959,
+   "50%": 210.1958,
+   "75%": 237.3356,
+   "max": 335.3359
+  },
+  "log_income": {
+   "count": 149275.0,
+   "mean": 11.1288,
+   "std": 0.4583,
+   "min": 8.7453,
+   "25%": 10.8656,
+   "50%": 11.1324,
+   "75%": 11.4321,
+   "max": 12.3578
+  },
+  "foundation_slab": {
+   "count": 140856.0,
+   "mean": 0.8446,
+   "std": 0.3623,
+   "min": 0.0,
+   "25%": 1.0,
+   "50%": 1.0,
+   "75%": 1.0,
+   "max": 1.0
+  },
+  "canopy_share": {
+   "count": 149316.0,
+   "mean": 0.3568,
+   "std": 0.2284,
+   "min": 0.0,
+   "25%": 0.1688,
+   "50%": 0.3412,
+   "75%": 0.5233,
+   "max": 1.0
+  }
+ },
+ "year_built_before_1800": 1,
+ "generating_coefficients": {
+  "file": "generating_coefficients.json",
+  "sha256": "2f67ed802968a6992101894724fdfb09489bb3fb2e8054ef277e37a1c98a9c8b",
+  "rows": 139778,
+  "events": 2719,
+  "coefficients": {
+   "building_age": 0.0659,
+   "log_living_area": 0.1149,
+   "log_lot_area": -0.0461,
+   "lep_0_150": 0.3449,
+   "slope_deg": 0.0707,
+   "elevation_m": -0.0579,
+   "log_income": 0.0113,
+   "foundation_slab": -0.0449,
+   "x_km": 0.4366,
+   "y_km": -0.332
+  }
+ },
+ "private_outputs_sha256": {
+  "features_2018.parquet": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a"
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "inputs": {
+  "e20155tx0059000.txt": "43e0302d828916fcce4c00028017bf253cb95718bd9ab06e2d6882b4387a1b2c",
+  "m20155tx0059000.txt": "d40d14cc786798347c3082e8bfd5cb153cc2ebbc8b3d0082d25d63b0cb74571c",
+  "g20155tx.csv": "666a1df44193fd7e4d08ac50b773d91e5e5a2559feb2d98c79b48abd48715bde",
+  "tl_2015_48_bg.zip": "f95f0cb5b39d9f4b8343ebf5bc3845428c33f04381cf4495c960c48ac9a5a92e"
+ },
+ "table": "B19013 (sequence 0059)",
+ "block_groups": 580,
+ "block_groups_valid": 568,
+ "tracts": 218,
+ "tracts_valid": 215,
+ "boundary_assignments": 0,
+ "eligible_houses": 149316,
+ "no_block_group": 30,
+ "by_source": {
+  "block group": {
+   "count": 148357,
+   "percent": 99.358
+  },
+  "tract": {
+   "count": 918,
+   "percent": 0.615
+  },
+  "none": {
+   "count": 41,
+   "percent": 0.027
+  }
+ },
+ "missing": {
+  "count": 41,
+  "percent": 0.027
+ },
+ "safeguard": {
+  "threshold_percent": 10,
+  "income_in_baseline_1": true
+ },
+ "income_usd_2015": {
+  "count": 149275.0,
+  "mean": 75390.0,
+  "std": 34667.0,
+  "min": 6281.0,
+  "25%": 52344.0,
+  "50%": 68353.0,
+  "75%": 92237.0,
+  "max": 232778.0
+ },
+ "relative_margin_of_error": {
+  "houses_with_a_margin": 149275,
+  "median": 0.232,
+  "p90": 0.467,
+  "houses_above_half": 11692,
+  "percent_above_half": 7.83
+ },
+ "block_groups_used": 459,
+ "private_outputs_sha256": {
+  "income_2015.parquet": "44a8b365abf11aacf4b3b07c1c5fea8f6621c90e09bece78409d32763fd9df2f"
+ }
+}

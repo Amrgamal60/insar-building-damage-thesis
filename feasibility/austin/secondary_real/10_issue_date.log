@@ -1,0 +1,55 @@
+{
+ "label": "REAL RUN",
+ "secondary": "10_issue_date",
+ "mode": "real",
+ "cases": 1732,
+ "rows": 82524,
+ "dropped": {
+  "no value in the window": 965,
+  "missing Baseline 1 input": 126,
+  "demolition-censored on or before the event date": 5
+ },
+ "observed": {
+  "pr": -0.0006089307428695304,
+  "roc": -0.001586702156731512,
+  "top10": -0.002886836027713613,
+  "top10_rs": -0.009237875288683584
+ },
+ "p": {
+  "pr": 0.813,
+  "roc": 0.25,
+  "top10": 0.56,
+  "top10_rs": 0.928
+ },
+ "ci95": {
+  "pr": [
+   -0.001878201164182834,
+   0.0003606693801921816
+  ],
+  "roc": [
+   -0.004549417200843842,
+   0.0019489614410163041
+  ],
+  "top10": [
+   -0.022538696053317757,
+   0.007901318614268564
+  ]
+ },
+ "notes": {
+  "dating": "issue date of the episode's first permit (\u00a712.10); episodes and events of \u00a74 re-dated, not re-derived",
+  "events_outside_the_study_months": 18,
+  "events_outside_the_study_months_by_month": {
+   "2025-12": 11,
+   "2026-02": 2,
+   "2026-05": 1,
+   "2026-06": 1,
+   "2026-10": 3
+  },
+  "risk_sets_without_a_control_row": 0
+ },
+ "seconds": {
+  "null": 29.831205527007114,
+  "bootstrap": 89.58705080597429,
+  "total": 166.0361725310213
+ }
+}

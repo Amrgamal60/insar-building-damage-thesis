@@ -1,0 +1,76 @@
+{
+ "host": "ai",
+ "started": "2026-11-11 08:00:52 EET",
+ "script_sha256": "8e16d3e0820f81122cdc5a91c4166e3e4696da5b0b5e2da240960770d48335ca",
+ "inputs": {
+  "insar_inputs": "a6bb02b361c2f90d17b17bc00f351522ed153cae081a282ee8463fbd1b1b0661",
+  "mask_permits": "68021fb29372a0960e69aa52e4c34f0b3b82b345587531db8687334ac59457cd",
+  "disp_manifest": "e261a28f544f41a618d605629925e0628f11b8a759a19fb35766f3ea01611fac"
+ },
+ "environment": {
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "OPENBLAS_CORETYPE": null
+ },
+ "versions": {
+  "python": "3.12.15",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "h5py": "3.16.0",
+  "opera_utils": "0.25.8",
+  "blas": {
+   "name": "blas",
+   "found": true,
+   "version": "3.9.0",
+   "detection method": "pkgconfig",
+   "include directory": "/home/ai-admin/AmrGamal/env/opera/include",
+   "lib directory": "/home/ai-admin/AmrGamal/env/opera/lib",
+   "openblas configuration": "unknown",
+   "pc file directory": "/home/ai-admin/AmrGamal/env/opera/lib/pkgconfig"
+  }
+ },
+ "settings": {
+  "quarter_days": 91,
+  "min_share": 0.8,
+  "permit_lead_days": 365,
+  "permit_m": 50.0,
+  "ring_m": [
+   60.0,
+   250.0
+  ],
+  "avail_m": 100.0,
+  "families": {
+   "L24": [
+    24,
+    "2018-08"
+   ],
+   "L12": [
+    12,
+    "2017-08"
+   ],
+   "L36": [
+    36,
+    "2019-08"
+   ]
+  },
+  "last_month": "2025-11"
+ },
+ "workers": 24,
+ "read_seconds": 29.822834014892578,
+ "window_seconds": 70.65054678916931,
+ "seconds": 101.99144959449768,
+ "finished": "2026-11-11 08:02:34 EET",
+ "outputs": {
+  "L12.npz": "f8123576d906e517a8151023108924e6ed5f74e074efae1b01fc558511bead2a",
+  "L24.npz": "0a40f901682c48a552fac43a2c977018d8c52fc9df365af1bfabb5a160e87c5c",
+  "L36.npz": "9c886b0ba1ef533239773f1c35101b9eddcbe760288bc5a6a62e68189bb67a8c",
+  "coverage.csv": "f0c6a0fa1e1eb984f086b7885a4975eb18e818febd7a01fbed52f9b23eb3bff6",
+  "full.npz": "2e39f2ff670c9954a35b229d8425568dba6d06a0b09364c58420a4f0f8aa526f",
+  "house_series.npz": "b7c52a3d6e2d908a5bfd79e03a7848a0183fdf3d2489fee59fe150382259de30",
+  "layers.txt": "90ca9e9c199b4f7785de5ebc50446acc4900e6d44ab956207bfbaed6e038f596",
+  "nyc_cells_L24.npz": "ffefe9b10c3edc53747f51f73a1b0439c2a729cbe90a19cc6b8d6c79acc37a46",
+  "products.csv": "f2e575bb1968aaa0be867622efd457f7422c4ef1371b143aa67d500da5509912",
+  "windows.csv": "0c35de2ccb3516b3e05fac6fd080425b87f4a528eb507ce896d9db826184ea8b"
+ }
+}

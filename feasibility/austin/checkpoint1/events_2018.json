@@ -1,0 +1,577 @@
+{
+ "inputs": {
+  "permits": "3syk-w9eu_checkpoint1.csv",
+  "permits_sha256": "0e6f003f286473512cc4cb59765df9ddd4a834b70256f788269e0a3b76f28146",
+  "population_sha256": "8a418a3b707b8bcd74d3ee7fd6d6aaf385acae66d238fd93c8832f53d02e266d"
+ },
+ "study_period": [
+  "2018-08-01",
+  "2025-11-30"
+ ],
+ "permit_rows": 2384452,
+ "population_houses": 149316,
+ "foundation": {
+  "rules_1_to_3": 13881,
+  "rule4_on_population_houses": 11706,
+  "undated": 0,
+  "dated_before_1980_ignored": 0,
+  "permits_from_1980": 11706,
+  "houses": 10240,
+  "episodes_chained_reading": 11418,
+  "episodes_anchored_reading": 11423,
+  "first_episode_status": {
+   "first episode before the study period": 6573,
+   "event": 2846,
+   "first episode after the study period": 696,
+   "excluded: construction BP in the 3 years before": 125
+  },
+  "events": 2846,
+  "events_dated_by_issue_date": 0,
+  "events_by_year": {
+   "2018": 170,
+   "2019": 355,
+   "2020": 316,
+   "2021": 382,
+   "2022": 386,
+   "2023": 397,
+   "2024": 369,
+   "2025": 471
+  },
+  "events_by_month": {
+   "2018-08": 36,
+   "2018-09": 32,
+   "2018-10": 41,
+   "2018-11": 23,
+   "2018-12": 38,
+   "2019-01": 42,
+   "2019-02": 18,
+   "2019-03": 16,
+   "2019-04": 35,
+   "2019-05": 23,
+   "2019-06": 15,
+   "2019-07": 35,
+   "2019-08": 21,
+   "2019-09": 33,
+   "2019-10": 49,
+   "2019-11": 25,
+   "2019-12": 43,
+   "2020-01": 34,
+   "2020-02": 30,
+   "2020-03": 35,
+   "2020-04": 16,
+   "2020-05": 17,
+   "2020-06": 34,
+   "2020-07": 23,
+   "2020-08": 33,
+   "2020-09": 27,
+   "2020-10": 18,
+   "2020-11": 23,
+   "2020-12": 26,
+   "2021-01": 44,
+   "2021-02": 27,
+   "2021-03": 47,
+   "2021-04": 38,
+   "2021-05": 44,
+   "2021-06": 19,
+   "2021-07": 15,
+   "2021-08": 34,
+   "2021-09": 22,
+   "2021-10": 32,
+   "2021-11": 37,
+   "2021-12": 23,
+   "2022-01": 33,
+   "2022-02": 22,
+   "2022-03": 42,
+   "2022-04": 30,
+   "2022-05": 28,
+   "2022-06": 37,
+   "2022-07": 12,
+   "2022-08": 39,
+   "2022-09": 35,
+   "2022-10": 39,
+   "2022-11": 47,
+   "2022-12": 22,
+   "2023-01": 54,
+   "2023-02": 34,
+   "2023-03": 39,
+   "2023-04": 16,
+   "2023-05": 30,
+   "2023-06": 19,
+   "2023-07": 23,
+   "2023-08": 38,
+   "2023-09": 34,
+   "2023-10": 33,
+   "2023-11": 32,
+   "2023-12": 45,
+   "2024-01": 35,
+   "2024-02": 35,
+   "2024-03": 42,
+   "2024-04": 32,
+   "2024-05": 39,
+   "2024-06": 21,
+   "2024-07": 20,
+   "2024-08": 22,
+   "2024-09": 22,
+   "2024-10": 35,
+   "2024-11": 26,
+   "2024-12": 40,
+   "2025-01": 46,
+   "2025-02": 33,
+   "2025-03": 43,
+   "2025-04": 56,
+   "2025-05": 29,
+   "2025-06": 23,
+   "2025-07": 46,
+   "2025-08": 23,
+   "2025-09": 53,
+   "2025-10": 60,
+   "2025-11": 59
+  },
+  "events_by_work_class": {
+   "Repair": 2845,
+   "Remodel": 1
+  },
+  "events_by_matched_permits_on_house": {
+   "1": 2681,
+   "2": 155,
+   "3": 9,
+   "4": 1
+  },
+  "events_on_keys_shared_with_a_non_population_roll_parcel": 2
+ },
+ "section6": {
+  "events_in_primary_population": 2846,
+  "threshold": 300,
+  "passes": true
+ },
+ "demolition": {
+  "residential_demolition_bp_on_population_houses": 9944,
+  "partial_by_description": 65,
+  "total_demolition_permits_from_study_start": 4629,
+  "houses_censored_from_study_start": 3797,
+  "houses_censored_within_study_period": 3416,
+  "houses_censored_by_year": {
+   "2018": 156,
+   "2019": 426,
+   "2020": 454,
+   "2021": 636,
+   "2022": 556,
+   "2023": 362,
+   "2024": 401,
+   "2025": 456,
+   "2026": 350
+  },
+  "events_on_houses_censored_on_or_before_the_event": 4,
+  "events_on_houses_demolished_later_in_the_study_period": 23
+ },
+ "survivorship": {
+  "population_houses_not_in_2026_detached_population": 5629,
+  "rule_1_to_3_permits_in_study_period_on_population_houses": 3514,
+  "of_which_at_houses_not_in_2026_detached_population": 58,
+  "percent": 1.651,
+  "events": 2846,
+  "events_at_houses_not_in_2026_detached_population": 30,
+  "events_percent": 1.054
+ },
+ "remodel": {
+  "residential_remodel_bp": 68744,
+  "description_matches_remodel_regex": 8022,
+  "of_which_also_match_foundation_regex_dropped": 267,
+  "rule4_on_population_houses": 6602,
+  "undated": 0,
+  "dated_before_1980_ignored": 1,
+  "permits_from_1980": 6601,
+  "houses": 6029,
+  "episodes_chained_reading": 6441,
+  "episodes_anchored_reading": 6444,
+  "first_episode_status": {
+   "first episode before the study period": 5997,
+   "event": 16,
+   "first episode after the study period": 12,
+   "excluded: construction BP in the 3 years before": 4
+  },
+  "events": 16,
+  "events_dated_by_issue_date": 0,
+  "events_by_year": {
+   "2018": 5,
+   "2019": 4,
+   "2021": 1,
+   "2022": 1,
+   "2024": 3,
+   "2025": 2
+  },
+  "candidate_control_events": 16,
+  "sampled_control_events": 16,
+  "months_with_too_few_candidates": {
+   "2018-08": {
+    "needed": 36,
+    "available": 1
+   },
+   "2018-09": {
+    "needed": 32,
+    "available": 1
+   },
+   "2018-10": {
+    "needed": 41,
+    "available": 1
+   },
+   "2018-11": {
+    "needed": 23,
+    "available": 1
+   },
+   "2018-12": {
+    "needed": 38,
+    "available": 1
+   },
+   "2019-01": {
+    "needed": 42,
+    "available": 0
+   },
+   "2019-02": {
+    "needed": 18,
+    "available": 0
+   },
+   "2019-03": {
+    "needed": 16,
+    "available": 1
+   },
+   "2019-04": {
+    "needed": 35,
+    "available": 0
+   },
+   "2019-05": {
+    "needed": 23,
+    "available": 0
+   },
+   "2019-06": {
+    "needed": 15,
+    "available": 0
+   },
+   "2019-07": {
+    "needed": 35,
+    "available": 0
+   },
+   "2019-08": {
+    "needed": 21,
+    "available": 1
+   },
+   "2019-09": {
+    "needed": 33,
+    "available": 1
+   },
+   "2019-10": {
+    "needed": 49,
+    "available": 0
+   },
+   "2019-11": {
+    "needed": 25,
+    "available": 0
+   },
+   "2019-12": {
+    "needed": 43,
+    "available": 1
+   },
+   "2020-01": {
+    "needed": 34,
+    "available": 0
+   },
+   "2020-02": {
+    "needed": 30,
+    "available": 0
+   },
+   "2020-03": {
+    "needed": 35,
+    "available": 0
+   },
+   "2020-04": {
+    "needed": 16,
+    "available": 0
+   },
+   "2020-05": {
+    "needed": 17,
+    "available": 0
+   },
+   "2020-06": {
+    "needed": 34,
+    "available": 0
+   },
+   "2020-07": {
+    "needed": 23,
+    "available": 0
+   },
+   "2020-08": {
+    "needed": 33,
+    "available": 0
+   },
+   "2020-09": {
+    "needed": 27,
+    "available": 0
+   },
+   "2020-10": {
+    "needed": 18,
+    "available": 0
+   },
+   "2020-11": {
+    "needed": 23,
+    "available": 0
+   },
+   "2020-12": {
+    "needed": 26,
+    "available": 0
+   },
+   "2021-01": {
+    "needed": 44,
+    "available": 0
+   },
+   "2021-02": {
+    "needed": 27,
+    "available": 0
+   },
+   "2021-03": {
+    "needed": 47,
+    "available": 0
+   },
+   "2021-04": {
+    "needed": 38,
+    "available": 0
+   },
+   "2021-05": {
+    "needed": 44,
+    "available": 0
+   },
+   "2021-06": {
+    "needed": 19,
+    "available": 0
+   },
+   "2021-07": {
+    "needed": 15,
+    "available": 0
+   },
+   "2021-08": {
+    "needed": 34,
+    "available": 0
+   },
+   "2021-09": {
+    "needed": 22,
+    "available": 0
+   },
+   "2021-10": {
+    "needed": 32,
+    "available": 1
+   },
+   "2021-11": {
+    "needed": 37,
+    "available": 0
+   },
+   "2021-12": {
+    "needed": 23,
+    "available": 0
+   },
+   "2022-01": {
+    "needed": 33,
+    "available": 0
+   },
+   "2022-02": {
+    "needed": 22,
+    "available": 0
+   },
+   "2022-03": {
+    "needed": 42,
+    "available": 0
+   },
+   "2022-04": {
+    "needed": 30,
+    "available": 0
+   },
+   "2022-05": {
+    "needed": 28,
+    "available": 0
+   },
+   "2022-06": {
+    "needed": 37,
+    "available": 0
+   },
+   "2022-07": {
+    "needed": 12,
+    "available": 0
+   },
+   "2022-08": {
+    "needed": 39,
+    "available": 0
+   },
+   "2022-09": {
+    "needed": 35,
+    "available": 0
+   },
+   "2022-10": {
+    "needed": 39,
+    "available": 0
+   },
+   "2022-11": {
+    "needed": 47,
+    "available": 1
+   },
+   "2022-12": {
+    "needed": 22,
+    "available": 0
+   },
+   "2023-01": {
+    "needed": 54,
+    "available": 0
+   },
+   "2023-02": {
+    "needed": 34,
+    "available": 0
+   },
+   "2023-03": {
+    "needed": 39,
+    "available": 0
+   },
+   "2023-04": {
+    "needed": 16,
+    "available": 0
+   },
+   "2023-05": {
+    "needed": 30,
+    "available": 0
+   },
+   "2023-06": {
+    "needed": 19,
+    "available": 0
+   },
+   "2023-07": {
+    "needed": 23,
+    "available": 0
+   },
+   "2023-08": {
+    "needed": 38,
+    "available": 0
+   },
+   "2023-09": {
+    "needed": 34,
+    "available": 0
+   },
+   "2023-10": {
+    "needed": 33,
+    "available": 0
+   },
+   "2023-11": {
+    "needed": 32,
+    "available": 0
+   },
+   "2023-12": {
+    "needed": 45,
+    "available": 0
+   },
+   "2024-01": {
+    "needed": 35,
+    "available": 0
+   },
+   "2024-02": {
+    "needed": 35,
+    "available": 0
+   },
+   "2024-03": {
+    "needed": 42,
+    "available": 1
+   },
+   "2024-04": {
+    "needed": 32,
+    "available": 0
+   },
+   "2024-05": {
+    "needed": 39,
+    "available": 0
+   },
+   "2024-06": {
+    "needed": 21,
+    "available": 0
+   },
+   "2024-07": {
+    "needed": 20,
+    "available": 0
+   },
+   "2024-08": {
+    "needed": 22,
+    "available": 1
+   },
+   "2024-09": {
+    "needed": 22,
+    "available": 0
+   },
+   "2024-10": {
+    "needed": 35,
+    "available": 0
+   },
+   "2024-11": {
+    "needed": 26,
+    "available": 0
+   },
+   "2024-12": {
+    "needed": 40,
+    "available": 1
+   },
+   "2025-01": {
+    "needed": 46,
+    "available": 1
+   },
+   "2025-02": {
+    "needed": 33,
+    "available": 0
+   },
+   "2025-03": {
+    "needed": 43,
+    "available": 0
+   },
+   "2025-04": {
+    "needed": 56,
+    "available": 0
+   },
+   "2025-05": {
+    "needed": 29,
+    "available": 0
+   },
+   "2025-06": {
+    "needed": 23,
+    "available": 0
+   },
+   "2025-07": {
+    "needed": 46,
+    "available": 0
+   },
+   "2025-08": {
+    "needed": 23,
+    "available": 0
+   },
+   "2025-09": {
+    "needed": 53,
+    "available": 0
+   },
+   "2025-10": {
+    "needed": 60,
+    "available": 0
+   },
+   "2025-11": {
+    "needed": 59,
+    "available": 1
+   }
+  },
+  "sampled_at_houses_holding_a_foundation_event": 2,
+  "sampled_at_houses_with_any_foundation_episode": 4,
+  "sampled_by_year": {
+   "2018": 5,
+   "2019": 4,
+   "2021": 1,
+   "2022": 1,
+   "2024": 3,
+   "2025": 2
+  }
+ },
+ "private_outputs_sha256": {
+  "demolition_censoring.parquet": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91",
+  "foundation_events.parquet": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+  "foundation_first_episodes.parquet": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+  "remodel_control_events.parquet": "44907fc71448c78bca2cfbce7cbe4c5729ce39de2a084df501e4216e60fa716c",
+  "remodel_first_episodes.parquet": "abd1cfd7b8640ae3d0ed0394ba8498a620afcf346bc04e09d95161e759de6377"
+ }
+}

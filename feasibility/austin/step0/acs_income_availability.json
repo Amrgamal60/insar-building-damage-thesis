@@ -1,0 +1,117 @@
+{
+  "generated_utc": "2026-10-30T21:05:16Z",
+  "table": "B19013_001 median household income in the past 12 months, 2015 inflation-adjusted dollars",
+  "sequence": "0059",
+  "start_position_1_based": 177,
+  "source": "ACS 2015 5-year summary file Texas_Tracts_Block_Groups_Only.zip plus TIGER 2015 tl_2015_48_bg.zip",
+  "api": "unavailable without a key; no key used",
+  "block_groups": {
+    "total": 580,
+    "valid_median": 568,
+    "coverage_percent": 97.93103448275862,
+    "estimate_value_counts": {
+      "blank": 8,
+      "dot": 4,
+      "valid": 568
+    },
+    "annotations": {
+      "blank": {
+        "count": 8,
+        "meaning": "Missing value (empty cell): estimate unavailable because of geographic filtering, coefficient-of-variation filtering, or Disclosure Review Board removal (tech doc section 4.2)."
+      },
+      "dot": {
+        "count": 4,
+        "meaning": "Dot '.': no sample observations or too few sample observations. In a margin-of-error file, also used when the margin is unavailable because the median was replaced by a jam value (tech doc section 4.2)."
+      }
+    },
+    "moe_value_counts": {
+      "blank": 8,
+      "dot": 4,
+      "usable": 568
+    },
+    "relative_moe": {
+      "n": 568,
+      "median": 0.26371400413189383,
+      "p75": 0.359959173337186,
+      "p90": 0.5349556164603891
+    },
+    "relative_moe_above_0_5": 67,
+    "valid_median_of_estimates": 61433.5
+  },
+  "tracts": {
+    "total": 218,
+    "valid_median": 215,
+    "coverage_percent": 98.62385321100918,
+    "estimate_value_counts": {
+      "dot": 3,
+      "valid": 215
+    },
+    "annotations": {
+      "dot": {
+        "count": 3,
+        "meaning": "Dot '.': no sample observations or too few sample observations. In a margin-of-error file, also used when the margin is unavailable because the median was replaced by a jam value (tech doc section 4.2)."
+      }
+    },
+    "moe_value_counts": {
+      "dot": 3,
+      "usable": 215
+    },
+    "relative_moe": {
+      "n": 215,
+      "median": 0.1527080344332855,
+      "p75": 0.19872783037561356,
+      "p90": 0.2651676735894717
+    },
+    "relative_moe_above_0_5": 1,
+    "valid_median_of_estimates": 60125.0
+  },
+  "parcels": {
+    "parquet_rows": 146857,
+    "imprv_type_cd_counts": {
+      "01": 144458,
+      "16": 2399
+    },
+    "detached_houses": 144458,
+    "empty_geometries": 0,
+    "invalid_geometries": 0,
+    "parcel_crs_epsg": 32614,
+    "parcel_crs": "EPSG:32614",
+    "geometry_encoding": "WKB",
+    "geometry_extension": "geoarrow.wkb",
+    "tiger_crs": "EPSG:4269",
+    "tiger_travis_block_groups": 580,
+    "tiger_acs_geoid_overlap": 580,
+    "tiger_only_block_groups": 0,
+    "acs_only_block_groups": 0,
+    "assigned": 144428,
+    "boundary_assigned": 0,
+    "parcel_counts": {
+      "valid_bg": 143613,
+      "tract_fallback": 806,
+      "neither": 39
+    },
+    "neither_parts": {
+      "unassigned": 30,
+      "bg_jam": 0,
+      "bg_missing_tract_not_valid": 9,
+      "bg_other": 0,
+      "boundary_ambiguous": 0,
+      "within_multiple_block_groups": 0
+    },
+    "relative_moe_above_0_5": {
+      "valid_bg": 10969,
+      "tract_fallback": 0,
+      "neither": 0,
+      "parcels": 10969
+    }
+  },
+  "read_checks": {
+    "estimate_rows_wrong_sequence": 0,
+    "moe_rows_wrong_sequence": 0,
+    "estimate_short_rows_while_scanning": 0,
+    "moe_short_rows_while_scanning": 0,
+    "geoid_constructed_mismatches": 0,
+    "unexpected_name": 0
+  },
+  "geometry_metadata_crs_epsg": 32614
+}

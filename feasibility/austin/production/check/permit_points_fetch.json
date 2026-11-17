@@ -1,0 +1,50 @@
+{
+ "dataset": "3syk-w9eu",
+ "rows_updated_at": 1794329601,
+ "where": "permittype='BP' AND work_class in('New','Demolition','Addition','Addition and Remodel','Shell','Relocation')",
+ "columns": [
+  "permit_number",
+  "latitude",
+  "longitude"
+ ],
+ "fetched": "2026-11-10 22:48:40 EET",
+ "pages": [
+  {
+   "offset": 0,
+   "rows": 50000,
+   "sha256": "1bbeb528ff00fcf5a1c93b7835a5069edd8a16eb2f605867ef6099ded2888dda"
+  },
+  {
+   "offset": 50000,
+   "rows": 50000,
+   "sha256": "ce56fdaead4cb7e1468f661e2510d82d9e0e21cbbf7ea5550000fc4ff1dcbbd5"
+  },
+  {
+   "offset": 100000,
+   "rows": 50000,
+   "sha256": "41cedd6791b066fc7895c516e76e81d8e61d663a8cae42b728adcc12227da415"
+  },
+  {
+   "offset": 150000,
+   "rows": 50000,
+   "sha256": "26cf745a72dcc2f06f0a5511ff6a9c03063842cab819a775605b3dc8caf48713"
+  },
+  {
+   "offset": 200000,
+   "rows": 50000,
+   "sha256": "30acfad6f3d6b0d30c1cc92c9f4c04bf5a9cf574854bb2e17051e811bf181721"
+  },
+  {
+   "offset": 250000,
+   "rows": 20688,
+   "sha256": "6f845491643270c74d340b976b4a680e5b849f4c8be07f4676e80f0f8cc1f0fe"
+  }
+ ],
+ "rows_fetched": 270688,
+ "snapshot_mask_permits": 270654,
+ "joined": 270654,
+ "fetched_not_in_snapshot": 34,
+ "snapshot_permits_not_fetched": 0,
+ "with_coordinates": 236035,
+ "permit_points_sha256": "c59590bfaf48141f150568fa015eea8ed89fc7e8f4affbd5e67aa891f5611eea"
+}

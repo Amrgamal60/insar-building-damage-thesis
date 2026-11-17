@@ -1,0 +1,521 @@
+{
+ "median_inactive": {
+  "valid_pixels": 1092,
+  "median": 8.788586694556113
+ },
+ "median_active": {
+  "valid_pixels": 100,
+  "median": 15.135705773981776
+ },
+ "median_subset": 8.02498928109928,
+ "median_city": 8.395621460992931,
+ "perimeters": [
+  {
+   "perimeter_id": 1,
+   "status": "INACTIVE",
+   "active_years": "1958-1967",
+   "valid_footprint": 13,
+   "footprint_median": 9.22016563133014,
+   "valid_ring": 932,
+   "ring_median": 9.034759785994439,
+   "contrast": 0.18540584533570126
+  },
+  {
+   "perimeter_id": 2,
+   "status": "INACTIVE",
+   "active_years": "1967-1970",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 574,
+   "ring_median": 8.642427350691676,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 3,
+   "status": "INACTIVE",
+   "active_years": "1973-1979",
+   "valid_footprint": 2,
+   "footprint_median": 8.522290606971247,
+   "valid_ring": 671,
+   "ring_median": 8.905362916805366,
+   "contrast": -0.38307230983411955
+  },
+  {
+   "perimeter_id": 4,
+   "status": "INACTIVE",
+   "active_years": "1954-1961",
+   "valid_footprint": 31,
+   "footprint_median": 8.14427262438056,
+   "valid_ring": 1157,
+   "ring_median": 8.549191423077813,
+   "contrast": -0.40491879869725267
+  },
+  {
+   "perimeter_id": 5,
+   "status": "INACTIVE",
+   "active_years": "1968-1982",
+   "valid_footprint": 138,
+   "footprint_median": 8.904219624950159,
+   "valid_ring": 363,
+   "ring_median": 13.485914287862618,
+   "contrast": -4.58169466291246
+  },
+  {
+   "perimeter_id": 6,
+   "status": "INACTIVE",
+   "active_years": "????-1970",
+   "valid_footprint": 59,
+   "footprint_median": 9.084448200369318,
+   "valid_ring": 919,
+   "ring_median": 8.784557794577308,
+   "contrast": 0.2998904057920093
+  },
+  {
+   "perimeter_id": 7,
+   "status": "INACTIVE",
+   "active_years": "1967-1973",
+   "valid_footprint": 22,
+   "footprint_median": 9.236915956816322,
+   "valid_ring": 506,
+   "ring_median": 8.93230836510967,
+   "contrast": 0.3046075917066524
+  },
+  {
+   "perimeter_id": 9,
+   "status": "INACTIVE",
+   "active_years": "1951-1969",
+   "valid_footprint": 51,
+   "footprint_median": 8.754173813413438,
+   "valid_ring": 1214,
+   "ring_median": 8.634145999258674,
+   "contrast": 0.12002781415476349
+  },
+  {
+   "perimeter_id": 10,
+   "status": "INACTIVE",
+   "active_years": "early 1960's",
+   "valid_footprint": 8,
+   "footprint_median": 8.685665765295418,
+   "valid_ring": 802,
+   "ring_median": 8.773425616199958,
+   "contrast": -0.08775985090453986
+  },
+  {
+   "perimeter_id": 11,
+   "status": "INACTIVE",
+   "active_years": "1963-1977",
+   "valid_footprint": 5,
+   "footprint_median": 8.215108165580611,
+   "valid_ring": 877,
+   "ring_median": 8.646782855990518,
+   "contrast": -0.43167469040990625
+  },
+  {
+   "perimeter_id": 12,
+   "status": "INACTIVE",
+   "active_years": "1963-1977",
+   "valid_footprint": 16,
+   "footprint_median": 8.294511034755141,
+   "valid_ring": 1010,
+   "ring_median": 8.646885073619927,
+   "contrast": -0.35237403886478624
+  },
+  {
+   "perimeter_id": 13,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 2,
+   "footprint_median": 8.563329167501657,
+   "valid_ring": 621,
+   "ring_median": 9.05051848834129,
+   "contrast": -0.48718932083963296
+  },
+  {
+   "perimeter_id": 14,
+   "status": "INACTIVE",
+   "active_years": "1958-1967",
+   "valid_footprint": 90,
+   "footprint_median": 8.811430548551817,
+   "valid_ring": 1587,
+   "ring_median": 9.104234006769355,
+   "contrast": -0.29280345821753784
+  },
+  {
+   "perimeter_id": 15,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 31,
+   "footprint_median": 9.267433430016343,
+   "valid_ring": 593,
+   "ring_median": 9.285107889273185,
+   "contrast": -0.017674459256841857
+  },
+  {
+   "perimeter_id": 16,
+   "status": "ACTIVE",
+   "active_years": "1977-present",
+   "valid_footprint": 58,
+   "footprint_median": 15.210582953424613,
+   "valid_ring": 656,
+   "ring_median": 15.04621912514364,
+   "contrast": 0.1643638282809725
+  },
+  {
+   "perimeter_id": 33,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 322,
+   "ring_median": 9.236100584478926,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 34,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 43,
+   "footprint_median": 9.042511701923909,
+   "valid_ring": 98,
+   "ring_median": 8.614100830857161,
+   "contrast": 0.42841087106674713
+  },
+  {
+   "perimeter_id": 35,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 65,
+   "footprint_median": 8.409843519386488,
+   "valid_ring": 297,
+   "ring_median": 9.493255455642634,
+   "contrast": -1.0834119362561463
+  },
+  {
+   "perimeter_id": 36,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 41,
+   "footprint_median": 8.632048056715911,
+   "valid_ring": 374,
+   "ring_median": 9.488510994785058,
+   "contrast": -0.8564629380691464
+  },
+  {
+   "perimeter_id": 37,
+   "status": "INACTIVE",
+   "active_years": "1944-1955",
+   "valid_footprint": 77,
+   "footprint_median": 8.090248175094537,
+   "valid_ring": 1422,
+   "ring_median": 8.578697298976325,
+   "contrast": -0.48844912388178763
+  },
+  {
+   "perimeter_id": 38,
+   "status": "INACTIVE",
+   "active_years": "1930-1940",
+   "valid_footprint": 14,
+   "footprint_median": 9.009315883822662,
+   "valid_ring": 587,
+   "ring_median": 8.367406896466136,
+   "contrast": 0.6419089873565262
+  },
+  {
+   "perimeter_id": 39,
+   "status": "INACTIVE",
+   "active_years": "1963-1987",
+   "valid_footprint": 1,
+   "footprint_median": 9.102989316605365,
+   "valid_ring": 434,
+   "ring_median": 8.622978755651994,
+   "contrast": 0.4800105609533709
+  },
+  {
+   "perimeter_id": 40,
+   "status": "INACTIVE",
+   "active_years": "1963-1984",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 442,
+   "ring_median": 8.504415688283398,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 41,
+   "status": "INACTIVE",
+   "active_years": "1963-1977",
+   "valid_footprint": 16,
+   "footprint_median": 8.483036548275471,
+   "valid_ring": 981,
+   "ring_median": 8.644575169055551,
+   "contrast": -0.16153862078007997
+  },
+  {
+   "perimeter_id": 42,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 32,
+   "footprint_median": 8.911556776647629,
+   "valid_ring": 337,
+   "ring_median": 9.277015467473456,
+   "contrast": -0.36545869082582705
+  },
+  {
+   "perimeter_id": 43,
+   "status": "INACTIVE",
+   "active_years": "1943-1980",
+   "valid_footprint": 11,
+   "footprint_median": 9.423288532511073,
+   "valid_ring": 180,
+   "ring_median": 9.031228516080699,
+   "contrast": 0.39206001643037425
+  },
+  {
+   "perimeter_id": 45,
+   "status": "INACTIVE",
+   "active_years": "????",
+   "valid_footprint": 6,
+   "footprint_median": 8.371492258009352,
+   "valid_ring": 828,
+   "ring_median": 8.55606657622065,
+   "contrast": -0.18457431821129688
+  },
+  {
+   "perimeter_id": 46,
+   "status": "INACTIVE",
+   "active_years": "????",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 456,
+   "ring_median": 8.642571689045461,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 17,
+   "status": "ACTIVE",
+   "active_years": "1981-present",
+   "valid_footprint": 42,
+   "footprint_median": 14.84133021524034,
+   "valid_ring": 874,
+   "ring_median": 17.88781099468347,
+   "contrast": -3.0464807794431294
+  },
+  {
+   "perimeter_id": 18,
+   "status": "ACTIVE",
+   "active_years": "2003-present",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 0,
+   "ring_median": null,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 19,
+   "status": "ACTIVE",
+   "active_years": "1961-present",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 129,
+   "ring_median": 8.957850994065744,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 21,
+   "status": "INACTIVE",
+   "active_years": "1952-1957",
+   "valid_footprint": 47,
+   "footprint_median": 8.408752035945833,
+   "valid_ring": 893,
+   "ring_median": 8.858889120723141,
+   "contrast": -0.4501370847773085
+  },
+  {
+   "perimeter_id": 22,
+   "status": "INACTIVE",
+   "active_years": "1971-1972",
+   "valid_footprint": 9,
+   "footprint_median": 14.608595642714656,
+   "valid_ring": 414,
+   "ring_median": 15.342157412775007,
+   "contrast": -0.7335617700603514
+  },
+  {
+   "perimeter_id": 24,
+   "status": "INACTIVE",
+   "active_years": "1948-1967",
+   "valid_footprint": 22,
+   "footprint_median": 7.777450601306741,
+   "valid_ring": 1039,
+   "ring_median": 8.486833765971541,
+   "contrast": -0.7093831646647999
+  },
+  {
+   "perimeter_id": 25,
+   "status": "INACTIVE",
+   "active_years": "????-1972",
+   "valid_footprint": 0,
+   "footprint_median": null,
+   "valid_ring": 189,
+   "ring_median": 0.23173389003520445,
+   "contrast": null
+  },
+  {
+   "perimeter_id": 26,
+   "status": "INACTIVE",
+   "active_years": "before 1983",
+   "valid_footprint": 96,
+   "footprint_median": 9.045358872681454,
+   "valid_ring": 1246,
+   "ring_median": 8.766870158472784,
+   "contrast": 0.2784887142086703
+  },
+  {
+   "perimeter_id": 27,
+   "status": "INACTIVE",
+   "active_years": "1955-1957",
+   "valid_footprint": 107,
+   "footprint_median": 9.192693014424098,
+   "valid_ring": 883,
+   "ring_median": 8.910108693378415,
+   "contrast": 0.28258432104568243
+  },
+  {
+   "perimeter_id": 29,
+   "status": "INACTIVE",
+   "active_years": "????-1974",
+   "valid_footprint": 21,
+   "footprint_median": 8.708159754977702,
+   "valid_ring": 936,
+   "ring_median": 8.842940899587639,
+   "contrast": -0.13478114460993673
+  },
+  {
+   "perimeter_id": 31,
+   "status": "INACTIVE",
+   "active_years": "1973-1979",
+   "valid_footprint": 16,
+   "footprint_median": 2.3691386817396207,
+   "valid_ring": 248,
+   "ring_median": 7.402433824703438,
+   "contrast": -5.0332951429638175
+  }
+ ],
+ "local_contrast_inactive": {
+  "perimeters": 30,
+  "median": -0.23868888821441736,
+  "below_zero": 20,
+  "pixel_weighted_mean": -0.7739272556044259
+ },
+ "local_contrast_active": [
+  {
+   "perimeter_id": 16,
+   "contrast": 0.1643638282809725,
+   "valid_footprint": 58
+  },
+  {
+   "perimeter_id": 17,
+   "contrast": -3.0464807794431294,
+   "valid_footprint": 42
+  },
+  {
+   "perimeter_id": 18,
+   "contrast": null,
+   "valid_footprint": 0
+  },
+  {
+   "perimeter_id": 19,
+   "contrast": null,
+   "valid_footprint": 0
+  }
+ ],
+ "pooled_inactive_pixel_contrast": {
+  "pixels": 1092,
+  "median": -0.19173784222474488,
+  "share_below_zero": 0.5943223443223443
+ },
+ "city_bands": {
+  "x": {
+   "600-605 km": {
+    "pixels": 13324,
+    "median": 6.876915119825786
+   },
+   "605-610 km": {
+    "pixels": 61309,
+    "median": 7.441663849965826
+   },
+   "610-615 km": {
+    "pixels": 101499,
+    "median": 7.851677918727771
+   },
+   "615-620 km": {
+    "pixels": 160769,
+    "median": 8.421690416088493
+   },
+   "620-625 km": {
+    "pixels": 140656,
+    "median": 8.7198617616742
+   },
+   "625-630 km": {
+    "pixels": 96099,
+    "median": 8.882838460846536
+   },
+   "630-635 km": {
+    "pixels": 13164,
+    "median": 9.650880105844724
+   }
+  },
+  "y": {
+   "3330-3335 km": {
+    "pixels": 8356,
+    "median": 7.444497483443641
+   },
+   "3335-3340 km": {
+    "pixels": 59240,
+    "median": 7.5976373660670316
+   },
+   "3340-3345 km": {
+    "pixels": 102498,
+    "median": 7.989393145335113
+   },
+   "3345-3350 km": {
+    "pixels": 86542,
+    "median": 8.291291819830121
+   },
+   "3350-3355 km": {
+    "pixels": 64996,
+    "median": 8.737260677518304
+   },
+   "3355-3360 km": {
+    "pixels": 80710,
+    "median": 8.68896459254547
+   },
+   "3360-3365 km": {
+    "pixels": 90621,
+    "median": 8.579672268279005
+   },
+   "3365-3370 km": {
+    "pixels": 69374,
+    "median": 8.533076204628024
+   },
+   "3370-3375 km": {
+    "pixels": 21640,
+    "median": 8.311572187606075
+   },
+   "3375-3380 km": {
+    "pixels": 3027,
+    "median": 8.517513967399488
+   }
+  }
+ },
+ "plane": {
+  "intercept": 8.343337739624634,
+  "per_km_east": 0.08150771212142768,
+  "per_km_north": 0.0033635686184585695
+ },
+ "residual_sign_check": {
+  "all_landfills": 0.09518524934916783,
+  "inactive": 0.022245441824430223,
+  "subset": 0.08860122641682144
+ }
+}

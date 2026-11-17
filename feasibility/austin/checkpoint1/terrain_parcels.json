@@ -1,0 +1,337 @@
+{
+ "tiles": [
+  {
+   "file": "USGS_one_meter_x60y334_TX_Central_B1_2017.tif",
+   "bytes": 415805677,
+   "sha256": "90becc3748761533a7b309779bcf707f3d9e44d0cae52e4a427f71e074c9cc0d"
+  },
+  {
+   "file": "USGS_one_meter_x60y335_TX_Central_B1_2017.tif",
+   "bytes": 426768227,
+   "sha256": "6b887dc5dfd92dcbf46491a5b15046bcc5e8e11a6550829b6be86e1bef6cb5f8"
+  },
+  {
+   "file": "USGS_one_meter_x60y336_TX_Central_B1_2017.tif",
+   "bytes": 462492932,
+   "sha256": "eca3973eaeb20607ae8c8a8bcd9670c067a9c4c8a9db206a514204d7dc01fda4"
+  },
+  {
+   "file": "USGS_one_meter_x60y337_TX_Central_B1_2017.tif",
+   "bytes": 361483799,
+   "sha256": "073cb2607f32311e1c2236f82f437e1bde7d729f38a5d472b661c7a9ccd1eaf7"
+  },
+  {
+   "file": "USGS_one_meter_x61y334_TX_Central_B1_2017.tif",
+   "bytes": 419027646,
+   "sha256": "a34df894b07d358d5d4bc7570b61e9cadb14c5be2fac03e062280907401e8f5f"
+  },
+  {
+   "file": "USGS_one_meter_x61y335_TX_Central_B1_2017.tif",
+   "bytes": 429850324,
+   "sha256": "4f2f658c069f02a7b49510c4b133043f2ed4840f6019b8836cfabd597ccdfa11"
+  },
+  {
+   "file": "USGS_one_meter_x61y336_TX_Central_B1_2017.tif",
+   "bytes": 459108625,
+   "sha256": "25999de2c0e2df757d46344bd7e0674cf28f79f5469859c568f2af8a35f2868b"
+  },
+  {
+   "file": "USGS_one_meter_x61y337_TX_Central_B1_2017.tif",
+   "bytes": 445026153,
+   "sha256": "6adff036291c3420a40cc6f9b57dd12958ebe0c1441a3b84f5c58c442a40dc54"
+  },
+  {
+   "file": "USGS_one_meter_x61y338_TX_Central_B1_2017.tif",
+   "bytes": 385328985,
+   "sha256": "13bd7be583ed21bfd77d55e032a6485ffab31499d29646abd51e35e507a74439"
+  },
+  {
+   "file": "USGS_one_meter_x62y334_TX_Central_B1_2017.tif",
+   "bytes": 417285915,
+   "sha256": "07b7fed72922afb200ff0e00e402698fb596052cb576ccac7cefd4f9c19667b2"
+  },
+  {
+   "file": "USGS_one_meter_x62y335_TX_Central_B1_2017.tif",
+   "bytes": 392323436,
+   "sha256": "9e3c5a59b4c93d2508ae0b0f8e747de64c2d8611d20a4a60688f10d544cff12d"
+  },
+  {
+   "file": "USGS_one_meter_x62y336_TX_Central_B1_2017.tif",
+   "bytes": 423908300,
+   "sha256": "ab6317ad12245ad5c628c850211a44b6698db719fed22590fbbce93fc6f3ee75"
+  },
+  {
+   "file": "USGS_one_meter_x62y337_TX_Central_B1_2017.tif",
+   "bytes": 417021910,
+   "sha256": "36a7722cd0adb5cf20643186bee40ff8b3c44dfdbfa2744194eaa28751c7d2da"
+  },
+  {
+   "file": "USGS_one_meter_x62y338_TX_Central_B1_2017.tif",
+   "bytes": 400577096,
+   "sha256": "e468ea6fe785de26ba71cbcaef9ec14f48eb0784cc318757b97920c86d6a891c"
+  },
+  {
+   "file": "USGS_one_meter_x63y334_TX_Central_B1_2017.tif",
+   "bytes": 406639236,
+   "sha256": "1ebe3cc26f2be7833acb4a1fb55cbefebf658df761a54179c3a57a070551b1bc"
+  },
+  {
+   "file": "USGS_one_meter_x63y335_TX_Central_B1_2017.tif",
+   "bytes": 382864146,
+   "sha256": "7ba4f61a2417d6cd40ef69ef1b05b92541a405e89e833d5c3bfa8ed7c37c9eb6"
+  },
+  {
+   "file": "USGS_one_meter_x63y336_TX_Central_B1_2017.tif",
+   "bytes": 412599517,
+   "sha256": "2a8acfe42ffb2cc28baa3ab59c88e3cb02935007ec71e6234aaa6a328e535b59"
+  },
+  {
+   "file": "USGS_one_meter_x63y337_TX_Central_B1_2017.tif",
+   "bytes": 407644366,
+   "sha256": "3edf70c8cc83f949cd596f5e88701e832bc5f60bae75eba1e5e478426df8bea9"
+  },
+  {
+   "file": "USGS_one_meter_x63y338_TX_Central_B1_2017.tif",
+   "bytes": 405950917,
+   "sha256": "d45a41fd65f058d8ceecc53beaf9fe5b681b2b1334795d09acbf44103d8eced4"
+  }
+ ],
+ "per_tile": [
+  {
+   "tile": "USGS_one_meter_x60y334_TX_Central_B1_2017.tif",
+   "nominal": [
+    600000.0,
+    3330000.0,
+    610000.0,
+    3340000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 2076
+  },
+  {
+   "tile": "USGS_one_meter_x60y335_TX_Central_B1_2017.tif",
+   "nominal": [
+    599999.999999997,
+    3340000.0,
+    609999.999999997,
+    3350000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 11153
+  },
+  {
+   "tile": "USGS_one_meter_x60y336_TX_Central_B1_2017.tif",
+   "nominal": [
+    600000.0,
+    3350000.0,
+    610000.0,
+    3360000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 252
+  },
+  {
+   "tile": "USGS_one_meter_x60y337_TX_Central_B1_2017.tif",
+   "nominal": [
+    599999.999999997,
+    3360000.0,
+    609999.999999997,
+    3370000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 515
+  },
+  {
+   "tile": "USGS_one_meter_x61y334_TX_Central_B1_2017.tif",
+   "nominal": [
+    610000.0,
+    3330000.0,
+    620000.0,
+    3340000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 15021
+  },
+  {
+   "tile": "USGS_one_meter_x61y335_TX_Central_B1_2017.tif",
+   "nominal": [
+    609999.999999997,
+    3340000.0,
+    619999.999999997,
+    3350000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 26205
+  },
+  {
+   "tile": "USGS_one_meter_x61y336_TX_Central_B1_2017.tif",
+   "nominal": [
+    610000.0,
+    3350000.0,
+    620000.0,
+    3360000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 10854
+  },
+  {
+   "tile": "USGS_one_meter_x61y337_TX_Central_B1_2017.tif",
+   "nominal": [
+    610000.0,
+    3360000.0,
+    620000.0,
+    3370000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 13120
+  },
+  {
+   "tile": "USGS_one_meter_x61y338_TX_Central_B1_2017.tif",
+   "nominal": [
+    610000.0,
+    3370000.0,
+    620000.0,
+    3380000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 0
+  },
+  {
+   "tile": "USGS_one_meter_x62y334_TX_Central_B1_2017.tif",
+   "nominal": [
+    619999.999999997,
+    3330000.0,
+    629999.999999997,
+    3340000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 3053
+  },
+  {
+   "tile": "USGS_one_meter_x62y335_TX_Central_B1_2017.tif",
+   "nominal": [
+    619999.999999997,
+    3340000.0,
+    629999.999999997,
+    3350000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 13274
+  },
+  {
+   "tile": "USGS_one_meter_x62y336_TX_Central_B1_2017.tif",
+   "nominal": [
+    620000.0,
+    3350000.0,
+    630000.0,
+    3360000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 28696
+  },
+  {
+   "tile": "USGS_one_meter_x62y337_TX_Central_B1_2017.tif",
+   "nominal": [
+    620000.0,
+    3360000.0,
+    630000.0,
+    3370000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 19647
+  },
+  {
+   "tile": "USGS_one_meter_x62y338_TX_Central_B1_2017.tif",
+   "nominal": [
+    619999.999999997,
+    3370000.0,
+    629999.999999997,
+    3380000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 0
+  },
+  {
+   "tile": "USGS_one_meter_x63y334_TX_Central_B1_2017.tif",
+   "nominal": [
+    629999.999999997,
+    3330000.0,
+    639999.999999997,
+    3340000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 1618
+  },
+  {
+   "tile": "USGS_one_meter_x63y335_TX_Central_B1_2017.tif",
+   "nominal": [
+    629999.999999997,
+    3340000.0,
+    639999.999999997,
+    3350000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 204
+  },
+  {
+   "tile": "USGS_one_meter_x63y336_TX_Central_B1_2017.tif",
+   "nominal": [
+    630000.0,
+    3350000.0,
+    640000.0,
+    3360000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 4100
+  },
+  {
+   "tile": "USGS_one_meter_x63y337_TX_Central_B1_2017.tif",
+   "nominal": [
+    630000.0,
+    3360000.0,
+    640000.0,
+    3370000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 819
+  },
+  {
+   "tile": "USGS_one_meter_x63y338_TX_Central_B1_2017.tif",
+   "nominal": [
+    630000.0,
+    3370000.0,
+    640000.0,
+    3380000.0
+   ],
+   "valid_share": 1.0,
+   "parcels_touching": 0
+  }
+ ],
+ "parcels": 149316,
+ "parcels_with_no_pixel_centre_inside": 0,
+ "elevation_missing": 0,
+ "slope_missing": 0,
+ "parcels_with_some_invalid_pixels": 0,
+ "pixel_area_over_polygon_area_median": 0.9999982717304172,
+ "elevation_m": {
+  "count": 149316.0,
+  "mean": 212.721,
+  "std": 40.336,
+  "min": 127.549,
+  "25%": 182.196,
+  "50%": 210.196,
+  "75%": 237.336,
+  "max": 335.336
+ },
+ "slope_deg": {
+  "count": 149316.0,
+  "mean": 3.68,
+  "std": 2.747,
+  "min": 0.453,
+  "25%": 2.069,
+  "50%": 2.848,
+  "75%": 4.166,
+  "max": 37.077
+ },
+ "out_sha256": "f7370398224fc0c5dfee489148d868139bc56d3f4be1e184f3837d56a85740de"
+}

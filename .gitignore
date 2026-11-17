@@ -1,0 +1,68 @@
+# Allowlist: everything is ignored unless it is re-included below.
+# Raw data, downloads, rasters, arrays and anything that may hold personal details stay out of the repository.
+*
+!*/
+
+# Code, documents and hash lists, anywhere
+!.gitignore
+!*.py
+!*.sh
+!*.md
+!*.yml
+!*.yaml
+!*.cfg
+!*.toml
+!*.sha256
+!SHA256SUMS*
+!BASELINE_SHA256SUMS
+!requirements.txt
+
+# Austin study: the whole record. Parcel-level and raw data are kept outside this folder (Alex_private).
+!/feasibility/austin/**
+
+# NYC replication: frozen plan, reports, event tables, run logs
+!/feasibility/nyc/freeze/**
+!/feasibility/nyc/out/*.csv
+!/feasibility/nyc/out/models/*.log
+!/feasibility/nyc/out/models/CODE_REAL_RUN.sha256
+
+# Alexandria discovery study: inventory, pilot tables and report
+!/data/inventory/*.csv
+!/data/inventory/*.png
+!/data/pilot/*.csv
+!/data/pilot/*.png
+!/data/report/*
+
+# Machine record of the old PC
+!/handoff/env/*.txt
+
+# ---- Never included, whatever is listed above ----
+__pycache__/
+*.pyc
+.venv*/
+/.aws/
+/.codex/
+/.agents/
+/.claude/
+/tools/LiCSBAS/
+/data/raw/
+/data/interim/
+/data/licsbas/
+/handoff/transcripts/
+/handoff/scratchpad/
+/handoff/uploads/
+/feasibility/*/downloads/
+/feasibility/*/raw/
+/feasibility/hongkong/mintpy/
+/feasibility/hongkong/hyp3/
+/feasibility/miami/audit/
+/feasibility/miami/full/
+/feasibility/miami/work/
+/feasibility/miami/review_host/
+/feasibility/miami/review_results/
+/feasibility/miami/metadata/
+# Alexandria inventory tables that carry people's names or article text (rebuilt from the public OSF source by scripts/01-03)
+/data/inventory/daftar_ahwal_alexandria_original.csv
+/data/inventory/excluded_non_alexandria_mentions.csv
+/data/inventory/inventory_geocoded.csv
+/data/inventory/inventory_records.csv

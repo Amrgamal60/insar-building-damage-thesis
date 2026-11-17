@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "actual_gpu": false,
+  "shared_memory_cpu_refits_identical": true,
+  "max_statistic_difference": {
+    "registered": 0.0,
+    "conditional": 0.0
+  },
+  "chunk_equality_checks": {
+    "registered": {
+      "max_abs_difference": 0.0,
+      "same_k": true,
+      "same_mask": true
+    },
+    "conditional": {
+      "max_abs_difference": 0.0,
+      "same_k": true,
+      "same_mask": true
+    }
+  }
+}

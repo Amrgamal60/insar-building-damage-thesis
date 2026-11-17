@@ -1,0 +1,94 @@
+{
+ "label": "DECOY RUN (code check, not a result)",
+ "test": "A",
+ "mode": "decoy",
+ "events_in_file": 2846,
+ "decoy_seed": 99,
+ "decoy_houses_drawn_twice_or_more": 21,
+ "cases": 2397,
+ "dropped": {
+  "missing Baseline 1 input": 184,
+  "not at risk at the event date": 144,
+  "no value in the window": 90,
+  "demolition-censored on or before the event date": 31
+ },
+ "rows": 114675,
+ "control_rows_dropped_missing_inputs": 7572,
+ "cases_by_year": {
+  "2018": 150,
+  "2019": 312,
+  "2020": 274,
+  "2021": 331,
+  "2022": 333,
+  "2023": 314,
+  "2024": 303,
+  "2025": 380
+ },
+ "cases_per_fold": [
+  510,
+  482,
+  468,
+  472,
+  465
+ ],
+ "houses_per_fold": [
+  29907,
+  29853,
+  29852,
+  29852,
+  29852
+ ],
+ "baseline_average_precision": 0.02075167573686952,
+ "observed": 0.00023492624160466324,
+ "draws": 20,
+ "statistics": [
+  -5.105400041588784e-05,
+  -2.4351150383201264e-05,
+  0.000544573662297633,
+  -1.3707227676844347e-05,
+  0.0003828324987829833,
+  0.00013996084382664198,
+  -0.0002881417841032949,
+  0.00027327068217768494,
+  0.00023536810866670033,
+  0.00013460284374584852,
+  0.0005609463135427956,
+  8.598550117088627e-05,
+  0.0005841130105894848,
+  0.00011651293497141196,
+  1.6608171619920953e-05,
+  9.30490295356981e-05,
+  0.00015587876711601126,
+  0.00021118037149270644,
+  4.9410444373870765e-05,
+  0.0002135336460095602
+ ],
+ "exceedances": 6,
+ "p": 0.3333333333333333,
+ "meets_rule": false,
+ "null_seconds": 1.9949344540946186,
+ "elapsed_seconds": 11.733613955322653,
+ "workers": 8,
+ "inputs": {
+  "checkpoint1": {
+   "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+   "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+   "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+   "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+  },
+  "events": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+  "field": "e69499956361a6bcb86073bc3b8ebee95cc2e4132cd47c946cb26882e70752a8",
+  "null_fingerprint": "67a99a6e8c927e3b12ac582343e02de8e374e7a75b937e5f29b0aa6374e84576",
+  "surrogates": "21c67bad239c47955be00bc05fbd7ddf854e045f70302aa41de544cd736c00c4",
+  "quantiles": "c3b16fb4036ea5ccba0afb27065dda9aca00ea2c47effc835e786c2e87d631f6"
+ },
+ "sources": {
+  "run_tests.py": "020c67e0c9f32b01520d45ef9e5b8897eeb720c68c641160219692c72985628b",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "test_b.py": "d5c0ea95db7897b1689e0f0847cfb19b61e17432672e5ba59c813d28742a4e1d"
+ },
+ "host": "amr-Precision-5820-Tower-X-Series",
+ "finished": "2026-11-11 12:49:38 EET"
+}

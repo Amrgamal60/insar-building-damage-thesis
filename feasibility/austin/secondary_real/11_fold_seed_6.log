@@ -1,0 +1,32 @@
+{
+ "label": "REAL RUN",
+ "secondary": "11_fold_seed_6",
+ "mode": "real",
+ "cases": 1754,
+ "rows": 83496,
+ "dropped": {
+  "no value in the window": 961,
+  "missing Baseline 1 input": 127,
+  "demolition-censored on or before the event date": 4
+ },
+ "observed": {
+  "pr": -0.0006212833761009215,
+  "roc": -0.001458464289023298,
+  "top10": -0.014823261117445807,
+  "top10_rs": -0.004561003420752552
+ },
+ "p": {
+  "pr": 0.033,
+  "roc": 0.481,
+  "top10": 0.97,
+  "top10_rs": 0.51
+ },
+ "notes": {
+  "risk_sets_without_a_control_row": 0
+ },
+ "seconds": {
+  "null": 31.16733462299453,
+  "bootstrap": 6.249756552278996e-07,
+  "total": 76.03125545696821
+ }
+}

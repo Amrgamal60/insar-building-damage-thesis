@@ -1,0 +1,46 @@
+{
+ "label": "REAL RUN",
+ "secondary": "13_no_construction_mask",
+ "mode": "real",
+ "cases": 2555,
+ "rows": 121826,
+ "dropped": {
+  "no value in the window": 160,
+  "missing Baseline 1 input": 127,
+  "demolition-censored on or before the event date": 4
+ },
+ "observed": {
+  "pr": -0.0002744713170140939,
+  "roc": -0.000878444836793224,
+  "top10": -0.002348336594911904,
+  "top10_rs": -0.004305283757338518
+ },
+ "p": {
+  "pr": 0.141,
+  "roc": 0.313,
+  "top10": 0.633,
+  "top10_rs": 0.735
+ },
+ "ci95": {
+  "pr": [
+   -0.0013535938465284376,
+   0.00040224981205970434
+  ],
+  "roc": [
+   -0.003335641570186343,
+   0.001254234708920557
+  ],
+  "top10": [
+   -0.017580745984356685,
+   0.005216003948573993
+  ]
+ },
+ "notes": {
+  "risk_sets_without_a_control_row": 0
+ },
+ "seconds": {
+  "null": 45.454628792009316,
+  "bootstrap": 135.905877320969,
+  "total": 239.11975355201866
+ }
+}

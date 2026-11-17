@@ -1,0 +1,34 @@
+/home/ai-admin/AmrGamal/env/venv/lib/python3.12/site-packages/pyfixest/estimation/formula/model_matrix.py:151: UserWarning: 6 singleton fixed effect(s) dropped from the model.
+  warnings.warn(
+/home/ai-admin/AmrGamal/env/venv/lib/python3.12/site-packages/pyfixest/estimation/models/fepois_.py:576: UserWarning: 91629 observations removed because of separation.
+  warnings.warn(
+{
+ "label": "REAL RUN",
+ "secondary": "17_local_relative_motion",
+ "mode": "real",
+ "field": "lrm",
+ "panel": {
+  "events_counted": 2842,
+  "events_counted_in_quarters": 2655,
+  "events_outside_the_28_quarters": 187,
+  "events_in_rows_used": 2553,
+  "events_in_rows_without_value": 102,
+  "rows_possible": 158060,
+  "rows_with_value": 129714,
+  "rows_used": 129682,
+  "cells_with_an_event_in_used_rows": 1397
+ },
+ "draws": 999,
+ "exceedances": 578,
+ "p_B": 0.579,
+ "null_seconds": 165.75379485299345,
+ "observed": {
+  "beta": -0.024104196988217075,
+  "rate_ratio_iqr": 0.9746793114470644,
+  "rate_ratio_ci95": [
+   0.9427423695046128,
+   1.0076981696092906
+  ],
+  "rows_used": 38047
+ }
+}

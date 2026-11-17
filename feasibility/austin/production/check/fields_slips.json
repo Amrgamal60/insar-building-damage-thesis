@@ -1,0 +1,115 @@
+{
+ "inputs": {
+  "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+  "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "i08_run": "64eec9b48b67613bd21f89645f57186c350ca03498187b6eec6fbee58a4e1b7b",
+  "L24.npz": "d87c838a8f3ae9c1958c294962e14327e5302ca9994ae10f12b9aa958a2c58dd",
+  "L12.npz": "8e820c56720982297480eb8f8758a3dc969dee6c3282ead2f3bde470cc033bcd",
+  "L36.npz": "2c01e1649bd9bf381ff62b1a5af98cd48a1a2532d73f82871559a1d06d623e64"
+ },
+ "testa_core": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+ "pixels": 114058,
+ "months": [
+  "2018-08",
+  "2025-11",
+  88
+ ],
+ "fields": {
+  "v": {
+   "source": "L24 v",
+   "sha256": "7a9ad77f75b05c4a13d7cc29db07da47c871c8a31e196aae49989a521aa4a4e4",
+   "months_with_values": 88,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70310.0,
+   "valid_pixels_max": 74246
+  },
+  "amp": {
+   "source": "L24 amp",
+   "sha256": "963dc22b38f6921ad45d03e008ea5d96a37c587aff5138b13d27a42a4bef4011",
+   "months_with_values": 88,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70310.0,
+   "valid_pixels_max": 74246
+  },
+  "lrm": {
+   "source": "L24 lrm",
+   "sha256": "79b77825e96d74f13546ec6724794238cc7b574b9f4be55f29ff71b445dab838",
+   "months_with_values": 88,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70310.0,
+   "valid_pixels_max": 74246
+  },
+  "acc": {
+   "source": "L12 v at m minus L12 v at m-12",
+   "sha256": "ab09584b3f1801bcb258a3fd470a09519173146f2a7e74517299059cfb4b8d4a",
+   "months_with_values": 88,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70341.0,
+   "valid_pixels_max": 74246
+  },
+  "v_nomask": {
+   "source": "L24 v_nomask",
+   "sha256": "a6e773241e9ba74f77f764b5ebd1e00fb295be57559e7aece01f4208da4fc9b6",
+   "months_with_values": 88,
+   "valid_pixels_min": 109750,
+   "valid_pixels_median": 110702.0,
+   "valid_pixels_max": 112456
+  },
+  "avail": {
+   "source": "L24 avail",
+   "sha256": "e408b477b839ce73740fe89a53288f9aa96256c10773447f35e5ec055d1ffc0b",
+   "months_with_values": 88,
+   "valid_pixels_min": 114058,
+   "valid_pixels_median": 114058.0,
+   "valid_pixels_max": 114058
+  },
+  "v12": {
+   "source": "L12 v",
+   "sha256": "fa98ead23221a22485c6906b5ca71210ff469978b70c89a1e35a743938ade227",
+   "months_with_values": 88,
+   "valid_pixels_min": 78575,
+   "valid_pixels_median": 81104.5,
+   "valid_pixels_max": 84570
+  },
+  "v36": {
+   "source": "L36 v",
+   "sha256": "152779e20248f37953e274fa80cb39b8fa666608276fe4bc29f7d2dc34f41875",
+   "months_with_values": 76,
+   "valid_pixels_min": 61071,
+   "valid_pixels_median": 62506.5,
+   "valid_pixels_max": 64332
+  },
+  "v_lag1": {
+   "source": "L24 v at m-1",
+   "sha256": "77fbd73319b0aff3be97d294a4262363a48ccc51a31c6db5b925a92260434603",
+   "months_with_values": 87,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70287.0,
+   "valid_pixels_max": 73975
+  },
+  "v_lag3": {
+   "source": "L24 v at m-3",
+   "sha256": "aca290ad3d647cf7e1ca8af895f0ddcf0d126b5ab5aea09ab94889755e235144",
+   "months_with_values": 85,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70279.0,
+   "valid_pixels_max": 73628
+  },
+  "v_lag6": {
+   "source": "L24 v at m-6",
+   "sha256": "6a6fa4cefbaffa08df5b364b91fdcac683094d7a5cbe855d850936ae088a4fd5",
+   "months_with_values": 82,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70211.0,
+   "valid_pixels_max": 73362
+  },
+  "v_lag12": {
+   "source": "L24 v at m-12",
+   "sha256": "b8a5dcbafc522c21224a528c9b23781dc748765c2e11848f9f61f368b6160534",
+   "months_with_values": 76,
+   "valid_pixels_min": 68369,
+   "valid_pixels_median": 70143.0,
+   "valid_pixels_max": 71985
+  }
+ }
+}

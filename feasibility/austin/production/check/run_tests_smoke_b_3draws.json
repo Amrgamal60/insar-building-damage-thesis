@@ -1,0 +1,71 @@
+{
+ "label": "DECOY RUN (code check, not a result)",
+ "test": "B",
+ "mode": "decoy",
+ "panel": {
+  "events_counted": 2658,
+  "events_counted_in_quarters": 2483,
+  "events_outside_the_28_quarters": 175,
+  "events_in_rows_used": 2409,
+  "events_in_rows_without_value": 74,
+  "rows_possible": 158060,
+  "rows_with_value": 129714,
+  "rows_used": 129682,
+  "cells_with_an_event_in_used_rows": 1736
+ },
+ "observed": {
+  "beta": -0.003935378945574715,
+  "clustered_se": 0.0029366487775267323,
+  "velocity_iqr": 27.139068347930603,
+  "rate_ratio_iqr": 0.8987031329984456,
+  "rate_ratio_ci95": [
+   0.7687360893951642,
+   1.0506431692268907
+  ],
+  "null_statistic": 0.003935378945574715,
+  "rows_input": 129682,
+  "rows_used": 47573,
+  "rows_dropped": 82109,
+  "cells_input": 4980,
+  "cells_used": 1736,
+  "cells_dropped": 3244,
+  "quarters_input": 28,
+  "quarters_used": 28,
+  "quarters_dropped": 0,
+  "blocks_used": 169,
+  "all_zero_cells_input": 3244,
+  "all_zero_quarters_input": 0,
+  "correction": "CRV1 full FE: G/(G-1) * (N-1)/(N-K)",
+  "interval": "normal Wald 1.959963984540054"
+ },
+ "statistics": [
+  0.002098273529428129,
+  0.0032153438389803117,
+  0.003101658940103848
+ ],
+ "exceedances": 0,
+ "p_B": 0.25,
+ "detected": false,
+ "elapsed_seconds": 5.806202742271125,
+ "inputs": {
+  "checkpoint1": {
+   "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+   "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+   "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+   "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+  },
+  "events": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+  "cells": "125bd0d19dfaae6062a887f3069e3a5f9f1f94c33de9ea22ec28a786038cff33",
+  "surrogates": "039e137dcbf4c9d295ea9a4d0b16db8ac90b4ee03901514d68c3a3c176338398",
+  "surrogate_seed": 2034
+ },
+ "sources": {
+  "run_tests.py": "020c67e0c9f32b01520d45ef9e5b8897eeb720c68c641160219692c72985628b",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "test_b.py": "d5c0ea95db7897b1689e0f0847cfb19b61e17432672e5ba59c813d28742a4e1d"
+ },
+ "host": "amr-Precision-5820-Tower-X-Series",
+ "finished": "2026-11-11 12:49:53 EET"
+}

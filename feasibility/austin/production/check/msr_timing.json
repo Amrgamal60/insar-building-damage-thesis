@@ -1,0 +1,90 @@
+{
+ "rows": [
+  {
+   "n": 10000,
+   "threads": 32,
+   "threshold_m": 5221.896207317798,
+   "threshold_verified": true,
+   "stages": {
+    "threshold": 1.3998192789999848,
+    "weights": 1.653455994000069,
+    "householder": 0.8686842070001148,
+    "eigh": 21.622766473999945,
+    "peak_gb_after_eigh": 2.856748,
+    "basis": 1.5280537130001903,
+    "coefficients": 0.0615794420000384
+   },
+   "build_seconds": 27.134964786000182,
+   "seconds_per_draw": 0.033305346687484416,
+   "peak_gb": 2.856748,
+   "rss_gb_before": 0.45018,
+   "load_average": [
+    91.45458984375,
+    102.3125,
+    93.6689453125
+   ]
+  },
+  {
+   "n": 20000,
+   "threads": 32,
+   "threshold_m": 5023.544565344275,
+   "threshold_verified": true,
+   "stages": {
+    "threshold": 5.059756758999811,
+    "weights": 7.570137188999979,
+    "householder": 4.327915413000028,
+    "eigh": 160.43517701100018,
+    "peak_gb_after_eigh": 9.891712,
+    "basis": 6.45675604500002,
+    "coefficients": 0.18348228899958485
+   },
+   "build_seconds": 184.03390111099998,
+   "seconds_per_draw": 0.08939626656251676,
+   "peak_gb": 9.891712,
+   "rss_gb_before": 0.452348,
+   "load_average": [
+    96.23974609375,
+    99.40625,
+    94.06640625
+   ]
+  },
+  {
+   "n": 30000,
+   "threads": 32,
+   "threshold_m": 4945.270467830855,
+   "threshold_verified": true,
+   "stages": {
+    "threshold": 10.449517372999708,
+    "weights": 16.53053004399999,
+    "householder": 8.480453383000167,
+    "eigh": 530.4268919870001,
+    "peak_gb_after_eigh": 21.649472,
+    "basis": 17.01327233100028,
+    "coefficients": 0.3686333559999184
+   },
+   "build_seconds": 583.2701065240003,
+   "seconds_per_draw": 0.1800248905624926,
+   "peak_gb": 21.649472,
+   "rss_gb_before": 0.451896,
+   "load_average": [
+    91.67724609375,
+    100.43212890625,
+    97.79248046875
+   ]
+  }
+ ],
+ "projection": {
+  "full_pixels": 107243,
+  "from_n": 30000,
+  "threads": 32,
+  "eigh_hours": 6.730791418282144,
+  "other_build_hours": 0.1533851146232424,
+  "draws_hours": 0.6383971541487878,
+  "peak_memory_gb": 276.074937176,
+  "surrogate_file_gb": 37.711786464,
+  "scaling": "eigh ~ n^3; weights, H w H, basis, coefficients and the per-draw product ~ n^2; memory 3 n^2 doubles during eigh; threshold time not scaled (full-set threshold differs)",
+  "total_hours": 7.522573687054175
+ },
+ "host": "ai",
+ "finished": "2026-11-12 09:53:51 EET"
+}

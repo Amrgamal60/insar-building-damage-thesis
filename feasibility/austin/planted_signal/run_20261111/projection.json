@@ -1,0 +1,12 @@
+{
+ "first_round_jobs": 64,
+ "mean_job_seconds": 688.1504823184805,
+ "workers": 64,
+ "jobs": 600,
+ "draws": 999,
+ "projected_hours": 1.7920585477043762,
+ "threshold_hours": 72.0,
+ "datasets_per_cell": 100,
+ "fallback_applied": false,
+ "written": "2026-11-11 19:56:02 EET"
+}

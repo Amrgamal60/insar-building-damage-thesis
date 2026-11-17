@@ -1,0 +1,153 @@
+2026-11-15 14:38:49 run_secondaries start (workers 40, from 1_nyc_design)
+2026-11-15 14:38:49 1_nyc_design smoke start
+2026-11-15 14:50:53 1_nyc_design start
+2026-11-15 15:31:00 20_deep_model waits for run_secondaries end
+2026-11-15 15:36:00 20_deep_model smoke start (GPU generator, 2 draws)
+2026-11-15 15:38:29 20_deep_model smoke STOPPED at once (launcher wait matched its own log line; decoy only, before any GPU use; no real run); launcher fixed and restarted
+2026-11-15 15:38:29 20_deep_model waiting (starts after the secondaries' last line)
+2026-11-15 18:08:08 1_nyc_design end 636849b41fce7c0a
+2026-11-15 18:08:08 2_local_controls smoke start
+2026-11-15 18:09:12 2_local_controls start
+2026-11-15 18:12:13 2_local_controls end 9cadc9e37ea4fc72
+2026-11-15 18:12:13 waits for work/insar/surr2/v12/surrogate_quantiles.npy.json
+2026-11-15 19:07:13 3_window_12 smoke start
+2026-11-15 19:08:07 3_window_12 start
+2026-11-15 19:11:21 3_window_12 end 959e4dd0b291c80a
+2026-11-15 19:14:44 deleted v12 surrogates (564fd776f4c8bb54, hash re-checked)
+2026-11-15 19:14:44 3_window_36 smoke start
+2026-11-15 19:15:32 3_window_36 start
+2026-11-15 19:17:56 3_window_36 end 820cf3a6081d5d46
+2026-11-15 19:21:19 deleted v36 surrogates (49ab8ccba0cc0f31, hash re-checked)
+2026-11-15 19:21:19 4_random_forest smoke start
+2026-11-15 19:56:02 4_random_forest start
+2026-11-16 00:30:28 4_random_forest end 08019528964b1b09
+2026-11-16 00:30:28 5_baseline_2 smoke start
+2026-11-16 00:31:27 5_baseline_2 start
+2026-11-16 00:34:30 5_baseline_2 end f23402bd775d04f7
+2026-11-16 00:34:30 5_baseline_1_no_income smoke start
+2026-11-16 00:35:28 5_baseline_1_no_income start
+2026-11-16 00:38:18 5_baseline_1_no_income end 24bd20d2274a7bc5
+2026-11-16 00:38:18 6_amplitude smoke start
+2026-11-16 00:39:07 6_amplitude start
+2026-11-16 00:42:02 6_amplitude end f4ecd4820965f1ca
+2026-11-16 00:42:02 6_local_relative_motion smoke start
+2026-11-16 00:42:53 6_local_relative_motion start
+2026-11-16 00:45:57 6_local_relative_motion end 5bc30b49f0b4659f
+2026-11-16 00:45:57 waits for work/insar/surr2/acc/surrogate_quantiles.npy.json
+2026-11-16 02:15:57 6_acceleration smoke start
+2026-11-16 02:16:45 6_acceleration start
+2026-11-16 02:19:52 6_acceleration end dc766fbb920dc687
+2026-11-16 02:19:52 7_boosted_trees smoke start
+2026-11-16 02:23:09 7_boosted_trees start
+2026-11-16 02:29:56 7_boosted_trees end 0c84fdab071ae509
+2026-11-16 02:33:16 deleted amp surrogates (6587de4df5be9a6f, hash re-checked)
+2026-11-16 02:36:28 deleted lrm surrogates (4ad83729546a5325, hash re-checked)
+2026-11-16 02:39:43 deleted acc surrogates (823755f4a3fafa99, hash re-checked)
+2026-11-16 02:39:43 9_lag_1 smoke start
+2026-11-16 02:40:35 9_lag_1 start
+2026-11-16 02:43:24 9_lag_1 end 123fbdc18a0a0973
+2026-11-16 02:46:40 deleted v_lag1 surrogates (765959e0211d72e1, hash re-checked)
+2026-11-16 02:46:40 9_lag_3 smoke start
+2026-11-16 02:47:31 9_lag_3 start
+2026-11-16 02:50:19 9_lag_3 end d0edd8eb4e49c09b
+2026-11-16 02:53:27 deleted v_lag3 surrogates (a9de0dac0b75f8ea, hash re-checked)
+2026-11-16 02:53:28 waits for work/insar/surr2/v_lag6/surrogate_quantiles.npy.json
+2026-11-16 02:58:28 9_lag_6 smoke start
+2026-11-16 02:59:19 9_lag_6 start
+2026-11-16 03:02:02 9_lag_6 end d24f2d6185215cbc
+2026-11-16 03:05:17 deleted v_lag6 surrogates (42c978b8f0ef2cd7, hash re-checked)
+2026-11-16 03:05:17 waits for work/insar/surr2/v_lag12/surrogate_quantiles.npy.json
+2026-11-16 07:20:17 9_lag_12 smoke start
+2026-11-16 07:21:04 9_lag_12 start
+2026-11-16 07:22:50 9_lag_12 end 64db64572a363118
+2026-11-16 07:26:18 deleted v_lag12 surrogates (c29a47969d770bb4, hash re-checked)
+2026-11-16 07:26:18 10_issue_date smoke start
+2026-11-16 07:27:09 10_issue_date start
+2026-11-16 07:29:57 10_issue_date end 2161d4effa59dda6
+2026-11-16 07:29:57 11_fold_seed_0 smoke start
+2026-11-16 07:30:48 11_fold_seed_0 start
+2026-11-16 07:32:08 11_fold_seed_0 end 9fe532fc4b3d38d2
+2026-11-16 07:32:08 11_fold_seed_1 smoke start
+2026-11-16 07:32:58 11_fold_seed_1 start
+2026-11-16 07:34:16 11_fold_seed_1 end 4351b97996b4b69f
+2026-11-16 07:34:16 11_fold_seed_2 smoke start
+2026-11-16 07:35:04 11_fold_seed_2 start
+2026-11-16 07:36:23 11_fold_seed_2 end c534639513b73556
+2026-11-16 07:36:23 11_fold_seed_3 smoke start
+2026-11-16 07:37:10 11_fold_seed_3 start
+2026-11-16 07:38:27 11_fold_seed_3 end 4bd1ef17dafe8704
+2026-11-16 07:38:27 11_fold_seed_4 smoke start
+2026-11-16 07:39:15 11_fold_seed_4 start
+2026-11-16 07:40:33 11_fold_seed_4 end 17ee3693c7b310d6
+2026-11-16 07:40:33 11_fold_seed_5 smoke start
+2026-11-16 07:41:23 11_fold_seed_5 start
+2026-11-16 07:42:42 11_fold_seed_5 end e937535676c9f890
+2026-11-16 07:42:42 11_fold_seed_6 smoke start
+2026-11-16 07:43:33 11_fold_seed_6 start
+2026-11-16 07:44:51 11_fold_seed_6 end dc2eb150cb286c63
+2026-11-16 07:44:51 11_fold_seed_7 smoke start
+2026-11-16 07:45:38 11_fold_seed_7 start
+2026-11-16 07:46:56 11_fold_seed_7 end 5b23f5996ba4c85d
+2026-11-16 07:46:56 11_fold_seed_8 smoke start
+2026-11-16 07:47:43 11_fold_seed_8 start
+2026-11-16 07:49:01 11_fold_seed_8 end 53cf74bcc82fb0a2
+2026-11-16 07:49:01 11_fold_seed_9 smoke start
+2026-11-16 07:49:49 11_fold_seed_9 start
+2026-11-16 07:51:05 11_fold_seed_9 end f1c0796801d47974
+2026-11-16 07:51:06 12_availability smoke start
+2026-11-16 07:52:11 12_availability start
+2026-11-16 07:55:19 12_availability end 7d1ca273647a9605
+2026-11-16 07:58:58 deleted avail surrogates (dbc69f1023508657, hash re-checked)
+2026-11-16 07:58:58 waits for work/insar/surr2/v_nomask/surrogate_quantiles.npy.json
+2026-11-16 08:08:58 13_no_construction_mask smoke start
+2026-11-16 08:10:01 13_no_construction_mask start
+2026-11-16 08:14:02 13_no_construction_mask end a5c115dd458e8bb6
+2026-11-16 08:17:29 deleted v_nomask surrogates (aa71f43122fa64f0, hash re-checked)
+2026-11-16 08:17:29 15_lag_1 smoke start
+2026-11-16 08:17:41 15_lag_1 start
+2026-11-16 08:20:54 15_lag_1 end e518cf347074eb3a
+2026-11-16 08:20:54 15_lag_3 smoke start
+2026-11-16 08:21:06 15_lag_3 start
+2026-11-16 08:24:04 15_lag_3 end 84c37ec5a3a57b40
+2026-11-16 08:24:04 15_lag_6 smoke start
+2026-11-16 08:24:14 15_lag_6 start
+2026-11-16 08:27:06 15_lag_6 end 7305992f4b8e9874
+2026-11-16 08:27:06 15_lag_12 smoke start
+2026-11-16 08:27:16 15_lag_12 start
+2026-11-16 08:30:08 15_lag_12 end 318424bee44a0ad3
+2026-11-16 08:30:08 16_window_24 smoke start
+2026-11-16 08:30:18 16_window_24 start
+2026-11-16 08:33:20 16_window_24 end 49439d66b85bfa31
+2026-11-16 08:33:20 17_amplitude smoke start
+2026-11-16 08:33:30 17_amplitude start
+2026-11-16 08:36:22 17_amplitude end 006419aec2518179
+2026-11-16 08:36:22 17_local_relative_motion smoke start
+2026-11-16 08:36:32 17_local_relative_motion start
+2026-11-16 08:39:24 17_local_relative_motion end 68f2f69a811f1995
+2026-11-16 08:39:24 17_acceleration smoke start
+2026-11-16 08:39:34 17_acceleration start
+2026-11-16 08:42:25 17_acceleration end 089259bd99a9d711
+2026-11-16 08:42:25 18_negative_binomial smoke start
+2026-11-16 08:42:56 18_negative_binomial start
+2026-11-16 08:55:01 18_negative_binomial end 8bf19dbb51dab6ab
+2026-11-16 08:55:01 19_monthly smoke start
+2026-11-16 08:55:18 19_monthly start
+2026-11-16 09:02:18 19_monthly end 65e8d93147d69ec4
+2026-11-16 09:02:18 D1_demolition smoke start
+2026-11-16 09:03:06 D1_demolition start
+2026-11-16 09:04:26 D1_demolition end 6a3ce4fd80f15051
+2026-11-16 09:04:26 D2_composite smoke start
+2026-11-16 09:05:15 D2_composite start
+2026-11-16 09:07:56 D2_composite end c484379122e07b9b
+2026-11-16 09:07:56 waits for work/insar/surr2/v_firstrun/surrogate_quantiles.npy.json
+2026-11-16 10:52:56 slip_first_run smoke start
+2026-11-16 10:53:42 slip_first_run start
+2026-11-16 10:55:45 slip_first_run end 0dd5480a2937c934
+2026-11-16 10:58:58 deleted v_firstrun surrogates (cf91fac8f91b47a1, hash re-checked)
+2026-11-16 10:58:58 slip_first_run_b smoke start
+2026-11-16 10:59:08 slip_first_run_b start
+2026-11-16 11:02:15 slip_first_run_b end aba9b8501f012058
+2026-11-16 11:02:15 run_secondaries end
+2026-11-16 11:03:30 20_deep_model smoke start (GPU generator, 2 draws)
+2026-11-16 11:13:49 20_deep_model start
+2026-11-16 16:39:35 20_deep_model end 12ac6bc0c79b4b92

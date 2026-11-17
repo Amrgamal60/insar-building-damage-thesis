@@ -1,0 +1,34 @@
+{
+ "permits_sha256": "0e6f003f286473512cc4cb59765df9ddd4a834b70256f788269e0a3b76f28146",
+ "eligible_houses": 149316,
+ "bp_on_eligible_houses": 237942,
+ "foundation_matches_left_out": 12571,
+ "undated_left_out": 0,
+ "non_foundation_bp": 225371,
+ "by_work_class": {
+  "New": 92901,
+  "Remodel": 46965,
+  "Repair": 30879,
+  "Addition": 22532,
+  "Addition and Remodel": 16611,
+  "Demolition": 9969,
+  "": 2737,
+  "Life Safety": 1813,
+  "Relocation": 935,
+  "Interior Demo Non-Structural": 25
+ },
+ "date_range": [
+  "1971-04-27",
+  "2026-11-05"
+ ],
+ "illustration_count_in_5_years_before_2018_08_01": {
+  "houses_with_none": 127604,
+  "houses_with_one": 17113,
+  "houses_with_two_or_more": 4599,
+  "mean": 0.1873,
+  "max": 81
+ },
+ "private_outputs_sha256": {
+  "other_bp_dates.parquet": "c47eef9c20c6e07cd443d25bf3c593d86d0d600becd5e22ee148e111e93049a3"
+ }
+}

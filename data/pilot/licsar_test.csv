@@ -1,0 +1,8 @@
+test,Test,Cells kept / before (collapse cells),PR AUC: baseline + x/y → + velocity,Change,"Median velocity, collapse / background (mm/yr)",Single-layer ROC AUC,"p, Free permutation","p, Within-block permutation","p, MSR","p, MSR, amplitude-adjusted","p, Variogram-matching","p, Variogram-matching, observed values",Largest p
+primary,"Primary: vertical P1, Shirzaei-test cells, 250 m, logistic regression",241 / 241 (32),0.328 → 0.413,+0.085,0.06 / 0.64,0.44,0.001,0.005,0.001,0.002,0.005,0.005,0.005
+s1,1. All core cells with a LiCSAR value,341 / 416 (34),0.326 → 0.409,+0.082,0.06 / 0.35,0.50,< 0.001,0.006,0.002,0.001,0.007,0.004,0.007
+s2,2. 200 m cells,345 / 347 (36),0.197 → 0.269,+0.072,0.09 / 0.73,0.37,< 0.001,< 0.001,0.013,0.015,0.102,0.090,0.102
+s3,3. Random forest,241 / 241 (32),0.249 → 0.318,+0.069,0.06 / 0.64,0.44,0.004,0.022,0.018,0.024,0.038,0.038,0.038
+s4,"4. P2, full period",241 / 241 (32),0.328 → 0.408,+0.080,2.18 / 2.73,0.43,0.002,0.004,0.002,0.002,0.008,0.005,0.008
+s5a,"5. 065D line of sight, P1",241 / 241 (32),0.328 → 0.399,+0.071,0.93 / 1.33,0.44,0.002,0.009,0.003,0.003,0.009,0.008,0.009
+s5b,"5. 131A line of sight, P1",241 / 241 (32),0.328 → 0.408,+0.080,-0.81 / -0.51,0.44,0.002,0.005,0.002,0.002,0.002,0.003,0.005

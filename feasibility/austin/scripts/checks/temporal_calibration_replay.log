@@ -1,0 +1,165 @@
+{"resumed": "no_signal_1717.json", "p": 0.9}
+{"resumed": "no_signal_1718.json", "p": 0.35}
+{"resumed": "no_signal_1719.json", "p": 0.6}
+{"resumed": "no_signal_1720.json", "p": 0.1}
+{"resumed": "no_signal_1721.json", "p": 0.5}
+{"resumed": "no_signal_1722.json", "p": 0.65}
+{"resumed": "no_signal_1723.json", "p": 0.3}
+{"resumed": "no_signal_1724.json", "p": 0.7}
+{"resumed": "no_signal_1725.json", "p": 0.75}
+{"resumed": "no_signal_1726.json", "p": 0.7}
+{"resumed": "planted_signal_1716.json", "p": 0.05}
+{
+  "synthetic_only": true,
+  "status": "COMPLETED",
+  "rows_per_dataset": 5100,
+  "no_signal_dataset_seeds": [
+    1717,
+    1718,
+    1719,
+    1720,
+    1721,
+    1722,
+    1723,
+    1724,
+    1725,
+    1726
+  ],
+  "planted_dataset_seed": 1716,
+  "surrogate_seed": 2037,
+  "draws_per_dataset": 19,
+  "minimum_attainable_p": 0.05,
+  "no_signal_p_values": [
+    0.9,
+    0.35,
+    0.6,
+    0.1,
+    0.5,
+    0.65,
+    0.3,
+    0.7,
+    0.75,
+    0.7
+  ],
+  "no_signal_mean_p": 0.5549999999999999,
+  "no_signal_count_p_equals_005": 0,
+  "expected_discrete_uniform_mean_p": 0.525,
+  "paired_gain_difference_ci95": [
+    -0.0007669179796261454,
+    0.0015029111310034787
+  ],
+  "observed_gains": [
+    0.0007553695198003474,
+    -0.0018194877187847486,
+    -0.0004646979479822483,
+    0.00020261576606361506,
+    0.0019016215637609538,
+    0.00028330942769879547,
+    0.008205088782758281,
+    0.0012056809927162015,
+    -0.0012276007573553717,
+    0.0003894311519021809
+  ],
+  "observed_gain_mean": 0.0009431330780578006,
+  "observed_gain_sd": 0.0027763956171578223,
+  "null_gain_mean": 0.0005751365023691339,
+  "null_gain_sd_pooled": 0.00241656894604483,
+  "null_mean_gain_per_dataset": [
+    0.0012259886139684715,
+    -0.002365489132995525,
+    -0.00046323584692080697,
+    1.2275005871898733e-05,
+    0.0016969875007193332,
+    0.00037758771338743737,
+    0.00346961478403777,
+    0.0017461549578591299,
+    -0.00040334985469894617,
+    0.0004548312824625764
+  ],
+  "paired_observed_minus_mean_null_mean": 0.0003679965756886667,
+  "paired_observed_minus_mean_null_sd": 0.0015865011518618828,
+  "observed_series_diagnostics_vs_null": {
+    "mean": {
+      "real_mean": 0.005838305444342955,
+      "real_sd": 0.009413455087497814,
+      "null_mean": 0.0003538252655254372,
+      "null_sd": 0.009920985436104491
+    },
+    "sd": {
+      "real_mean": 0.6167305249513515,
+      "real_sd": 0.007965092083645962,
+      "null_mean": 0.5326707325025895,
+      "null_sd": 0.07410292756793602
+    },
+    "skewness": {
+      "real_mean": -0.008074333462386426,
+      "real_sd": 0.05483543910212739,
+      "null_mean": -0.0010938647541475198,
+      "null_sd": 0.0944665023239101
+    },
+    "excess_kurtosis": {
+      "real_mean": 1.799717101906867,
+      "real_sd": 0.16811885512446212,
+      "null_mean": 2.6743142412792342,
+      "null_sd": 0.22569698821106524
+    },
+    "pooled_lag1_correlation": {
+      "real_mean": 0.9393648460897845,
+      "real_sd": 0.0014981998429224818,
+      "null_mean": 0.9670781521581023,
+      "null_sd": 0.03268956182274744
+    },
+    "mean_squared_step_over_variance": {
+      "real_mean": 0.12115873873189154,
+      "real_sd": 0.0030017004357902914,
+      "null_mean": 0.06597133838789096,
+      "null_sd": 0.06483163550860574
+    },
+    "valid_share": {
+      "real_mean": 0.9051243972999037,
+      "real_sd": 0.0007435853255517611,
+      "null_mean": 0.9051243972999035,
+      "null_sd": 0.0007072907259442776
+    }
+  },
+  "planted_p": 0.05,
+  "planted_observed_gain": 0.0522794920868632,
+  "planted_null_gains": [
+    0.0036143020729054592,
+    0.0026705672124141336,
+    0.004120119878719762,
+    0.001836118825602806,
+    0.005132977166127761,
+    0.003110578605704524,
+    0.00253538531760545,
+    0.003557082501739306,
+    0.004044143777030461,
+    0.0034289917918356727,
+    0.004166782655971792,
+    0.002037630421133821,
+    0.004023406568649954,
+    0.0030718768847892222,
+    0.003741838676916222,
+    0.0034218336478929953,
+    0.0036134689786528895,
+    0.0035116144494638166,
+    0.004370821497290671
+  ],
+  "elapsed_this_invocation_seconds": 0.030220781918615103,
+  "initial_wall_seconds": 825.8544490949716,
+  "summed_replicate_seconds": 1609.3193590582814,
+  "nvidia_smi_free_mib_before": "22477",
+  "replicate_files": [
+    "calibration/no_signal_1717.json",
+    "calibration/no_signal_1718.json",
+    "calibration/no_signal_1719.json",
+    "calibration/no_signal_1720.json",
+    "calibration/no_signal_1721.json",
+    "calibration/no_signal_1722.json",
+    "calibration/no_signal_1723.json",
+    "calibration/no_signal_1724.json",
+    "calibration/no_signal_1725.json",
+    "calibration/no_signal_1726.json",
+    "calibration/planted_signal_1716.json"
+  ]
+}

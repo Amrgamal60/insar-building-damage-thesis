@@ -1,0 +1,52 @@
+{
+ "gpu": "surrogates_nulla.tmp.npy",
+ "cpu": "surrogates_nulla.tmp.npy",
+ "draws_compared": 3,
+ "all_nan_identical": true,
+ "max_float32_steps": 1,
+ "values_not_identical": 1,
+ "values_compared": 17453010,
+ "share_not_identical": 5.729670698635937e-08,
+ "max_abs_diff": 1.8189894035458565e-12,
+ "any_unwritten_draw": false,
+ "per_draw": [
+  {
+   "draw": 0,
+   "nan_identical": true,
+   "max_float32_steps": 0,
+   "values_not_identical": 0,
+   "values_more_than_one_step": 0,
+   "max_abs_diff": 0.0,
+   "values_beyond_one_step_and_abs_tol": 0,
+   "max_abs_diff_beyond_one_step": 0.0,
+   "all_zero": false
+  },
+  {
+   "draw": 1,
+   "nan_identical": true,
+   "max_float32_steps": 0,
+   "values_not_identical": 0,
+   "values_more_than_one_step": 0,
+   "max_abs_diff": 0.0,
+   "values_beyond_one_step_and_abs_tol": 0,
+   "max_abs_diff_beyond_one_step": 0.0,
+   "all_zero": false
+  },
+  {
+   "draw": 2,
+   "nan_identical": true,
+   "max_float32_steps": 1,
+   "values_not_identical": 1,
+   "values_more_than_one_step": 0,
+   "max_abs_diff": 1.8189894035458565e-12,
+   "values_beyond_one_step_and_abs_tol": 0,
+   "max_abs_diff_beyond_one_step": 0.0,
+   "all_zero": false
+  }
+ ],
+ "abs_tol": 1e-12,
+ "values_more_than_one_step": 0,
+ "values_beyond_one_step_and_abs_tol": 0,
+ "max_abs_diff_beyond_one_step": 0.0,
+ "pass": true
+}

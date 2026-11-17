@@ -1,0 +1,12 @@
+{
+  "event": "dataset_complete",
+  "cell": "A_09",
+  "cell_complete": 100,
+  "cell_total": 100,
+  "completed_this_run": 2200,
+  "cached": false,
+  "dataset_seconds": 104.12116333912127,
+  "wall_seconds": 10614.30546116829,
+  "path": "/mnt/data/Master-projects/Alex/feasibility/austin/scripts/calibration/records/A_09_0098.json",
+  "utc": "2026-11-06T21:56:24Z"
+}

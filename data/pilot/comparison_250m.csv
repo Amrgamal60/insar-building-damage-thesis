@@ -1,0 +1,5 @@
+Velocity product,Model,cells,positive cells,"ROC AUC, baseline","ROC AUC, + velocity","PR AUC, baseline","PR AUC, + velocity",prevalence,"recall in top 10%, baseline","recall in top 10%, + velocity",fold ΔAUC,ΔROC AUC 95% interval,ΔPR AUC 95% interval
+Shirzaei et al. VLM,logistic regression,1783,46,0.823,0.825,0.083,0.084,0.026,0.413,0.391,"+0.009, +0.014, -0.007, -0.016, +0.008",-0.010 to +0.013,-0.019 to +0.014
+Shirzaei et al. VLM,random forest,1783,46,0.851,0.865,0.101,0.151,0.026,0.413,0.543,"-0.013, +0.047, +0.043, +0.003, +0.034",-0.011 to +0.037,+0.003 to +0.104
+Ohenhen et al. 2025 VLM,logistic regression,3156,49,0.881,0.877,0.072,0.067,0.016,0.510,0.469,"-0.002, +0.001, -0.018, +0.003, -0.007",-0.008 to +0.001,-0.017 to -0.000
+Ohenhen et al. 2025 VLM,random forest,3156,49,0.891,0.888,0.094,0.079,0.016,0.633,0.592,"+0.009, +0.047, -0.015, -0.055, -0.006",-0.036 to +0.027,-0.063 to -0.000

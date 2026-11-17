@@ -1,0 +1,33 @@
+{
+ "cupy": "14.2.0",
+ "numpy": "2.5.3",
+ "device": "NVIDIA A30",
+ "driver": 13000,
+ "cases": [
+  {
+   "label": "engine_kmax1000",
+   "draws": 4,
+   "max_abs_diff": 1.2878587085651816e-14,
+   "k": [
+    1000,
+    641,
+    411,
+    1000
+   ],
+   "float32_bytes_identical_fraction_min": 1.0
+  },
+  {
+   "label": "conditional_kmax1000",
+   "draws": 3,
+   "max_abs_diff": 5.440092820663267e-15,
+   "k": [
+    18,
+    18,
+    18
+   ],
+   "float32_bytes_identical_fraction_min": 1.0
+  }
+ ],
+ "gpu_pool_peak_mib": 549.8564453125,
+ "pass": true
+}

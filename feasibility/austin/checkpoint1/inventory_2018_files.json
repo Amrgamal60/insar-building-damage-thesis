@@ -1,0 +1,315 @@
+[
+ {
+  "archive": "2018_Certified_Appraisal_Export_Supp_0.zip",
+  "folder": "traviscad.govqa.us_R010955-110226_roll2018",
+  "bytes": 327702589,
+  "sha256": "500f594c05f748aad600edbb5a56612b71ada690ecaffa017292de80d9e20c8d",
+  "members": [
+   {
+    "name": "ABS_SUBD.TXT",
+    "bytes": 1475864,
+    "crc32": "e4efe4ed",
+    "modified": "2026-07-29 13:49:52",
+    "sha256": "9d3f7fd8e420826a734fd02114b1559a835d4df8c2fde80c1b4ef0499fc00a40"
+   },
+   {
+    "name": "AGENT.TXT",
+    "bytes": 758480,
+    "crc32": "d6bd8c9b",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "2eb34328c6d4ee424bc6717ff7c5c78cd8e62f7a01045ea3e5f56a60870287f7"
+   },
+   {
+    "name": "APPR_HDR.TXT",
+    "bytes": 246,
+    "crc32": "4000e96f",
+    "modified": "2026-07-29 13:47:56",
+    "sha256": "84613b262ad20877a0f7353f5236bd7ade882ab14b358224fbe6df802fd8480d"
+   },
+   {
+    "name": "ARB.TXT",
+    "bytes": 4583241,
+    "crc32": "c3d390da",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "0b356189e9d9608cd0c1b7a12f9d0d80dc2f129c53f49fd420900571ad45467a"
+   },
+   {
+    "name": "ARBITRATION.TXT",
+    "bytes": 11424,
+    "crc32": "d6e3bd2f",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "1c1271320277984ed7718d77f618ef2b38bc80099bdb2feef3a9432e4ec65d9b"
+   },
+   {
+    "name": "COUNTRY.TXT",
+    "bytes": 13965,
+    "crc32": "f67a96f2",
+    "modified": "2026-07-29 13:50:18",
+    "sha256": "b8f3a5c50e5b60de5dba1c675787eac72bee2cf6e949adb0499b5877cf9fc12a"
+   },
+   {
+    "name": "ENTITY.TXT",
+    "bytes": 5605,
+    "crc32": "fad27bfa",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "fc470e71334ee2e0efa5b74574e00bc5cb17dbfcd79568a4ad9181ccfd2be6bd"
+   },
+   {
+    "name": "IMP_ATR.TXT",
+    "bytes": 215052391,
+    "crc32": "5b314103",
+    "modified": "2026-07-29 13:50:16",
+    "sha256": "19a6b91978c092f160637dc707ac219fd24229c1955d6022244ae12c83eebcc8"
+   },
+   {
+    "name": "IMP_DET.TXT",
+    "bytes": 1795209312,
+    "crc32": "d4f5cc06",
+    "modified": "2026-07-29 13:50:12",
+    "sha256": "5a0eefc172508e784e9eb5f93ead7b853c19d6bf9b9050840241f509819a1781"
+   },
+   {
+    "name": "IMP_INFO.TXT",
+    "bytes": 42668048,
+    "crc32": "a4859c45",
+    "modified": "2026-07-29 13:49:56",
+    "sha256": "5e98b519b300dfd7f9499ac4db1f7db57d5abbdfe20869c8376900f449ac469f"
+   },
+   {
+    "name": "LAND_DET.TXT",
+    "bytes": 77785191,
+    "crc32": "232b3f57",
+    "modified": "2026-07-29 13:50:16",
+    "sha256": "426443487c87d65ccb28346bb3e0d371b00a9c3fe9788a563f3455028333e18e"
+   },
+   {
+    "name": "LAWSUIT.TXT",
+    "bytes": 841806,
+    "crc32": "e490bfb9",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "6a42159b430d69f7a0700b0bd08fd7ac41ab3e4716bd6f927dec4db9ebdbc219"
+   },
+   {
+    "name": "MOBILE_HOME_INFO.TXT",
+    "bytes": 12897240,
+    "crc32": "4a2678f1",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "89e39eef6016f8e2881c502f3b5fc64498153b0447182809a0554c2168eaf605"
+   },
+   {
+    "name": "PROP.TXT",
+    "bytes": 4348428852,
+    "crc32": "efabba20",
+    "modified": "2026-07-29 13:48:34",
+    "sha256": "d862df02948a1d67ca9819e1289d021e6387c4fd07d9d2d290d3729b7c83183a"
+   },
+   {
+    "name": "PROP_ENT.TXT",
+    "bytes": 8542406845,
+    "crc32": "f704044d",
+    "modified": "2026-07-29 13:49:52",
+    "sha256": "58f39be34a42b0115e1e7ec575273d64cb03d2ebee96b87c0c42781da7922b2d"
+   },
+   {
+    "name": "SB12.TXT",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2026-07-29 13:50:20",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "name": "SKETCH_INFO.TXT",
+    "bytes": 132151958,
+    "crc32": "67cc12f4",
+    "modified": "2026-07-29 13:50:20",
+    "sha256": "84f00462c9fbdee46b4d8894bd6f8c748f3cf94f5104247105437dd90d53e13e"
+   },
+   {
+    "name": "STATE_CD.TXT",
+    "bytes": 5715,
+    "crc32": "cb41a06c",
+    "modified": "2026-07-29 13:49:54",
+    "sha256": "8b7a925c2ffb38ff8d031592ff14182177921622fc1531f3efb3aea3a8c795fb"
+   },
+   {
+    "name": "TAX_DEFERRAL_INFO.TXT",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2026-07-29 13:50:18",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "name": "TOTALS.TXT",
+    "bytes": 403866,
+    "crc32": "1e21bad0",
+    "modified": "2026-07-29 13:49:52",
+    "sha256": "41a3be478b85d5ced70775b16d7f254a35c4fce028c668217149a3f32cc1a4c4"
+   },
+   {
+    "name": "3f6303a8-8af2-11f1-b455-0242ac11000a_exportTotals.pdf",
+    "bytes": 670841,
+    "crc32": "beb8f59e",
+    "modified": "2026-07-29 13:50:20",
+    "sha256": "19a8a1af908bd17a11f142dcbeb6a298bf91cf47a7ef4fd95064a0dbf7ae0dd1"
+   }
+  ],
+  "appraisal_header": {
+   "run_date_time": "07/28/2026 19:56",
+   "file_description": "Appraisal Export - 2018",
+   "appraisal_year": "2018",
+   "supplement_number": "0000",
+   "entity": "Multi",
+   "office_name": "Travis",
+   "tp_version": "8.1.33.23",
+   "export_version": "8.0.0.33"
+  }
+ },
+ {
+  "archive": "2018_Shapefiles.zip",
+  "folder": "traviscad.govqa.us_R010955-110226_gis2018",
+  "bytes": 178134562,
+  "sha256": "64e1a626bd09ad2aad4d0800543e67c162b66b99982a37364c65c95632886c06",
+  "members": [
+   {
+    "name": "2018_Shapefiles/",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2026-06-02 14:02:46",
+    "sha256": null
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.cpg",
+    "bytes": 5,
+    "crc32": "0e813c50",
+    "modified": "2019-04-15 06:48:32",
+    "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.dbf",
+    "bytes": 122794306,
+    "crc32": "423ad083",
+    "modified": "2019-04-15 06:48:34",
+    "sha256": "f84a1b11b478a4940799cf84cb9d8d6d7cc3c7155274487b80ffd00e077c538a"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.prj",
+    "bytes": 583,
+    "crc32": "b31b94f7",
+    "modified": "2019-04-15 06:48:34",
+    "sha256": "220f22dc493ec65a6c264db7908034979f0ceb47f2928bacd2eed550ad496261"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.sbn",
+    "bytes": 3145396,
+    "crc32": "df5e031d",
+    "modified": "2019-04-15 06:48:34",
+    "sha256": "1f4e00a7c8adf2e40d93cf30f45f3963edd5ba0c660c31e7f7972df6956149a5"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.sbx",
+    "bytes": 72556,
+    "crc32": "804b8889",
+    "modified": "2019-04-15 06:48:34",
+    "sha256": "404ca471ca0229e678ae3dac618321ec97b25825776222147ec9ec86e681cacb"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shp",
+    "bytes": 134973148,
+    "crc32": "03b0eb74",
+    "modified": "2019-04-15 06:48:42",
+    "sha256": "264bed132997524bfa432b3e4b2266612473b8b0ce78262990426ae73ec55c07"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shp.ESRI5.7320.7316.sr.lock",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2021-01-04 08:29:22",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shp.TCAD325.7668.5852.sr.lock",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2020-02-29 09:01:28",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shp.TCAD338.10980.8264.sr.lock",
+    "bytes": 0,
+    "crc32": "00000000",
+    "modified": "2021-02-11 06:34:54",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shp.xml",
+    "bytes": 155857,
+    "crc32": "30a37c6b",
+    "modified": "2019-04-15 06:48:42",
+    "sha256": "faa3dffb2084dd6f437fac9a0bf3e20911fe9930e8d7e90a6a762134ca3ed7b3"
+   },
+   {
+    "name": "2018_Shapefiles/Parcel_poly.shx",
+    "bytes": 2822948,
+    "crc32": "b8b37e93",
+    "modified": "2019-04-15 06:48:42",
+    "sha256": "786760ecbd7a2668008ceec36dcde46592c5d9acb7e09758a3959b2428214d81"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.cpg",
+    "bytes": 5,
+    "crc32": "0e813c50",
+    "modified": "2019-04-15 06:49:24",
+    "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.dbf",
+    "bytes": 112914306,
+    "crc32": "3587b724",
+    "modified": "2019-04-15 06:49:26",
+    "sha256": "e604cf184d1d1919edcf0c482ac09de3d0e47b4129530b88f44b86bedf66260f"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.prj",
+    "bytes": 583,
+    "crc32": "b31b94f7",
+    "modified": "2019-04-15 06:49:26",
+    "sha256": "220f22dc493ec65a6c264db7908034979f0ceb47f2928bacd2eed550ad496261"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.sbn",
+    "bytes": 3145396,
+    "crc32": "37582bac",
+    "modified": "2019-04-15 06:49:26",
+    "sha256": "c91cae549d5a17168deb3ee4079f3019dc60470359de5785fbe729dbd21a74f5"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.sbx",
+    "bytes": 72556,
+    "crc32": "2671ca5b",
+    "modified": "2019-04-15 06:49:26",
+    "sha256": "0e49ad215185237d94b534225ada33be0b86bce9d4951362c34c70ad1b1edd35"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.shp",
+    "bytes": 135158008,
+    "crc32": "fba661b1",
+    "modified": "2019-04-15 06:49:34",
+    "sha256": "9675ffa8e9186aaa8621d00572df3f02ab3b24d6d6e945c54aa512d5accf1dca"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.shp.xml",
+    "bytes": 567,
+    "crc32": "702378a9",
+    "modified": "2019-04-15 06:49:34",
+    "sha256": "dd8b851e0aaee8a87471c1a0e7038571aaec3317b2f874828a9994eb9a1187fb"
+   },
+   {
+    "name": "2018_Shapefiles/_parcel_poly_bak.shx",
+    "bytes": 2822948,
+    "crc32": "0807341f",
+    "modified": "2019-04-15 06:49:34",
+    "sha256": "0cb2fe3b90f5b1f1422d71066ea8ec8722755777f7494f321a900ca3aaba3bf2"
+   }
+  ]
+ }
+]

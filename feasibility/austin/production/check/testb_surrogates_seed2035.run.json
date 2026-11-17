@@ -1,0 +1,48 @@
+{
+ "field": "v",
+ "seed": 2035,
+ "draws": 999,
+ "workers": 64,
+ "res": 250.0,
+ "settings": {
+  "kmax": 1000,
+  "max_lag": 16,
+  "chunk": 8
+ },
+ "cells_npz_sha256": "125bd0d19dfaae6062a887f3069e3a5f9f1f94c33de9ea22ec28a786038cff33",
+ "cells_in_null": 4982,
+ "cells_total": 5645,
+ "field_sha256": "235d33d0bc6700672f7868b682944dfa9bf75d858eef2e4173f8799c5538ad86",
+ "surrogates_sha256": "b67577695866d104a4c6bf65212c345fe4c1fff897b52444693dd6214d92df24",
+ "k_median": 169.0,
+ "k_offered": [
+  2,
+  3,
+  4,
+  7,
+  11,
+  18,
+  28,
+  44,
+  69,
+  108,
+  169,
+  264,
+  411,
+  641,
+  1000
+ ],
+ "setup_seconds": 2.0645272843539715,
+ "draw_seconds": 330.2952460888773,
+ "host": "ai",
+ "python": "3.12.7",
+ "numpy": "2.5.3",
+ "sources": {
+  "production/make_testb_surrogates.py": "37daf33fb7463f27ec00fd6432424b7164607bc89b43011fe28ff3dc39e72598",
+  "production/parallel_draws.py": "df48a54d446f01fa63618ec0c116747069bdadb3b1c3db620a10ae95a81eb8f6",
+  "freeze/scripts/nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "freeze/scripts/lowmem_null.py": "84a6e78ef074d6ae29f1dbbe1b76d0f8bd46d35a8d3850da73a8c5ccaadf87e9",
+  "freeze/scripts/calibration/cpu_null.py": "935ff76d17bc35070b9757132ba7998295a2bddfe852ed98d35e7782f6fc0f07"
+ },
+ "finished": "2026-11-11 18:57:36 EET"
+}

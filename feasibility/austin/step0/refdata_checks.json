@@ -1,0 +1,47 @@
+{
+ "source_2019": "stratmap19-landparcels_48453_travis_201909 (TxGIO/TNRIS StratMap, ArcGIS mirror, step 0)",
+ "layer_2019": {
+  "rows": 353920,
+  "tax_year_counts": {
+   "2019": 353920
+  },
+  "a1_rows": 259695,
+  "a1_year_built_positive": 257113,
+  "date_acq_distinct_values": [
+   "201909"
+  ],
+  "note": "DATE_ACQ is the data acquisition month, not a deed date; the layer has no improvement type, living area or foundation"
+ },
+ "same_houses_2019_vs_2026": {
+  "detached_2026": 144458,
+  "found_in_2019_by_prop_id": 144322,
+  "year_built_compared": 144233,
+  "year_built_identical": 143780,
+  "lot_area_compared": 144322,
+  "lot_area_within_1pct": 139208,
+  "lot_area_within_5pct": 142361
+ },
+ "survivorship_2019_to_2026": {
+  "boundary": "vnwj-xmz9 version of 2026-10-27 (same as step 0), used for both years",
+  "a1_built_by_2015_inside_2019": 151944,
+  "by_2026_status": {
+   "in the 2026 detached population": 144041,
+   "not A1 in 2026, or property ID changed": 3274,
+   "A1 in 2026, rebuilt (year built after 2015)": 2477,
+   "A1 in 2026, main improvement not type 01": 2152
+  },
+  "rebuilt_year_built_counts": {
+   "2016": 21,
+   "2017": 28,
+   "2018": 30,
+   "2019": 209,
+   "2020": 288,
+   "2021": 414,
+   "2022": 546,
+   "2023": 354,
+   "2024": 231,
+   "2025": 342,
+   "2026": 14
+  }
+ }
+}

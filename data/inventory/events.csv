@@ -1,0 +1,174 @@
+﻿event_id,record_ids,n_buildings,event_date_start,year,qism,address_base,loc_category,x_utm36,y_utm36,matched_extent_m,severity_class,cause_group,possible_duplicate,located_AB
+EV001,DA-R004,1,2014-01-05,2014,العطارين,العطارين,D_district_only,,,,partial_structural,deterioration,,False
+EV002,DA-R006,1,2014-01-07,2014,مينا البصل,كوم الشقافة,C_neighbourhood,203742.1,3453723.6,335.0,total,deterioration,,False
+EV003,DA-R009,1,2014-01-01,2014,غير محدد,غير محدد,E_unlocated,,,,partial_structural,deterioration,,False
+EV004,DA-R014,1,2014-02-13,2014,محرم بك,ش قاسم أمين,A_street,206340.8,3454447.0,110.0,total,deterioration,,True
+EV005,DA-R020,1,2014-02-19,2014,محرم بك,غربال - ش جميل ثابت,A_street,204810.9,3454463.5,131.0,partial_element,deterioration,,True
+EV006,DA-R037,1,2014-03-13,2014,سيدي جابر,سموحة - المركز التجاري - كافيتيريا فيولا,C_neighbourhood,209541.8,3456930.1,,partial_element,technical_violation,,False
+EV007,DA-R047,1,2014-04-05,2014,الدخيلة,ش منشية العلماء,D_district_only,,,,partial_structural,deterioration,,False
+EV008,DA-R049,1,2014-04-13,2014,العطارين,كوم الدكة - ش علي البدوي,B_street_review,205227.4,3455534.4,96.0,partial_structural,technical_violation,,True
+EV009,DA-R053,1,2014-05-09,2014,أول المنتزة,ش عمر بن عبد العزيز,B_street_ambiguous,,,,partial_element,deterioration,,False
+EV010,DA-R054,1,2014-05-15,2014,الدخيلة,ش الكورنيش,D_district_only,,,,partial_element,works_on_building,,False
+EV011,DA-R057,1,2014-05-28,2014,سيدي جابر,ش المشير أحمد إسماعيل,A_street,208672.4,3458492.7,504.0,total,works_on_building,,True
+EV012,DA-R058,1,2014-05-30,2014,أول المنتزة,أول المنتزة,D_district_only,,,,partial_structural,works_on_building,,False
+EV013,DA-R059,1,2014-06-01,2014,أول الرمل,جناكليس - ش مرتضى,B_street_review,211376.9,3460274.4,180.0,partial_structural,deterioration,,True
+EV014,DA-R062,1,2014-06-06,2014,الجمرك,ش سوق السمك القديم,A_street,203106.1,3455703.5,61.0,partial_element,deterioration,,True
+EV015,DA-R066,1,2014-07-10,2014,أول الرمل,ش الجزري,D_district_only,,,,partial_structural,deterioration,,False
+EV016,DA-R067,1,2014-07-15,2014,محرم بك,ش عرفان,B_street_review,206016.5,3454509.8,548.0,partial_structural,deterioration,,True
+EV017,DA-R068,1,2014-07-16,2014,محرم بك,منطقة نادي الصيد - ش محمد علي,A_street,207767.5,3454930.7,45.0,total,deterioration,,True
+EV018,DA-R070,1,2014-07-24,2014,اللبان,ش علي بك الكبير,A_street,203788.8,3455304.1,268.0,partial_structural,deterioration,,True
+EV019,DA-R077,1,2014-08-22,2014,غير محدد,غير محدد,E_unlocated,,,,partial_structural,deterioration,,False
+EV020,DA-R078,1,2014-08-26,2014,أول المنتزة,ش خالد بن الوليد,B_street_ambiguous,,,,partial_structural,works_adjacent,,False
+EV021,DA-R081,1,2014-08-29,2014,ثان الرمل,باكوس - ش محطة السوق,A_street,211571.9,3459135.6,653.0,partial_structural,deterioration,,True
+EV022,DA-R085;DA-R086,2,2014-09-09,2014,باب شرقي,الحضرة - ش المنوفية,A_street,207968.3,3456362.3,54.0,total,deterioration,,True
+EV023,DA-R091,1,2014-10-05,2014,سيدي جابر,ش السنوسي,A_street,208434.2,3456515.9,118.0,partial_structural,works_on_building,,True
+EV024,DA-R096,1,2014-10-10,2014,غير محدد,غير محدد,E_unlocated,,,,partial_structural,deterioration,,False
+EV025,DA-R099,1,2014-10-18,2014,محرم بك,تقاطع ش يكن مع ش الكواكب,B_street_ambiguous,,,,total,deterioration,,False
+EV026,DA-R100,1,2014-10-22,2014,مينا البصل,منطقة المتراس - ش الباجي,C_neighbourhood,201154.8,3451091.4,1810.0,total,deterioration,,False
+EV027,DA-R102,1,2014-11-01,2014,أول العامرية,الكيلو 21 قبلي - ش نور الإسلام,B_street_ambiguous,,,,total,works_on_building,,False
+EV028,DA-R103,1,2014-11-03,2014,العطارين,كوم الدكة - ش سيد درويش,B_street_review,205302.2,3455479.3,204.0,total,deterioration,,True
+EV029,DA-R117,1,2014-11-30,2014,كرموز,غيط العنب,C_neighbourhood,205019.0,3453216.8,1548.0,total,deterioration,,False
+EV030,DA-R128,1,2014-12-16,2014,العطارين,شركة مصر العامرية للغزل والنسيج - ش صلاح سالم,A_street,204175.5,3455566.4,437.0,partial_structural,technical_violation,,True
+EV031,DA-R135,1,2015-01-07,2015,المنشية,مسجد بن خلدون - ش النصر,A_street,203389.7,3455684.9,333.0,partial_structural,deterioration_weather,,True
+EV032,DA-R136,1,2015-01-07,2015,أول المنتزة,الأزاريطة,D_district_only,,,,partial_element,deterioration_weather,,False
+EV033,DA-R138,1,2015-01-11,2015,محرم بك,غربال - ش الباب الجديد,D_district_only,,,,partial_element,works_on_building,,False
+EV034,DA-R140,1,2015-01-13,2015,أول المنتزة,سيدي بشر - تقاطع ش علي باشا إبراهيم مع ش عبد المحسن الحسيني,A_street,212718.7,3462300.8,222.0,partial_element,water_leak,,True
+EV035,DA-R141,1,2015-01-16,2015,ثان الرمل,الظاهرية,C_neighbourhood,211154.5,3458478.5,957.0,partial_structural,deterioration,,False
+EV036,DA-R145,1,2015-01-18,2015,الدخيلة,ش مسجد الخطيب,D_district_only,,,,partial_structural,deterioration,,False
+EV037,DA-R151;DA-R152,2,2015-01-22,2015,الدخيلة,الهانوفيل - خلف مسجد القويري,C_neighbourhood,191449.9,3446450.5,,partial_structural,external_accident,,False
+EV038,DA-R161;DA-R163,2,2015-01-28,2015,مينا البصل,القباري - عشش طابية,C_neighbourhood,203509.2,3452919.5,1349.0,total,works_on_building,,False
+EV039,DA-R173,1,2015-02-12,2015,ثان الرمل,ش أبو كامل الشجاع,A_street,212576.7,3460503.3,115.0,partial_element,deterioration_weather,,True
+EV040,DA-R175,1,2015-02-22,2015,الجمرك,مواجه لقصر رأس التين,C_landmark,201681.3,3456008.9,294.0,partial_structural,deterioration,,False
+EV041,DA-R178,1,2015-02-25,2015,المنشية,ش الشهيد مصطفى حافظ,A_street,203466.3,3455957.5,223.0,partial_structural,external_accident,,True
+EV042,DA-R179,1,2015-02-26,2015,الدخيلة,وادي القمر,C_neighbourhood,198773.6,3449407.1,348.0,partial_structural,works_adjacent,,False
+EV043,DA-R187,1,2015-03-08,2015,سيدي جابر,وينجت - ش الطيار محمود أبو السعود,C_neighbourhood,210278.1,3458808.2,,partial_structural,works_on_building,,False
+EV044,DA-R188,1,2015-03-08,2015,أول الرمل,فليمنج - ش الطيار,D_district_only,,,,partial_structural,deterioration,"MEDIUM same date, identical injury count, different address [EV045]",False
+EV045,DA-R189,1,2015-03-08,2015,أول الرمل,جليم,C_neighbourhood,210191.9,3460201.6,,total,deterioration,"MEDIUM same date, identical injury count, different address [EV044]",False
+EV046,DA-R192,1,2015-03-13,2015,كرموز,غيط العنب - ش الغابة,A_street,205371.2,3453726.9,178.0,total,deterioration,"WEAK same date and source text, different address (may be separate buildings) [EV047]",True
+EV047,DA-R193,1,2015-03-13,2015,كرموز,غيط العنب - ش الفواكة,A_street,205105.5,3453700.6,339.0,total,deterioration,"WEAK same date and source text, different address (may be separate buildings) [EV046]",True
+EV048,DA-R194,1,2015-03-16,2015,الجمرك,حارة الصعايدة,A_street,203042.2,3455853.6,15.0,total,deterioration,,True
+EV049,DA-R198,1,2015-03-31,2015,الجمرك,حارة تيمور - منطقة بحري,A_street,203037.4,3456086.8,103.0,total,deterioration,,True
+EV050,DA-R205,1,2015-04-16,2015,سيدي جابر,حمامات كليوباترا - ش رشدي,A_street,208163.3,3458526.7,81.0,partial_structural,deterioration,,True
+EV051,DA-R207,1,2015-04-20,2015,محرم بك,غيط الصعيدي - ش خضر باشا,A_street,207124.2,3455508.2,188.0,partial_structural,deterioration,,True
+EV052,DA-R223,1,2015-05-12,2015,باب شرقي,ش بن جهم,A_street,207513.4,3456273.7,37.0,partial_structural,deterioration,,True
+EV053,DA-R224,1,2015-05-17,2015,كرموز,ش النيل,A_street,204472.1,3454069.5,519.0,partial_structural,deterioration,,True
+EV054,DA-R226,1,2015-05-19,2015,سيدي جابر,ش الإسماعيلية,A_street,209603.9,3458523.2,399.0,partial_element,works_on_building,,True
+EV055,DA-R229,1,2015-05-25,2015,أول الرمل,جليم,C_neighbourhood,210191.9,3460201.6,,total,deterioration,MEDIUM source article dated on another event in same area (date may be wrong) [EV057],False
+EV056,DA-R235,1,2015-06-03,2015,الدخيلة,العجمي,C_neighbourhood,193030.2,3445594.5,6894.0,partial_structural,external_accident,,False
+EV057,DA-R245,1,2015-06-25,2015,أول الرمل,جليم,C_neighbourhood,210191.9,3460201.6,,total,deterioration,MEDIUM source article dated on another event in same area (date may be wrong) [EV055],False
+EV058,DA-R251,1,2015-07-18,2015,كرموز,غيط العنب - ش الرند,B_street_overture,205023.2,3453712.3,,partial_element,deterioration,,True
+EV059,DA-R265,1,2015-08-13,2015,كرموز,ش الوهابي,A_street,204704.8,3454009.6,121.0,partial_structural,external_accident,,True
+EV060,DA-R283,1,2015-08-31,2015,الجمرك,ش سيدي نصر الدين,B_street_review,202814.0,3456894.1,176.0,partial_structural,deterioration,,True
+EV061,DA-R292,1,2015-09-20,2015,سيدي جابر,الإبراهيمية - ش اللاجتيه,A_street,207426.9,3456875.8,148.0,partial_element,deterioration,,True
+EV062,DA-R294,1,2015-09-27,2015,غير محدد,,E_unlocated,,,,partial_element,deterioration,,False
+EV063,DA-R296,1,2015-10-03,2015,اللبان,ش العناني,A_street,203576.6,3454449.4,196.0,partial_structural,deterioration,,True
+EV064,DA-R297,1,2015-10-13,2015,الجمرك,حارة موافي,A_street,202776.5,3456211.5,49.0,partial_structural,deterioration,,True
+EV065,DA-R300,1,2015-10-24,2015,كرموز,حارة رحاب,A_street,204484.2,3454220.5,153.0,partial_element,deterioration,,True
+EV066,DA-R302,1,2015-10-26,2015,ثان الرمل,ش بلال بن رباح - منطقة أبو سرحة,B_street_ambiguous,,,,total,deterioration_weather,,False
+EV067,DA-R304,1,2015-10-28,2015,ثان المنتزة,أبو قير - ش الإمام مالك,A_street,220774.8,3468813.7,90.0,partial_structural,deterioration_weather,,True
+EV068,DA-R305,1,2015-10-28,2015,باب شرقي,الحضرة,C_neighbourhood,207379.4,3456435.2,1275.0,partial_structural,deterioration_weather,,False
+EV069,DA-R308,1,2015-10-30,2015,سيدي جابر,كليوباترا - ش سعد منصور من ش العقبة,A_intersection,208253.9,3457716.5,0.0,total,works_adjacent,,True
+EV070,DA-R311,1,2015-10-31,2015,باب شرقي,أرض المعسل - ش بن نصر,A_street,207596.0,3456581.2,101.0,partial_structural,deterioration_weather,,True
+EV071,DA-R312,1,2015-10-31,2015,كرموز,غيط العنب - ش وادي النطرون,A_street,204797.5,3453551.2,33.0,partial_structural,deterioration_weather,"WEAK same neighbourhood, 2 d apart, different street [EV075]",True
+EV072,DA-R313,1,2015-10-31,2015,اللبان,ش بن بطوطة,A_street,203573.6,3455059.8,349.0,partial_structural,deterioration_weather,,True
+EV073,DA-R314,1,2015-11-01,2015,اللبان,ش عبد المنعم الشرقاوي,B_street_review,203395.5,3454950.5,205.0,partial_element,deterioration_weather,,True
+EV074,DA-R315,1,2015-11-01,2015,اللبان,شارع باب البحر - بحري بك,D_district_only,,,,partial_structural,deterioration_weather,,False
+EV075,DA-R318,1,2015-11-02,2015,كرموز,غيط العنب - ش الرند,B_street_overture,205023.2,3453712.3,,partial_structural,deterioration_weather,"WEAK same neighbourhood, 2 d apart, different street [EV071]",True
+EV076,DA-R320,1,2015-11-04,2015,أول المنتزة,أبو قير - ش سوق الخضار,A_street,220594.5,3468840.1,203.0,partial_structural,deterioration_weather,,True
+EV077,DA-R321,1,2015-11-04,2015,أول المنتزة,السيوف,C_neighbourhood,214249.6,3460423.1,3191.0,partial_structural,deterioration_weather,,False
+EV078,DA-R322,1,2015-11-04,2015,كرموز,ش الأنطاكي,A_street,204384.0,3454344.7,34.0,partial_element,deterioration_weather,,True
+EV079,DA-R323,1,2015-11-05,2015,باب شرقي,الحضرة البحرية - ش العدالة,A_street,207515.8,3456231.2,45.0,partial_element,deterioration_weather,,True
+EV080,DA-R324,1,2015-11-05,2015,كرموز,ش الراوي,A_street,204568.4,3454528.2,101.0,partial_structural,deterioration_weather,,True
+EV081,DA-R325,1,2015-11-05,2015,كرموز,حارة الفنون,A_street,204607.0,3453950.6,114.0,partial_element,deterioration_weather,,True
+EV082,DA-R326,1,2015-11-05,2015,أول العامرية,عزبة التميز,D_district_only,,,,partial_element,deterioration_weather,,False
+EV083,DA-R327,1,2015-11-05,2015,اللبان,ش التوريني,D_district_only,,,,partial_element,deterioration_weather,,False
+EV084,DA-R328,1,2015-11-05,2015,ثان الرمل,القصعي - ش محمد أبو العنين,A_street,212444.8,3460421.8,163.0,partial_element,deterioration_weather,,True
+EV085,DA-R329,1,2015-11-05,2015,العطارين,ش الذهبي,A_street,204517.1,3454782.2,101.0,partial_element,deterioration_weather,,True
+EV086,DA-R330,1,2015-11-05,2015,أول المنتزة,السيوف شماعة - ش 6 مع ش مكة المكرمة,B_street_ambiguous,,,,partial_element,deterioration_weather,,False
+EV087,DA-R331;DA-R332,2,2015-11-05,2015,غير محدد,,E_unlocated,,,,partial_structural,deterioration_weather,,False
+EV088,DA-R336,1,2015-11-06,2015,الدخيلة,وادي القمر - ش صلاح الدين,A_street,198649.6,3449503.5,278.0,partial_structural,deterioration_weather,,True
+EV089,DA-R337,1,2015-11-06,2015,العطارين,محطة الرمل - ش السلطان حسين,A_street,205354.5,3456007.7,796.0,partial_element,deterioration_weather,,True
+EV090,DA-R338,1,2015-11-06,2015,مينا البصل,ش ورشة الموازين,D_district_only,,,,partial_structural,deterioration_weather,,False
+EV091,DA-R339,1,2015-11-06,2015,الجمرك,ش تيمور,A_street,203037.4,3456086.8,103.0,total,deterioration_weather,,True
+EV092,DA-R340,1,2015-11-06,2015,المنشية,ش فرنسا,B_street_review,204701.4,3454309.9,220.0,partial_element,deterioration_weather,,True
+EV093,DA-R341,1,2015-11-06,2015,محرم بك,غربال - ش أبو العلا,B_street_ambiguous,,,,partial_structural,deterioration_weather,,False
+EV094,DA-R342,1,2015-11-06,2015,محرم بك,الباب الجديد - ش المقداد,A_street,205177.4,3454531.4,117.0,partial_structural,deterioration_weather,,True
+EV095,DA-R343,1,2015-11-06,2015,محرم بك,أبيس - المنطقة العاشرة,C_neighbourhood,214494.0,3449711.9,10209.0,partial_element,deterioration_weather,,False
+EV096,DA-R354,1,2015-11-07,2015,أول الرمل,ش أبو حيان,B_street_review,211002.6,3459138.2,66.0,partial_element,deterioration_weather,,True
+EV097,DA-R355,1,2015-11-07,2015,محرم بك,ش أحد,A_street,205344.0,3454386.8,139.0,partial_structural,deterioration_weather,,True
+EV098,DA-R356,1,2015-11-07,2015,كرموز,ش المناشي,A_street,204466.9,3454116.3,185.0,partial_structural,deterioration_weather,,True
+EV099,DA-R357,1,2015-11-07,2015,باب شرقي,الحضرة - ش الجرجاني,A_street,207534.4,3456192.7,46.0,partial_structural,deterioration_weather,,True
+EV100,DA-R358,1,2015-11-07,2015,العطارين,كوم الدكة - حارة عويضة,C_neighbourhood,205283.8,3455418.2,582.0,partial_structural,deterioration_weather,,False
+EV101,DA-R359,1,2015-11-07,2015,اللبان,حارة مسجد كسفريت - ش الغزالي,A_street,203633.0,3455113.9,501.0,partial_structural,deterioration_weather,,True
+EV102,DA-R383,1,2015-11-08,2015,الدخيلة,منطقة أم زغيو - خلف شركة الشمعدان,C_neighbourhood,188516.8,3443228.1,6137.0,partial_element,deterioration_weather,,False
+EV103,DA-R388,1,2015-11-09,2015,اللبان,ش محمد يوسف,D_district_only,,,,partial_structural,deterioration_weather,,False
+EV104,DA-R389,1,2015-11-09,2015,اللبان,ش العناني,A_street,203576.6,3454449.4,196.0,total,deterioration_weather,,True
+EV105,DA-R390,1,2015-11-09,2015,مينا البصل,كوم الشقافة - حارة المراكبية,A_street,203776.1,3453678.8,86.0,partial_element,deterioration_weather,,True
+EV106,DA-R391,1,2015-11-09,2015,أول الرمل,زعربانة - ش الكسائي,A_street,210596.2,3458901.5,203.0,partial_structural,deterioration_weather,"WEAK same neighbourhood, 0 d apart, different street [EV107]",True
+EV107,DA-R392,1,2015-11-09,2015,أول الرمل,زعربانة - ش أبو فراس,A_street,211021.4,3459100.5,37.0,partial_structural,deterioration_weather,"WEAK same neighbourhood, 0 d apart, different street [EV106]",True
+EV108,DA-R396,1,2015-11-15,2015,كرموز,غيط العنب - حارة يوسف,A_street,204942.7,3453671.6,40.0,partial_structural,deterioration,,True
+EV109,DA-R402,1,2015-11-17,2015,كرموز,حارة المحلي,A_street,204364.1,3453781.7,36.0,total,deterioration,,True
+EV110,DA-R403,1,2015-11-17,2015,الجمرك,ش عبد ربه,A_street,202710.6,3456331.3,93.0,partial_structural,deterioration,,True
+EV111,DA-R406,1,2015-11-18,2015,الدخيلة,مبنى الضرائب العقارية - ش كوبري المكس,D_district_only,,,,partial_element,deterioration,,False
+EV112,DA-R409,1,2015-11-24,2015,الجمرك,حارة شقير,D_district_only,,,,partial_structural,deterioration,,False
+EV113,DA-R410,1,2015-11-24,2015,محرم بك,غيط العنب - ش ابن أنس,B_street_ambiguous,,,,total,works_adjacent,,False
+EV114,DA-R412,1,2015-11-25,2015,كرموز,غيط العنب,C_neighbourhood,205019.0,3453216.8,1548.0,partial_structural,works_adjacent,,False
+EV115,DA-R413,1,2015-12-01,2015,الجمرك,ش سيدي داوود,A_street,202714.5,3456459.7,127.0,total,deterioration_weather,,True
+EV116,DA-R418,1,2015-12-13,2015,كرموز,ش عبد الحليم الشريف,A_street,205545.0,3453704.8,210.0,partial_element,works_adjacent,,True
+EV117,DA-R425,1,2015-12-19,2015,الجمرك,ش مسجد أبو علي,A_street,203236.4,3455418.7,122.0,partial_structural,deterioration,,True
+EV118,DA-R426,1,2015-12-20,2015,محرم بك,ش الصوالح,A_street,206460.6,3454981.6,138.0,partial_element,deterioration,,True
+EV119,DA-R431,1,2015-12-24,2015,الدخيلة,البيطاش - ش مسجد النصر,B_street_ambiguous,,,,total,deterioration,,False
+EV120,DA-R432,1,2015-12-25,2015,الجمرك,ش سيدي عبد الرحمن من ش أبو وردة,B_street_review,202853.3,3456190.2,130.0,partial_element,deterioration,,True
+EV121,DA-R434,1,2015-12-26,2015,كرموز,ش المحاميد - ش العامري,A_street,204621.6,3454307.0,44.0,partial_structural,deterioration,,True
+EV122,DA-R437,1,2015-12-27,2015,كرموز,ش الرحاب,A_street,204484.2,3454220.5,153.0,partial_structural,deterioration,,True
+EV123,DA-R445,1,2016-01-10,2016,كرموز,ش الآداب - ش الوطنية,A_intersection,204426.1,3453886.6,0.0,total,deterioration,,True
+EV124,DA-R447,1,2016-01-11,2016,مينا البصل,كوم الشقافة - حارة المهدي,C_neighbourhood,203742.1,3453723.6,335.0,partial_structural,deterioration,,False
+EV125,DA-R449,1,2016-01-12,2016,ثان الرمل,فيكتوريا - ش فيليب جاد,A_street,212551.2,3460531.7,117.0,total,deterioration,,True
+EV126,DA-R456,1,2016-01-17,2016,سيدي جابر,عزبة هلش,D_district_only,,,,total,deterioration,,False
+EV127,DA-R462,1,2016-01-27,2016,الجمرك,حارة البطارية,D_district_only,,,,total,deterioration,,False
+EV128,DA-R463,1,2016-01-28,2016,أول المنتزة,سيدي بشر قبلي - ش الموحدين,A_street,213952.3,3461239.6,66.0,partial_element,works_on_building,,True
+EV129,DA-R464,1,2016-01-29,2016,محرم بك,غربال - ش بن يوسف,A_street,204983.6,3454732.2,47.0,partial_element,deterioration,,True
+EV130,DA-R465,1,2016-01-31,2016,مينا البصل,كوم الشقافة - ش العفاف,A_street,203902.3,3454003.8,58.0,partial_element,deterioration,,True
+EV131,DA-R467,1,2016-02-02,2016,محرم بك,غربال - ش النحوي من ش محمد سامى البارودى,D_district_only,,,,partial_structural,deterioration,,False
+EV132,DA-R471,1,2016-02-04,2016,مينا البصل,ش العمري,D_district_only,,,,total,deterioration,,False
+EV133,DA-R482,1,2016-02-20,2016,ثان الرمل,باكوس - ش فرج أبو العلا,A_street,211455.3,3459340.7,44.0,partial_element,deterioration,,True
+EV134,DA-R483;DA-R484,2,2016-02-21,2016,مينا البصل,حارة الاجتهاد,A_street,203840.9,3454121.1,54.0,partial_structural,deterioration,,True
+EV135,DA-R490,1,2016-03-03,2016,الجمرك,حارة مدورة,A_street,203132.4,3456002.1,84.0,partial_structural,deterioration,,True
+EV136,DA-R494;DA-R495;DA-R496,3,2016-03-11,2016,كرموز,ش الجارحي,B_street_review,204433.1,3454068.4,149.0,total,deterioration,,True
+EV137,DA-R506,1,2016-04-03,2016,سيدي جابر,كليوباترا - ش أحمد صدقي,C_neighbourhood,208083.0,3458045.5,,partial_element,deterioration,,False
+EV138,DA-R507,1,2016-04-05,2016,ثان الرمل,ش أحمد أبو سليمان,A_street,212605.0,3459313.7,970.0,total,deterioration,,True
+EV139,DA-R523,1,2016-04-14,2016,ثان الرمل,ش مسجد الحرمين - أحمد أبو سليمان,B_street_ambiguous,,,,total,deterioration,,False
+EV140,DA-R525,1,2016-04-20,2016,المنشية,ش الهماميل,D_district_only,,,,partial_element,works_on_building,,False
+EV141,DA-R526,1,2016-04-27,2016,الجمرك,ش تيمور,A_street,203037.4,3456086.8,103.0,total,deterioration,,True
+EV142,DA-R529,1,2016-05-03,2016,المنشية,ش محمود مصطفى,D_district_only,,,,partial_element,deterioration,,False
+EV143,DA-R531,1,2016-05-14,2016,محرم بك,ش المعلم يعقوب - غربال,A_street,205362.7,3454329.0,140.0,partial_element,deterioration,,True
+EV144,DA-R535;DA-R536,2,2016-05-21,2016,محرم بك,ش السبكي - ش عمر مكرم,A_intersection,205050.0,3454847.2,0.0,total,deterioration,,True
+EV145,DA-R539;DA-R540,2,2016-05-29,2016,كرموز,ش النيل,A_street,204472.1,3454069.5,519.0,total,deterioration,,True
+EV146,DA-R543,1,2016-06-06,2016,العطارين,ش إسماعيل مهنا,A_street,204218.7,3454943.3,788.0,partial_element,deterioration,,True
+EV147,DA-R549,1,2016-06-19,2016,اللبان,اللبان,D_district_only,,,,total,deterioration,,False
+EV148,DA-R550,1,2016-06-20,2016,غير محدد,فيللا شيكوريل التراثية,E_unlocated,,,,partial_structural,deterioration,,False
+EV149,DA-R554,1,2016-06-24,2016,كرموز,غيط العنب - ش القرنفل,A_street,205097.0,3453493.8,128.0,partial_structural,deterioration,,True
+EV150,DA-R559,1,2016-07-01,2016,اللبان,حارة خورشيد - ش بن ميسر,B_street_review,203674.7,3454771.8,64.0,total,deterioration,,True
+EV151,DA-R564,1,2016-07-14,2016,مينا البصل,كوم الشقافة - حارة بن النحاس,A_street,203747.2,3453649.3,78.0,partial_structural,deterioration,,True
+EV152,DA-R567,1,2016-07-16,2016,سيدي جابر,كليوباترا,C_neighbourhood,208083.0,3458045.5,,partial_element,deterioration,,False
+EV153,DA-R570,1,2016-07-18,2016,الجمرك,ش بن العفيفي,B_street_review,202953.1,3456231.0,50.0,partial_structural,deterioration,,True
+EV154,DA-R571,1,2016-07-20,2016,كرموز,ش النيل,B_street_review,204472.1,3454069.5,519.0,partial_element,deterioration,,True
+EV155,DA-R576,1,2016-07-27,2016,محرم بك,ش الكمال,A_street,205926.6,3454409.3,99.0,total,deterioration,,True
+EV156,DA-R583,1,2016-08-11,2016,أول الرمل,ش عبد السلام عارف,A_street,211122.5,3460596.6,1759.0,total,works_on_building,,True
+EV157,DA-R588,1,2016-08-21,2016,أول المنتزة,منطقة الجزيرة الخضراء - ش السلام,B_street_ambiguous,,,,partial_element,deterioration,,False
+EV158,DA-R589;DA-R590;DA-R591,3,2016-08-27,2016,الدخيلة,المكس - خلف مسجد الروبي,C_neighbourhood,198979.6,3446983.8,4537.0,total,external_accident,same building ordinal repeated within event,False
+EV159,DA-R594,1,2016-09-03,2016,كرموز,ش الوهابي,A_street,204704.8,3454009.6,121.0,partial_structural,deterioration,,True
+EV160,DA-R601,1,2016-09-21,2016,محرم بك,ش الحبشة,A_street,205414.6,3454546.4,138.0,partial_element,works_adjacent,,True
+EV161,DA-R603,1,2016-09-22,2016,المنشية,ش مسجد عبد اللطيف,A_street,203451.7,3455672.2,18.0,total,works_adjacent,,True
+EV162,DA-R604,1,2016-09-27,2016,أول المنتزة,سيدي بشر بحري - ش مسجد التضامن,A_street,216740.5,3456056.6,175.0,partial_element,works_adjacent,,True
+EV163,DA-R616,1,2016-10-19,2016,المنشية,ش فرنسا,B_street_review,204701.4,3454309.9,220.0,partial_structural,deterioration,,True
+EV164,DA-R628,1,2016-10-29,2016,كرموز,ش بن مقلة من ش باب الملوك,A_intersection,204112.9,3453737.6,0.0,partial_structural,deterioration_weather,,True
+EV165,DA-R634,1,2016-11-06,2016,كرموز,غيط العنب,C_neighbourhood,205019.0,3453216.8,1548.0,partial_element,deterioration,,False
+EV166,DA-R636,1,2016-11-08,2016,المنشية,ش القاضي جمال الدين,A_street,203372.0,3455570.5,53.0,partial_structural,deterioration,,True
+EV167,DA-R640,1,2016-11-19,2016,كرموز,ش المازني,A_street,204311.7,3454324.1,132.0,partial_structural,deterioration,,True
+EV168,DA-R646,1,2016-11-24,2016,اللبان,مدرسة نبيل الوقاد الابتدائية - ش بحري بك,A_street,203475.8,3455055.9,174.0,partial_structural,works_on_building,,True
+EV169,DA-R651,1,2016-11-30,2016,باب شرقي,منطقة باب شرقي,D_district_only,,,,total,deterioration_weather,,False
+EV170,DA-R652,1,2016-12-02,2016,كرموز,ش باب الملوك,A_street,204294.0,3453754.7,229.0,partial_element,deterioration_weather,,True
+EV171,DA-R655,1,2016-12-05,2016,باب شرقي,سبورتنج - طريق الجيش,A_street,207437.6,3458046.4,1253.0,partial_element,deterioration,,True
+EV172,DA-R656,1,2016-12-08,2016,سيدي جابر,الإبراهيمية - ش ممفيس,A_street,207031.9,3457262.2,408.0,partial_structural,deterioration,,True
+EV173,DA-R664,1,2016-12-24,2016,سيدي جابر,كليوباترا - ش صفوت منصور,A_street,208315.8,3458296.3,78.0,partial_element,deterioration,,True

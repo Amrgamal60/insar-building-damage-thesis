@@ -1,0 +1,60 @@
+{
+ "n_cells": 111039,
+ "windows": 88,
+ "kmax": 1000,
+ "ks": [
+ ],
+ "variogram_pairs": 15338069,
+ "smoothing_nnz": 310242966,
+ "pair_seconds": 1.1,
+ "gpu_gb_estimate": {
+  "W_k (csr float64 + int32 idx)": 3.72,
+  "vp (W x P float64, as nyc_lib)": 10.8,
+  "pair index gi, gj, H (int64/float64)": 0.55,
+  "z, x0, xs (W x n float64, x3)": 0.23,
+  "vario chunk d (16 x P float64, x3 temporaries)": 5.89
+ },
+ "gpu_gb_estimate_total": 21.19,
+ "surrogate_file_gb (999 x W x n float32)": 39.0
+}
+init 77.7 s; pool 22.01 GB
+draw 0: 7.2 s (k = 69); pool 11.04 GB
+draw 1: 6.9 s (k = 69); pool 11.04 GB
+draw 2: 6.9 s (k = 69); pool 11.04 GB
+draw 3: 6.9 s (k = 69); pool 11.04 GB
+draw 4: 6.9 s (k = 69); pool 11.04 GB
+{
+ "n_cells": 111039,
+ "windows": 88,
+ "kmax": 1000,
+ "ks": [
+ ],
+ "variogram_pairs": 15338069,
+ "smoothing_nnz": 310242966,
+ "pair_seconds": 1.1,
+ "gpu_gb_estimate": {
+  "W_k (csr float64 + int32 idx)": 3.72,
+  "vp (W x P float64, as nyc_lib)": 10.8,
+  "pair index gi, gj, H (int64/float64)": 0.55,
+  "z, x0, xs (W x n float64, x3)": 0.23,
+  "vario chunk d (16 x P float64, x3 temporaries)": 5.89
+ },
+ "gpu_gb_estimate_total": 21.19,
+ "surrogate_file_gb (999 x W x n float32)": 39.0,
+ "implementation": "LowMemVariogramNull(chunk=8)",
+ "init_seconds": 77.7,
+ "gpu_gb_after_init": 22.01,
+ "draw_seconds": [
+  7.2,
+  6.9,
+  6.9,
+  6.9,
+  6.9
+ ],
+ "ks_chosen": [
+ ],
+ "steady_draw_seconds": 6.9,
+ "peak_gpu_gb": 11.04,
+ "projected_999_hours": 1.9,
+ "projected_499_hours": 1.0
+}

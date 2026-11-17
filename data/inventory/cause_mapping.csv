@@ -1,0 +1,9 @@
+﻿cause_group,regex_on_initial_cause
+deterioration_weather,تقادم.*(الرياح|الأمطار)
+deterioration,تقادم وتهالك
+adjacent_collapse,انهيار بعقار مجاور
+works_adjacent,(مجاور|بجوار العقار|بأسفل العقار)
+works_on_building,(ترميم|هدم|إنشاء|إنشائ|انشاء|انشائ|بناء|تشييد|حفر|مواد البناء)
+external_accident,(غاز|حريق|اصطدام|أفران)
+technical_violation,مخالف
+water_leak,(تسرب|مياة|مياه)

@@ -1,0 +1,7 @@
+2026-11-01: Runtime ask returned explicit approval.
+Keep every registered cell and count; no reductions. Allow exceeding 12 hours.
+Use a single bounded GPU generator whenever it fits; query free VRAM before each GPU start.
+Never use more than min(free VRAM minus 1 GiB, 8 GiB); leave other GPU processes untouched.
+Fall back to CPU automatically on allocation failure; CPU/GPU equality tolerance remains 1e-11.
+Record device per dataset. Complete small Test A null cells first, then scale cells, then Test B.
+Power cells follow the required null/scale/B order. Report measured throughput and revised ETA.

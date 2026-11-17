@@ -1,0 +1,34 @@
+{
+ "collection": "C3959290248-ASF",
+ "granule": "OPERA_L3_DISP-S1-STATIC_F28482_20140403_S1A_v1.0",
+ "cmr_updated": "2026-01-14T21:55:18.000Z",
+ "frame": 28482,
+ "files": [
+  {
+   "file": "OPERA_L3_DISP-S1-STATIC_F28482_20140403_S1A_v1.0.iso.xml",
+   "bytes": 124898,
+   "md5_matches_asf": true,
+   "sha256": "60cfd94f57518d3a99793401a656e24165be2a7a95a0516171abed38f24b221f"
+  },
+  {
+   "file": "OPERA_L3_DISP-S1-STATIC_F28482_20140403_S1A_v1.0_dem.tif",
+   "bytes": 83808724,
+   "md5_matches_asf": true,
+   "sha256": "df34139fe7e844da791811e458bf0d4ab7c5fcccb88cf786dd7c4550c987a587"
+  },
+  {
+   "file": "OPERA_L3_DISP-S1-STATIC_F28482_20140403_S1A_v1.0_layover_shadow_mask.tif",
+   "bytes": 243921,
+   "md5_matches_asf": true,
+   "sha256": "e415dae48a2a600f043c69412d26c90902bcfece3e767062ba81fd44a277b998"
+  },
+  {
+   "file": "OPERA_L3_DISP-S1-STATIC_F28482_20140403_S1A_v1.0_line_of_sight_enu.tif",
+   "bytes": 20131826,
+   "md5_matches_asf": true,
+   "sha256": "be9b78e000c24039ca66dce1f36a376f1e13bf56ac529667c2183554c5ddeed1"
+  }
+ ],
+ "manifest_sha256": "3d97aada0c79c7430643f54ad4e03ee3da9ff5753fc21e1583bf8979ad777933",
+ "finished": "2026-11-11 07:35:10 EET"
+}

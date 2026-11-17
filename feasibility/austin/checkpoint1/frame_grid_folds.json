@@ -1,0 +1,88 @@
+{
+ "frame": 28482,
+ "source": "https://github.com/opera-adt/burst_db/releases/download/v0.18.0/",
+ "files": {
+  "opera-s1-disp-0.18.0-frame-to-burst.json.zip": {
+   "bytes": 4275029,
+   "sha256": "28e9ca8ccb8531bc5ecf5ead7f6dde9ffc46db3de7e80aa496fcd8aab6556083"
+  },
+  "frame-geometries-simple-0.18.0.geojson.zip": {
+   "bytes": 3121422,
+   "sha256": "bffccf981d21730916dcb8940b927854d647e1c2042b591860643d81af653e0d"
+  }
+ },
+ "frame_grid": {
+  "epsg": 32614,
+  "snap_m": 30.0,
+  "xmin": 448080,
+  "ymin": 3170700,
+  "xmax": 735600,
+  "ymax": 3409770,
+  "bursts": 27,
+  "database_version": "0.18.0"
+ },
+ "frame_footprint": {
+  "orbit_pass": "ASCENDING",
+  "area_km2": 43448.4
+ },
+ "frame_clip": {
+  "population_houses": 149316,
+  "inside_frame_footprint": 149316,
+  "outside_frame_footprint": 0,
+  "inside_frame_bounding_box": 149316,
+  "nearest_distance_to_footprint_edge_km": 13.87
+ },
+ "eligible": {
+  "houses": 149316,
+  "unique_pixels": 114058,
+  "houses_sharing_a_pixel": 68492,
+  "max_houses_in_a_pixel": 5,
+  "blocks_2km": 213,
+  "houses_whose_point_block_differs_from_pixel_block": 931,
+  "cells_250m": 5645,
+  "cells_250m_with_3_or_more_houses": 5019,
+  "houses_per_250m_cell_median": 23.0
+ },
+ "folds": {
+  "function": "nyc_lib.fold_map (frozen copy)",
+  "nyc_lib_sha256": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "seed": 42,
+  "order": "prop_id ascending",
+  "events_at_eligible_houses": 2846,
+  "by_fold": [
+   {
+    "fold": 0,
+    "houses": 29857,
+    "events": 566,
+    "blocks": 44
+   },
+   {
+    "fold": 1,
+    "houses": 29877,
+    "events": 570,
+    "blocks": 37
+   },
+   {
+    "fold": 2,
+    "houses": 29855,
+    "events": 564,
+    "blocks": 43
+   },
+   {
+    "fold": 3,
+    "houses": 29858,
+    "events": 567,
+    "blocks": 44
+   },
+   {
+    "fold": 4,
+    "houses": 29869,
+    "events": 579,
+    "blocks": 45
+   }
+  ]
+ },
+ "private_outputs_sha256": {
+  "eligible_grid_folds.parquet": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb"
+ }
+}

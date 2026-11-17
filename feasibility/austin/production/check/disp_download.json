@@ -1,0 +1,22 @@
+{
+ "frame": 28482,
+ "product": "OPERA_L3_DISP-S1 v1.0 (CMR C3294057315-ASF)",
+ "end_datetime": "2025-12-01",
+ "bbox_lonlat": [
+  -97.95758099999999,
+  30.080344,
+  -97.539756,
+  30.534671
+ ],
+ "buffer_m": 2000.0,
+ "boundary_sha256": "9656bd73a7a7989ef41fd0610f716a8078d0fe843d0466b21e9acef9f93ede47",
+ "opera_utils": "0.25.8",
+ "exit_code": 0,
+ "attempts": 1,
+ "files": 254,
+ "manifest_sha256": "e261a28f544f41a618d605629925e0628f11b8a759a19fb35766f3ea01611fac",
+ "first": "OPERA_L3_DISP-S1_IW_F28482_VV_20160710T003437Z_20160926T003358Z_v1.0_20251023T225424Z.nc",
+ "last": "OPERA_L3_DISP-S1_IW_F28482_VV_20250418T003512Z_20251120T003508Z_v1.0_20260629T200309Z.nc",
+ "seconds": 2247.442854642868,
+ "finished": "2026-11-10 23:03:52 EET"
+}

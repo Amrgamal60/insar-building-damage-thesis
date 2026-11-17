@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://services1.arcgis.com/HGcSYZ5bvjRswoCb/arcgis/rest/services/TCAD_Parcels_Dec_2025/FeatureServer/0?f=pjson",
+    "access_date_utc": "2026-10-30T22:23:51.106570+00:00",
+    "http_status": 200,
+    "size_bytes": 24656,
+    "sha256": "613126081b6163b86779386aee2967ed61e3049bbaf10cc4b5aba7717f64e7cb",
+    "local_path": "/mnt/data/Master-projects/Alex_private/austin/crosswalk/raw/tcad_arcgis_metadata/layer.json"
+  },
+  {
+    "url": "https://taxmaps.traviscountytx.gov/arcgis/rest/services/Parcels/MapServer/0?f=pjson",
+    "access_date_utc": "2026-10-30T22:29:45.958682+00:00",
+    "http_status": 0,
+    "size_bytes": 0,
+    "sha256": null,
+    "local_path": null,
+    "error": "urllib.error.URLError: <urlopen error timed out>"
+  },
+  {
+    "url": "https://traviscad.org/faqs",
+    "access_date_utc": "2026-10-30T22:29:47.255278+00:00",
+    "http_status": 0,
+    "size_bytes": 0,
+    "sha256": null,
+    "local_path": null,
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

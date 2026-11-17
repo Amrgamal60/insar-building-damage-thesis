@@ -1,0 +1,46 @@
+{
+ "canopy_zip": "Tree_canopy_2018_study_area_fgdb.zip",
+ "canopy_zip_sha256": "de63add98983057542969630044535a5f11ba108313dcacb5d6628fdc2ac846d",
+ "ring_reading_area_check": {
+  "features": 3092138,
+  "rings": 5334637,
+  "rings_read_with_their_own_holes": 0,
+  "anticlockwise_rings": 104294,
+  "features_with_negative_stored_area": 104294,
+  "sum_read_m2": -378513433.14873695,
+  "sum_field_m2": -378513433.1486653,
+  "features_differing_by_more_than_1_m2_and_1_percent": 0,
+  "max_abs_difference_m2": 7.928162813186646e-05
+ },
+ "canopy_bounds": [
+  599185.7,
+  3329412.6,
+  636326.3,
+  3373493.0
+ ],
+ "parcels": 149316,
+ "parcels_inside_canopy_layer_bounds": 149316,
+ "parcels_without_pixels": 0,
+ "pixel_m": 0.5,
+ "pixel_area_over_polygon_area_median": 0.9999977871213384,
+ "canopy_share": {
+  "count": 149316.0,
+  "mean": 0.3568,
+  "std": 0.2284,
+  "min": 0.0,
+  "25%": 0.1688,
+  "50%": 0.3412,
+  "75%": 0.5233,
+  "max": 1.0
+ },
+ "share_zero": 2953,
+ "exact_check": {
+  "parcels": 300,
+  "seed": 2038,
+  "max_abs_difference": 0.0062142476048623885,
+  "mean_difference": -2.95459995203349e-05,
+  "p95_abs_difference": 0.0024750255459024435
+ },
+ "seconds": 76.8,
+ "out_sha256": "3e72c18fadd63e5aa17cec2417dd9b6ac280c5d5b158377472e0e228fe997662"
+}

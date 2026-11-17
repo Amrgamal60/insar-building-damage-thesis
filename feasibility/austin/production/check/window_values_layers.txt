@@ -1,0 +1,5 @@
+Layers used, as named in OPERA_L3_DISP-S1_IW_F28482_VV_20160710T003437Z_20160926T003358Z_v1.0_20251023T225424Z.nc:
+displacement: Line-of-sight displacement (meters)
+recommended_mask: Recommended Mask (unitless)
+water_mask: Water Mask (unitless)
+connected_component_labels: Connected Component Labels (unitless)

@@ -1,0 +1,167 @@
+{
+ "inputs": {
+  "full.npz": "2e39f2ff670c9954a35b229d8425568dba6d06a0b09364c58420a4f0f8aa526f",
+  "coverage.csv": "f0c6a0fa1e1eb984f086b7885a4975eb18e818febd7a01fbed52f9b23eb3bff6",
+  "insar_inputs.npz": "a6bb02b361c2f90d17b17bc00f351522ed153cae081a282ee8463fbd1b1b0661",
+  "city_landfill_perimeters.geojson": "9d9e98944eeca842b2bd51bc1f16e2416a5b0e4dfb9a33c09cffd77f9c66f14b",
+  "vnwj-xmz9.geojson": "9656bd73a7a7989ef41fd0610f716a8078d0fe843d0466b21e9acef9f93ede47",
+  "features_2018.parquet": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+  "eligible_grid_folds.parquet": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb"
+ },
+ "sign_check": {
+  "perimeters_used": 39,
+  "by_status": {
+   "INACTIVE": 35,
+   "ACTIVE": 4
+  },
+  "footprint_pixels": 8110,
+  "valid_footprint_pixels": 1183,
+  "perimeters_with_valid_pixels": 32,
+  "landfill_median_mm_yr": 8.867360107556456,
+  "subset_median_mm_yr": 8.02498928109928,
+  "valid_subset_pixels": 1305296,
+  "city_median_mm_yr": 8.395621460992931,
+  "difference_mm_yr": 0.8423708264571754,
+  "result": "not below"
+ },
+ "clay_contrast": {
+  "parcels": 149316,
+  "parcels_with_lep": 148204,
+  "parcels_with_amplitude": 140374,
+  "used": 139294,
+  "by_class": {
+   "low": {
+    "parcels": 16843,
+    "used": 16027,
+    "median_amplitude_mm": 2.86823783645373
+   },
+   "moderate": {
+    "parcels": 93002,
+    "used": 90136,
+    "median_amplitude_mm": 2.6089866696412214
+   },
+   "high": {
+    "parcels": 8963,
+    "used": 8526,
+    "median_amplitude_mm": 3.4967853826359163
+   },
+   "very high": {
+    "parcels": 29396,
+    "used": 24605,
+    "median_amplitude_mm": 3.631529302330612
+   }
+  },
+  "statistic_mm": 0.7228993433789799,
+  "interval_95": [
+   0.41318819566385123,
+   1.0343947880710422
+  ],
+  "blocks": 213,
+  "draws": 2000,
+  "seed": 2026,
+  "draws_undefined": 0,
+  "label": "demonstrated"
+ },
+ "coverage": {
+  "L12": {
+   "valid": {
+    "min": 79049,
+    "median": 81510.5,
+    "max": 84572
+   },
+   "houses_valid": {
+    "min": 104361,
+    "median": 107459.5,
+    "max": 111502
+   },
+   "construction_mask": {
+    "min": 28805,
+    "median": 30962.5,
+    "max": 33801
+   },
+   "valid_before_construction_mask": {
+    "min": 111181,
+    "median": 112766.0,
+    "max": 113391
+   }
+  },
+  "L24": {
+   "valid": {
+    "min": 70020,
+    "median": 71366.0,
+    "max": 74250
+   },
+   "houses_valid": {
+    "min": 92887,
+    "median": 94383.5,
+    "max": 98321
+   },
+   "construction_mask": {
+    "min": 38194,
+    "median": 40120.5,
+    "max": 42090
+   },
+   "valid_before_construction_mask": {
+    "min": 110547,
+    "median": 112076.5,
+    "max": 112593
+   }
+  },
+  "L36": {
+   "valid": {
+    "min": 62940,
+    "median": 63474.5,
+    "max": 64840
+   },
+   "houses_valid": {
+    "min": 83661,
+    "median": 84489.0,
+    "max": 86150
+   },
+   "construction_mask": {
+    "min": 46073,
+    "median": 47620.0,
+    "max": 48827
+   },
+   "valid_before_construction_mask": {
+    "min": 109972,
+    "median": 111472.5,
+    "max": 112019
+   }
+  },
+  "full": {
+   "valid": {
+    "min": 107527,
+    "median": 107527.0,
+    "max": 107527
+   },
+   "houses_valid": {
+    "min": 140374,
+    "median": 140374.0,
+    "max": 140374
+   },
+   "construction_mask": {
+    "min": 0,
+    "median": 0.0,
+    "max": 0
+   },
+   "valid_before_construction_mask": {
+    "min": 107527,
+    "median": 107527.0,
+    "max": 107527
+   }
+  }
+ },
+ "full_period_pixels": {
+  "subset": 2259712,
+  "valid_subset": 1305296,
+  "inside_city": 839735,
+  "valid_inside_city": 587004,
+  "house_pixels": 114058,
+  "valid_house_pixels": 107527
+ },
+ "outputs": {
+  "clay_contrast_draws.npy": "35da0fe3e78de6c13b5957f406060d22023fdb277af739ab67a70b35a3b4b4d3",
+  "sign_check_perimeters.csv": "5cfa559cd413eb9e0ae929abf17fcfa9e79afaa323dd6b630e5eb9e4e56792dd"
+ }
+}

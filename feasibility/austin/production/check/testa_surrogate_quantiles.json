@@ -1,0 +1,22 @@
+{
+ "sha256": "99d9e71bfbf25dd28d2fb563b159d022de6e402ad6067d5dd834b1ad7d62feff",
+ "surrogates_sha256": "07bf0d54eef4b62389ce81d62732388cbf62c9cc66a22a44e5d67308d556c055",
+ "fingerprint": "970344870bc083ddbe6d21260d00416e9afba5813b0a9e8a41007e8a5abb7e3e",
+ "shape": [
+  999,
+  5,
+  88
+ ],
+ "percentiles": [
+  0.5,
+  25,
+  50,
+  75,
+  99.5
+ ],
+ "sources": {
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1"
+ }
+}

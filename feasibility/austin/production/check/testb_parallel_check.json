@@ -1,0 +1,26 @@
+{
+ "parallel": "testb_v_seed2034.npz",
+ "sequential": "s3.npz",
+ "draws_compared": 3,
+ "seeds": [
+  2034,
+  2034
+ ],
+ "cells_equal": true,
+ "quarters_equal": true,
+ "bytes_identical": true,
+ "nan_identical": true,
+ "max_abs_diff": 0.0,
+ "k_parallel": [
+  169,
+  169,
+  169
+ ],
+ "k_sequential": [
+  169,
+  169,
+  169
+ ],
+ "sha256_first_draws": "2a5cb52cd383c389aedad69ca1e58e5a5cef3bbd24156f63ce3f1e4c90fb60aa",
+ "pass": true
+}

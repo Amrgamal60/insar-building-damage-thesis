@@ -1,0 +1,39 @@
+{
+ "gpu": "surrogates_conditional.tmp.npy",
+ "cpu": "surrogates_conditional.tmp.npy",
+ "draws_compared": 3,
+ "all_nan_identical": true,
+ "max_float32_steps": 0,
+ "values_not_identical": 0,
+ "values_compared": 17453010,
+ "share_not_identical": 0.0,
+ "max_abs_diff": 0.0,
+ "any_unwritten_draw": false,
+ "per_draw": [
+  {
+   "draw": 0,
+   "nan_identical": true,
+   "max_float32_steps": 0,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "all_zero": false
+  },
+  {
+   "draw": 1,
+   "nan_identical": true,
+   "max_float32_steps": 0,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "all_zero": false
+  },
+  {
+   "draw": 2,
+   "nan_identical": true,
+   "max_float32_steps": 0,
+   "values_not_identical": 0,
+   "max_abs_diff": 0.0,
+   "all_zero": false
+  }
+ ],
+ "pass": true
+}

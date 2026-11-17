@@ -1,0 +1,71 @@
+{
+ "label": "REAL RUN",
+ "test": "A",
+ "mode": "real",
+ "events_in_file": 2846,
+ "decoy_seed": null,
+ "decoy_houses_drawn_twice_or_more": null,
+ "cases": 1754,
+ "dropped": {
+  "no value in the window": 961,
+  "missing Baseline 1 input": 127,
+  "demolition-censored on or before the event date": 4
+ },
+ "rows": 83496,
+ "control_rows_dropped_missing_inputs": 5958,
+ "cases_by_year": {
+  "2018": 115,
+  "2019": 189,
+  "2020": 180,
+  "2021": 222,
+  "2022": 235,
+  "2023": 264,
+  "2024": 225,
+  "2025": 324
+ },
+ "cases_per_fold": [
+  319,
+  349,
+  346,
+  365,
+  375
+ ],
+ "houses_per_fold": [
+  29857,
+  29877,
+  29855,
+  29858,
+  29869
+ ],
+ "baseline_average_precision": 0.045994768404207076,
+ "observed": -0.0005775151161721351,
+ "draws": 999,
+ "exceedances": 930,
+ "p": 0.931,
+ "meets_rule": false,
+ "null_seconds": 25.93592258300032,
+ "elapsed_seconds": 76.38143214100023,
+ "workers": 64,
+ "inputs": {
+  "checkpoint1": {
+   "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+   "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+   "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+   "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+  },
+  "events": "23d0487cfed9403a56023e04175dc78620e5864a17f18693db1d72d307236ef0",
+  "field": "7a9ad77f75b05c4a13d7cc29db07da47c871c8a31e196aae49989a521aa4a4e4",
+  "null_fingerprint": "970344870bc083ddbe6d21260d00416e9afba5813b0a9e8a41007e8a5abb7e3e",
+  "surrogates": "07bf0d54eef4b62389ce81d62732388cbf62c9cc66a22a44e5d67308d556c055",
+  "quantiles": "99d9e71bfbf25dd28d2fb563b159d022de6e402ad6067d5dd834b1ad7d62feff"
+ },
+ "sources": {
+  "run_tests.py": "020c67e0c9f32b01520d45ef9e5b8897eeb720c68c641160219692c72985628b",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "test_b.py": "d5c0ea95db7897b1689e0f0847cfb19b61e17432672e5ba59c813d28742a4e1d"
+ },
+ "host": "ai",
+ "finished": "2026-11-12 09:23:52 EET"
+}

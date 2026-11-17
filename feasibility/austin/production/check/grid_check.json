@@ -1,0 +1,28 @@
+{
+ "granules": 254,
+ "first": "OPERA_L3_DISP-S1_IW_F28482_VV_20160710T003437Z_20160926T003358Z_v1.0_20251023T225424Z.nc",
+ "crs_epsg_32614": true,
+ "dx": [
+  30.0
+ ],
+ "dy": [
+  -30.0
+ ],
+ "x_range": [
+  600015.0,
+  640725.0
+ ],
+ "y_range": [
+  3328605.0,
+  3378495.0
+ ],
+ "shape": [
+  1664,
+  1358
+ ],
+ "centres_at_30k_plus_15": true,
+ "all_granules_same_grid": true,
+ "all_house_pixels_inside_subset": true,
+ "houses": 149316,
+ "grid_as_assumed": true
+}

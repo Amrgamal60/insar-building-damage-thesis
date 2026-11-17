@@ -1,0 +1,18 @@
+{
+ "houses": 149316,
+ "pixels": 114058,
+ "cells": 5645,
+ "inside_city_pixels": 839735,
+ "grid": {
+  "x0": 600015.0,
+  "y0": 3378495.0,
+  "rows": 1664,
+  "cols": 1358
+ },
+ "inputs": {
+  "eligible_grid_folds.parquet": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+  "vnwj-xmz9.geojson": "9656bd73a7a7989ef41fd0610f716a8078d0fe843d0466b21e9acef9f93ede47",
+  "grid_check.json": "6f47852bb51c4eb95310382e74de826ad638426c25db757d44af146d607f6620"
+ },
+ "npz_sha256": "a6bb02b361c2f90d17b17bc00f351522ed153cae081a282ee8463fbd1b1b0661"
+}

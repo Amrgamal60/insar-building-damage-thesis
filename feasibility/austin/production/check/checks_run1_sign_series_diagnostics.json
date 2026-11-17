@@ -1,0 +1,603 @@
+{
+ "step_test": {
+  "16 ring": [
+   {
+    "pixel": 1011427,
+    "good": true,
+    "v": 15.500678852446319,
+    "max_jump_mm": 144.0582275390625,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 32.876456470981836,
+    "first_half_v": 21.10698873315753,
+    "second_half_v": 4.225472361682315
+   },
+   {
+    "pixel": 972065,
+    "good": true,
+    "v": 14.858648822157386,
+    "max_jump_mm": 126.251220703125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 33.063812878393506,
+    "first_half_v": 20.187473342950156,
+    "second_half_v": 3.9205380839210333
+   },
+   {
+    "pixel": 981576,
+    "good": true,
+    "v": 14.784553240673471,
+    "max_jump_mm": 122.7569580078125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 33.0561774816455,
+    "first_half_v": 20.038116431136075,
+    "second_half_v": 3.6825973326998014
+   },
+   {
+    "pixel": 967896,
+    "good": true,
+    "v": 9.69028896192849,
+    "max_jump_mm": 135.37596893310547,
+    "max_jump_between": [
+     "2022-05-28",
+     "2022-06-09"
+    ],
+    "jumps_over_14mm": 169,
+    "resid_sd_mm": 29.912924843951114,
+    "first_half_v": 11.616082541760711,
+    "second_half_v": 8.654318984309542
+   },
+   {
+    "pixel": 1007340,
+    "good": true,
+    "v": 13.613688782582845,
+    "max_jump_mm": 139.0380859375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 170,
+    "resid_sd_mm": 30.661816387735513,
+    "first_half_v": 19.559536757834863,
+    "second_half_v": 8.171056354631903
+   },
+   {
+    "pixel": 981570,
+    "good": true,
+    "v": 15.342088662348708,
+    "max_jump_mm": 124.93133544921875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 166,
+    "resid_sd_mm": 32.9939618135554,
+    "first_half_v": 21.074513188444485,
+    "second_half_v": 4.240679851645766
+   },
+   {
+    "pixel": 962466,
+    "good": true,
+    "v": 9.456967016082393,
+    "max_jump_mm": 134.28115844726562,
+    "max_jump_between": [
+     "2022-05-28",
+     "2022-06-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 29.77349443657259,
+    "first_half_v": 10.895221076609092,
+    "second_half_v": 8.821965600215114
+   },
+   {
+    "pixel": 991082,
+    "good": true,
+    "v": 15.240673388933567,
+    "max_jump_mm": 126.22833251953125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 164,
+    "resid_sd_mm": 32.98357619952907,
+    "first_half_v": 20.789691789714997,
+    "second_half_v": 4.291065217845089
+   }
+  ],
+  "16 footprint": [
+   {
+    "pixel": 984275,
+    "good": true,
+    "v": 16.36110608622648,
+    "max_jump_mm": 126.4190673828125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 163,
+    "resid_sd_mm": 32.57220886899766,
+    "first_half_v": 22.116408104439014,
+    "second_half_v": 5.478298002795822
+   },
+   {
+    "pixel": 1001924,
+    "good": true,
+    "v": 15.22523518970842,
+    "max_jump_mm": 129.82177734375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 32.92639767290452,
+    "first_half_v": 21.20557596795811,
+    "second_half_v": 3.5549194644951347
+   },
+   {
+    "pixel": 980201,
+    "good": true,
+    "v": 14.882881935243663,
+    "max_jump_mm": 126.4495849609375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 166,
+    "resid_sd_mm": 32.92983820719373,
+    "first_half_v": 20.76097411700307,
+    "second_half_v": 3.0518266661914164
+   },
+   {
+    "pixel": 981558,
+    "good": true,
+    "v": 15.064702930985248,
+    "max_jump_mm": 126.76239013671875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 32.73684811936021,
+    "first_half_v": 20.73007224772096,
+    "second_half_v": 4.014948601707755
+   },
+   {
+    "pixel": 1001923,
+    "good": true,
+    "v": 14.093590477198186,
+    "max_jump_mm": 143.6767578125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 169,
+    "resid_sd_mm": 32.86222368075285,
+    "first_half_v": 20.084935823171683,
+    "second_half_v": 3.183618852760147
+   },
+   {
+    "pixel": 980197,
+    "good": true,
+    "v": 14.70884193467366,
+    "max_jump_mm": 127.37274169921875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 32.84131047042578,
+    "first_half_v": 21.035435172357115,
+    "second_half_v": 3.6695280950069735
+   },
+   {
+    "pixel": 999202,
+    "good": true,
+    "v": 15.677488497019366,
+    "max_jump_mm": 144.073486328125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 171,
+    "resid_sd_mm": 33.28078561783969,
+    "first_half_v": 22.33377340121976,
+    "second_half_v": 3.4990081703673916
+   },
+   {
+    "pixel": 986991,
+    "good": true,
+    "v": 18.190922500552354,
+    "max_jump_mm": 129.09698486328125,
+    "max_jump_between": [
+     "2021-09-06",
+     "2021-09-18"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 32.4328558552502,
+    "first_half_v": 23.61647352107561,
+    "second_half_v": 8.186705010008364
+   }
+  ],
+  "17 ring": [
+   {
+    "pixel": 936773,
+    "good": true,
+    "v": 16.04657625519818,
+    "max_jump_mm": 122.4212646484375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 166,
+    "resid_sd_mm": 32.13219186777103,
+    "first_half_v": 19.751987372847104,
+    "second_half_v": 7.177044115850004
+   },
+   {
+    "pixel": 936762,
+    "good": true,
+    "v": 20.94772677669847,
+    "max_jump_mm": 123.28338623046875,
+    "max_jump_between": [
+     "2022-05-28",
+     "2022-06-09"
+    ],
+    "jumps_over_14mm": 167,
+    "resid_sd_mm": 31.884536281577194,
+    "first_half_v": 24.506281875455798,
+    "second_half_v": 13.016216492214253
+   },
+   {
+    "pixel": 921827,
+    "good": true,
+    "v": 19.50128922526896,
+    "max_jump_mm": 125.21363067626953,
+    "max_jump_between": [
+     "2021-09-06",
+     "2021-09-18"
+    ],
+    "jumps_over_14mm": 163,
+    "resid_sd_mm": 31.556743608130937,
+    "first_half_v": 21.699609260954418,
+    "second_half_v": 12.759403205407041
+   },
+   {
+    "pixel": 955782,
+    "good": true,
+    "v": 14.978391409713806,
+    "max_jump_mm": 125.06103515625,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 164,
+    "resid_sd_mm": 33.305000830746344,
+    "first_half_v": 20.935538191062445,
+    "second_half_v": 3.2439432346659376
+   },
+   {
+    "pixel": 958493,
+    "good": true,
+    "v": 15.625649933306468,
+    "max_jump_mm": 123.0926513671875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 33.16347370808259,
+    "first_half_v": 21.253432582440674,
+    "second_half_v": 4.132749187054443
+   },
+   {
+    "pixel": 929978,
+    "good": true,
+    "v": 22.906976134562584,
+    "max_jump_mm": 124.2523193359375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 163,
+    "resid_sd_mm": 31.89255633400286,
+    "first_half_v": 27.386731107535784,
+    "second_half_v": 14.965348933882833
+   },
+   {
+    "pixel": 927259,
+    "good": true,
+    "v": 20.947602151597685,
+    "max_jump_mm": 125.69427490234375,
+    "max_jump_between": [
+     "2021-09-06",
+     "2021-09-18"
+    ],
+    "jumps_over_14mm": 164,
+    "resid_sd_mm": 31.551976159730685,
+    "first_half_v": 23.689936529150433,
+    "second_half_v": 13.961180813958293
+   },
+   {
+    "pixel": 977498,
+    "good": true,
+    "v": 15.027461526622817,
+    "max_jump_mm": 126.190185546875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 166,
+    "resid_sd_mm": 33.04561140926059,
+    "first_half_v": 20.738088307034698,
+    "second_half_v": 4.032663319892157
+   }
+  ],
+  "17 footprint": [
+   {
+    "pixel": 929950,
+    "good": true,
+    "v": 13.602845747132035,
+    "max_jump_mm": 124.8779296875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 31.357599263478004,
+    "first_half_v": 11.16152051455207,
+    "second_half_v": 9.503228319050212
+   },
+   {
+    "pixel": 969343,
+    "good": true,
+    "v": 14.598821311007203,
+    "max_jump_mm": 126.16729736328125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 34.04473004622147,
+    "first_half_v": 22.337811041034747,
+    "second_half_v": 1.746891174284685
+   },
+   {
+    "pixel": 980203,
+    "good": true,
+    "v": 16.059569031829835,
+    "max_jump_mm": 126.0986328125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 164,
+    "resid_sd_mm": 32.5637541150252,
+    "first_half_v": 21.187016630536377,
+    "second_half_v": 5.322583064819533
+   },
+   {
+    "pixel": 978847,
+    "good": true,
+    "v": 16.121225564870944,
+    "max_jump_mm": 127.99072265625,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 169,
+    "resid_sd_mm": 33.24750564235348,
+    "first_half_v": 22.51528664769892,
+    "second_half_v": 4.548088792818216
+   },
+   {
+    "pixel": 961196,
+    "good": true,
+    "v": 12.82774212513931,
+    "max_jump_mm": 132.0648193359375,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 170,
+    "resid_sd_mm": 33.15134129997159,
+    "first_half_v": 18.230788188528045,
+    "second_half_v": 0.8592983600764252
+   },
+   {
+    "pixel": 965270,
+    "good": true,
+    "v": 13.858856158271553,
+    "max_jump_mm": 128.76129150390625,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 33.5735232196958,
+    "first_half_v": 20.259486320682836,
+    "second_half_v": 1.8127403329272322
+   },
+   {
+    "pixel": 966628,
+    "good": true,
+    "v": 14.636461680257637,
+    "max_jump_mm": 127.410888671875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 33.70135798496319,
+    "first_half_v": 21.17811769840793,
+    "second_half_v": 2.237394743777129
+   },
+   {
+    "pixel": 976132,
+    "good": true,
+    "v": 15.787821768827055,
+    "max_jump_mm": 129.5623779296875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 165,
+    "resid_sd_mm": 32.75894381291563,
+    "first_half_v": 21.31534378104317,
+    "second_half_v": 5.009835051479843
+   }
+  ],
+  "house pixels": [
+   {
+    "pixel": 698988,
+    "good": true,
+    "v": 7.800916671093818,
+    "max_jump_mm": 131.4697265625,
+    "max_jump_between": [
+     "2021-09-06",
+     "2021-09-18"
+    ],
+    "jumps_over_14mm": 162,
+    "resid_sd_mm": 30.008685097263214,
+    "first_half_v": 10.975808552585178,
+    "second_half_v": 5.229863527988597
+   },
+   {
+    "pixel": 1102158,
+    "good": true,
+    "v": 8.923600600405525,
+    "max_jump_mm": 125.518798828125,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 167,
+    "resid_sd_mm": 28.01011931152991,
+    "first_half_v": 10.810310964504183,
+    "second_half_v": 8.10491413641309
+   },
+   {
+    "pixel": 943147,
+    "good": true,
+    "v": 9.49643045806047,
+    "max_jump_mm": 126.678466796875,
+    "max_jump_between": [
+     "2021-07-20",
+     "2021-08-01"
+    ],
+    "jumps_over_14mm": 161,
+    "resid_sd_mm": 28.009564204410076,
+    "first_half_v": 11.958213177023827,
+    "second_half_v": 7.572846052602233
+   },
+   {
+    "pixel": 1444423,
+    "good": true,
+    "v": 8.544190354274514,
+    "max_jump_mm": 133.87680053710938,
+    "max_jump_between": [
+     "2017-01-18",
+     "2017-01-30"
+    ],
+    "jumps_over_14mm": 169,
+    "resid_sd_mm": 28.994450752545088,
+    "first_half_v": 10.588518125953794,
+    "second_half_v": 8.406771254879986
+   },
+   {
+    "pixel": 751935,
+    "good": true,
+    "v": 8.78217986607416,
+    "max_jump_mm": 134.27734375,
+    "max_jump_between": [
+     "2021-09-06",
+     "2021-09-18"
+    ],
+    "jumps_over_14mm": 163,
+    "resid_sd_mm": 29.561244780783532,
+    "first_half_v": 10.428232025556486,
+    "second_half_v": 7.386977722029269
+   },
+   {
+    "pixel": 867055,
+    "good": true,
+    "v": 8.751886491476078,
+    "max_jump_mm": 140.79285049438477,
+    "max_jump_between": [
+     "2021-07-20",
+     "2021-08-01"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 27.66740970946084,
+    "first_half_v": 11.229148170727383,
+    "second_half_v": 7.383469057899286
+   },
+   {
+    "pixel": 1214977,
+    "good": true,
+    "v": 8.595985371603604,
+    "max_jump_mm": 119.54499053955078,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 168,
+    "resid_sd_mm": 29.019125810032676,
+    "first_half_v": 11.018152360036417,
+    "second_half_v": 9.238553189985621
+   },
+   {
+    "pixel": 1708812,
+    "good": true,
+    "v": 7.166811917646722,
+    "max_jump_mm": 126.8768310546875,
+    "max_jump_between": [
+     "2025-08-04",
+     "2025-09-09"
+    ],
+    "jumps_over_14mm": 159,
+    "resid_sd_mm": 25.19317125356195,
+    "first_half_v": 10.132376892043704,
+    "second_half_v": 6.1036910134552445
+   }
+  ]
+ },
+ "clay_seasonality": {
+  "parcels_high_or_very_high": 33131,
+  "parcels_low": 16027,
+  "high_minus_low": {
+   "peak_month": 3,
+   "peak_day_of_year": 89,
+   "trough_month": 9,
+   "trough_day_of_year": 272,
+   "amplitude_mm": 1.134099140837889
+  },
+  "high": {
+   "peak_month": 2,
+   "peak_day_of_year": 43,
+   "trough_month": 8,
+   "trough_day_of_year": 225,
+   "amplitude_mm": 3.4773137824421476
+  },
+  "low": {
+   "peak_month": 1,
+   "peak_day_of_year": 26,
+   "trough_month": 7,
+   "trough_day_of_year": 208,
+   "amplitude_mm": 2.809764836313634
+  },
+  "trough_day_of_year_interval_95": [
+   260,
+   287
+  ]
+ }
+}

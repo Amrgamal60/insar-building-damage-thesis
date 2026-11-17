@@ -1,0 +1,78 @@
+=== 2026-10-08 16:27:20 real run (§13 step 5), code as in out/models/CODE_REAL_RUN.sha256
+16:27:39 primary: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+16:49:41 primary: p = 0.418; done in 1326 s
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 99, in field_rep
+    m = metrics_of(np.c_[Xb, v], y, fold, rs, kind)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 88, in metrics_of
+    return N.metrics(y, s, rs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 209, in metrics
+    return {"pr": average_precision_score(y, s), "roc": roc_auc_score(y, s), "top10": recall_top(y, s),
+                                                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 733, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 480, in _binary_roc_auc_score
+    return auc(fpr, tpr)
+           ^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 107, in auc
+    raise ValueError("x is neither increasing nor decreasing : {}.".format(x))
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 3.22809736e-06 4.84214604e-05 ... 9.99983860e-01
+ 9.99990316e-01 1.00000000e+00].
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 373, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 355, in main
+    other_nulls(ctx[250], events)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 318, in other_nulls
+    out[name] = par(delayed(field_rep)(f, Xb, y, fold, rs, LR, mb) for f in fields)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 3.22809736e-06 4.84214604e-05 ... 9.99983860e-01
+ 9.99990316e-01 1.00000000e+00].
+EXIT 1 2026-10-08 16:52:39
+=== 2026-10-10 17:52:12 resume after s8 crash (suspected RAM bit flip, §14 dev. 4); same code and command; finished analyses skipped
+=== 2026-10-10 17:52:53 stopped the 17:52 resume after under a minute (it ran attached to the Claude session); relaunched detached, same command
+EXIT 1 2026-10-10 21:50:55

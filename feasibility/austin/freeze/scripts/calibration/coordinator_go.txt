@@ -1,0 +1,5 @@
+2026-11-01: Orca ask msg_adbdd6ba2107 returned Go.
+Coordinator approved DESIGN.md/design.json and CPU adapter, including accelerated cumulative incidence, full Baseline 1, no missingness, and concurrency capped by RAM.
+Required additions before any inference result: 100 datasets each N2-strong and N4-strong at 12 km / 16000 pixels / 21600 houses / 36 blocks; new cell IDs 10/11; all other parameters unchanged.
+Additional Test A acceptability: lower 95% Student-t bound of mean paired bias (observed statistic minus within-dataset mean null statistic) <= 0 in every null cell including scale cells; branches unchanged.
+Coordinator says revised runtime heartbeat is sufficient, no further go required.

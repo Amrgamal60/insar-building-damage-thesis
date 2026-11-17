@@ -1,0 +1,10 @@
+# Exact direct dependency versions for the frozen Austin scripts.
+# Install CPU torch separately; README gives the two pip commands.
+pyfixest==0.60.0
+statsmodels==0.15.0
+torch==2.9.1+cpu
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.6
+scikit-learn==1.9.1
+cupy-cuda13x==14.2.0

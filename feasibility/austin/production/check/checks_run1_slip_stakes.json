@@ -1,0 +1,24 @@
+{
+ "slips": 3152,
+ "slip_pixels": 1228,
+ "windows_touched": 88,
+ "first_touched": "2018-08",
+ "last_touched": "2025-11",
+ "house_window_values_with_value": 8330669,
+ "house_window_values_affected": 73006,
+ "share_affected": 0.008763521873213304,
+ "affected_houses_per_touched_window": {
+  "median": 800.0,
+  "max": 1565
+ },
+ "affected_above_99_5": 16494,
+ "affected_below_0_5": 2428,
+ "share_affected_beyond_winsorising_points": 0.25918417664301563,
+ "affected_percentile_rank_quantiles": {
+  "0.1": 0.2090275521566435,
+  "0.25": 0.9789236540347733,
+  "0.5": 0.9894182106524162,
+  "0.75": 0.9949912393216137,
+  "0.9": 0.9980524584233709
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "python": "3.12.7 (main, Oct 16 2024, 04:37:19) [Clang 18.1.8 ]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "processor": "Intel Core i9-10900X, 20 logical CPUs (model fitter uses one thread)",
+  "torch_cuda_version": null,
+  "cuda_available": false,
+  "packages": {
+    "pip": "24.2",
+    "pyfixest": "0.60.0",
+    "statsmodels": "0.15.0",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "cupy-cuda13x": "14.2.0"
+  }
+}

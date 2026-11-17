@@ -1,0 +1,40 @@
+{
+  "gpu_free_before_mib": 1183,
+  "pool_cap_mib": 700,
+  "timings": [
+    {
+      "city": "small",
+      "method": "registered",
+      "setup_seconds": 4.253707929048687,
+      "draw_seconds": 0.16756489379331468,
+      "pool_mib": 640.02099609375,
+      "status": "PASS"
+    },
+    {
+      "city": "small",
+      "method": "conditional",
+      "setup_seconds": 4.498962624929845,
+      "draw_seconds": 0.19044115100987255,
+      "pool_mib": 569.96923828125,
+      "status": "PASS"
+    },
+    {
+      "city": "scale",
+      "method": "registered",
+      "status": "MEMORY_LIMIT",
+      "error": "Out of memory allocating 52,736,000 bytes (allocated so far: 715,141,120 bytes, limit set to: 734,003,200 bytes)."
+    },
+    {
+      "city": "scale",
+      "method": "conditional",
+      "status": "MEMORY_LIMIT",
+      "error": "Out of memory allocating 82,176,000 bytes (allocated so far: 730,153,984 bytes, limit set to: 734,003,200 bytes)."
+    },
+    {
+      "city": "B",
+      "method": "registered",
+      "status": "MEMORY_LIMIT",
+      "error": "Out of memory allocating 124,986,368 bytes (allocated so far: 662,172,672 bytes, limit set to: 734,003,200 bytes)."
+    }
+  ]
+}

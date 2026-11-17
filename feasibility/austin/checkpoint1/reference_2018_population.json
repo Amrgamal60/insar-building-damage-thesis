@@ -1,0 +1,185 @@
+{
+ "roll": {
+  "properties": 438173,
+  "prop_val_yr": {
+   "02018": 438173
+  },
+  "sup_num": {
+   "000000000000": 438173
+  },
+  "a1_real_parcels": 252090,
+  "main_dwelling_type": {
+   "01": 248133,
+   "16": 3466,
+   "MISSING": 491
+  },
+  "main_16_but_has_a_type01_improvement": 0,
+  "year_built_after_2018_on_main": 0
+ },
+ "layer": {
+  "file": "2018_Shapefiles/Parcel_poly.shp",
+  "crs": "EPSG:2277",
+  "features": 352856,
+  "prop_id_zero_or_null": 118,
+  "unique_prop_ids": 351989,
+  "prop_ids_with_several_rows": 577,
+  "null_or_empty_geometry": 4,
+  "invalid_geometry": 36,
+  "backup_layer_identical_prop_id_and_geometry": false,
+  "prop_ids_in_roll": 339465,
+  "pid10_equals_roll_geo_id": {
+   "count": 339210,
+   "denominator": 339465,
+   "percent": 99.925
+  }
+ },
+ "a1_polygons": {
+  "a1_parcels_with_polygon": 251326,
+  "a1_parcels_without_polygon": 764,
+  "invalid_before_make_valid": 11,
+  "duplicate_rows_dissolved": 103,
+  "invalid_point": 0
+ },
+ "boundary": {
+  "file": "vnwj-xmz9.geojson",
+  "sha256": "9656bd73a7a7989ef41fd0610f716a8078d0fe843d0466b21e9acef9f93ede47",
+  "features": 26,
+  "area_km2": 755.728,
+  "a1_points_on_boundary_line": 0
+ },
+ "flow": [
+  {
+   "step": "A1 real-property parcels in the 2018 roll",
+   "remaining": 252090
+  },
+  {
+   "step": "main improvement type 01 (1 FAM DWELLING)",
+   "remaining": 248133
+  },
+  {
+   "step": "year built 1..2015 (first floor of main dwelling)",
+   "remaining": 238456
+  },
+  {
+   "step": "polygon in the 2018 parcel layer",
+   "remaining": 237995
+  },
+  {
+   "step": "valid parcel point",
+   "remaining": 237995
+  },
+  {
+   "step": "point inside the full-purpose boundary",
+   "remaining": 149320
+  },
+  {
+   "step": "minus houses whose 2018 geo_id is shared by another house (rule 3) or blank",
+   "removed": 4,
+   "ambiguous_geo_ids": 2,
+   "remaining": 149316
+  }
+ ],
+ "excluded_for_information": {
+  "townhouse_main_type16_built_by_2015_inside": 2544,
+  "main_dwelling_missing": 491
+ },
+ "population_geo_ids_shared_with_a_non_population_roll_parcel": 61,
+ "population": {
+  "houses": 149316,
+  "unique_30m_cells": 114058
+ },
+ "completeness": {
+  "year_built_positive": {
+   "count": 149316,
+   "denominator": 149316,
+   "percent": 100.0
+  },
+  "living_area_positive": {
+   "count": 149316,
+   "denominator": 149316,
+   "percent": 100.0
+  },
+  "lot_area_polygon_positive": {
+   "count": 149316,
+   "denominator": 149316,
+   "percent": 100.0
+  },
+  "foundation_any_code": {
+   "count": 141294,
+   "denominator": 149316,
+   "percent": 94.628
+  },
+  "foundation_slab_or_pier_and_beam_only": {
+   "count": 141118,
+   "denominator": 149316,
+   "percent": 94.51
+  },
+  "foundation_single_slab_or_single_pier_and_beam": {
+   "count": 140856,
+   "denominator": 149316,
+   "percent": 94.334
+  },
+  "foundation_categories": {
+   "SLAB": 118970,
+   "PIER AND B": 21886,
+   "(blank)": 8022,
+   "PIER AND B | SLAB": 262,
+   "OTHER": 166,
+   "BLOCKS": 7,
+   "FLOATING S | PIER AND B": 1,
+   "OTHER | SLAB": 1,
+   "WOOD POST": 1
+  },
+  "deed_date_parseable_not_in_baseline": {
+   "count": 148884,
+   "denominator": 149316,
+   "percent": 99.711
+  },
+  "land_table_square_feet_positive_comparison_only": {
+   "count": 149248,
+   "denominator": 149316,
+   "percent": 99.954
+  },
+  "year_built_range": [
+   201,
+   2015
+  ],
+  "living_area_sqft_quartiles": [
+   1308.0,
+   1708.0,
+   2330.625
+  ],
+  "lot_area_m2_quartiles": [
+   622.5,
+   765.7,
+   992.4
+  ],
+  "polygon_vs_land_table_area_ratio_median": 0.9997
+ },
+ "comparison": {
+  "population_2018": 149316,
+  "diagnostic_2026_type01": 144458,
+  "option_c_2019_before_exclusions": 151944,
+  "option_c_2019_primary_step0": 149786,
+  "population_2018_prop_id_in_2026_roll": {
+   "count": 147670,
+   "denominator": 149316,
+   "percent": 98.898
+  },
+  "population_2018_in_2026_type01_diagnostic": {
+   "count": 143687,
+   "denominator": 149316,
+   "percent": 96.23
+  },
+  "population_2018_in_2019_option_c_set": {
+   "count": 148617,
+   "denominator": 149316,
+   "percent": 99.532
+  },
+  "option_c_2019_set_in_population_2018": {
+   "count": 148617,
+   "denominator": 151944,
+   "percent": 97.81
+  }
+ }
+}

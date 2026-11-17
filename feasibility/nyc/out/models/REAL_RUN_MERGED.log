@@ -1,0 +1,702 @@
+# NYC real run (§13 step 5): merged log, 2026-10-08 to 2026-10-15
+# Built 2026-10-15 after the run ended, from unchanged source logs in out/models/ (none was edited):
+#   Part 1: real_run_live.log (complete record of the 2026-10-08 run and the 2026-10-10 resume up to the 21:50:55 crash),
+#           with line 77 taken from real_run.log (its wording 'under a minute' is the correct one; the live copy says '2 min')
+#           and real_run.log's final line 'EXIT 1 2026-10-10 21:50:55' appended (the live copy ends with the traceback).
+#   Part 2: codex_resume.log in full: Codex's five attempts on the old PC (2026-10-10/11, §14 dev. 5-8) and the new-PC run
+#           (2026-10-14/15, §14 dev. 9). Its '===' and 'EXIT' headers are UTC; model lines carry Cairo local time.
+#   Part 3: resume_newpc_supervisor.log (the new-PC supervisor's own output).
+# Model-line times in Part 1 are Cairo local time (EEST, UTC+3).
+
+#################### Part 1: real_run_live.log (+ real_run.log corrections)
+=== 2026-10-08 16:27:20 real run (§13 step 5), code as in out/models/CODE_REAL_RUN.sha256
+16:27:39 primary: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+16:49:41 primary: p = 0.418; done in 1326 s
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 99, in field_rep
+    m = metrics_of(np.c_[Xb, v], y, fold, rs, kind)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 88, in metrics_of
+    return N.metrics(y, s, rs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 209, in metrics
+    return {"pr": average_precision_score(y, s), "roc": roc_auc_score(y, s), "top10": recall_top(y, s),
+                                                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 733, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 480, in _binary_roc_auc_score
+    return auc(fpr, tpr)
+           ^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 107, in auc
+    raise ValueError("x is neither increasing nor decreasing : {}.".format(x))
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 3.22809736e-06 4.84214604e-05 ... 9.99983860e-01
+ 9.99990316e-01 1.00000000e+00].
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 373, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 355, in main
+    other_nulls(ctx[250], events)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 318, in other_nulls
+    out[name] = par(delayed(field_rep)(f, Xb, y, fold, rs, LR, mb) for f in fields)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 3.22809736e-06 4.84214604e-05 ... 9.99983860e-01
+ 9.99990316e-01 1.00000000e+00].
+EXIT 1 2026-10-08 16:52:39
+=== 2026-10-10 17:52:12 resume after s8 crash (suspected RAM bit flip, §14 dev. 4); same code and command; finished analyses skipped
+=== 2026-10-10 17:52:53 stopped the 17:52 resume after under a minute (it ran attached to the Claude session); relaunched detached, same command
+18:03:29 s8: Free permutation done
+18:16:43 s8: Within-block permutation done
+18:22:19 s8: MSR done
+18:49:20 s8: MSR, amplitude-adjusted done
+18:54:33 s9_seed0: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+18:59:40 s9_seed0: p = 0.362; done in 311 s
+18:59:44 s9_seed1: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0003 (+0.0000)
+19:04:51 s9_seed1: p = 0.362; done in 311 s
+19:04:55 s9_seed2: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0002 (-0.0000)
+19:10:02 s9_seed2: p = 0.654; done in 311 s
+19:10:06 s9_seed3: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0002 (-0.0000)
+19:15:12 s9_seed3: p = 0.825; done in 310 s
+19:15:16 s9_seed4: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0003 (-0.0000)
+19:20:22 s9_seed4: p = 0.528; done in 310 s
+19:20:27 s9_seed5: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+19:25:32 s9_seed5: p = 0.544; done in 310 s
+19:25:37 s9_seed6: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+19:30:45 s9_seed6: p = 0.624; done in 312 s
+19:30:50 s9_seed7: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0004 (+0.0001)
+19:35:59 s9_seed7: p = 0.101; done in 314 s
+19:36:04 s9_seed8: 64 risk sets, 309,972 rows; PR AUC 0.0003 -> 0.0003 (-0.0000)
+19:41:10 s9_seed8: p = 0.535; done in 311 s
+19:41:14 s9_seed9: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+19:46:21 s9_seed9: p = 0.797; done in 311 s
+19:46:28 s1: 78 risk sets, 784,157 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+19:46:39   surrogates s1: 0/999 (k = 264)
+19:54:42   surrogates s1: 200/999 (k = 264)
+20:02:45   surrogates s1: 400/999 (k = 264)
+20:10:49   surrogates s1: 600/999 (k = 264)
+20:18:52   surrogates s1: 800/999 (k = 264)
+/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:469: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+21:24:02 s1: p = 0.450; done in 5861 s
+21:24:08 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+21:24:12   surrogates s2: 0/999 (k = 169)
+21:27:43   surrogates s2: 200/999 (k = 169)
+21:31:14   surrogates s2: 400/999 (k = 169)
+21:34:44   surrogates s2: 600/999 (k = 169)
+21:38:15   surrogates s2: 800/999 (k = 169)
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 116, in boot_rep
+    "roc": roc_auc_score(yy[ok], sv[ok]) - roc_auc_score(yy[ok], sb[ok]),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 733, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 480, in _binary_roc_auc_score
+    return auc(fpr, tpr)
+           ^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 107, in auc
+    raise ValueError("x is neither increasing nor decreasing : {}.".format(x))
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 7.99736087e-06 1.99934022e-05 ... 9.99960013e-01
+ 9.99964012e-01 1.00000000e+00].
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 373, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 368, in main
+    run_analysis(key, ctx[N.SPEC[key][2]], events, n_null, n_boot)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 275, in run_analysis
+    bt = [b for b in par(delayed(boot_rep)(s, blocks, Xb, v, y, fold, kind) for s in range(n_boot)) if b is not None]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+ValueError: x is neither increasing nor decreasing : [0.00000000e+00 7.99736087e-06 1.99934022e-05 ... 9.99960013e-01
+ 9.99964012e-01 1.00000000e+00].
+EXIT 1 2026-10-10 21:50:55
+
+#################### Part 2: codex_resume.log
+
+=== 2026-10-10T20:40:23.058311+00:00 Codex resume; jobs=16; original seeds and counts
+23:40:46 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+Fatal Python error: Segmentation fault
+
+Current thread 0x00007a6c1e2d4bc0 (most recent call first):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54 in _wrapfunc
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1246 in argsort
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/externals/array_api_compat/common/_aliases.py", line 490 in argsort
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/externals/array_api_compat/_internal.py", line 35 in wrapped_f
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 908 in _sort_inputs_and_compute_classification_thresholds
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1021 in confusion_matrix_at_thresholds
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191 in wrapper
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 80 in inner_f
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1161 in precision_recall_curve
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191 in wrapper
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 250 in _binary_uninterpolated_average_precision
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77 in _average_binary_score
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 297 in average_precision_score
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218 in wrapper
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 209 in metrics
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 88 in metrics_of
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 94 in null_rep
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490 in _process_worker
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108 in run
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314 in _bootstrap
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 180 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, pyarrow.lib, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, _cyutility, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, scipy._cyutility, scipy._lib._ccallback_c, scipy.sparse._sparsetools, charset_normalizer.md, charset_normalizer.cd, _csparsetools, scipy.sparse._csparsetools, scipy.spatial._ckdtree, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._internal_matfuncs, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg.cython_lapack, scipy.linalg._decomp_update, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, sklearn.__check_build._check_build, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy._lib._uarray._uarray, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.interpolate._fitpack, scipy.interpolate._dierckx, scipy.interpolate._ppoly, scipy.interpolate._interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy.stats._ansari_swilk_statistics, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._rcont.rcont, scipy.stats._qmvnt_cy, scipy.ndimage._nd_image, scipy.ndimage._rank_filter_1d, _ni_label, scipy.ndimage._ni_label, sklearn._cyutility, sklearn.utils._isfinite, sklearn.utils.sparsefuncs_fast, sklearn.utils.murmurhash, sklearn.utils._openmp_helpers, sklearn.metrics.cluster._expected_mutual_info_fast, sklearn.metrics._dist_metrics, sklearn.metrics._pairwise_distances_reduction._datasets_pair, sklearn.utils._cython_blas, sklearn.metrics._pairwise_distances_reduction._base, sklearn.metrics._pairwise_distances_reduction._middle_term_computer, sklearn.utils._heap, sklearn.utils._sorting, sklearn.metrics._pairwise_distances_reduction._argkmin, sklearn.metrics._pairwise_distances_reduction._argkmin_classmode, sklearn.utils._vector_sentinel, sklearn.metrics._pairwise_distances_reduction._radius_neighbors, sklearn.metrics._pairwise_distances_reduction._radius_neighbors_classmode, sklearn.metrics._pairwise_fast, sklearn.preprocessing._csr_polynomial_expansion, sklearn.preprocessing._target_encoder_fast, sklearn.neighbors._partition_nodes, sklearn.neighbors._ball_tree, sklearn.neighbors._kd_tree, sklearn.utils.arrayfuncs, sklearn.utils._random, sklearn.utils._seq_dataset, sklearn.linear_model._cd_fast, sklearn._loss._loss, sklearn.linear_model._sag_fast, sklearn.svm._liblinear, sklearn.svm._libsvm, sklearn.svm._libsvm_sparse, sklearn.utils._weight_vector, sklearn.linear_model._sgd_fast, sklearn.decomposition._online_lda_fast, sklearn.decomposition._cdnmf_fast, sklearn.tree._utils, sklearn.neighbors._quad_tree, sklearn.tree._tree, sklearn.tree._partitioner, sklearn.tree._splitter, sklearn.tree._criterion, sklearn.ensemble._gradient_boosting, sklearn.ensemble._hist_gradient_boosting.common, sklearn.ensemble._hist_gradient_boosting._gradient_boosting, sklearn.ensemble._hist_gradient_boosting._binning, sklearn.utils._bitset, sklearn.ensemble._hist_gradient_boosting.histogram, sklearn.ensemble._hist_gradient_boosting._predictor, sklearn.ensemble._hist_gradient_boosting.splitting (total: 187)
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 373, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 368, in main
+    run_analysis(key, ctx[N.SPEC[key][2]], events, n_null, n_boot)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 265, in run_analysis
+    nd = par(delayed(null_rep)(path, d, wpos, upos, Xb, y, fold, rs, kind, mb) for d in range(n_null))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGSEGV(-11)}
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+
+EXIT 1 2026-10-10T20:41:08.062242+00:00 budget_exhausted=False
+
+=== 2026-10-10T20:44:19.087273+00:00 Codex resume; jobs=16; original seeds and counts
+23:44:38 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 94, in null_rep
+    m = metrics_of(np.c_[Xb, v], y, fold, rs, kind)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 88, in metrics_of
+    return N.metrics(y, s, rs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/nyc_lib.py", line 209, in metrics
+    return {"pr": average_precision_score(y, s), "roc": roc_auc_score(y, s), "top10": recall_top(y, s),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 297, in average_precision_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 250, in _binary_uninterpolated_average_precision
+    precision, recall, _ = precision_recall_curve(
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1161, in precision_recall_curve
+    _, fps, _, tps, thresholds = confusion_matrix_at_thresholds(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 80, in inner_f
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1046, in confusion_matrix_at_thresholds
+    return tns, fps, fns, tps, y_score[threshold_idxs]
+                               ~~~~~~~^^^^^^^^^^^^^^^^
+IndexError: index 549756137364 is out of bounds for axis 0 with size 502812
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 373, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 368, in main
+    run_analysis(key, ctx[N.SPEC[key][2]], events, n_null, n_boot)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 265, in run_analysis
+    nd = par(delayed(null_rep)(path, d, wpos, upos, Xb, y, fold, rs, kind, mb) for d in range(n_null))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+IndexError: index 549756137364 is out of bounds for axis 0 with size 502812
+
+EXIT 1 2026-10-10T20:47:19.117177+00:00 budget_exhausted=False
+
+=== 2026-10-10T21:09:30.594770+00:00 Codex resume; jobs=4; original seeds and counts; repeat checks and calculation checkpoints enabled
+00:09:53 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+00:10:16 s2: reused 999 saved null draws after integrity/metric checks
+Fatal Python error: Segmentation fault
+
+Current thread 0x00007e70e047abc0 (most recent call first):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54 in _wrapfunc
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1246 in argsort
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/externals/array_api_compat/common/_aliases.py", line 490 in argsort
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/externals/array_api_compat/_internal.py", line 35 in wrapped_f
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 908 in _sort_inputs_and_compute_classification_thresholds
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1021 in confusion_matrix_at_thresholds
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191 in wrapper
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 80 in inner_f
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 1319 in roc_curve
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191 in wrapper
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 478 in _binary_roc_auc_score
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 77 in _average_binary_score
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 733 in roc_auc_score
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218 in wrapper
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 122 in boot_rep
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 162 in reproducible_rep
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 190 in checkpoint_rep
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291 in __call__
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490 in _process_worker
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108 in run
+  File "/home/amr/.local/share/uv/python/cpython-3.12-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314 in _bootstrap
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/popen_loky_posix.py", line 180 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+
+Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, pyarrow.lib, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, _cyutility, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, scipy._cyutility, scipy._lib._ccallback_c, scipy.sparse._sparsetools, charset_normalizer.md, charset_normalizer.cd, _csparsetools, scipy.sparse._csparsetools, scipy.spatial._ckdtree, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._internal_matfuncs, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg.cython_lapack, scipy.linalg._decomp_update, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, sklearn.__check_build._check_build, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy._lib._uarray._uarray, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.interpolate._fitpack, scipy.interpolate._dierckx, scipy.interpolate._ppoly, scipy.interpolate._interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy.stats._ansari_swilk_statistics, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._rcont.rcont, scipy.stats._qmvnt_cy, scipy.ndimage._nd_image, scipy.ndimage._rank_filter_1d, _ni_label, scipy.ndimage._ni_label, sklearn._cyutility, sklearn.utils._isfinite, sklearn.utils.sparsefuncs_fast, sklearn.utils.murmurhash, sklearn.utils._openmp_helpers, sklearn.metrics.cluster._expected_mutual_info_fast, sklearn.metrics._dist_metrics, sklearn.metrics._pairwise_distances_reduction._datasets_pair, sklearn.utils._cython_blas, sklearn.metrics._pairwise_distances_reduction._base, sklearn.metrics._pairwise_distances_reduction._middle_term_computer, sklearn.utils._heap, sklearn.utils._sorting, sklearn.metrics._pairwise_distances_reduction._argkmin, sklearn.metrics._pairwise_distances_reduction._argkmin_classmode, sklearn.utils._vector_sentinel, sklearn.metrics._pairwise_distances_reduction._radius_neighbors, sklearn.metrics._pairwise_distances_reduction._radius_neighbors_classmode, sklearn.metrics._pairwise_fast, sklearn.preprocessing._csr_polynomial_expansion, sklearn.preprocessing._target_encoder_fast, sklearn.neighbors._partition_nodes, sklearn.neighbors._ball_tree, sklearn.neighbors._kd_tree, sklearn.utils.arrayfuncs, sklearn.utils._random, sklearn.utils._seq_dataset, sklearn.linear_model._cd_fast, sklearn._loss._loss, sklearn.linear_model._sag_fast, sklearn.svm._liblinear, sklearn.svm._libsvm, sklearn.svm._libsvm_sparse, sklearn.utils._weight_vector, sklearn.linear_model._sgd_fast, sklearn.decomposition._online_lda_fast, sklearn.decomposition._cdnmf_fast, sklearn.tree._utils, sklearn.neighbors._quad_tree, sklearn.tree._tree, sklearn.tree._partitioner, sklearn.tree._splitter, sklearn.tree._criterion, sklearn.ensemble._gradient_boosting, sklearn.ensemble._hist_gradient_boosting.common, sklearn.ensemble._hist_gradient_boosting._gradient_boosting, sklearn.ensemble._hist_gradient_boosting._binning, sklearn.utils._bitset, sklearn.ensemble._hist_gradient_boosting.histogram, sklearn.ensemble._hist_gradient_boosting._predictor, sklearn.ensemble._hist_gradient_boosting.splitting (total: 187)
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 491, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 486, in main
+    run_analysis(key, ctx[N.SPEC[key][2]], events, n_null, n_boot)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 392, in run_analysis
+    bt = [b for b in par(delayed(checkpoint_rep)(boot_dir, s, boot_rep, s, blocks, Xb, v, y, fold, kind)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 128, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGSEGV(-11)}
+Detailed tracebacks of the workers should have been printed to stderr in the executor process if faulthandler was not disabled.
+
+EXIT 1 2026-10-10T21:15:45.625802+00:00 budget_exhausted=False
+
+=== 2026-10-10T21:15:55.051132+00:00 Codex resume; jobs=4; original seeds and counts; repeat checks and calculation checkpoints enabled
+00:16:17 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+00:16:18 s2: reused 999 saved null draws after integrity/metric checks
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 490, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 607, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 190, in checkpoint_rep
+    result, attempts = reproducible_rep(function, args, (directory / "input_arrays.sha256").read_text())
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 174, in reproducible_rep
+    raise RuntimeError(f"seeded calculation did not reproduce in six attempts: {records}")
+RuntimeError: seeded calculation did not reproduce in six attempts: [{'attempt': 0, 'result': {'pr': -2.0386285353826754e-05, 'roc': -0.03245881117593952, 'top10': np.float64(-0.0136986301369863)}}, {'attempt': 1, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 2, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 3, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 4, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 5, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}]
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 491, in <module>
+    main()
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 486, in main
+    run_analysis(key, ctx[N.SPEC[key][2]], events, n_null, n_boot)
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 392, in run_analysis
+    bt = [b for b in par(delayed(checkpoint_rep)(boot_dir, s, boot_rep, s, blocks, Xb, v, y, fold, kind)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/feasibility/nyc/scripts/11_models.py", line 128, in par
+    return Parallel(n_jobs=ARGS.jobs)(tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 2098, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1704, in _get_outputs
+    yield from self._retrieve()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1806, in _retrieve
+    self._raise_error_fast()
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 1885, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 780, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/amr/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/parallel.py", line 795, in _return_or_raise
+    raise self._result
+RuntimeError: seeded calculation did not reproduce in six attempts: [{'attempt': 0, 'result': {'pr': -2.0386285353826754e-05, 'roc': -0.03245881117593952, 'top10': np.float64(-0.0136986301369863)}}, {'attempt': 1, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 2, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 3, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 4, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}, {'attempt': 5, 'error': "IndexError('index 549756009465 is out of bounds for axis 0 with size 502812')"}]
+
+EXIT 1 2026-10-10T21:24:55.121635+00:00 budget_exhausted=False
+
+=== 2026-10-10T21:25:15.159803+00:00 Codex resume; jobs=4; original seeds and counts; repeat checks and calculation checkpoints enabled
+
+EXIT -11 2026-10-10T21:25:30.163559+00:00 budget_exhausted=False
+
+=== 2026-10-14T20:16:46.101319+00:00 resume; jobs=16; OPENBLAS_CORETYPE=Haswell; original seeds and counts; repeat checks and calculation checkpoints enabled
+23:17:12 s2: 69 risk sets, 502,812 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+23:17:13 s2: reused 999 saved null draws after integrity/metric checks
+23:41:16 s2: p = 0.454; done in 1451 s
+23:41:20 s4: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+00:08:38 s4: p = 0.555; done in 1642 s
+00:08:41 s5: 49 risk sets, 236,025 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+00:08:51   surrogates s5: 0/999 (k = 169)
+00:09:29   surrogates s5: 200/999 (k = 169)
+00:10:08   surrogates s5: 400/999 (k = 169)
+00:10:48   surrogates s5: 600/999 (k = 169)
+00:11:27   surrogates s5: 800/999 (k = 169)
+00:29:55 s5: p = 0.386; done in 1277 s
+00:29:57 s6: 36 risk sets, 172,381 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+00:29:59   surrogates s6: 0/999 (k = 169)
+00:30:28   surrogates s6: 200/999 (k = 169)
+00:30:57   surrogates s6: 400/999 (k = 264)
+00:31:28   surrogates s6: 600/999 (k = 169)
+00:31:57   surrogates s6: 800/999 (k = 169)
+00:45:19 s6: p = 0.294; done in 924 s
+00:45:23 s7: 68 risk sets, 335,964 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+00:45:26   surrogates s7: 0/999 (k = 169)
+00:46:19   surrogates s7: 200/999 (k = 169)
+00:47:12   surrogates s7: 400/999 (k = 169)
+00:48:06   surrogates s7: 600/999 (k = 169)
+00:49:00   surrogates s7: 800/999 (k = 169)
+01:15:28 s7: p = 0.599; done in 1810 s
+01:15:32 s11: 64 risk sets, 307,961 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+01:38:40 s11: p = 0.410; done in 1392 s
+01:38:44 s12: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+01:38:47   surrogates s12: 0/999 (k = 169)
+01:39:36   surrogates s12: 200/999 (k = 169)
+01:40:26   surrogates s12: 400/999 (k = 169)
+01:41:15   surrogates s12: 600/999 (k = 169)
+01:42:05   surrogates s12: 800/999 (k = 169)
+02:06:12 s12: p = 0.412; done in 1652 s
+02:06:16 s13: 64 risk sets, 310,021 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+02:06:18   surrogates s13: 0/999 (k = 169)
+02:07:08   surrogates s13: 200/999 (k = 169)
+02:07:57   surrogates s13: 400/999 (k = 169)
+02:08:47   surrogates s13: 600/999 (k = 169)
+02:09:37   surrogates s13: 800/999 (k = 169)
+02:33:42 s13: p = 0.377; done in 1650 s
+02:33:46 s14: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+02:33:48   surrogates s14: 0/999 (k = 44)
+02:34:38   surrogates s14: 200/999 (k = 108)
+02:35:27   surrogates s14: 400/999 (k = 44)
+02:36:17   surrogates s14: 600/999 (k = 28)
+02:37:06   surrogates s14: 800/999 (k = 44)
+03:01:00 s14: p = 0.097; done in 1639 s
+03:01:04 s15: 64 risk sets, 310,299 rows; PR AUC 0.0002 -> 0.0002 (-0.0000)
+03:01:07   surrogates s15: 0/999 (k = 169)
+03:01:56   surrogates s15: 200/999 (k = 108)
+03:02:45   surrogates s15: 400/999 (k = 108)
+03:03:34   surrogates s15: 600/999 (k = 108)
+03:04:24   surrogates s15: 800/999 (k = 108)
+03:28:01 s15: p = 0.654; done in 1621 s
+03:31:23 s3: 64 risk sets, 309,972 rows; PR AUC 0.0002 -> 0.0002 (+0.0000)
+/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 6 leaked file objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-1d23926cf91d401591d129455c30ba09.pkl': 19, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-c457d14b27f546b1bd36def14cfd0729.pkl': 19, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-50c4abbfefd0484d8deeabdbb611a578.pkl': 19, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-757fdb78d900477b9e78dcbcddca735e.pkl': 19, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-6d2b49a0bb01409bbe4854957369ec3e.pkl': 19, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86/74230-126981579250368-af06a87fd4b740af9ea68793077e73fb.pkl': 19}
+  warnings.warn(
+/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 22 leaked semlock objects to clean up at shutdown: {'/loky-74230-vl30ovhm': 1, '/loky-74230-64rb0976': 1, '/loky-74230-31c6v36s': 1, '/loky-74230-zr1wyj06': 1, '/loky-74230-ebp9bhgj': 1, '/loky-74230-1tkm5a2n': 1, '/loky-74230-k8am1hrd': 1, '/loky-74230-fnq1z814': 1, '/loky-74230-0_45zhqy': 1, '/loky-74230-9xqvjwo0': 1, '/loky-74230-z5sf2mjc': 1, '/loky-74230-ncyzvigv': 1, '/loky-74230-uyuy3iq8': 1, '/loky-74230-nj7ex3nt': 1, '/loky-74230-xd2d_3_k': 1, '/loky-74230-ezhi5xk4': 1, '/loky-74230-o4w2o0ki': 1, '/loky-74230-ovukqq01': 1, '/loky-74230-eqmu9094': 1, '/loky-74230-sxmfpc5g': 1, '/loky-74230-y8uy6tfb': 1, '/loky-74230-3ob46vog': 1}
+  warnings.warn(
+/mnt/data/Master-projects/Alex/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 21 leaked folder objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_9632451532a34a57aa42e82cc216b7ba': 1, '/dev/shm/joblib_memmapping_folder_74230_a2558368b0d64d29ae72c69c8a102a45_3f7c8282d1a241ec96e408ab8dcda82a': 1, '/dev/shm/joblib_memmapping_folder_74230_4375adefba644760952038e6901cc816_8ca7fbbc9606403f94a7554216f05237': 1, '/dev/shm/joblib_memmapping_folder_74230_72a9e366ad494848b5c350f12d4ffb58_86c462e1766b4f709286601e113b86a2': 1, '/dev/shm/joblib_memmapping_folder_74230_0d4890cc7d82454e8f183defc5fc6c77_36f6c428e60e45a5bfcbdf17766a133b': 1, '/dev/shm/joblib_memmapping_folder_74230_dbfc24a2aaea40db91a66983b326ef29_c4180a49693445a691c863f783ec3834': 1, '/dev/shm/joblib_memmapping_folder_74230_48be7af48eec4e988c010785443f3734_b10d8f9942374fdb9402b5c04746a86c': 1, '/dev/shm/joblib_memmapping_folder_74230_b9d3c55e59994ff2afca99ecef6bafca_04615430664e43e0ab7de2bb8c13e88f': 1, '/dev/shm/joblib_memmapping_folder_74230_e191e8629e7a4b86bc66f507714368f9_43db5b6a92e741b1bbe7a398592c8ab8': 1, '/dev/shm/joblib_memmapping_folder_74230_a53fdc2deecd416496f8069300677316_32b6e9df8215440e9f4af529d2727004': 1, '/dev/shm/joblib_memmapping_folder_74230_ab0d207dd61a4c729d426a7a1b6e0b36_14959995e9bd4ebf852e76ab6979595f': 1, '/dev/shm/joblib_memmapping_folder_74230_9d28dfd3f1ae48e192136253b05a5a94_10fdb5a5a9a842b3ab0620c22b79a4d0': 1, '/dev/shm/joblib_memmapping_folder_74230_9c09a4e286a6424689eaecb1994cf83f_3d928e6978c8484f8852b0b2017b7c1b': 1, '/dev/shm/joblib_memmapping_folder_74230_9a0c2f27a48c4bd5b20dbb968ee5ff2c_3e910380350744a6919809bf8a400198': 1, '/dev/shm/joblib_memmapping_folder_74230_8388a83d5f9a4d01941765021a8f36fa_8e049857939e4ead8f3eef5080256f7f': 1, '/dev/shm/joblib_memmapping_folder_74230_2d687b9bdea5428c807f13f52caaa395_2ec83c00de4445d6b7d1b1ababcb44f3': 1, '/dev/shm/joblib_memmapping_folder_74230_48089408eeff40fa981ac02f4f8019a1_0c87826dc9954804b3a04a4350e7a8e4': 1, '/dev/shm/joblib_memmapping_folder_74230_18c318a069c345118b65e81b2096b746_39dfbd2d5dc24cda8e1b201f9a8d19ca': 1, '/dev/shm/joblib_memmapping_folder_74230_1eff47a961f040c78469009ca810aef1_d2203c69c8ee44cebace573f599b19b1': 1, '/dev/shm/joblib_memmapping_folder_74230_ab59ec52dfdb4dea90628ce2abacb66a_832d572b0ee64a9499eb72cacf5887d5': 1, '/dev/shm/joblib_memmapping_folder_74230_02898067bfe84eafb21f61caed31a5b8_1fafbe6a9a3f47aeb9720685993dde86': 1}
+  warnings.warn(
+
+EXIT -15 2026-10-15T13:27:25.872302+00:00 budget_exhausted=True
+Observed primary metrics match saved result
+999 primary null draws match
+Observed metrics, 999 null draws and 2000 bootstrap resamples verified
+# NYC replication: result
+
+**Plan:** `NYC_REPLICATION_PLAN.md` (frozen copy `freeze/NYC_REPLICATION_PLAN_frozen.md`), §11–§13. **Reproduce:** `../../.venv/bin/python -I scripts/11_models.py raw out --real`, then `scripts/12_report.py out --real`.
+
+## 1. Variogram check (reported first, §10)
+
+**Variogram check of the primary null (999 surrogates, seed 2027; 20 windows, seed 7)**
+
+- **Primary analysis structure:** 60 windows; 4,966 domain cells with a value in any window (the null's union). Event counts and losses are reported with the results, not here.
+- **Chosen neighbourhood k:** median 169 (2.5–97.5%: 169–169); offered 2, 3, 4, 7, 11, 18, 28, 44, 69, 108, 169, 264, 411, 641, 1000.
+- **Lags 1–16 cell widths:** observed inside the surrogates' 95% range at 194 of 320 window-lags; **1 km bins from 4 to 20 km:** 79 of 320.
+- Whatever this shows, the primary null is not changed (§10).
+
+| window | Lags 1–16 inside | 1 km bins 4–20 km inside | Median / observed, lags 1–4 | Median / observed, lags 5–16 (range) | Outside, below the range | Outside, above the range |
+|---|---|---|---|---|---|---|
+| 365d_2017-08-07 | 8 of 16 | 0 of 16 | 1.59 · 1.08 · 0.94 · 0.90 | 0.91–1.05 | 4 | 20 |
+| 365d_2017-09-24 | 11 of 16 | 0 of 16 | 1.27 · 1.02 · 0.94 · 0.91 | 0.91–1.09 | 4 | 17 |
+| 365d_2018-02-18 | 12 of 16 | 1 of 16 | 1.62 · 1.13 · 0.97 · 0.94 | 0.92–1.02 | 1 | 18 |
+| 365d_2018-05-13 | 7 of 16 | 0 of 16 | 2.03 · 1.17 · 0.96 · 0.89 | 0.88–1.05 | 5 | 20 |
+| 365d_2018-08-06 | 12 of 16 | 5 of 16 | 1.83 · 1.27 · 1.10 · 1.03 | 0.93–1.04 | 4 | 11 |
+| 365d_2018-08-09 | 12 of 16 | 5 of 16 | 1.83 · 1.27 · 1.10 · 1.03 | 0.93–1.04 | 4 | 11 |
+| 365d_2019-05-06 | 8 of 16 | 9 of 16 | 2.27 · 1.29 · 1.03 · 0.92 | 0.88–1.04 | 3 | 12 |
+| 365d_2019-07-21 | 13 of 16 | 0 of 16 | 1.68 · 1.15 · 1.00 · 0.95 | 0.93–1.04 | 3 | 16 |
+| 365d_2019-10-28 | 10 of 16 | 0 of 16 | 1.20 · 1.01 · 0.95 · 0.93 | 0.92–1.05 | 3 | 19 |
+| 365d_2019-10-31 | 10 of 16 | 0 of 16 | 1.12 · 0.98 · 0.94 · 0.94 | 0.92–1.05 | 3 | 19 |
+| 365d_2020-07-08 | 6 of 16 | 0 of 16 | 1.71 · 1.07 · 0.92 · 0.88 | 0.89–1.09 | 5 | 21 |
+| 365d_2020-07-31 | 9 of 16 | 2 of 16 | 1.50 · 1.03 · 0.93 · 0.90 | 0.92–1.06 | 4 | 17 |
+| 365d_2020-08-04 | 8 of 16 | 2 of 16 | 1.91 · 1.15 · 0.96 · 0.89 | 0.88–1.06 | 4 | 18 |
+| 365d_2020-12-28 | 13 of 16 | 0 of 16 | 1.47 · 1.10 · 0.97 · 0.93 | 0.93–1.04 | 1 | 18 |
+| 365d_2021-02-14 | 7 of 16 | 14 of 16 | 1.87 · 1.27 · 1.07 · 0.96 | 0.88–1.05 | 4 | 7 |
+| 365d_2021-03-01 | 4 of 16 | 16 of 16 | 1.86 · 1.29 · 1.08 · 0.95 | 0.87–1.06 | 6 | 6 |
+| 365d_2021-06-21 | 2 of 16 | 16 of 16 | 3.77 · 2.43 · 2.05 · 1.82 | 1.00–1.70 | 14 | 0 |
+| 365d_2022-03-11 | 16 of 16 | 8 of 16 | 1.31 · 0.98 · 0.93 · 0.93 | 0.96–1.03 | 0 | 8 |
+| 365d_2022-04-14 | 14 of 16 | 0 of 16 | 1.41 · 1.02 · 0.94 · 0.93 | 0.94–1.04 | 0 | 18 |
+| 365d_2022-04-17 | 12 of 16 | 1 of 16 | 1.77 · 1.13 · 0.97 · 0.92 | 0.91–1.03 | 1 | 18 |
+
+**By lag, over the 20 windows:**
+
+| Lag | Windows inside the 95% range | Surrogate median / observed (median over windows) |
+|---|---|---|
+| 0.25 km | 6 of 20 | 1.69 |
+| 0.50 km | 12 of 20 | 1.13 |
+| 0.75 km | 18 of 20 | 0.96 |
+| 1.00 km | 6 of 20 | 0.93 |
+| 1.25 km | 5 of 20 | 0.93 |
+| 1.50 km | 10 of 20 | 0.94 |
+| 1.75 km | 14 of 20 | 0.96 |
+| 2.00 km | 16 of 20 | 0.99 |
+| 2.25 km | 17 of 20 | 1.02 |
+| 2.50 km | 17 of 20 | 1.03 |
+| 2.75 km | 11 of 20 | 1.04 |
+| 3.00 km | 10 of 20 | 1.03 |
+| 3.25 km | 7 of 20 | 1.03 |
+| 3.50 km | 15 of 20 | 1.01 |
+| 3.75 km | 17 of 20 | 0.98 |
+| 4.00 km | 13 of 20 | 0.96 |
+| 4.125–5 km | 9 of 20 | 0.89 |
+| 5–6 km | 4 of 20 | 0.80 |
+| 6–7 km | 4 of 20 | 0.70 |
+| 7–8 km | 4 of 20 | 0.63 |
+| 8–9 km | 5 of 20 | 0.58 |
+| 9–10 km | 4 of 20 | 0.54 |
+| 10–11 km | 4 of 20 | 0.51 |
+| 11–12 km | 3 of 20 | 0.49 |
+| 12–13 km | 3 of 20 | 0.48 |
+| 13–14 km | 5 of 20 | 0.47 |
+| 14–15 km | 4 of 20 | 0.47 |
+| 15–16 km | 6 of 20 | 0.47 |
+| 16–17 km | 6 of 20 | 0.47 |
+| 17–18 km | 6 of 20 | 0.46 |
+| 18–19 km | 7 of 20 | 0.45 |
+| 19–20 km | 5 of 20 | 0.45 |
+
+Full check and figure: `out/insar/INSAR_CHECKS.md`, `out/insar/insar_checks.png`.
+
+## 2. Decision (§11)
+
+- **Incremental-value replication: not replicated.** Primary analysis (domain, 250 m, logistic regression, Baseline 1 + x/y, 1-year window): out-of-fold PR AUC 0.000231 → 0.000227, change -0.000004; variogram-matching null p = 0.418 (999 draws). Rule: change > 0 and p < 0.05.
+- **Directional concordance: opposite.** Line-of-sight velocity is positive toward the satellite. Measure: the median over risk sets of (event cell − median of its controls), standardised velocity: +0.037 (47% of risk sets below 0). Below 0 is concordant with Alexandria: event cells move away from the satellite relative to their controls, as relative subsidence would. Above 0 is opposite.
+  - Same measure in raw line of sight: -0.72 mm/yr. Raw values are not standardised, so they keep each window's landmass-group medians and spread. Medians pooled over rows (controls repeat across risk sets, so these need not differ by the value above): event cells -2.85, control rows -1.80 mm/yr.
+  - Velocity coefficient in a logistic regression fitted on all rows (standardised, conditional on the baseline features): -0.016, sign concordant (negative = concordant).
+- **Together:** no incremental-value replication (opposite deformation direction).
+- **Effect size:** -0.000004 (95% refit-bootstrap interval -0.000021 to +0.000023, 2000 of 2000 resamples).
+- **Largest p across the six nulls** (Alexandria's LiCSAR standard, reported only): 0.48126 (PR AUC p of each: Variogram-matching (primary) 0.418; Free permutation 0.42229; Within-block permutation 0.48126; MSR 0.371; MSR, amplitude-adjusted 0.380; Variogram-matching, observed values 0.395).
+
+**Sample:** 64 risk sets over 60 windows; 309,972 rows; 4,887 cells; prevalence 0.000206 (one event per risk set, §9). Events from 2017-07-16 not used: 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set). Cells without a static input: 0.
+
+| Metric | Baseline 1 + x/y | + velocity | Change | p (variogram-matching) | Null median | 95% refit-bootstrap interval |
+|---|---|---|---|---|---|---|
+| PR AUC (primary) | 0.000231 | 0.000227 | -0.000004 | 0.418 | -0.000005 | -0.000021 to +0.000023 |
+| ROC AUC | 0.5330 | 0.5298 | -0.0032 | 0.450 | -0.0044 | -0.0309 to +0.0446 |
+| Top-10% recall, pooled (share of events in the top 10% of all rows) | 0.0469 | 0.0469 | +0.0000 | 0.851 | +0.0156 | -0.0615 to +0.0545 |
+| Top 10% of own risk set (share of events) | 0.0469 | 0.0469 | +0.0000 | 0.857 | +0.0156 | – |
+
+The bootstrap interval is not computed for the own-risk-set top-10% share.
+
+## 3. All nulls on the primary analysis (primary and secondary 8)
+
+| Null | Draws | p, PR AUC | p, ROC AUC | p, Top-10% recall, pooled | p, Top 10% of own risk set |
+|---|---|---|---|---|---|
+| Variogram-matching (primary, §10) | 999 | 0.418 | 0.450 | 0.851 | 0.857 |
+| Free permutation | 2000 | 0.42229 | 0.46027 | 0.86257 | 0.87106 |
+| Within-block permutation | 2000 | 0.48126 | 0.51324 | 0.90555 | 0.92554 |
+| MSR | 999 | 0.371 | 0.392 | 0.862 | 0.857 |
+| MSR, amplitude-adjusted | 999 | 0.380 | 0.393 | 0.839 | 0.843 |
+| Variogram-matching, observed values | 999 | 0.395 | 0.443 | 0.850 | 0.860 |
+
+
+## 4. Secondary analyses (no decision attached; primary null unless stated)
+
+| Analysis | Risk sets | PR AUC | Change | p | Draws | Interval | ΔROC AUC (p) | ΔTop-10% pooled (p) | ΔTop-10% own set (p) | Direction |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1. Whole NYC (generalization) | 78 | 0.000159 → 0.000157 | -0.000002 | 0.450 | 999 | -0.000012 to +0.000008 | -0.003 (0.412) | -0.013 (0.823) | -0.013 (0.812) | opposite |
+| 2. 200 m cells | 69 | 0.000183 → 0.000179 | -0.000004 | 0.454 | 999 | -0.000045 to +0.000021 | -0.008 (0.639) | -0.014 (0.547) | -0.014 (0.579) | concordant |
+| 3. Random forest | not run |  |  |  |  |  |  |  |  |  |
+| 4. Baseline 2 (adds building age) | 64 | 0.000217 → 0.000213 | -0.000004 | 0.555 | 999 | -0.000025 to +0.000021 | -0.003 (0.452) | +0.000 (0.579) | +0.000 (0.699) | opposite |
+| 5. 2-year window | 49 | 0.000214 → 0.000215 | +0.000000 | 0.386 | 999 | -0.000035 to +0.000048 | +0.006 (0.264) | -0.020 (0.841) | -0.020 (0.840) | concordant |
+| 6. 3-year window | 36 | 0.000196 → 0.000210 | +0.000014 | 0.294 | 999 | -0.000048 to +0.000078 | +0.042 (0.147) | -0.028 (0.986) | -0.028 (0.985) | concordant |
+| 7. Earlier control rule | 68 | 0.000229 → 0.000224 | -0.000005 | 0.599 | 999 | -0.000022 to +0.000018 | -0.006 (0.592) | -0.015 (0.922) | -0.029 (0.920) | opposite |
+| 11. Never-case control rule | 64 | 0.000233 → 0.000229 | -0.000004 | 0.410 | 999 | -0.000022 to +0.000023 | -0.003 (0.448) | +0.000 (0.830) | +0.000 (0.836) | opposite |
+| 12. Linear-only velocity | 64 | 0.000231 → 0.000228 | -0.000003 | 0.412 | 999 | -0.000019 to +0.000027 | -0.000 (0.372) | +0.031 (0.459) | +0.016 (0.664) | concordant |
+| 13. No construction mask | 64 | 0.000231 → 0.000228 | -0.000003 | 0.377 | 999 | -0.000022 to +0.000024 | -0.003 (0.436) | +0.000 (0.856) | +0.000 (0.855) | opposite |
+| 14. Availability only: log(1 + valid pixels) (coverage check, §12.14) | 64 | 0.000231 → 0.000241 | +0.000010 | 0.097 | 999 | -0.000020 to +0.000122 | +0.013 (0.124) | +0.078 (0.075) | +0.094 (0.041) | – |
+| 15. Ohenhen et al. 2025 VLM, static (exploratory) (retrospective, carries no weight, §12.15) | 64 | 0.000227 → 0.000218 | -0.000009 | 0.654 | 999 | -0.000031 to +0.000053 | +0.001 (0.246) | +0.016 (0.643) | +0.016 (0.641) | – |
+
+Direction uses the same measure as §11 and applies only to velocity fields. Δ columns: change from the baseline, with its p from the same null.
+
+## 5. Sample and exclusions per analysis (§8, §9)
+
+| Analysis | Risk sets | Windows | Rows | Cells | Prevalence | Cells without a static input | Rows without building age | Events from | Of these, not used |
+|---|---|---|---|---|---|---|---|---|---|
+| Primary: domain, 250 m, logistic regression, Baseline 1, 1-year window | 64 | 60 | 309,972 | 4,887 | 0.000206 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 1. Whole NYC (generalization) | 78 | 74 | 784,157 | 10,149 | 0.000099 | 9 | – | 2017-07-16 | 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 2. 200 m cells | 69 | 65 | 502,812 | 7,346 | 0.000137 | 0 | – | 2017-07-16 | 10 cell not in the population; 2 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 3. Random forest | not run |  |  |  |  |  |  |  |  |
+| 4. Baseline 2 (adds building age) | 64 | 60 | 309,972 | 4,887 | 0.000206 | 0 | 0 | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 5. 2-year window | 49 | 46 | 236,025 | 4,871 | 0.000208 | 0 | – | 2018-07-16 | 11 cell not in the population; 3 earlier event in the cell |
+| 6. 3-year window | 36 | 33 | 172,381 | 4,857 | 0.000209 | 0 | – | 2019-07-16 | 7 cell not in the population; 2 earlier event in the cell |
+| 7. Earlier control rule | 68 | 63 | 335,964 | 4,966 | 0.000202 | 0 | – | 2017-07-16 | 14 cell not in the population |
+| 11. Never-case control rule | 64 | 60 | 307,961 | 4,887 | 0.000208 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 12. Linear-only velocity | 64 | 60 | 309,972 | 4,887 | 0.000206 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 13. No construction mask | 64 | 60 | 310,021 | 4,887 | 0.000206 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 14. Availability only: log(1 + valid pixels) (coverage check, §12.14) | 64 | 60 | 309,972 | 4,887 | 0.000206 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+| 15. Ohenhen et al. 2025 VLM, static (exploratory) (retrospective, carries no weight, §12.15) | 64 | 60 | 310,299 | 4,880 | 0.000206 | 0 | – | 2017-07-16 | 14 cell not in the population; 3 earlier event in the cell; 1 same cell and date as another event (one risk set) |
+
+## 6. Other fold assignments (secondary 9; primary null, no bootstrap)
+
+| Fold seed | PR AUC change | p | ΔROC AUC (p) | ΔTop-10% pooled (p) | ΔTop-10% own set (p) |
+|---|---|---|---|---|---|
+| 0 | -0.000001 | 0.362 | -0.003 (0.502) | +0.000 (0.407) | +0.000 (0.419) |
+| 1 | +0.000001 | 0.362 | +0.000 (0.365) | +0.000 (0.861) | +0.000 (0.857) |
+| 2 | -0.000008 | 0.654 | -0.020 (0.923) | -0.016 (0.917) | -0.016 (0.916) |
+| 3 | -0.000017 | 0.825 | -0.006 (0.550) | -0.031 (0.938) | -0.016 (0.793) |
+| 4 | -0.000009 | 0.528 | -0.007 (0.741) | -0.016 (0.654) | -0.031 (0.874) |
+| 5 | -0.000003 | 0.544 | -0.006 (0.641) | +0.000 (0.356) | +0.000 (0.349) |
+| 6 | -0.000006 | 0.624 | -0.005 (0.578) | -0.031 (0.913) | -0.016 (0.772) |
+| 7 | +0.000092 | 0.101 | -0.009 (0.696) | +0.000 (0.546) | +0.000 (0.556) |
+| 8 | -0.000007 | 0.535 | -0.007 (0.619) | -0.016 (0.735) | +0.000 (0.466) |
+| 9 | -0.000007 | 0.797 | -0.009 (0.733) | +0.031 (0.380) | +0.031 (0.390) |
+
+
+#################### Part 3: resume_newpc_supervisor.log
+Resume log: /mnt/data/Master-projects/Alex/feasibility/nyc/out/models/codex_resume.log
+Original secondary-analysis deadline: 2026-10-15T16:27:20+03:00
+Model process started: 74230
+Report generated; completed outputs verified unchanged

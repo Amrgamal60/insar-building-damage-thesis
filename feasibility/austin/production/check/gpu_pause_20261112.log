@@ -1,0 +1,52 @@
+2026-11-12 09:45:17 saved: root sync={"automated":{"prune":true,"selfHeal":true},"syncOptions":["CreateNamespace=true"]} ai-inference sync={"automated":{"prune":true,"selfHeal":true},"syncOptions":["CreateNamespace=true"]} replicas=1
+2026-11-12 09:45:17 pause: start (gpu free 2733 MiB)
+application.argoproj.io/root patched
+application.argoproj.io/ai-inference patched
+deployment.apps/sglang-vision scaled
+2026-11-12 09:46:35 pause: after 60 s settle: replicas=0 root sync={"syncOptions":["CreateNamespace=true"]} ai-inference sync={"syncOptions":["CreateNamespace=true"]} gpu free 24164 MiB
+2026-11-12 09:46:35 gpu: start
+2026-11-12 09:49:18 gpu: early check passed
+2026-11-12 12:18:39 gpu: exit=0
+2026-11-12 12:18:39 restore: start (gpu free 24164 MiB)
+2026-11-12 12:18:39 restore: gpu free 24164 MiB before scale-up
+deployment.apps/sglang-vision scaled
+2026-11-12 12:18:40 restore: scale rc=0
+application.argoproj.io/ai-inference patched
+2026-11-12 12:18:40 restore: ai-inference sync rc=0
+application.argoproj.io/root patched
+2026-11-12 12:18:41 restore: root sync rc=0
+2026-11-12 12:22:47 restore: readyReplicas=1 root sync={"automated":{"prune":true,"selfHeal":true},"syncOptions":["CreateNamespace=true"]} ai-inference sync={"automated":{"prune":true,"selfHeal":true},"syncOptions":["CreateNamespace=true"]} gpu free 2737 MiB
+NAME                                                     READY   STATUS              RESTARTS        AGE     IP            NODE                         NOMINATED NODE   READINESS GATES
+admin-backend-6464db6745-p47fg                           1/1     Running             1 (3h28m ago)   37d     10.42.1.115   k3d-mcait-testing-agent-0    <none>           <none>
+admin-backend-6464db6745-sqpvg                           1/1     Running             3 (3h27m ago)   3h38m   10.42.0.114   k3d-mcait-testing-server-0   <none>           <none>
+admin-ui-5b94c7f8c-cw9th                                 1/1     Running             2               37d     10.42.1.76    k3d-mcait-testing-agent-0    <none>           <none>
+admin-ui-5b94c7f8c-k759h                                 1/1     Running             0               3h38m   10.42.0.118   k3d-mcait-testing-server-0   <none>           <none>
+alertmanager-monitoring-kube-prometheus-alertmanager-0   2/2     Running             2 (3h28m ago)   38d     10.42.1.132   k3d-mcait-testing-agent-0    <none>           <none>
+app-shell-5c9df75f7b-7q9d4                               1/1     Running             0               3h38m   10.42.0.110   k3d-mcait-testing-server-0   <none>           <none>
+app-shell-5c9df75f7b-927ng                               1/1     Running             2               37d     10.42.1.123   k3d-mcait-testing-agent-0    <none>           <none>
+cpu-embedding-68c9f88c8b-wthjt                           0/1     ContainerCreating   0               38d     <none>        k3d-mcait-testing-agent-0    <none>           <none>
+mcait-auth-5b6b7dcc4-wbb2g                               1/1     Running             3               38d     10.42.1.93    k3d-mcait-testing-agent-0    <none>           <none>
+mcait-auth-postgres-86c6fc556c-9j5ps                     1/1     Running             2               38d     10.42.1.91    k3d-mcait-testing-agent-0    <none>           <none>
+mcait-policy-composer-c9cdc8fcd-8gdsz                    1/1     Running             2               38d     10.42.1.70    k3d-mcait-testing-agent-0    <none>           <none>
+mcait-policy-management-78d5fd95cf-8xk6j                 1/1     Running             1 (3h28m ago)   38d     10.42.1.107   k3d-mcait-testing-agent-0    <none>           <none>
+mcait-policy-management-78d5fd95cf-zfznj                 1/1     Running             0               3h38m   10.42.0.111   k3d-mcait-testing-server-0   <none>           <none>
+mcait-policy-management-postgres-7c555dc947-rl2d6        1/1     Running             2               38d     10.42.1.96    k3d-mcait-testing-agent-0    <none>           <none>
+mcait-router-75d4fc7658-6st9p                            1/1     Running             1 (3h28m ago)   38d     10.42.1.90    k3d-mcait-testing-agent-0    <none>           <none>
+mcait-router-75d4fc7658-p8694                            1/1     Running             4 (3h27m ago)   3h38m   10.42.0.117   k3d-mcait-testing-server-0   <none>           <none>
+mcait-ui-postgres-846c5c6478-pqz4t                       1/1     Running             2               38d     10.42.1.97    k3d-mcait-testing-agent-0    <none>           <none>
+monitoring-grafana-0                                     3/3     Running             3 (3h28m ago)   38d     10.42.1.113   k3d-mcait-testing-agent-0    <none>           <none>
+monitoring-kube-prometheus-operator-6968b5c975-6k6zp     1/1     Running             2               38d     10.42.1.68    k3d-mcait-testing-agent-0    <none>           <none>
+monitoring-kube-state-metrics-868694bc4b-xw4hm           1/1     Running             2               38d     10.42.1.62    k3d-mcait-testing-agent-0    <none>           <none>
+prometheus-monitoring-kube-prometheus-prometheus-0       2/2     Running             2 (3h28m ago)   38d     10.42.1.110   k3d-mcait-testing-agent-0    <none>           <none>
+sglang-vision-8d79977d7-9w2lw                            1/1     Running             0               4m7s    10.42.0.166   k3d-mcait-testing-server-0   <none>           <none>
+temporal-admintools-6b89f4796c-8qhbz                     1/1     Running             2               38d     10.42.1.79    k3d-mcait-testing-agent-0    <none>           <none>
+temporal-cowork-namespace-fsjxl                          0/1     Completed           0               162m    10.42.0.133   k3d-mcait-testing-server-0   <none>           <none>
+temporal-cowork-worker-version-29907980-n6hpq            0/1     Completed           0               2m47s   10.42.0.167   k3d-mcait-testing-server-0   <none>           <none>
+temporal-docsmart-namespace-4qxgn                        0/1     Completed           0               167m    10.42.0.129   k3d-mcait-testing-server-0   <none>           <none>
+temporal-frontend-7b6d666c7d-bf7sb                       1/1     Running             6 (3h27m ago)   38d     10.42.1.104   k3d-mcait-testing-agent-0    <none>           <none>
+temporal-history-75f4f997bd-ssv7w                        1/1     Running             7 (3h27m ago)   38d     10.42.1.108   k3d-mcait-testing-agent-0    <none>           <none>
+temporal-matching-8765646cd-5m5zs                        1/1     Running             6 (3h27m ago)   38d     10.42.1.44    k3d-mcait-testing-agent-0    <none>           <none>
+temporal-postgres-65ff8d6d4-jvcbr                        1/1     Running             1 (3h28m ago)   38d     10.42.1.72    k3d-mcait-testing-agent-0    <none>           <none>
+temporal-schema-1-6n6dt                                  0/1     Completed           0               164m    10.42.0.130   k3d-mcait-testing-server-0   <none>           <none>
+temporal-web-768c58b585-bpcdz                            1/1     Running             2               38d     10.42.1.116   k3d-mcait-testing-agent-0    <none>           <none>
+temporal-worker-75f6bf69d6-4gbc5                         1/1     Running             6 (3h27m ago)   38d     10.42.1.117   k3d-mcait-testing-agent-0    <none>           <none>

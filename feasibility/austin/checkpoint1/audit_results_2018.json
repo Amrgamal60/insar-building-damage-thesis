@@ -1,0 +1,56 @@
+{
+ "label_audit": {
+  "sample_sha256": "a7395ab56cda42a0528e1d1ef972d4385b20ec692f083e85780d31a8b5705880",
+  "n": 100,
+  "classes": {
+   "REPAIR_EXISTING_FOUNDATION": 98,
+   "UNCLEAR": 1,
+   "NOT_FOUNDATION": 1
+  },
+  "share": {
+   "count": 98,
+   "denominator": 100,
+   "percent": 98.0,
+   "clopper_pearson_95": [
+    93.0,
+    99.8
+   ]
+  },
+  "reader": "Claude (AI model), from the permit description only, one reading on 2026-11-10; not checked by an engineer or a second reader",
+  "reasons_among_repairs": {
+   "Foundation repair of an existing house.": 69,
+   "Foundation repair with a stated number of piers or pilings.": 15,
+   "Foundation repair listed with other repair or remodel work.": 9,
+   "Piers installed under an existing house; the text does not use the word repair.": 4,
+   "Adjustment of existing piers, which implies an earlier repair that is not in the record.": 1
+  }
+ },
+ "demolition_audit": {
+  "sample_sha256": "cfb78b0557c18182de05da8ebb58ba1ac3b742e69fc0687e16b023e15f629574",
+  "n": 50,
+  "classes": {
+   "MAIN_HOUSE": 38,
+   "ACCESSORY_ONLY": 12
+  },
+  "share": {
+   "count": 38,
+   "denominator": 50,
+   "percent": 76.0,
+   "clopper_pearson_95": [
+    61.8,
+    86.9
+   ]
+  },
+  "reader": "Claude (AI model), from the permit description only, one reading on 2026-11-10; not checked by an engineer or a second reader",
+  "classes_by_permit_class": {
+   "R- 645 Demolition One Family Homes": {
+    "ACCESSORY_ONLY": 2,
+    "MAIN_HOUSE": 38
+   },
+   "R- 649 Demolition All Other Bldgs Res": {
+    "ACCESSORY_ONLY": 10,
+    "MAIN_HOUSE": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,101 @@
+audit_id,permit_number,class,reason
+L001,2018-135765 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L002,2018-156276 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L003,2018-160609 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L004,2018-161828 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L005,2018-177041 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L006,2018-183710 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L007,2018-201655 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L008,2019-012247 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L009,2019-014371 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L010,2019-026385 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L011,2019-045898 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L012,2019-133029 BP,REPAIR_EXISTING_FOUNDATION,Piers installed under an existing house; the text does not use the word repair.
+L013,2019-134841 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L014,2019-151702 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L015,2019-154392 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L016,2019-165584 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L017,2019-194826 BP,UNCLEAR,The foundation is named in a long list of remodel work without a clear repair statement.
+L018,2019-219920 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L019,2019-224482 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L020,2019-225225 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L021,2019-231302 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L022,2019-231200 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L023,2019-240491 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L024,2020-006595 BP,REPAIR_EXISTING_FOUNDATION,Piers installed under an existing house; the text does not use the word repair.
+L025,2020-046243 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L026,2020-057481 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L027,2020-066961 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L028,2020-073048 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L029,2020-083768 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L030,2020-087388 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L031,2020-108348 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L032,2020-108351 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L033,2020-117919 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L034,2020-150269 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L035,2020-172216 BP,REPAIR_EXISTING_FOUNDATION,"Adjustment of existing piers, which implies an earlier repair that is not in the record."
+L036,2020-180991 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L037,2020-191251 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L038,2021-007495 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L039,2021-029286 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L040,2021-031549 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L041,2021-040085 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L042,2021-040094 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L043,2021-046806 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L044,2021-056450 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L045,2021-065881 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L046,2021-086536 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L047,2021-104854 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L048,2021-121359 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L049,2021-129915 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L050,2021-129721 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L051,2021-133003 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L052,2021-164006 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L053,2022-027189 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L054,2022-036126 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L055,2022-041785 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L056,2022-046181 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L057,2022-064452 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L058,2022-111650 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L059,2022-111065 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L060,2022-169728 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L061,2022-167257 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L062,2023-003701 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L063,2023-008739 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L064,2023-014414 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L065,2023-069301 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L066,2023-068374 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L067,2023-099902 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L068,2023-116103 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L069,2023-131111 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L070,2023-137301 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L071,2023-138227 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L072,2023-141389 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L073,2023-152608 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L074,2023-161657 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L075,2024-007751 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L076,2024-017186 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L077,2024-042336 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L078,2024-107338 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L079,2024-133219 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L080,2024-133724 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L081,2024-136044 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L082,2024-149819 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L083,2024-151142 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L084,2024-154631 BP,NOT_FOUNDATION,Fire-damage repair of a detached garage; the foundation is mentioned only as unable to carry a rebuild.
+L085,2024-166738 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L086,2024-167477 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L087,2024-167730 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L088,2025-013699 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L089,2025-026225 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair listed with other repair or remodel work.
+L090,2025-035059 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L091,2025-091698 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L092,2025-095920 BP,REPAIR_EXISTING_FOUNDATION,Piers installed under an existing house; the text does not use the word repair.
+L093,2025-096656 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L094,2025-122221 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L095,2025-122179 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L096,2025-132470 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L097,2025-137059 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair with a stated number of piers or pilings.
+L098,2025-139175 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L099,2025-141664 BP,REPAIR_EXISTING_FOUNDATION,Foundation repair of an existing house.
+L100,2025-151213 BP,REPAIR_EXISTING_FOUNDATION,Piers installed under an existing house; the text does not use the word repair.

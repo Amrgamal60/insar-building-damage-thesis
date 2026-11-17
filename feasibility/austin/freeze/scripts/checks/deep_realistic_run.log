@@ -1,0 +1,19 @@
+{"fold": 0, "elapsed_seconds": 26.838199371937662, "comparison_epoch": 5, "series_epoch": 3}
+{"fold": 1, "elapsed_seconds": 54.369638696080074, "comparison_epoch": 11, "series_epoch": 11}
+{"fold": 2, "elapsed_seconds": 35.33256322401576, "comparison_epoch": 4, "series_epoch": 6}
+{"fold": 3, "elapsed_seconds": 41.106749013997614, "comparison_epoch": 7, "series_epoch": 7}
+{"fold": 4, "elapsed_seconds": 33.75519042601809, "comparison_epoch": 5, "series_epoch": 5}
+{
+  "synthetic_only": true,
+  "rows": 300000,
+  "steps": 61,
+  "baseline_features": 9,
+  "elapsed_seconds": 191.59330310020596,
+  "projected_99_full_paired_refits_seconds": 18967.73700692039,
+  "score_sha256": {
+    "comparison": "150c1e731657e2d56db5e72731f87fb47071dc76b2da53afe448e8e26ddb4ac7",
+    "series": "61325b97db3b29e9bed4a5dd985f897ee972eff2270e930cf19a5e7fa9592032"
+  },
+  "comparison_pr_auc": 0.04497062974553866,
+  "series_pr_auc": 0.7549404948815527
+}
