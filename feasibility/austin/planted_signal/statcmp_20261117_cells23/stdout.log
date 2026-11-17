@@ -1,0 +1,231 @@
+2026-11-17 12:46:27 setup 41.7 s; 200 jobs; 64 workers; draws 999
+2026-11-17 12:57:11 cell 3 dataset 21: ap p 0.637, oofll p 0.237, llr p 0.344, coef p 0.592, abscoef p 0.409; 644 s
+2026-11-17 12:58:23 cell 3 dataset 24: ap p 0.665, oofll p 0.626, llr p 0.845, coef p 0.841, abscoef p 0.870; 715 s
+2026-11-17 12:58:48 cell 3 dataset 0: ap p 0.397, oofll p 0.126, llr p 0.268, coef p 0.695, abscoef p 0.307; 741 s
+2026-11-17 12:59:08 cell 2 dataset 31: ap p 0.384, oofll p 0.332, llr p 0.389, coef p 0.324, abscoef p 0.411; 761 s
+2026-11-17 12:59:20 cell 2 dataset 30: ap p 0.052, oofll p 0.188, llr p 0.024, coef p 0.067, abscoef p 0.067; 773 s
+2026-11-17 12:59:28 cell 3 dataset 30: ap p 0.731, oofll p 0.641, llr p 0.935, coef p 0.036, abscoef p 0.965; 781 s
+2026-11-17 12:59:33 cell 2 dataset 10: ap p 0.974, oofll p 0.831, llr p 0.435, coef p 0.396, abscoef p 0.605; 786 s
+2026-11-17 12:59:33 cell 3 dataset 16: ap p 0.307, oofll p 0.800, llr p 0.362, coef p 0.156, abscoef p 0.392; 786 s
+2026-11-17 12:59:35 cell 2 dataset 12: ap p 0.991, oofll p 0.714, llr p 0.670, coef p 0.188, abscoef p 0.813; 787 s
+2026-11-17 12:59:52 cell 3 dataset 26: ap p 0.412, oofll p 0.990, llr p 0.419, coef p 0.544, abscoef p 0.544; 805 s
+2026-11-17 12:59:56 cell 3 dataset 8: ap p 0.473, oofll p 0.210, llr p 0.241, coef p 0.414, abscoef p 0.414; 808 s
+2026-11-17 12:59:56 cell 2 dataset 4: ap p 0.812, oofll p 0.665, llr p 0.137, coef p 0.809, abscoef p 0.209; 809 s
+2026-11-17 12:59:57 cell 3 dataset 13: ap p 0.299, oofll p 0.358, llr p 0.999, coef p 0.377, abscoef p 0.879; 810 s
+2026-11-17 13:00:00 cell 3 dataset 28: ap p 0.983, oofll p 0.848, llr p 0.876, coef p 0.900, abscoef p 0.900; 812 s
+2026-11-17 13:00:05 cell 2 dataset 8: ap p 0.629, oofll p 0.475, llr p 0.071, coef p 0.844, abscoef p 0.157; 818 s
+2026-11-17 13:00:15 cell 2 dataset 5: ap p 0.148, oofll p 0.290, llr p 0.762, coef p 0.294, abscoef p 0.836; 828 s
+2026-11-17 13:00:18 cell 2 dataset 9: ap p 0.473, oofll p 0.661, llr p 0.290, coef p 0.861, abscoef p 0.377; 830 s
+2026-11-17 13:00:18 cell 2 dataset 29: ap p 0.744, oofll p 0.002, llr p 0.925, coef p 0.037, abscoef p 0.843; 831 s
+2026-11-17 13:00:22 cell 2 dataset 17: ap p 0.815, oofll p 0.556, llr p 0.934, coef p 0.613, abscoef p 0.948; 835 s
+2026-11-17 13:00:25 cell 2 dataset 26: ap p 0.496, oofll p 0.785, llr p 0.296, coef p 0.653, abscoef p 0.747; 838 s
+2026-11-17 13:00:28 cell 2 dataset 27: ap p 0.756, oofll p 0.901, llr p 0.632, coef p 0.693, abscoef p 0.694; 841 s
+2026-11-17 13:00:38 cell 3 dataset 29: ap p 0.194, oofll p 0.510, llr p 0.751, coef p 0.214, abscoef p 0.787; 851 s
+2026-11-17 13:00:42 cell 3 dataset 25: ap p 0.954, oofll p 0.936, llr p 0.846, coef p 0.593, abscoef p 0.898; 855 s
+2026-11-17 13:00:45 cell 2 dataset 19: ap p 0.086, oofll p 0.730, llr p 0.584, coef p 0.132, abscoef p 0.571; 858 s
+2026-11-17 13:00:46 cell 3 dataset 27: ap p 0.560, oofll p 0.681, llr p 0.185, coef p 0.996, abscoef p 0.194; 859 s
+2026-11-17 13:00:52 cell 3 dataset 22: ap p 0.030, oofll p 0.126, llr p 0.117, coef p 0.778, abscoef p 0.223; 865 s
+2026-11-17 13:00:53 cell 2 dataset 21: ap p 0.389, oofll p 0.180, llr p 0.641, coef p 0.333, abscoef p 0.707; 866 s
+2026-11-17 13:00:59 cell 2 dataset 1: ap p 0.996, oofll p 0.915, llr p 0.953, coef p 0.018, abscoef p 0.983; 871 s
+2026-11-17 13:01:10 cell 2 dataset 15: ap p 0.702, oofll p 0.189, llr p 0.245, coef p 0.452, abscoef p 0.549; 883 s
+2026-11-17 13:01:14 cell 2 dataset 24: ap p 0.538, oofll p 0.480, llr p 0.253, coef p 0.910, abscoef p 0.596; 887 s
+2026-11-17 13:01:19 cell 3 dataset 23: ap p 0.739, oofll p 0.673, llr p 0.689, coef p 0.278, abscoef p 0.723; 891 s
+2026-11-17 13:01:33 cell 2 dataset 6: ap p 0.433, oofll p 0.083, llr p 0.221, coef p 0.284, abscoef p 0.311; 906 s
+2026-11-17 13:02:28 cell 3 dataset 3: ap p 0.193, oofll p 0.479, llr p 0.631, coef p 0.743, abscoef p 0.743; 961 s
+2026-11-17 13:02:28 cell 2 dataset 2: ap p 0.227, oofll p 0.127, llr p 0.845, coef p 0.580, abscoef p 0.896; 961 s
+2026-11-17 13:02:33 cell 2 dataset 20: ap p 0.762, oofll p 0.530, llr p 0.201, coef p 0.825, abscoef p 0.236; 965 s
+2026-11-17 13:02:38 cell 2 dataset 11: ap p 0.771, oofll p 0.467, llr p 0.301, coef p 0.378, abscoef p 0.378; 971 s
+2026-11-17 13:02:49 cell 2 dataset 23: ap p 0.498, oofll p 0.261, llr p 0.077, coef p 0.879, abscoef p 0.122; 982 s
+2026-11-17 13:03:02 cell 3 dataset 6: ap p 0.773, oofll p 0.866, llr p 0.810, coef p 0.837, abscoef p 0.837; 995 s
+2026-11-17 13:03:04 cell 3 dataset 7: ap p 0.099, oofll p 0.050, llr p 0.124, coef p 0.822, abscoef p 0.179; 997 s
+2026-11-17 13:03:13 cell 3 dataset 9: ap p 0.939, oofll p 0.933, llr p 0.839, coef p 0.861, abscoef p 0.861; 1005 s
+2026-11-17 13:03:17 cell 3 dataset 4: ap p 0.772, oofll p 0.412, llr p 0.310, coef p 0.607, abscoef p 0.394; 1010 s
+2026-11-17 13:03:21 cell 2 dataset 14: ap p 0.013, oofll p 0.001, llr p 0.023, coef p 0.939, abscoef p 0.062; 1014 s
+2026-11-17 13:03:24 cell 3 dataset 18: ap p 0.006, oofll p 0.625, llr p 0.782, coef p 0.841, abscoef p 0.841; 1017 s
+2026-11-17 13:03:35 cell 3 dataset 17: ap p 0.223, oofll p 0.787, llr p 0.747, coef p 0.680, abscoef p 0.763; 1028 s
+2026-11-17 13:03:42 cell 2 dataset 25: ap p 0.783, oofll p 0.534, llr p 0.924, coef p 0.100, abscoef p 0.944; 1035 s
+2026-11-17 13:03:49 cell 3 dataset 5: ap p 0.891, oofll p 0.728, llr p 0.882, coef p 0.888, abscoef p 0.888; 1042 s
+2026-11-17 13:03:58 cell 3 dataset 15: ap p 0.826, oofll p 0.249, llr p 0.880, coef p 0.631, abscoef p 0.926; 1051 s
+2026-11-17 13:04:01 cell 3 dataset 2: ap p 0.534, oofll p 0.558, llr p 0.964, coef p 0.142, abscoef p 0.961; 1054 s
+2026-11-17 13:04:15 cell 3 dataset 31: ap p 0.677, oofll p 0.638, llr p 0.444, coef p 0.558, abscoef p 0.558; 1068 s
+2026-11-17 13:04:15 cell 2 dataset 18: ap p 0.089, oofll p 0.128, llr p 0.732, coef p 0.978, abscoef p 0.804; 1068 s
+2026-11-17 13:04:16 cell 2 dataset 0: ap p 0.001, oofll p 0.422, llr p 0.029, coef p 0.944, abscoef p 0.061; 1069 s
+2026-11-17 13:04:22 cell 3 dataset 20: ap p 0.766, oofll p 0.348, llr p 0.332, coef p 0.851, abscoef p 0.340; 1075 s
+2026-11-17 13:04:41 cell 3 dataset 11: ap p 0.912, oofll p 0.959, llr p 0.823, coef p 0.149, abscoef p 0.852; 1094 s
+2026-11-17 13:04:51 cell 3 dataset 10: ap p 0.888, oofll p 0.985, llr p 0.743, coef p 0.782, abscoef p 0.782; 1104 s
+2026-11-17 13:05:11 cell 2 dataset 28: ap p 0.033, oofll p 0.876, llr p 0.356, coef p 0.486, abscoef p 0.515; 1124 s
+2026-11-17 13:05:12 cell 3 dataset 12: ap p 0.663, oofll p 0.701, llr p 0.626, coef p 0.044, abscoef p 0.631; 1125 s
+2026-11-17 13:05:19 cell 3 dataset 19: ap p 0.216, oofll p 0.957, llr p 0.962, coef p 0.032, abscoef p 0.969; 1132 s
+2026-11-17 13:05:30 cell 3 dataset 14: ap p 0.636, oofll p 0.777, llr p 0.630, coef p 0.738, abscoef p 0.738; 1143 s
+2026-11-17 13:05:44 cell 2 dataset 7: ap p 0.749, oofll p 0.274, llr p 0.895, coef p 0.216, abscoef p 0.997; 1156 s
+2026-11-17 13:06:37 cell 2 dataset 3: ap p 0.349, oofll p 0.619, llr p 0.989, coef p 0.414, abscoef p 0.928; 1210 s
+2026-11-17 13:06:49 cell 2 dataset 16: ap p 0.631, oofll p 0.261, llr p 0.872, coef p 0.113, abscoef p 0.895; 1222 s
+2026-11-17 13:07:05 cell 2 dataset 22: ap p 0.762, oofll p 0.441, llr p 0.645, coef p 0.489, abscoef p 0.655; 1238 s
+2026-11-17 13:07:37 cell 2 dataset 13: ap p 0.504, oofll p 0.447, llr p 0.570, coef p 0.367, abscoef p 0.635; 1270 s
+2026-11-17 13:07:54 cell 3 dataset 1: ap p 0.708, oofll p 0.880, llr p 0.506, coef p 0.454, abscoef p 0.559; 1287 s
+2026-11-17 13:11:51 cell 2 dataset 39: ap p 0.515, oofll p 0.017, llr p 0.117, coef p 0.029, abscoef p 0.133; 707 s
+2026-11-17 13:12:27 cell 3 dataset 41: ap p 0.766, oofll p 0.828, llr p 0.673, coef p 0.307, abscoef p 0.694; 721 s
+2026-11-17 13:12:29 cell 3 dataset 37: ap p 0.011, oofll p 0.024, llr p 0.056, coef p 0.122, abscoef p 0.122; 753 s
+2026-11-17 13:12:40 cell 2 dataset 40: ap p 0.869, oofll p 0.989, llr p 0.362, coef p 0.525, abscoef p 0.476; 742 s
+2026-11-17 13:12:56 cell 3 dataset 39: ap p 0.480, oofll p 0.041, llr p 0.282, coef p 0.803, abscoef p 0.303; 762 s
+2026-11-17 13:12:59 cell 2 dataset 37: ap p 0.342, oofll p 0.058, llr p 0.089, coef p 0.886, abscoef p 0.124; 784 s
+2026-11-17 13:13:02 cell 2 dataset 41: ap p 0.119, oofll p 0.065, llr p 0.326, coef p 0.504, abscoef p 0.578; 759 s
+2026-11-17 13:13:03 cell 2 dataset 42: ap p 0.496, oofll p 0.373, llr p 0.285, coef p 0.660, abscoef p 0.341; 754 s
+2026-11-17 13:13:03 cell 2 dataset 45: ap p 0.009, oofll p 0.464, llr p 0.093, coef p 0.171, abscoef p 0.171; 730 s
+2026-11-17 13:13:14 cell 2 dataset 36: ap p 0.602, oofll p 0.233, llr p 0.552, coef p 0.673, abscoef p 0.481; 819 s
+2026-11-17 13:13:52 cell 3 dataset 34: ap p 0.113, oofll p 0.153, llr p 0.187, coef p 0.266, abscoef p 0.266; 864 s
+2026-11-17 13:14:15 cell 3 dataset 43: ap p 0.683, oofll p 0.505, llr p 0.234, coef p 0.707, abscoef p 0.294; 810 s
+2026-11-17 13:14:34 cell 2 dataset 32: ap p 0.373, oofll p 0.044, llr p 0.025, coef p 0.952, abscoef p 0.049; 1043 s
+2026-11-17 13:14:39 cell 3 dataset 40: ap p 0.070, oofll p 0.762, llr p 0.666, coef p 0.859, abscoef p 0.778; 861 s
+2026-11-17 13:14:55 cell 3 dataset 33: ap p 0.233, oofll p 0.421, llr p 0.806, coef p 0.834, abscoef p 0.834; 947 s
+2026-11-17 13:15:15 cell 3 dataset 42: ap p 0.989, oofll p 0.685, llr p 0.984, coef p 0.986, abscoef p 0.986; 876 s
+2026-11-17 13:15:18 cell 2 dataset 33: ap p 0.460, oofll p 0.392, llr p 0.543, coef p 0.277, abscoef p 0.724; 990 s
+2026-11-17 13:15:20 cell 2 dataset 49: ap p 0.008, oofll p 0.013, llr p 0.937, coef p 0.088, abscoef p 0.859; 767 s
+2026-11-17 13:15:23 cell 3 dataset 35: ap p 0.994, oofll p 0.848, llr p 0.055, coef p 0.092, abscoef p 0.092; 950 s
+2026-11-17 13:15:30 cell 2 dataset 51: ap p 0.979, oofll p 0.930, llr p 0.954, coef p 0.967, abscoef p 0.967; 745 s
+2026-11-17 13:15:34 cell 2 dataset 48: ap p 0.041, oofll p 0.067, llr p 0.176, coef p 0.282, abscoef p 0.282; 786 s
+2026-11-17 13:15:35 cell 3 dataset 50: ap p 0.642, oofll p 0.944, llr p 0.709, coef p 0.327, abscoef p 0.744; 753 s
+2026-11-17 13:15:37 cell 3 dataset 51: ap p 0.897, oofll p 0.787, llr p 0.435, coef p 0.352, abscoef p 0.499; 745 s
+2026-11-17 13:15:41 cell 2 dataset 47: ap p 0.993, oofll p 0.977, llr p 0.489, coef p 0.362, abscoef p 0.639; 862 s
+2026-11-17 13:15:55 cell 3 dataset 48: ap p 0.575, oofll p 0.277, llr p 0.734, coef p 0.220, abscoef p 0.781; 806 s
+2026-11-17 13:16:11 cell 2 dataset 52: ap p 0.037, oofll p 0.133, llr p 0.041, coef p 0.897, abscoef p 0.104; 773 s
+2026-11-17 13:16:21 cell 2 dataset 46: ap p 0.899, oofll p 0.417, llr p 0.636, coef p 0.310, abscoef p 0.767; 911 s
+2026-11-17 13:16:51 cell 2 dataset 44: ap p 0.329, oofll p 0.838, llr p 0.362, coef p 0.575, abscoef p 0.647; 964 s
+2026-11-17 13:17:15 cell 2 dataset 50: ap p 0.712, oofll p 0.061, llr p 0.026, coef p 0.994, abscoef p 0.068; 867 s
+2026-11-17 13:17:24 cell 2 dataset 35: ap p 0.272, oofll p 0.633, llr p 0.536, coef p 0.540, abscoef p 0.620; 1071 s
+2026-11-17 13:17:26 cell 3 dataset 32: ap p 0.690, oofll p 0.240, llr p 0.376, coef p 0.451, abscoef p 0.451; 1143 s
+2026-11-17 13:17:26 cell 2 dataset 43: ap p 0.989, oofll p 0.995, llr p 0.803, coef p 0.803, abscoef p 0.757; 1004 s
+2026-11-17 13:17:30 cell 2 dataset 60: ap p 0.308, oofll p 0.275, llr p 0.172, coef p 0.205, abscoef p 0.213; 731 s
+2026-11-17 13:17:40 cell 3 dataset 44: ap p 0.305, oofll p 0.594, llr p 0.409, coef p 0.447, abscoef p 0.554; 1008 s
+2026-11-17 13:17:43 cell 2 dataset 55: ap p 0.253, oofll p 0.447, llr p 0.658, coef p 0.569, abscoef p 0.828; 825 s
+2026-11-17 13:17:51 cell 2 dataset 56: ap p 0.908, oofll p 0.351, llr p 0.261, coef p 0.266, abscoef p 0.314; 816 s
+2026-11-17 13:17:57 cell 2 dataset 34: ap p 0.968, oofll p 0.355, llr p 0.538, coef p 0.503, abscoef p 0.589; 1117 s
+2026-11-17 13:17:57 cell 3 dataset 36: ap p 0.804, oofll p 0.682, llr p 0.817, coef p 0.832, abscoef p 0.833; 1085 s
+2026-11-17 13:18:08 cell 2 dataset 38: ap p 0.846, oofll p 0.752, llr p 0.394, coef p 0.211, abscoef p 0.425; 1092 s
+2026-11-17 13:18:10 cell 2 dataset 54: ap p 0.943, oofll p 0.363, llr p 0.349, coef p 0.622, abscoef p 0.407; 868 s
+2026-11-17 13:18:39 cell 3 dataset 55: ap p 0.221, oofll p 0.080, llr p 0.250, coef p 0.300, abscoef p 0.300; 878 s
+2026-11-17 13:18:45 cell 3 dataset 46: ap p 0.459, oofll p 0.746, llr p 0.470, coef p 0.470, abscoef p 0.531; 1050 s
+2026-11-17 13:18:54 cell 3 dataset 38: ap p 0.361, oofll p 0.038, llr p 0.379, coef p 0.227, abscoef p 0.410; 1134 s
+2026-11-17 13:18:56 cell 3 dataset 45: ap p 0.171, oofll p 0.036, llr p 0.097, coef p 0.199, abscoef p 0.199; 1078 s
+2026-11-17 13:19:16 cell 3 dataset 58: ap p 0.832, oofll p 0.725, llr p 0.186, coef p 0.781, abscoef p 0.220; 865 s
+2026-11-17 13:19:24 cell 3 dataset 54: ap p 0.307, oofll p 0.666, llr p 0.118, coef p 0.163, abscoef p 0.163; 935 s
+2026-11-17 13:19:49 cell 2 dataset 61: ap p 0.982, oofll p 0.897, llr p 0.954, coef p 0.031, abscoef p 0.970; 846 s
+2026-11-17 13:19:56 cell 3 dataset 49: ap p 0.411, oofll p 0.537, llr p 0.604, coef p 0.290, abscoef p 0.711; 1038 s
+2026-11-17 13:20:13 cell 3 dataset 47: ap p 0.316, oofll p 0.336, llr p 0.988, coef p 0.573, abscoef p 0.876; 1120 s
+2026-11-17 13:20:21 cell 3 dataset 53: ap p 0.785, oofll p 0.577, llr p 0.691, coef p 0.716, abscoef p 0.716; 1006 s
+2026-11-17 13:21:11 cell 2 dataset 53: ap p 0.643, oofll p 0.557, llr p 0.081, coef p 0.858, abscoef p 0.143; 1066 s
+2026-11-17 13:21:22 cell 3 dataset 61: ap p 0.197, oofll p 0.125, llr p 0.960, coef p 0.468, abscoef p 0.895; 885 s
+2026-11-17 13:21:25 cell 2 dataset 58: ap p 0.832, oofll p 0.242, llr p 0.469, coef p 0.833, abscoef p 0.445; 1004 s
+2026-11-17 13:22:32 cell 2 dataset 63: ap p 0.708, oofll p 0.996, llr p 0.252, coef p 0.618, abscoef p 0.383; 895 s
+2026-11-17 13:22:38 cell 3 dataset 57: ap p 0.780, oofll p 0.454, llr p 0.857, coef p 0.873, abscoef p 0.873; 1095 s
+2026-11-17 13:22:41 cell 3 dataset 56: ap p 0.203, oofll p 0.708, llr p 0.446, coef p 0.423, abscoef p 0.578; 1105 s
+2026-11-17 13:23:33 cell 2 dataset 57: ap p 0.825, oofll p 0.975, llr p 0.866, coef p 0.114, abscoef p 0.888; 1156 s
+2026-11-17 13:23:44 cell 2 dataset 62: ap p 0.390, oofll p 0.194, llr p 0.632, coef p 0.491, abscoef p 0.547; 1015 s
+2026-11-17 13:23:49 cell 2 dataset 59: ap p 0.224, oofll p 0.761, llr p 0.117, coef p 0.863, abscoef p 0.193; 1118 s
+2026-11-17 13:23:58 cell 3 dataset 63: ap p 0.544, oofll p 0.396, llr p 0.345, coef p 0.530, abscoef p 0.471; 964 s
+2026-11-17 13:24:35 cell 2 dataset 64: ap p 0.505, oofll p 0.110, llr p 0.218, coef p 0.279, abscoef p 0.280; 763 s
+2026-11-17 13:25:10 cell 2 dataset 65: ap p 0.025, oofll p 0.914, llr p 0.981, coef p 0.015, abscoef p 0.987; 761 s
+2026-11-17 13:25:15 cell 3 dataset 60: ap p 0.375, oofll p 0.159, llr p 0.271, coef p 0.309, abscoef p 0.314; 1185 s
+2026-11-17 13:25:21 cell 3 dataset 62: ap p 0.899, oofll p 0.963, llr p 0.598, coef p 0.700, abscoef p 0.700; 1096 s
+2026-11-17 13:25:23 cell 3 dataset 52: ap p 0.476, oofll p 0.063, llr p 0.917, coef p 0.179, abscoef p 0.976; 1321 s
+2026-11-17 13:25:37 cell 2 dataset 67: ap p 0.198, oofll p 0.669, llr p 0.961, coef p 0.022, abscoef p 0.979; 755 s
+2026-11-17 13:25:42 cell 3 dataset 71: ap p 1.000, oofll p 0.888, llr p 0.260, coef p 0.669, abscoef p 0.332; 627 s
+2026-11-17 13:26:08 cell 3 dataset 68: ap p 1.000, oofll p 0.999, llr p 0.725, coef p 0.630, abscoef p 0.757; 774 s
+2026-11-17 13:26:19 cell 2 dataset 69: ap p 0.447, oofll p 0.488, llr p 0.867, coef p 0.094, abscoef p 0.907; 747 s
+2026-11-17 13:26:42 cell 3 dataset 59: ap p 0.295, oofll p 0.634, llr p 0.695, coef p 0.331, abscoef p 0.760; 1290 s
+2026-11-17 13:27:18 cell 3 dataset 70: ap p 0.942, oofll p 0.999, llr p 0.710, coef p 0.731, abscoef p 0.732; 759 s
+2026-11-17 13:27:35 cell 2 dataset 71: ap p 0.028, oofll p 0.043, llr p 0.294, coef p 0.201, abscoef p 0.454; 760 s
+2026-11-17 13:27:45 cell 2 dataset 76: ap p 0.392, oofll p 0.038, llr p 0.648, coef p 0.220, abscoef p 0.670; 710 s
+2026-11-17 13:28:04 cell 3 dataset 65: ap p 0.456, oofll p 0.525, llr p 0.252, coef p 0.724, abscoef p 0.279; 925 s
+2026-11-17 13:28:32 cell 3 dataset 74: ap p 0.832, oofll p 0.046, llr p 0.037, coef p 0.967, abscoef p 0.035; 777 s
+2026-11-17 13:28:49 cell 2 dataset 68: ap p 0.958, oofll p 1.000, llr p 0.651, coef p 0.454, abscoef p 0.747; 945 s
+2026-11-17 13:28:50 cell 2 dataset 73: ap p 0.943, oofll p 0.224, llr p 0.002, coef p 0.990, abscoef p 0.011; 807 s
+2026-11-17 13:29:24 cell 2 dataset 77: ap p 0.032, oofll p 0.473, llr p 0.761, coef p 0.306, abscoef p 0.841; 783 s
+2026-11-17 13:29:27 cell 3 dataset 79: ap p 0.981, oofll p 0.965, llr p 0.602, coef p 0.605, abscoef p 0.635; 721 s
+2026-11-17 13:29:39 cell 3 dataset 80: ap p 0.668, oofll p 0.337, llr p 0.095, coef p 0.854, abscoef p 0.147; 719 s
+2026-11-17 13:29:43 cell 2 dataset 66: ap p 0.074, oofll p 0.301, llr p 0.259, coef p 0.150, abscoef p 0.290; 1006 s
+2026-11-17 13:29:47 cell 2 dataset 78: ap p 0.591, oofll p 0.123, llr p 0.041, coef p 0.906, abscoef p 0.095; 752 s
+2026-11-17 13:30:09 cell 2 dataset 70: ap p 0.866, oofll p 0.563, llr p 0.773, coef p 0.136, abscoef p 0.865; 934 s
+2026-11-17 13:30:12 cell 3 dataset 84: ap p 0.298, oofll p 0.657, llr p 0.822, coef p 0.828, abscoef p 0.836; 687 s
+2026-11-17 13:30:13 cell 2 dataset 83: ap p 0.321, oofll p 0.152, llr p 0.149, coef p 0.662, abscoef p 0.339; 725 s
+2026-11-17 13:30:15 cell 3 dataset 69: ap p 0.108, oofll p 0.524, llr p 0.707, coef p 0.238, abscoef p 0.763; 960 s
+2026-11-17 13:30:23 cell 3 dataset 66: ap p 0.212, oofll p 0.053, llr p 0.030, coef p 0.079, abscoef p 0.079; 1044 s
+2026-11-17 13:30:28 cell 3 dataset 81: ap p 0.915, oofll p 0.539, llr p 0.608, coef p 0.643, abscoef p 0.645; 757 s
+2026-11-17 13:30:33 cell 3 dataset 73: ap p 0.065, oofll p 0.446, llr p 0.078, coef p 0.889, abscoef p 0.117; 903 s
+2026-11-17 13:30:51 cell 3 dataset 67: ap p 0.593, oofll p 0.264, llr p 0.247, coef p 0.636, abscoef p 0.365; 1068 s
+2026-11-17 13:31:06 cell 2 dataset 81: ap p 0.077, oofll p 0.082, llr p 0.979, coef p 0.943, abscoef p 0.773; 803 s
+2026-11-17 13:31:16 cell 3 dataset 83: ap p 0.075, oofll p 0.093, llr p 0.141, coef p 0.839, abscoef p 0.172; 786 s
+2026-11-17 13:31:16 cell 3 dataset 76: ap p 0.005, oofll p 0.062, llr p 0.147, coef p 0.204, abscoef p 0.204; 906 s
+2026-11-17 13:31:22 cell 2 dataset 74: ap p 0.348, oofll p 0.685, llr p 0.083, coef p 0.841, abscoef p 0.160; 948 s
+2026-11-17 13:31:25 cell 3 dataset 64: ap p 0.134, oofll p 0.324, llr p 0.285, coef p 0.523, abscoef p 0.478; 1139 s
+2026-11-17 13:31:52 cell 2 dataset 80: ap p 0.741, oofll p 0.234, llr p 0.679, coef p 0.272, abscoef p 0.731; 862 s
+2026-11-17 13:32:00 cell 2 dataset 75: ap p 0.033, oofll p 0.022, llr p 0.066, coef p 0.892, abscoef p 0.115; 983 s
+2026-11-17 13:32:02 cell 2 dataset 84: ap p 0.910, oofll p 0.044, llr p 0.017, coef p 0.952, abscoef p 0.049; 803 s
+2026-11-17 13:32:04 cell 2 dataset 79: ap p 0.500, oofll p 0.396, llr p 0.458, coef p 0.255, abscoef p 0.456; 878 s
+2026-11-17 13:32:10 cell 3 dataset 72: ap p 0.457, oofll p 0.288, llr p 0.599, coef p 0.326, abscoef p 0.675; 1010 s
+2026-11-17 13:32:24 cell 3 dataset 85: ap p 0.228, oofll p 0.109, llr p 0.259, coef p 0.643, abscoef p 0.358; 808 s
+2026-11-17 13:32:28 cell 2 dataset 72: ap p 0.755, oofll p 0.250, llr p 0.871, coef p 0.129, abscoef p 0.896; 1029 s
+2026-11-17 13:32:34 cell 2 dataset 88: ap p 0.051, oofll p 0.387, llr p 0.853, coef p 0.081, abscoef p 0.833; 741 s
+2026-11-17 13:32:35 cell 3 dataset 77: ap p 0.719, oofll p 0.087, llr p 0.016, coef p 0.963, abscoef p 0.038; 944 s
+2026-11-17 13:32:38 cell 3 dataset 88: ap p 0.691, oofll p 0.704, llr p 0.817, coef p 0.166, abscoef p 0.835; 737 s
+2026-11-17 13:32:43 cell 3 dataset 75: ap p 0.728, oofll p 0.273, llr p 0.643, coef p 0.895, abscoef p 0.702; 1022 s
+2026-11-17 13:32:46 cell 3 dataset 82: ap p 0.767, oofll p 0.411, llr p 0.535, coef p 0.597, abscoef p 0.597; 889 s
+2026-11-17 13:32:51 cell 3 dataset 87: ap p 0.967, oofll p 0.576, llr p 0.853, coef p 0.891, abscoef p 0.891; 775 s
+2026-11-17 13:32:58 cell 2 dataset 82: ap p 0.262, oofll p 0.215, llr p 0.852, coef p 0.211, abscoef p 0.892; 900 s
+2026-11-17 13:33:28 cell 2 dataset 89: ap p 0.199, oofll p 0.354, llr p 0.454, coef p 0.436, abscoef p 0.565; 737 s
+2026-11-17 13:33:37 cell 3 dataset 86: ap p 0.957, oofll p 0.995, llr p 0.241, coef p 0.674, abscoef p 0.327; 854 s
+2026-11-17 13:33:41 cell 2 dataset 86: ap p 1.000, oofll p 0.948, llr p 0.574, coef p 0.310, abscoef p 0.691; 865 s
+2026-11-17 13:33:48 cell 2 dataset 87: ap p 0.106, oofll p 0.815, llr p 0.651, coef p 0.422, abscoef p 0.783; 839 s
+2026-11-17 13:33:53 cell 3 dataset 78: ap p 0.568, oofll p 0.551, llr p 0.678, coef p 0.227, abscoef p 0.774; 989 s
+2026-11-17 13:34:19 cell 2 dataset 85: ap p 0.262, oofll p 0.273, llr p 0.614, coef p 0.078, abscoef p 0.779; 925 s
+2026-11-17 13:34:53 cell 3 dataset 91: ap p 0.214, oofll p 0.841, llr p 0.215, coef p 0.059, abscoef p 0.301; 732 s
+2026-11-17 13:35:27 cell 3 dataset 89: ap p 0.280, oofll p 0.253, llr p 0.338, coef p 0.630, abscoef p 0.376; 845 s
+2026-11-17 13:35:57 cell 2 dataset 95: ap p 0.342, oofll p 0.091, llr p 0.456, coef p 0.544, abscoef p 0.585; 642 s
+2026-11-17 13:35:59 cell 3 dataset 98: ap p 0.174, oofll p 0.450, llr p 0.098, coef p 0.874, abscoef p 0.127; 557 s
+2026-11-17 13:36:00 cell 2 dataset 93: ap p 0.019, oofll p 0.196, llr p 0.208, coef p 0.733, abscoef p 0.271; 731 s
+2026-11-17 13:36:06 cell 2 dataset 91: ap p 0.999, oofll p 0.896, llr p 0.949, coef p 0.036, abscoef p 0.965; 808 s
+2026-11-17 13:36:15 cell 2 dataset 90: ap p 0.137, oofll p 0.708, llr p 0.562, coef p 0.322, abscoef p 0.679; 890 s
+2026-11-17 13:36:24 cell 3 dataset 90: ap p 0.801, oofll p 0.670, llr p 0.015, coef p 0.975, abscoef p 0.026; 832 s
+2026-11-17 13:36:35 cell 3 dataset 95: ap p 0.198, oofll p 0.513, llr p 0.522, coef p 0.664, abscoef p 0.664; 674 s
+2026-11-17 13:36:36 cell 2 dataset 92: ap p 0.071, oofll p 0.750, llr p 0.208, coef p 0.740, abscoef p 0.277; 784 s
+2026-11-17 13:36:37 cell 3 dataset 92: ap p 0.003, oofll p 0.006, llr p 0.004, coef p 0.008, abscoef p 0.008; 774 s
+2026-11-17 13:36:46 cell 2 dataset 94: ap p 0.985, oofll p 0.797, llr p 0.727, coef p 0.801, abscoef p 0.792; 732 s
+2026-11-17 13:36:51 cell 3 dataset 99: ap p 0.541, oofll p 0.684, llr p 0.850, coef p 0.084, abscoef p 0.917; 556 s
+2026-11-17 13:36:57 cell 3 dataset 93: ap p 0.652, oofll p 0.702, llr p 0.937, coef p 0.044, abscoef p 0.957; 778 s
+2026-11-17 13:36:57 cell 2 dataset 97: ap p 0.474, oofll p 0.589, llr p 0.360, coef p 0.596, abscoef p 0.861; 675 s
+2026-11-17 13:37:15 cell 2 dataset 96: ap p 0.066, oofll p 0.054, llr p 0.595, coef p 0.024, abscoef p 0.590; 713 s
+2026-11-17 13:37:16 cell 3 dataset 94: ap p 0.093, oofll p 0.213, llr p 0.424, coef p 0.396, abscoef p 0.605; 726 s
+2026-11-17 13:37:19 cell 2 dataset 98: ap p 0.992, oofll p 0.874, llr p 0.388, coef p 0.439, abscoef p 0.453; 660 s
+2026-11-17 13:37:35 cell 3 dataset 96: ap p 0.159, oofll p 0.043, llr p 0.303, coef p 0.299, abscoef p 0.312; 718 s
+2026-11-17 13:37:44 cell 2 dataset 99: ap p 0.264, oofll p 0.035, llr p 0.033, coef p 0.862, abscoef p 0.139; 626 s
+2026-11-17 13:37:44 cell 3 dataset 97: ap p 0.073, oofll p 0.188, llr p 0.083, coef p 0.144, abscoef p 0.144; 697 s
+2026-11-17 13:37:45 run complete
+# Test statistics compared inside the same surrogate null (exploratory, synthetic events only)
+
+Datasets per cell: 100, 100. Null draws per dataset: 999. Same synthetic datasets, folds and surrogates as the planted-signal check of 2026-11-11; the frozen statistic (ap) reproduces those records with max |difference| 0.0e+00.
+
+Share of datasets detected (p < 0.05, with the sign condition where one applies), 95% Wilson interval:
+
+| Statistic | 2. 0.65 t (nonlinear soil) | 3. 0.7 H (hidden spatial field) |
+|---|---|---|
+| change in out-of-fold average precision (frozen Test A) | 11/100 [6, 19]% | 5/100 [2, 11]% |
+| change in out-of-fold log-likelihood | 4/100 [2, 10]% | 3/100 [1, 8]% |
+| change in in-sample log-likelihood | 10/100 [6, 17]% | 5/100 [2, 11]% |
+| velocity coefficient, negative tail | 3/100 [1, 8]% | 2/100 [1, 7]% |
+| |velocity coefficient| | 3/100 [1, 8]% | 4/100 [2, 10]% |
+
+Paired against ap on the same datasets (detected by this statistic only / by ap only; exact McNemar p):
+
+| Statistic | 2. 0.65 t (nonlinear soil) | 3. 0.7 H (hidden spatial field) |
+|---|---|---|
+| oofll | 2 / 9; p 0.0654 | 2 / 4; p 0.688 |
+| llr | 7 / 8; p 1 | 4 / 4; p 1 |
+| coef | 3 / 11; p 0.0574 | 1 / 4; p 0.375 |
+| abscoef | 3 / 11; p 0.0574 | 3 / 4; p 1 |
+
+p deciles (0,.1], ..., (.9,1]:
+
+- 2. 0.65 t (nonlinear soil): ap [20, 6, 7, 12, 9, 5, 4, 12, 8, 17]; oofll [18, 11, 12, 10, 11, 6, 6, 8, 7, 11]; llr [17, 6, 14, 10, 6, 9, 12, 5, 9, 12]; coef [14, 8, 14, 10, 9, 9, 8, 2, 15, 11]; abscoef [8, 11, 8, 7, 9, 10, 10, 11, 15, 11]
+- 3. 0.7 H (hidden spatial field): ap [11, 10, 12, 7, 8, 7, 11, 12, 9, 13]; oofll [14, 7, 10, 6, 7, 12, 13, 12, 7, 12]; llr [12, 8, 13, 9, 7, 5, 13, 9, 15, 9]; coef [9, 9, 11, 8, 7, 8, 14, 9, 20, 5]; abscoef [6, 10, 7, 13, 7, 7, 8, 17, 17, 8]
+
+Source hashes: `planted_signal.py` 977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4, `testa_core.py` f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430, `nyc_lib.py` 619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1, `statistic_comparison.py` 4f74ad9d205b3c4391598bc50ce44240cbbc334019ddca3f2ed4420fe37dfe9c.

@@ -2106,6 +2106,27 @@ Secondary analyses are not corrected for multiple tests. Only Test A carries the
     - the record table;
     - the variogram tables by distance.
   - It adds no new analysis and no new reading. Nothing in §4–§12 changed.
+- **2026-11-17. Exploratory comparison of test statistics on synthetic events** (Claude; the user approved it with "ok" after the literature search, `feasibility/literature_methods/SYNTHESIS.md` section 2).
+  - **What it is:** not part of the frozen analysis. It changes no Austin decision, no §11 reading and nothing in §4–§12. No real event is joined to a velocity value: real events enter only as the dates file of the planted-signal check.
+  - **Question:** inside the same conditional-null surrogates, does another statistic detect a planted velocity effect more often than the change in out-of-fold average precision, without more false positives?
+  - **Code:** `planted_signal/statistic_comparison.py` (`4f74ad9d205b3c4391598bc50ce44240cbbc334019ddca3f2ed4420fe37dfe9c`). It imports `planted_signal.py` (977f626f…) and `testa_core.py` (f4d71575…) unchanged and asserts their hashes. Same seeds, synthetic datasets, risk sets, folds, design, observed field, 999 stored surrogates (seed 2027) and their quantiles as the planted-signal check.
+  - **Statistics, from one set of fits per field (frozen nyc_lib logistic model):** change in out-of-fold average precision (frozen, the anchor); change in out-of-fold log-likelihood; change in in-sample log-likelihood; velocity coefficient (lower tail, as planted); |coefficient|. Detection is p < 0.05 with the sign condition where one applies.
+  - **Where and when:** server, 64 workers (`work/insar/run_statcmp.sh`). Cells 1, 4, 5: 2026-11-17 11:22–12:43. Cells 2, 3 (added by Claude to check false positives under misspecification): 12:45–13:37. 100 datasets per cell.
+  - **Checks:** the frozen statistic reproduced all 500 planted-signal records exactly (observed, baseline and all 999 null values; max difference 0.0; same p and decision in each). Both summaries were rebuilt on the PC from the copied records, byte-identical.
+  - **Records:** `planted_signal/statcmp_20261117/` (summary json `90f29385…`, md `930994f0…`; hash list `SHA256SUMS_statcmp_20261117` `b3100f98…`) and `planted_signal/statcmp_20261117_cells23/` (json `fc248516…`, md `d9f19736…`; `SHA256SUMS_statcmp_20261117_cells23` `6a8d5a09…`).
+  - **Result (detected out of 100; cells 1–3 have no velocity effect):**
+
+    | Statistic | 1 | 2 | 3 | 1–3 pooled | 4 (β −0.1) | 5 (β −0.2) |
+    |---|---|---|---|---|---|---|
+    | Out-of-fold average precision (frozen) | 5 | 11 | 5 | 7.0% | 34 | 75 |
+    | Out-of-fold log-likelihood | 7 | 4 | 3 | 4.7% | 66 | 100 |
+    | In-sample log-likelihood | 9 | 10 | 5 | 8.0% | 68 | 100 |
+    | Velocity coefficient, negative tail | 7 | 3 | 2 | 4.0% | 55 | 96 |
+    | Absolute coefficient | 7 | 3 | 4 | 4.7% | 55 | 96 |
+
+    - Paired on the same datasets against the frozen statistic, out-of-fold log-likelihood detected 34 datasets the frozen statistic missed and missed 2 it detected in cell 4 (exact McNemar p 1.9e-8). In cell 5 the counts were 25 and 0 (p 6.0e-8).
+    - Pooled rates are the sums of the two summaries' counts. Only the in-sample log-likelihood is above 5% (one-sided binomial p 0.017; the frozen statistic 0.078; scipy binomtest).
+  - **Reading (exploratory):** on Austin's design, the change in out-of-fold log-likelihood about doubles power at β = −0.1 without more false positives. It is the candidate primary statistic for any new frozen plan, with the change in average precision as the effect size. Limits: one design, effect planted in the model's own log-linear form, 100 datasets per cell.
 
 ## 16. Revisions before freezing
 

@@ -1,0 +1,441 @@
+{
+ "draws": 999,
+ "sources": {
+  "planted_signal.py": "977f626f1c72ab25e6c3f70b062fe1010252b9027f0e8bba113f4acad882b8f4",
+  "testa_core.py": "f4d71575c3179ef2f6ac7aeff8e0a26c14ab515db76ad937e411fae9e6e38430",
+  "nyc_lib.py": "619e4de49415bc2f33cc7e54cd91f26740a37de8c0fcd0d990503a93f4546db1",
+  "statistic_comparison.py": "4f74ad9d205b3c4391598bc50ce44240cbbc334019ddca3f2ed4420fe37dfe9c"
+ },
+ "fingerprints": {
+  "checkpoint1_inputs": {
+   "features": "d02137242303f60380a026b68a73c55bfed5c599840538d90d14dc4a4769db6a",
+   "grid": "c13e637f7e10bc25469e1384d19065cf44e7e0617fbc1c7808e96b14e27fd7bb",
+   "episodes": "ba6898f7887c6aeab5b93c31b86c9314d887583fbb5bb46b78bc305efd5d0ace",
+   "censoring": "0e223f92ef2ad60a3f1124a8e51870b239a9a57afc6ef25c76ae8e8ae7fd4a91"
+  },
+  "field_npz": "7a9ad77f75b05c4a13d7cc29db07da47c871c8a31e196aae49989a521aa4a4e4",
+  "null_field": "970344870bc083ddbe6d21260d00416e9afba5813b0a9e8a41007e8a5abb7e3e",
+  "coefficients": "2f67ed802968a6992101894724fdfb09489bb3fb2e8054ef277e37a1c98a9c8b",
+  "event_dates": "8bd81249242c48e018b4c16d95c3d5bbb529d998bf4a708dbca4a82b335d495a",
+  "surrogates": "07bf0d54eef4b62389ce81d62732388cbf62c9cc66a22a44e5d67308d556c055",
+  "quantiles": "99d9e71bfbf25dd28d2fb563b159d022de6e402ad6067d5dd834b1ad7d62feff"
+ },
+ "anchor_max_abs_diff": 0.0,
+ "records": 300,
+ "cells": {
+  "1": {
+   "label": "1. nothing added",
+   "datasets": 100,
+   "statistics": {
+    "ap": {
+     "detects": 5,
+     "share": 0.05,
+     "wilson95": [
+      0.021543679154367973,
+      0.11175046923191914
+     ],
+     "p_deciles": [
+      12,
+      6,
+      12,
+      14,
+      13,
+      8,
+      8,
+      8,
+      8,
+      11
+     ],
+     "observed_mean": -9.657349145968428e-05,
+     "null_mean": -0.00011373507926449293
+    },
+    "oofll": {
+     "detects": 7,
+     "share": 0.07,
+     "wilson95": [
+      0.03431926106727269,
+      0.13749514739073504
+     ],
+     "p_deciles": [
+      16,
+      6,
+      15,
+      11,
+      14,
+      8,
+      5,
+      7,
+      5,
+      13
+     ],
+     "observed_mean": -0.5957326306293089,
+     "null_mean": -0.7653834880222905
+    },
+    "llr": {
+     "detects": 9,
+     "share": 0.09,
+     "wilson95": [
+      0.048072540002565146,
+      0.1622621285271631
+     ],
+     "p_deciles": [
+      10,
+      9,
+      10,
+      8,
+      16,
+      11,
+      8,
+      9,
+      7,
+      12
+     ],
+     "observed_mean": 0.4908969527324916,
+     "null_mean": 0.4953709074008216
+    },
+    "coef": {
+     "detects": 7,
+     "share": 0.07,
+     "wilson95": [
+      0.03431926106727269,
+      0.13749514739073504
+     ],
+     "p_deciles": [
+      14,
+      8,
+      9,
+      10,
+      9,
+      10,
+      12,
+      6,
+      7,
+      15
+     ],
+     "observed_mean": 0.0031703684731155114,
+     "null_mean": 0.0033807786665163457
+    },
+    "abscoef": {
+     "detects": 7,
+     "share": 0.07,
+     "wilson95": [
+      0.03431926106727269,
+      0.13749514739073504
+     ],
+     "p_deciles": [
+      10,
+      5,
+      10,
+      8,
+      15,
+      10,
+      10,
+      12,
+      9,
+      11
+     ],
+     "observed_mean": 0.020269174254821637,
+     "null_mean": 0.021386847804258445
+    }
+   },
+   "paired_vs_ap": {
+    "oofll": {
+     "only_this": 5,
+     "only_ap": 3,
+     "exact_mcnemar_p": 0.7265625
+    },
+    "llr": {
+     "only_this": 7,
+     "only_ap": 3,
+     "exact_mcnemar_p": 0.34375
+    },
+    "coef": {
+     "only_this": 6,
+     "only_ap": 4,
+     "exact_mcnemar_p": 0.75390625
+    },
+    "abscoef": {
+     "only_this": 6,
+     "only_ap": 4,
+     "exact_mcnemar_p": 0.75390625
+    }
+   }
+  },
+  "4": {
+   "label": "4. beta = -0.1",
+   "datasets": 100,
+   "statistics": {
+    "ap": {
+     "detects": 34,
+     "share": 0.34,
+     "wilson95": [
+      0.25461520797348164,
+      0.43722271145275377
+     ],
+     "p_deciles": [
+      47,
+      13,
+      4,
+      6,
+      7,
+      6,
+      3,
+      5,
+      4,
+      5
+     ],
+     "observed_mean": 0.0006985338366902421,
+     "null_mean": 0.0003304983232290458
+    },
+    "oofll": {
+     "detects": 66,
+     "share": 0.66,
+     "wilson95": [
+      0.5627772885472462,
+      0.7453847920265184
+     ],
+     "p_deciles": [
+      77,
+      15,
+      2,
+      0,
+      1,
+      2,
+      2,
+      0,
+      0,
+      1
+     ],
+     "observed_mean": 5.840800452248896,
+     "null_mean": 2.268947413686648
+    },
+    "llr": {
+     "detects": 68,
+     "share": 0.68,
+     "wilson95": [
+      0.583373813895476,
+      0.763308526750009
+     ],
+     "p_deciles": [
+      76,
+      13,
+      4,
+      4,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+     ],
+     "observed_mean": 6.8897734901679,
+     "null_mean": 3.2692579346554203
+    },
+    "coef": {
+     "detects": 55,
+     "share": 0.55,
+     "wilson95": [
+      0.45244602997442135,
+      0.6438546202048803
+     ],
+     "p_deciles": [
+      68,
+      10,
+      10,
+      5,
+      4,
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     "observed_mean": -0.09374743632920937,
+     "null_mean": -0.06613574907089641
+    },
+    "abscoef": {
+     "detects": 55,
+     "share": 0.55,
+     "wilson95": [
+      0.45244602997442135,
+      0.6438546202048803
+     ],
+     "p_deciles": [
+      68,
+      10,
+      10,
+      5,
+      4,
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     "observed_mean": 0.09374743632920937,
+     "null_mean": 0.06615722170854753
+    }
+   },
+   "paired_vs_ap": {
+    "oofll": {
+     "only_this": 34,
+     "only_ap": 2,
+     "exact_mcnemar_p": 1.941225491464138e-08
+    },
+    "llr": {
+     "only_this": 37,
+     "only_ap": 3,
+     "exact_mcnemar_p": 1.946500560734421e-08
+    },
+    "coef": {
+     "only_this": 25,
+     "only_ap": 4,
+     "exact_mcnemar_p": 0.00010371580719947815
+    },
+    "abscoef": {
+     "only_this": 25,
+     "only_ap": 4,
+     "exact_mcnemar_p": 0.00010371580719947815
+    }
+   }
+  },
+  "5": {
+   "label": "5. beta = -0.2",
+   "datasets": 100,
+   "statistics": {
+    "ap": {
+     "detects": 75,
+     "share": 0.75,
+     "wilson95": [
+      0.656955364519384,
+      0.8245478863771232
+     ],
+     "p_deciles": [
+      83,
+      8,
+      1,
+      4,
+      2,
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "observed_mean": 0.0027549228568843386,
+     "null_mean": 0.0013249200389602728
+    },
+    "oofll": {
+     "detects": 100,
+     "share": 1.0,
+     "wilson95": [
+      0.9630065017930143,
+      1.0
+     ],
+     "p_deciles": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "observed_mean": 27.111090223337396,
+     "null_mean": 11.753154286750275
+    },
+    "llr": {
+     "detects": 100,
+     "share": 1.0,
+     "wilson95": [
+      0.9630065017930143,
+      1.0
+     ],
+     "p_deciles": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "observed_mean": 26.969169745652607,
+     "null_mean": 11.81278329828478
+    },
+    "coef": {
+     "detects": 96,
+     "share": 0.96,
+     "wilson95": [
+      0.9016292856411208,
+      0.9843366960084523
+     ],
+     "p_deciles": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "observed_mean": -0.1936198208918924,
+     "null_mean": -0.13490167942522518
+    },
+    "abscoef": {
+     "detects": 96,
+     "share": 0.96,
+     "wilson95": [
+      0.9016292856411208,
+      0.9843366960084523
+     ],
+     "p_deciles": [
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "observed_mean": 0.1936198208918924,
+     "null_mean": 0.13490167942522518
+    }
+   },
+   "paired_vs_ap": {
+    "oofll": {
+     "only_this": 25,
+     "only_ap": 0,
+     "exact_mcnemar_p": 5.960464477539063e-08
+    },
+    "llr": {
+     "only_this": 25,
+     "only_ap": 0,
+     "exact_mcnemar_p": 5.960464477539063e-08
+    },
+    "coef": {
+     "only_this": 23,
+     "only_ap": 2,
+     "exact_mcnemar_p": 1.9431114196777344e-05
+    },
+    "abscoef": {
+     "only_this": 23,
+     "only_ap": 2,
+     "exact_mcnemar_p": 1.9431114196777344e-05
+    }
+   }
+  }
+ }
+}

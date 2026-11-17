@@ -59,6 +59,21 @@ Class: **R** = could enter a new frozen plan for a retest. **E** = on Austin or 
 - **By Pepe's result both statistics test the same hypothesis,** so this is a question of power, not of meaning.
 - **It can be measured, not assumed:** rerun planted cells 1, 4 and 5 with the coefficient as the statistic. That
   uses synthetic outcomes only and touches no real result.
+- **Measured on 2026-11-17 (synthetic only; `feasibility/austin/planted_signal/statistic_comparison.py`, records in
+  `statcmp_20261117/` and `statcmp_20261117_cells23/`, §15 of the Austin plan).** Planted cells 1–5, 100 datasets
+  each, the same datasets and 999 surrogates as the planted-signal check. The frozen statistic reproduced the
+  2026-11-11 records exactly.
+
+  | Statistic | False positives, cells 1–3 pooled (300) | Power β = −0.1 | Power β = −0.2 |
+  |---|---|---|---|
+  | Change in out-of-fold average precision (frozen) | 7.0% | 34% | 75% |
+  | Change in out-of-fold log-likelihood | 4.7% | 66% | 100% |
+  | Change in in-sample log-likelihood | 8.0% (above 5%, p 0.017) | 68% | 100% |
+  | Velocity coefficient, negative tail | 4.0% | 55% | 96% |
+
+  The hypothesis held: the held-out log-likelihood gain about doubled power at β = −0.1 with no rise in false
+  positives, including under the two misspecified cells. Limits: one city's design, an effect planted in the
+  model's own log-linear form, 100 datasets per cell.
 
 ### Inference under spatial autocorrelation (theme 3)
 
@@ -153,9 +168,11 @@ the within-building gradient the literature uses.
 
 ## 4. Bottom line on power
 
-- **Worth measuring, not yet shown:** whether the coefficient or the log-likelihood gain has more power than the
-  change in average precision inside the same surrogate null. The planted-signal check can answer this on synthetic
-  outcomes (section 2). The published warnings about discrimination tests concern a different, invalid procedure.
+- **Measured (2026-11-17, synthetic only, section 2):** inside the same surrogate null, the change in out-of-fold
+  log-likelihood had 66% and 100% power at β = −0.1 and −0.2, against 34% and 75% for the change in average
+  precision, with pooled false positives of 4.7% against 7.0%. It keeps the held-out framing, so it is the
+  candidate primary statistic for any new frozen plan, with the change in average precision reported as the effect
+  size. The published warnings about discrimination tests concern a different, invalid procedure.
 - **Do not expect this to reverse Austin.** The hypothesis tested is the same. In the Austin record the velocity
   coefficient on all rows was +0.0085 and the median case-minus-control difference +0.009 standardised units, both
   close to zero and both in the opposite direction. Any such reanalysis there would be exploratory.
